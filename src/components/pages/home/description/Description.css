@@ -15,7 +15,6 @@
     margin-bottom: 16px;
     color: #ffffff;
     font-size: 32px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .description-image {
@@ -47,7 +46,7 @@
 .ftc-container {
     position: relative;
     width: 100%;
-    background-color: #ff852b;
+    background-color: #202020; /*ff852b*/
     flex-direction: column;
     padding: 20px;
 }
@@ -56,7 +55,7 @@
     text-align: center;
     font-size: 100px;
     color: #ffffff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
     margin-top: 20px;
 }
 
@@ -71,7 +70,6 @@
 }
 
 .ftc-description-container > p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #ffffff;
     font-size: 32px;
 }
@@ -86,12 +84,9 @@
     position: absolute;
     bottom: 5px;
     right: 0px;
-    background-color: #fe6601;
-    color: #ffffff;
     padding: 10px;
     border-radius: 5px;
     font-size: 90px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     max-width: 40%;
     max-height: 30%;
 }
@@ -109,7 +104,7 @@
 .frc-container {
     position: relative;
     width: 100%;
-    background-color: #2626a9;
+    background-color: #202020; /*2626a9*/
     flex-direction: column;
     padding: 20px;
 }
@@ -118,7 +113,7 @@
     text-align: center;
     font-size: 100px;
     color: #ffffff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
 .frc-description-container {
@@ -132,7 +127,7 @@
 }
 
 .frc-description-container > p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
     color: #ffffff;
     font-size: 32px;
 }
@@ -152,7 +147,7 @@
     padding: 10px;
     border-radius: 5px;
     font-size: 90px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
     max-width: 40%;
     max-height: 30%;
 }
@@ -173,7 +168,7 @@
     text-align: center;
     font-size: 60px;
     color: #ffffff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
   
 .cards-container {
@@ -254,14 +249,14 @@
 .cards-item-title {
     color: #ffffff;
     font-size: 28px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
     text-align: center;
 }
 
 .cards-item-number {
     color: #ffffff;
     font-size: 28px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
     text-align: center;
     margin-top: 5px;
 }
