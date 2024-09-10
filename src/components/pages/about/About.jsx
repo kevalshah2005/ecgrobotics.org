@@ -1,10 +1,11 @@
 import React from 'react'
+import Timeline from './timeline/Timeline'
 
 function About() {
   return (
-    <div>
-      <h1>About Us</h1>
-    </div>
+    <>
+      <Timeline />
+    </>
   )
 }
 
