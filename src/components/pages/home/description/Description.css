@@ -26,6 +26,7 @@
 @media screen and (max-width: 960px) {
     .description-container {
         flex-direction: column;
+        padding: 30px 30px 30px 30px;
     }
     .text-container > p {
         max-width: 100%;
@@ -33,7 +34,7 @@
     }
     .description-image {
         max-width: 100%;
-        margin-left: 0%;
+        margin-top: 2rem;
     }
 }
   
@@ -93,10 +94,26 @@
 @media screen and (max-width: 960px) {
     .ftc-description-container {
         flex-direction: column;
+        padding: 10px 10px 10px 10px;
     }
     .ftc-image {
-        max-width: 80%;
+        max-width: 100%;
         margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .ftc-container > h1 {
+        max-width: 100%;
+        font-size: 50px;
+    }
+    .ftc-description-container > p {
+        max-width: 100%;
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ftc-description-container > p {
+      font-size: 24px;
     }
 }
 
@@ -152,12 +169,30 @@
 }
 
 @media screen and (max-width: 960px) {
+
     .frc-description-container {
         flex-direction: column;
+        padding: 10px 10px 10px 10px;
     }
     .frc-image {
-        max-width: 80%;
+        max-width: 100%;
         margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .frc-container > h1 {
+        max-width: 100%;
+        font-size: 50px;
+    }
+    .frc-description-container > p {
+        max-width: 100%;
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .frc-description-container > p {
+      font-size: 24px;
     }
 }
 
@@ -167,7 +202,6 @@
     text-align: center;
     font-size: 60px;
     color: #ffffff;
-    
 }
   
 .cards-container {
@@ -281,5 +315,13 @@
 @media only screen and (max-width: 1024px) {
     .cards-item {
       margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .cards > h1 {
+        text-align: center;
+        font-size: 36px;
+        color: #ffffff;
     }
 }

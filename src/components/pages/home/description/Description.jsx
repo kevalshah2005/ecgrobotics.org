@@ -70,9 +70,9 @@ function Description() {
       <div className="frc-container">
       <h1>FIRST Robotics Competition</h1>
         <div className='frc-description-container'>
-          <img src={frcImage} alt='' className='frc-image' />
           <p> This is filler text. In this space will be an explanation about what FRC is. Ideally I'd like to keep it a general program overview rather than anything about the team, since that's already below.
           </p>
+          <img src={frcImage} alt='' className='frc-image' />
         </div>
         <div className='cards'>
           <h1>Check out our team here!</h1>
