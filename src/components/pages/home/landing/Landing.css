@@ -1,0 +1,92 @@
+/* .landing {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/tempLandingImage.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-text {
+    text-align: center;
+    max-width: 1000px;
+}
+
+.landing-text h1 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 20px;
+} */
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.landing-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+    object-fit: contain;
+}
+
+.landing-container > h1 {
+    color: #ffffff;
+    font-size: 100px;
+    margin-top: -100px;
+}
+
+.landing-container > p {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    color: #ffffff;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.landing-btns {
+  margin-top: 32px;
+}
+
+.landing-btns .btn{
+  margin: 6px;
+}
+
+@media screen and (max-width: 960px) {
+    .landing-container > h1 {
+      font-size: 70px;
+      margin-top: -150px;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .landing-container > h1 {
+      font-size: 50px;
+      margin-top: -100px;
+    }
+  
+    .landing-container > p {
+      font-size: 30px;
+    }
+  
+    .btn-mobile {
+      display: block;
+      text-decoration: none;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+}

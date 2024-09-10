@@ -1,0 +1,291 @@
+.description-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020; /* please change this at some point */
+    padding: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.text-container > p {
+    max-width: 100%;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    color: #ffffff;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.description-image {
+    max-width: 45%;
+    margin-left: 10px;
+    border-radius: 5%;
+}
+
+@media screen and (max-width: 960px) {
+    .description-container {
+        flex-direction: column;
+    }
+    .text-container > p {
+        max-width: 100%;
+        font-size: 28px;
+    }
+    .description-image {
+        max-width: 100%;
+        margin-left: 0%;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .text-container > p {
+      font-size: 24px;
+    }
+}
+
+.ftc-container {
+    position: relative;
+    width: 100%;
+    background-color: #ff852b;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.ftc-container > h1 {
+    text-align: center;
+    font-size: 100px;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.ftc-description-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.ftc-description-container > p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.ftc-image {
+    max-width: 45%;
+    margin-left: 10px;
+    border-radius: 5%;
+}
+
+.ftc-text-box {
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    background-color: #fe6601;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 90px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 40%;
+    max-height: 30%;
+}
+
+@media screen and (max-width: 960px) {
+    .ftc-description-container {
+        flex-direction: column;
+    }
+    .ftc-image {
+        max-width: 80%;
+        margin-top: 2rem;
+    }
+}
+
+.frc-container {
+    position: relative;
+    width: 100%;
+    background-color: #2626a9;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.frc-container > h1 {
+    text-align: center;
+    font-size: 100px;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.frc-description-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.frc-description-container > p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.frc-image {
+    max-width: 45%;
+    margin-right: 30px;
+    border-radius: 5%;
+}
+
+.frc-text-box {
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    background-color: #2626a9;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 90px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 40%;
+    max-height: 30%;
+}
+
+@media screen and (max-width: 960px) {
+    .frc-description-container {
+        flex-direction: column;
+    }
+    .frc-image {
+        max-width: 80%;
+        margin-top: 2rem;
+    }
+}
+
+/* CARDS */
+  
+.cards > h1 {
+    text-align: center;
+    font-size: 60px;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  
+.cards-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+}
+  
+.cards-wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+}
+  
+.cards-items {
+    margin-bottom: 24px;
+}
+  
+.cards-item {
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+}
+  
+.cards-item-link {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    max-width: 400px;
+}
+  
+.cards-item-pic-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 67%;
+    overflow: hidden;
+}
+  
+.fade-img {
+    animation-name: fade-img;
+    animation-duration: 2s;
+}
+  
+.cards-item-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+}
+  
+.cards-item-img:hover {
+    transform: scale(1.1);
+}
+  
+.cards-item-info {
+    padding: 20px;
+}
+  
+.cards-item-title {
+    color: #ffffff;
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.cards-item-number {
+    color: #ffffff;
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.cards-item-description {
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 20px;
+}
+  
+@media only screen and (min-width: 1200px) {
+    .content-blog-container {
+      width: 84%;
+    }
+}
+  
+@media only screen and (min-width: 1024px) {
+    .cards-items {
+      display: flex;
+    }
+}
+  
+@media only screen and (max-width: 1024px) {
+    .cards-item {
+      margin-bottom: 2rem;
+    }
+}
