@@ -1,4 +1,5 @@
 .footer-container {
+    border-top: 3px solid #ffffff;
     background-color: #202020;
     padding: 4rem 0 2rem 0;
     display: flex;
