@@ -1,7 +1,22 @@
 import React from 'react'
 import './AboutDescription.css'
+import Gallery from '../../../gallery/Gallery'
+import logo731 from '../../../../assets/frcImage.jpg'
+import logo5795 from '../../../../assets/ftcImage.jpg'
+import logo6183 from '../../../../assets/tempLandingImage.png'
+import logo10195 from '../../../../assets/logo10195.png'
+import logo1533 from '../../../../assets/logo1533.png'
 
 function AboutDescription() {
+  const galleryImages = [
+    logo731,
+    logo5795,
+    logo731,
+    logo5795,
+    logo731,
+    logo6183
+  ];
+
   return (
     <div>
       <div className="about-us-container">
@@ -9,8 +24,10 @@ function AboutDescription() {
           <h1>About ECG Robotics</h1>
           <h3>More about the club and its history</h3>
 
-          {/* gallery goes here */}
-          <p>gallery goes here</p>
+          <Gallery 
+            images={galleryImages}
+          />
+
           <p>ECG Robotics is a student-led club in Greensboro, NC made up of five FIRST Robotics teams, working together each season to not only build robots, but to share our love of robotics and STEM with kids and adults in our community.</p>
           
           <h2>What is FIRST?</h2>
