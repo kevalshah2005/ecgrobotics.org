@@ -143,14 +143,13 @@
 }
 
 .frc-description-container > p {
-    
     color: #ffffff;
     font-size: 32px;
 }
 
 .frc-image {
     max-width: 45%;
-    margin-right: 30px;
+    margin-left: 10px;
     border-radius: 5%;
 }
 
@@ -208,7 +207,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    max-width: 1120px;
+    max-width: 1320px;
     width: 90%;
     margin: 0 auto;
 }
@@ -233,9 +232,9 @@
     display: flex;
     flex-flow: column;
     width: 100%;
-    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.7);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.7));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.17));
     border-color: white;
     border-style: solid;
     border-radius: 10px;
