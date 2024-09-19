@@ -4,7 +4,7 @@ import Timeline from './timeline/Timeline'
 function About() {
   return (
     <>
-      <Timeline />
+    
     </>
   )
 }
