@@ -1,20 +1,19 @@
 import React from 'react'
 import './AboutDescription.css'
 import Gallery from '../../../gallery/Gallery'
-import logo731 from '../../../../assets/frcImage.jpg'
-import logo5795 from '../../../../assets/ftcImage.jpg'
-import logo6183 from '../../../../assets/tempLandingImage.png'
-import logo10195 from '../../../../assets/logo10195.png'
-import logo1533 from '../../../../assets/logo1533.png'
+import teampic_1533_2022 from '../../../../assets/1533_2022teampic.jpg'
+import teampic_1533_2023 from '../../../../assets/1533_2023teampic.jpg'
+import teampic_1533_states_2024 from '../../../../assets/1533_2024statesteam.jpg'
+import working_5795 from '../../../../assets/5795_working.jpg'
 
 function AboutDescription() {
   const galleryImages = [
-    logo731,
-    logo5795,
-    logo731,
-    logo5795,
-    logo731,
-    logo6183
+    teampic_1533_2022,
+    teampic_1533_2023,
+    working_5795,
+    teampic_1533_2023,
+    teampic_1533_2022,
+    teampic_1533_states_2024
   ];
 
   return (
@@ -26,6 +25,11 @@ function AboutDescription() {
 
           <Gallery 
             images={galleryImages}
+            left={true}
+          />
+          <Gallery 
+            images={galleryImages}
+            left={false}
           />
 
           <p>ECG Robotics is a student-led club in Greensboro, NC made up of five FIRST Robotics teams, working together each season to not only build robots, but to share our love of robotics and STEM with kids and adults in our community.</p>
@@ -37,7 +41,7 @@ function AboutDescription() {
           <p><strong>FIRST Robotics Competition (FRC):</strong> Each January brings a new challenge for FRC teams. Starting with a Kit of Parts, they design, program, and build industrial-sized robots to play an action-packed game on a themed field as part of a three-team alliance. Guided by mentors and sponsors, students learn engineering and problem-solving skills as they compete for awards, create a team identity, raise funds, hone teamwork skills, and advance appreciation for STEM in their community.</p>
         
           <h2>Our History</h2>
-          {/* timeline goes here */}
+          
         </div>
       </div>
     </div>

@@ -1,14 +1,8 @@
 import React, {useEffect} from 'react'
 import './Gallery.css'
 
-
-
-const Gallery = ({images}) => {
+const Gallery = ({images, left = true}) => {
     const numberOfImages = images.length;
-
-    useEffect(() => {
-        document.documentElement.style.setProperty('--gallery-width', `${400 * images.length}px`);
-      }, [numberOfImages]);
 
     return (
         <div className="gallery">
@@ -20,14 +14,20 @@ const Gallery = ({images}) => {
                         const style = {
                             animationDelay: delay,
                             position: "absolute",
-                            left: "var(--gallery-width)",
-                            animationName: "scrollLeft",
+                            animationName: left ? "scrollLeft" : "scrollRight",
                             animationDuration: "60s",
                             animationTimingFunction: "linear",
                             animationIterationCount: "infinite",
-                            height: "250px",
                             width: "400px",
+                            height: "250px",
+                            transition: "transform 1s",
                         };
+
+                        if (left) {
+                            style.left = `${400 * images.length}px`;
+                        } else {
+                            style.right = `${400 * images.length}px`;
+                        }
 
                         return (
                             <img
@@ -42,7 +42,7 @@ const Gallery = ({images}) => {
                 </div>
             </div>
         </div>
-    )
+    );
 };
 
 export default Gallery

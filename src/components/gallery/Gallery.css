@@ -3,14 +3,18 @@
     display: grid;
     place-items: center;
     margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
 }
 
 .slide-track {
-    width: 1320px;
-    overflow: hidden;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
     height: 250px;
     margin-inline: auto;
     position: relative;
+    align-items: stretch;
 
     mask-image: linear-gradient(
         to right,
@@ -21,8 +25,22 @@
     );
 }
 
+.slide-track:hover img {
+    animation-play-state: paused;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
 @keyframes scrollLeft {
     to {
         left: -400px;
+    }
+}
+
+@keyframes scrollRight {
+    to {
+        right: -400px;
     }
 }
