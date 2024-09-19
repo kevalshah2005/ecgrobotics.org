@@ -12,6 +12,8 @@
     flex-flow: column;
     justify-content: center;
     margin: auto;
+
+    text-align: center;
 }
 
 .about-us-description-container > h1 {
