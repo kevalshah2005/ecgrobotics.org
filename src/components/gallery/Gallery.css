@@ -29,10 +29,6 @@
     animation-play-state: paused;
 }
 
-img:hover {
-    transform: scale(1.2);
-}
-
 @keyframes scrollLeft {
     to {
         left: -400px;
