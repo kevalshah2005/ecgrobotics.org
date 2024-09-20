@@ -6,6 +6,7 @@ import About from './components/pages/about/About';
 import Footer from './components/footer/Footer';
 
 import { useEffect } from "react";
+import Sponsors from './components/pages/sponsors/Sponsors';
 
 // For some reason it doesn't automatically scroll to top when switching pages, so this is needed
 function ScrollToTop() {
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           <Route path='/' exact element={<Home />} />
           <Route path='/about' exact element={<About />} />
+          <Route path='/sponsors' exact element = {<Sponsors />} />
         </Routes>
         <Footer />
       </Router>

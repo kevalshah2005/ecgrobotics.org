@@ -11,11 +11,9 @@ body {
   background: #f5f5f5;
 }
 
+/* links */
 a {
-  text-decoration: none;
-  color: inherit;
-  line-height: 1;
-  cursor: pointer;
+  color: #0070e0;
 }
 
 img {
@@ -30,19 +28,6 @@ img:hover {
   padding-left: 10%;
   padding-right: 10%;
 }
-/* .btn {
-  background: #FFFFFF;
-  color: #212121;
-  padding: 14px 25px;
-  font-size: 16px;
-  border-radius: 30px;
-  cursor: pointer;
-  border: 0;
-  outline: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 .btn img {
   width: 20px;
