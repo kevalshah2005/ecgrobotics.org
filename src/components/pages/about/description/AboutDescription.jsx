@@ -39,7 +39,6 @@ function AboutDescription() {
           <p>ECG Robotics fields teams that compete in two FIRST programs: FIRST Tech Challenge (FTC) and FIRST Robotics Competition (FRC).</p>
                   
           <h2>Our History</h2>
-          
         </div>
       </div>
     </div>
