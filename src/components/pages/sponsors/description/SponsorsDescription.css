@@ -29,8 +29,7 @@
     width: 100%;
     background-image: url('../../../../assets/clubphoto.jpg');
     background-size: cover;
-    background-position: top -275px center;
-    background-blend-mode: darken;
+    background-position: top -250px center;
 
     box-shadow: inset 0 0 0 1000px rgba(32, 32, 32, 0.9);
 
@@ -38,6 +37,8 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+
+    padding: 100px;
 }
 
 .sponsors-header-text {
@@ -50,7 +51,7 @@
     text-align: center;
     font-size: 100px;
     color: #ffffff;
-    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .sponsors-header-text > h2 {
@@ -66,7 +67,6 @@
     font-size: 36px;
     color: #ff852b;
     margin-top: 10px;
-    margin-bottom: 40px;
 }
 
 .sponsors-description-container > h2 {
