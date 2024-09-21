@@ -5,16 +5,40 @@ import teampic_1533_2022 from '../../../../assets/1533_2022teampic.jpg'
 import teampic_1533_2023 from '../../../../assets/1533_2023teampic.jpg'
 import teampic_1533_states_2024 from '../../../../assets/1533_2024statesteam.jpg'
 import working_5795 from '../../../../assets/5795_working.jpg'
+import bot_6183_2024 from '../../../../assets/6183_2024bot.png'
+import teampic_731_2019 from '../../../../assets/731_2019teampic.jpg'
+import climb_1533_2018 from '../../../../assets/1533_2018climb.png'
+import teampic_1533_2018 from '../../../../assets/1533_2018teampic.jpg'
+import working_6183 from '../../../../assets/6183_working.jpg'
+
+// Fisher-Yates shuffle
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
 
 function AboutDescription() {
-  const galleryImages = [
+  var galleryImagesLeft = [
     teampic_1533_2022,
     teampic_1533_2023,
     working_5795,
-    teampic_1533_2023,
-    teampic_1533_2022,
-    teampic_1533_states_2024
+    bot_6183_2024,
+    teampic_731_2019,
   ];
+
+  var galleryImagesRight = [
+    climb_1533_2018,
+    teampic_1533_2018,
+    working_6183,
+    teampic_1533_states_2024,
+    teampic_1533_2023,
+  ];
+
+  // Randomize order of images
+  shuffle(galleryImagesLeft);
+  shuffle(galleryImagesRight);
 
   return (
     <div>
