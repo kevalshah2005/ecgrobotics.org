@@ -5,7 +5,7 @@ import teampic_1533_2022 from '../../../../assets/1533_2022teampic.jpg'
 import teampic_1533_2023 from '../../../../assets/1533_2023teampic.jpg'
 import teampic_1533_states_2024 from '../../../../assets/1533_2024statesteam.jpg'
 import working_5795 from '../../../../assets/5795_working.jpg'
-import bot_6183_2024 from '../../../../assets/6183_2024bot.png'
+import bot_731_2024 from '../../../../assets/731_2024bot.jpg'
 import teampic_731_2019 from '../../../../assets/731_2019teampic.jpg'
 import climb_1533_2018 from '../../../../assets/1533_2018climb.png'
 import teampic_1533_2018 from '../../../../assets/1533_2018teampic.jpg'
@@ -24,7 +24,7 @@ function AboutDescription() {
     teampic_1533_2022,
     teampic_1533_2023,
     working_5795,
-    bot_6183_2024,
+    bot_731_2024,
     teampic_731_2019,
   ];
 
