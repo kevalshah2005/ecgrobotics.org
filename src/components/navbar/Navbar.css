@@ -3,7 +3,7 @@
 }
 
 .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: rgba(28, 28, 28, 1);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -14,6 +14,7 @@
   z-index: 999;
   padding: 50px;
 
+  border-bottom: grey 1px solid; /* consider changing to #ff852b */
 }
    
 .navbar-container {
