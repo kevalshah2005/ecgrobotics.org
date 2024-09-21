@@ -17,11 +17,11 @@ a {
 }
 
 img {
-  transition: transform 1s;
+  transition: transform 0.5s cubic-bezier(0.87, -1.38, 0.03, 1.54);
 }
 
 img:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
 .container {
