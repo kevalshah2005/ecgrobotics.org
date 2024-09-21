@@ -3,7 +3,6 @@
     width: 100%;
     background-color: #202020;
     flex-direction: column;
-    padding: 20px;    
 }
 
 .about-us-description-container {
@@ -16,22 +15,30 @@
     text-align: center;
 }
 
-.about-us-description-container > h1 {
+.about-us-header-container {
+    background-image: url('../../../../assets/clubphoto.jpg');
+    background-size: cover;
+    background-position: top -250px center;
+
+    box-shadow: inset 0 0 0 1000px rgba(32, 32, 32, 0.9);
+
+    padding: 100px;
+}
+
+.about-us-header-container > h1 {
     text-align: center;
     font-size: 100px;
     color: #ffffff;
-    margin-top: 20px;
 }
 
-.about-us-description-container > h3 {
+.about-us-header-container > h2 {
     text-align: center;
     font-size: 36px;
     color: #ffffff;
     margin-top: 10px;
-    margin-bottom: 20px;
 }
 
-.about-us-description-container > h2 {
+.about-us-description-container > h1 {
     text-align: center;
     font-size: 72px;
     color: #ffffff;
