@@ -9,8 +9,7 @@
 
 .slide-track {
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
     height: 250px;
     margin-inline: auto;
     position: relative;
