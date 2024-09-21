@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #202020; /* please change this at some point */
+    background-color: #202020;
     padding: 40px;
     padding-left: 80px;
     padding-right: 80px;
@@ -48,7 +48,7 @@
 .ftc-container {
     position: relative;
     width: 100%;
-    background-color: #202020; /*ff852b*/
+    background-color: #202020;
     flex-direction: column;
     padding: 20px;
 }
@@ -122,7 +122,7 @@
 .frc-container {
     position: relative;
     width: 100%;
-    background-color: #202020; /*2626a9*/
+    background-color: #202020;
     flex-direction: column;
     padding: 20px;
 }
