@@ -1,21 +1,22 @@
 import React, {useEffect} from 'react'
 import './Gallery.css'
 
-const Gallery = ({images, left = true}) => {
+const Gallery = ({images, speed = 8, left = true}) => {
     const numberOfImages = images.length;
+    const animationDuration = numberOfImages * speed;
 
     return (
         <div className="gallery">
             <div className="slide-track">
                 <div className="images">
                     {images.map((image, index) => {
-                        const delay = `${(60 / numberOfImages) * (numberOfImages - index) * -1}s`;
+                        const delay = `${(animationDuration / numberOfImages) * (numberOfImages - index) * -1}s`;
 
                         const style = {
                             animationDelay: delay,
                             position: "absolute",
                             animationName: left ? "scrollLeft" : "scrollRight",
-                            animationDuration: "60s",
+                            animationDuration: `${animationDuration}s`,
                             animationTimingFunction: "linear",
                             animationIterationCount: "infinite",
                             width: "400px",
