@@ -21,7 +21,6 @@ const Gallery = ({images, speed = 8, left = true}) => {
                             animationIterationCount: "infinite",
                             width: "400px",
                             height: "250px",
-                            transition: "transform 1s",
                         };
 
                         if (left) {
