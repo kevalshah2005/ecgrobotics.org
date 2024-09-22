@@ -10,8 +10,8 @@
     position: absolute;
     width: 350px;
     height: 100px;
-    top: 20%;
-    left: calc(50% - 250px);
+    top: 10%;
+    left: calc(50% - 175px);
     transform-style: preserve-3d;
 
     transition: transform 1s ease-in-out;
