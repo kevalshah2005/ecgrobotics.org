@@ -1,6 +1,7 @@
 import React from 'react'
 import './SponsorsDescription.css'
 import sponsorImage from '../../../../assets/sponsorImage.jpg'
+import Gallery3D from '../../../gallery3d/Gallery3D'
 
 function SponsorsDescription() {
   return (
@@ -22,6 +23,7 @@ function SponsorsDescription() {
             <p>Ready? Contact us at <a href="mailto: info@ecgrobotics.org">info@ecgrobotics.org</a> and ask how you can help build tomorrow’s engineers, programmers, designers, and thinkers.</p>
             <img src={sponsorImage} alt="Image showing robot with sponsor logos on it" />
         </div>
+        <Gallery3D />
     </div>
   )
 }
