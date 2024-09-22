@@ -13,7 +13,6 @@
     top: 20%;
     left: calc(50% - 250px);
     transform-style: preserve-3d;
-    transform: perspective(2500px);
 
     transition: transform 1s ease-in-out;
 }
