@@ -81,7 +81,8 @@ function Description() {
               <ul className="cards-items">
                 <CardItem 
                   src={logo1533}
-                  title='1533 Triple Strange'
+                  title='Triple Strange'
+                  number='1533'
                   description="Triple Strange is a 3-time state champion team, established in 2004. We were the first team to be a part of ECG robotics. We typically accept those from grades 9-12, but we also enjoy having younger groups shadowing us and learning as we often encourage them to join the team as well. We keep striving to be unusually good at the impossible as we grow every day."
                   path='/frc1533'
                 />
