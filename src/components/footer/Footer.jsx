@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '../button/Button'
 import rightArrow from '../../assets/rightArrow.png'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.webp'
 import './Footer.css'
 import { Link } from 'react-router-dom'
 

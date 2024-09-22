@@ -1,6 +1,6 @@
 import React from 'react'
 import './SponsorsDescription.css'
-import sponsorImage from '../../../../assets/sponsorImage.jpg'
+import sponsorImage from '../../../../assets/sponsorImage.webp'
 import Gallery3D from '../../../gallery3d/Gallery3D'
 
 function SponsorsDescription() {
