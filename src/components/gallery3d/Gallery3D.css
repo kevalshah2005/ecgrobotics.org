@@ -30,3 +30,62 @@
     height: 100%;
     object-fit: cover;
 }
+
+.left-btn, .right-btn {
+    background-color: rgba(255, 133, 43, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.left-btn:hover, .right-btn:hover {
+    background-color: rgba(255, 133, 43, 0.8);
+}
+
+.navigation-buttons button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 25px;
+}
+
+.navigation-buttons button.active-level {
+    background-color: #ff852b;
+    color: white;
+}
+
+.navigation-buttons button:hover {
+    background-color: rgb(255, 161, 95);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.left-btn, .right-btn {
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .banner .slider {
+        top: 20%;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+    .banner .slider {
+        top: 30%;
+    }
+}
