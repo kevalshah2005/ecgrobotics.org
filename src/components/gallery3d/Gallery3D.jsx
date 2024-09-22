@@ -22,14 +22,14 @@ function Gallery3D() {
     
     return (
         <div className="banner">
-            <div className="slider" style={{ transform: `perspective(2500px) rotateX(-10deg) rotateY(${rotation}deg)` }}>
+            <div className="slider" style={{ transform: `perspective(2500px) rotateX(-8deg) rotateY(${rotation}deg)` }}>
                 <div className="item" data-index="1">
                     <CardItem 
                         src=''
                         title='Diamond'
                         number='$7500+ Annual Contribution'
                         description="Description of diamond level"
-                        backgroundColor="rgba(0, 195, 255, 0.8)"
+                        backgroundColor="rgba(207, 228, 238, 0.8)"
                     />
                 </div>
                 <div className="item" data-index="2">
