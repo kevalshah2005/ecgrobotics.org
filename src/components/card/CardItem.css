@@ -19,14 +19,10 @@
 }
   
 .cards-items {
-    display: flex;
     margin-bottom: 24px;
-    align-items: stretch;
 }
   
 .cards-item {
-    display: flex;
-    flex: 1;
     margin: 0 1rem;
     border-radius: 10px;
 }
@@ -80,7 +76,6 @@
   
 .cards-item-info {
     padding: 20px;
-    flex-grow: 1;
 }
   
 .cards-item-title {
