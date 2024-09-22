@@ -22,7 +22,7 @@ function Gallery3D() {
     
     return (
         <div className="banner">
-            <div className="slider" style={{ transform: `perspective(2500px) rotateX(-8deg) rotateY(${rotation}deg)` }}>
+            <div className="slider" style={{ transform: `perspective(2500px) rotateX(-4deg) rotateY(${rotation}deg)` }}>
                 <div className="item" data-index="1">
                     <CardItem 
                         src=''
