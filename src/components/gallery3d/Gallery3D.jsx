@@ -62,7 +62,7 @@ function Gallery3D() {
                 difference = quantity - Math.abs(index - currentLevel);
             }
         }
-        const rotationAmount = direction * difference * 360 / quantity
+        const rotationAmount = direction * difference * 360 / quantity;
         setRotationY(prevRotation => prevRotation + rotationAmount);
         setCurrentLevel(index);
     };
