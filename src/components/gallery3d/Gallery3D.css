@@ -38,7 +38,6 @@
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
-    z-index: 1000;
 }
 
 .left-btn:hover, .right-btn:hover {
