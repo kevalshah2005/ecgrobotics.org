@@ -64,6 +64,9 @@ function AboutDescription() {
           <p>ECG Robotics fields teams that compete in two FIRST programs: FIRST Tech Challenge (FTC) and FIRST Robotics Competition (FRC).</p>
                   
           <h1>Our History</h1>
+          <p>ECG Robotics was formed in 2004 and started out with a single team – FRC Team 1533 Triple Strange. As the club grew, it added FTC Team 731 Wannabee Strange in 2007.</p>
+          <p>Over the next decade, ECG Robotics continued to expand, adding additional FTC teams in 2011 (FTC 5795 Back to the Drawing Board), 2012 (FTC 6183 Thunderducks), and 2015 (FTC 10195 Night Owls). Together with their adult mentors, all five teams have worked to inspire students across Guilford County, build capable, award-winning robots, and spread a love of robotics and STEM throughout their community.</p>
+        
         </div>
       </div>
     </div>
