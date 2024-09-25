@@ -23,6 +23,12 @@
     border-radius: 5%;
 }
 
+@media screen and (max-width: 1500px) {
+    .text-container > p {
+        font-size: 28px;
+    }
+}
+
 @media screen and (max-width: 960px) {
     .description-container {
         flex-direction: column;
@@ -90,6 +96,16 @@
     font-size: 90px;
     max-width: 40%;
     max-height: 30%;
+}
+
+@media screen and (max-width: 1500px) {
+    .ftc-container > h1 {
+        font-size: 84px;
+    }
+
+    .ftc-description-container > p {
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -167,6 +183,16 @@
     
     max-width: 40%;
     max-height: 30%;
+}
+
+@media screen and (max-width: 1500px) {
+    .frc-container > h1 {
+        font-size: 84px;
+    }
+
+    .frc-description-container > p {
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 960px) {

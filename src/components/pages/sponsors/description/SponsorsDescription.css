@@ -83,6 +83,21 @@
     font-size: 32px;
 }
 
+@media screen and (max-width: 1500px) {
+    .sponsors-description-container > h1 {
+        font-size: 50px;
+    }
+
+    .sponsors-description-container > p {
+        font-size: 28px;
+    }
+
+    .sponsors-description-container > img {
+        margin: 0;
+        max-width: 80%;
+    }
+}
+
 @media screen and (max-width: 960px) {
     .sponsors-header-container {
         padding: 10px;

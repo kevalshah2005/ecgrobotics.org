@@ -3,6 +3,8 @@
     width: 100%;
     background-color: #09090b;
     flex-direction: column;
+
+    margin-bottom: 50px;
 }
 
 .about-us-description-container {
@@ -62,6 +64,16 @@
     padding: 20px;
     color: #ffffff;
     font-size: 32px;
+}
+
+@media screen and (max-width: 1500px) {
+    .about-us-description-container > h1 {
+        font-size: 84px;
+    }
+
+    .about-us-description-container > p {
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 960px) {
