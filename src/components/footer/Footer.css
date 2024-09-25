@@ -1,7 +1,7 @@
 .footer-container {
     border-top: 3px solid #ffffff;
     background-color: #09090b;
-    padding: 4rem 0 2rem 0;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,12 +20,17 @@
     color: #ffffff;
 }
 
-.footer-join-heading {
+.footer-join > h1 {
     margin-bottom: 24px;
-    font-size: 28px;
+    font-size: 48px;
 }
 
-.footer-join-text {
+.footer-join > h2 {
+    margin-bottom: 16px;
+    font-size: 36px;
+}
+
+.footer-join > p {
     margin-bottom: 24px;
     font-size: 24px;
 }
