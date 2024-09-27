@@ -13,8 +13,6 @@
     flex-flow: column;
     justify-content: center;
     margin: auto;
-
-    text-align: center;
 }
 
 .about-us-header-container {
@@ -41,14 +39,12 @@
 }
 
 .about-us-description-container > h1 {
-    text-align: center;
     font-size: 72px;
     color: var(--main-text-color);
     padding: 20px;
 }
 
 .about-us-description-container > h2 {
-    text-align: center;
     font-size: 48px;
     color: var(--main-text-color);
     padding: 20px;
@@ -82,7 +78,6 @@
     }
 
     .about-us-header-container > h1 {
-        text-align: center;
         font-size: 70px;
     }
 
