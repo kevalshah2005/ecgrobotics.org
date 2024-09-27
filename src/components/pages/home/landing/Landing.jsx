@@ -10,7 +10,7 @@ function Landing() {
     <div className='landing-container'>
       <video src={landingVideo} type='video/mp4' autoPlay loop muted />
       <h1>ECG Robotics</h1>
-      <p>North Carolina's premier high school robotics organization</p>
+      <h2>North Carolina's premier high school robotics organization</h2>
       <div className='landing-btns'>
         <Button className='btn' buttonStyle='btn--outline' buttonSize='btn--large' location='/about'>
           Learn more <img src={rightArrow} alt="" /></Button>
