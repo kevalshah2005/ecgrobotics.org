@@ -5,7 +5,7 @@ import './CardItem.css'
 function CardItem(props) {
   return (
     <>
-        <li className="cards-item">
+        <div className="cards-item">
             <Link className="cards-item-link" to={props.path} style = {{ backgroundColor: props.backgroundColor }}>
                 <figure className="cards-item-pic-wrap" >
                     <img src={props.src} alt='Team Image' className="cards-item-img" />
@@ -16,7 +16,7 @@ function CardItem(props) {
                     <p className='cards-item-description'>{props.description}</p>
                 </div>
             </Link>
-        </li>
+        </div>
     </>
   )
 }
