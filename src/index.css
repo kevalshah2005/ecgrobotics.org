@@ -5,15 +5,33 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+:root {
+  /* Color Scheme */
+  --white: #ffffff;
+  --black: #090909;
+  --orange: #ff852b;
+  --blue: #0070e0;
+
+  --main-bg-color: var(--black);
+  --main-text-color: var(--white);
+  --secondary-text-color: var(--black);
+  --accent-text-color: var(--orange);
+  --button-hover-color: var(--orange);
+  --button-solid-color: var(--white);
+  --button-outline-color: var(--white);
+  --button-outline-text-color: var(--white);
+  --border-color: var(--white);
+  --link-color: var(--blue);
 }
 
 body {
-  background: #09090b;
+  background: var(--main-bg-color);
 }
 
 /* links */
 a {
-  color: #0070e0;
+  color: var(--link-color);
 }
 
 img {

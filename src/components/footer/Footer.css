@@ -1,5 +1,5 @@
 .footer-container {
-    border-top: 3px solid #ffffff;
+    border-top: 3px solid var(--border-color);
     background-color: #09090b;
     padding: 40px;
     display: flex;
@@ -17,7 +17,7 @@
     text-align: center;
     margin-bottom: 24px;
     padding: 24px;
-    color: #ffffff;
+    color: var(--main-text-color);
 }
 
 .footer-join > h1 {
@@ -52,6 +52,6 @@
 }
 
 .website-rights {
-    color: #ffffff;
+    color: var(--main-text-color);
     margin-bottom: 16px;
 }

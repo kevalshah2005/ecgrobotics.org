@@ -51,14 +51,14 @@
 .sponsors-header-text > h1 {
     text-align: center;
     font-size: 100px;
-    color: #ffffff;
+    color: var(--main-text-color);
     margin-bottom: 50px;
 }
 
 .sponsors-header-text > h2 {
     text-align: center;
     font-size: 36px;
-    color: #ffffff;
+    color: var(--main-text-color);
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -66,7 +66,7 @@
 .sponsors-header-text > h3 {
     text-align: center;
     font-size: 36px;
-    color: #ff852b;
+    color: var(--accent-text-color);
     margin-top: 10px;
 }
 
@@ -79,7 +79,7 @@
 
 .sponsors-description-container > p {
     padding: 30px;
-    color: #ffffff;
+    color: var(--main-text-color);
     font-size: 32px;
 }
 
@@ -106,7 +106,7 @@
     .sponsors-header-text > h1 {
         text-align: center;
         font-size: 50px;
-        color: #ffffff;
+        color: var(--main-text-color);
         margin-bottom: 15px;
     }
 

@@ -11,16 +11,16 @@
   }
   
 .btn--primary {
-    background-color: var(--primary);
+    background-color: var(--button-solid-color);
     color: #242424;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--button-solid-color);
 }
   
 .btn--outline {
     background-color: rgba(0,0,0,0.2);
-    color: #ffffff;
+    color: var(--button-outline-text-color);
     padding: 8px 20px;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--button-outline-color);
     transition: all 0.3s ease-out;
 }
   

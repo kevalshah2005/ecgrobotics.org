@@ -3,7 +3,7 @@
 }
 
 .navbar {
-  background: rgba(9, 9, 11, 1);
+  background: var(--main-bg-color);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -14,7 +14,7 @@
   z-index: 999;
   padding: 50px;
 
-  border-bottom: grey 1px solid; /* consider changing to #ff852b */
+  border-bottom: grey 1px solid; /* consider changing to orange */
 }
    
 .navbar-container {
@@ -46,7 +46,7 @@
 }
 
 .nav-links {
-  color: #fff;
+  color: var(--main-text-color);
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -55,7 +55,7 @@
 }
 
 .nav-links:hover {
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid var(--main-text-color);
   transition: all 0.2s ease-out;
 }
 
@@ -89,7 +89,7 @@
   }
 
   .nav-menu.active {
-    background: #09090b;
+    background: var(--main-bg-color);
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;

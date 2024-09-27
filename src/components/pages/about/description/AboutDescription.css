@@ -30,39 +30,39 @@
 .about-us-header-container > h1 {
     text-align: center;
     font-size: 100px;
-    color: #ffffff;
+    color: var(--main-text-color);
 }
 
 .about-us-header-container > h2 {
     text-align: center;
     font-size: 36px;
-    color: #ffffff;
+    color: var(--main-text-color);
     margin-top: 15px;
 }
 
 .about-us-description-container > h1 {
     text-align: center;
     font-size: 72px;
-    color: #ffffff;
+    color: var(--main-text-color);
     padding: 20px;
 }
 
 .about-us-description-container > h2 {
     text-align: center;
     font-size: 48px;
-    color: #ffffff;
+    color: var(--main-text-color);
     padding: 20px;
 }
 
 .about-us-description-container > p {
     padding: 20px;
-    color: #ffffff;
+    color: var(--main-text-color);
     font-size: 32px;
 }
 
 .about-us-description-container > p {
     padding: 20px;
-    color: #ffffff;
+    color: var(--main-text-color);
     font-size: 32px;
 }
 
@@ -84,7 +84,6 @@
     .about-us-header-container > h1 {
         text-align: center;
         font-size: 70px;
-        color: #ffffff;
     }
 
     .about-us-description-container > h1 {

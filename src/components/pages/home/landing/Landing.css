@@ -27,15 +27,15 @@ video {
 }
 
 .landing-container > h1 {
-    color: #ffffff;
+    color: var(--main-text-color);
     font-size: 100px;
     margin-top: -100px;
 }
 
-.landing-container > p {
+.landing-container > h2 {
     margin-top: 8px;
-    margin-bottom: 16px;
-    color: #ffffff;
+    margin-bottom: 8px;
+    color: var(--main-text-color);
     font-size: 32px;
 }
 
