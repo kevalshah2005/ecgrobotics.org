@@ -7,6 +7,7 @@ import Footer from './components/footer/Footer';
 
 import { useEffect } from "react";
 import Sponsors from './components/pages/sponsors/Sponsors';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 // For some reason it doesn't automatically scroll to top when switching pages, so this is needed
 function ScrollToTop() {
@@ -32,6 +33,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
+      <SpeedInsights />
     </>
   );
 }
