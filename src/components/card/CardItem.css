@@ -1,7 +1,7 @@
 .cards > h1 {
     text-align: center;
     font-size: 60px;
-    color: #ffffff;
+    color: var(--main-text-color);
 }
   
 .cards-container {
@@ -32,9 +32,7 @@
     flex-flow: column;
     width: 100%;
     height: 100%;
-    box-shadow: 0 6px 20px ;
-    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.7));
-    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.17));
+    box-shadow: 0 0 15px 5px var(--orange);
     border-color: white;
     border-style: solid;
     border-radius: 10px;
