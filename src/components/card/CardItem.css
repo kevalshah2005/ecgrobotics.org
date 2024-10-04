@@ -27,7 +27,7 @@
     border-radius: 10px;
 }
   
-.cards-item-link {
+.cards-item-link, .cards-item-no-link {
     display: flex;
     flex-flow: column;
     width: 100%;
@@ -96,7 +96,7 @@
     margin-top: 10px;
     font-size: 20px;
 }
-  
+
 @media only screen and (min-width: 1200px) {
     .content-blog-container {
       width: 84%;
@@ -112,6 +112,21 @@
 @media only screen and (max-width: 1024px) {
     .cards-item {
       margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .cards-item-title {
+        font-size: 24px;
+    }
+
+    .cards-item-number {
+        font-size: 24px;
+        
+    }
+
+    .cards-item-description {
+        font-size: 16px;
     }
 }
 
