@@ -15,6 +15,7 @@
     max-width: 1320px;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 50px;
     width: 100%;
 }
 
@@ -78,6 +79,7 @@
 }
 
 .sponsors-description-container > p {
+    text-align: left;
     padding: 30px;
     color: var(--main-text-color);
     font-size: 32px;
