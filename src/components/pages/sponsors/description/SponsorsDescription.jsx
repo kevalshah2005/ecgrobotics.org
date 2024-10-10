@@ -40,43 +40,43 @@ function SponsorsDescription() {
                 <CardItem 
                   src={logo731}
                   title='Diamond'
-                  number='$7500+ Annual Contribution'
+                  number='$7500+'
                   description="Wannabee Strange is a 12-year team where members learn to apply real-world skills. We've received the NC Inspire award in the last 2 years, gone to Worlds for 4 years running, and in 2019 we received a robot design nomination. 731 gives back with our Varsity Letter Initiative, pushing for the recognition of robotics as a varsity sport worldwide."
                 />
                 <CardItem 
                   src={logo5795}
                   title='Platinum'
-                  number='$5000-7499 Annual Contribution'
+                  number='$5000-7499'
                   description="Back to the Drawing Board has 6 years of experience and we have been to the World Championships 3 times! Every day, our team strives to build better robots, help out our sister teams, and spread the core values of FIRST to the community—especially through STEM Education Events—no matter how many times we have to go back to the drawing board."
-                  path='/ftc5795'
+                  path=''
                 />
                 <CardItem 
                   src={logo6183}
                   title='Gold'
-                  number='$3000-4999 Annual Contribution'
+                  number='$3000-4999'
                   description="The Thunder Ducks were established in 2014 and have consistently gone to the NC State Competition since. Our members are constantly helping other teams, teaching each other, and growing together as we strive together to continue to be better each and every day. We do this with our children's book series—Beek Beek Books—and by cultivating STEM skills for the real-world."
-                  path='/ftc6183'
+                  path=''
                 />
                 <CardItem 
                   src={logo10195}
                   title='Silver'
-                  number='$1000-2499 Annual Contribution'
+                  number='$1000-2499'
                   description="The Night Owls formed in 2015. Every year enthusiastic individuals come to fill old members' shoes. Our team consists of a mixture of students from schools around Greensboro. We've expanded our love for our team by making an owl-themed mascot complete with hand-made wings along with our own owl robot, Otto! We hope to go to Worlds for the first time this year!"
-                  path='/ftc10195'
+                  path=''
                 />
                 <CardItem 
                   src={logo10195}
                   title='Bronze'
-                  number='$500-999 Annual Contribution'
+                  number='$500-999'
                   description="The Night Owls formed in 2015. Every year enthusiastic individuals come to fill old members' shoes. Our team consists of a mixture of students from schools around Greensboro. We've expanded our love for our team by making an owl-themed mascot complete with hand-made wings along with our own owl robot, Otto! We hope to go to Worlds for the first time this year!"
-                  path='/ftc10195'
+                  path=''
                 />
                 <CardItem 
                   src={logo10195}
                   title='Honorable Mention'
-                  number='$0-499 Annual Contribution'
+                  number='$0-499'
                   description="The Night Owls formed in 2015. Every year enthusiastic individuals come to fill old members' shoes. Our team consists of a mixture of students from schools around Greensboro. We've expanded our love for our team by making an owl-themed mascot complete with hand-made wings along with our own owl robot, Otto! We hope to go to Worlds for the first time this year!"
-                  path='/ftc10195'
+                  path=''
                 />
               </ul>
             </div>
