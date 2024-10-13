@@ -14,13 +14,13 @@ function SponsorsDescription() {
     <div className="sponsors-container">
         <div className="sponsors-header-container">
           <div className="sponsors-header-text">
-            <h1>Become a Sponsor</h1>
+            <h1>Sponsors</h1>
             <h2>ECG Robotics is inspiring tomorrow’s engineers, programmers, designers, and thinkers.</h2>
             <h3>But we can't do it without your help.</h3>
           </div>
         </div>
         <div className="sponsors-description-container">
-            <p>Thanks to our generous sponsors, our teams have inspired others while taking home state championship titles and earning a place at the FIRST World Championships in Houston. 
+            <p>Thanks to our generous sponsors, our teams have inspired others while taking home state championship titles and earning places at the FIRST World Championships in Houston. 
               <b><span style={{color: "var(--accent-text-color)"}}> Your company’s donation helps fund materials, tools, workspaces, and competition expenses </span></b>
               that will provide students with hands-on experience building not just robots, but
               <b><span style={{color: "var(--accent-text-color)"}}> real-world skills </span></b>

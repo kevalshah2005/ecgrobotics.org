@@ -53,7 +53,7 @@ const Navbar = () => {
                 </li>
                 <li className='nav-item'>
                     <Link to='/sponsors' className='nav-links' onClick={closeMobileMenu}>
-                        Become a Sponsor
+                        Sponsors
                     </Link>
                 </li>
                 <li className='nav-item'>
