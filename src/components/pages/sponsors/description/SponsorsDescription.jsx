@@ -8,7 +8,7 @@ import logo6183 from '../../../../assets/logo6183.webp'
 import logo10195 from '../../../../assets/logo10195.webp'
 import logo1533 from '../../../../assets/logo1533.webp'
 import Gallery3D from '../../../gallery3d/Gallery3D'
-import Sponsor from '../sponsorTiers/Sponsor'
+import Sponsor from '../sponsor/Sponsor'
 
 const sponsors = [
   {
