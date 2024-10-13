@@ -63,7 +63,7 @@ const sponsors = [
 ];
 
 const getSponsorsByLevel = (level) => {
-  return sponsors.filter((sponsor) => sponsor.level.toLowerCase() === level);
+  return sponsors.filter((sponsor) => sponsor.level.toLowerCase() === level.toLowerCase());
 };
 
 function SponsorsDescription() {
