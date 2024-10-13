@@ -173,7 +173,7 @@ function SponsorsDescription() {
           <p>No bronze sponsors yet.</p>
         )}
 
-        <h2>Honorable Mention - Below $499 Annual Contribution</h2>
+        <h2>Honorable Mention - Below $500 Annual Contribution</h2>
         {honorableMentionSponsors.length > 0 ? (
           honorableMentionSponsors.map((sponsor, index) => (
             <Sponsor
