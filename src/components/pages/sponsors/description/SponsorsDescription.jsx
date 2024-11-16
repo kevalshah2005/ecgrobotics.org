@@ -99,6 +99,7 @@ function SponsorsDescription() {
       <div className="sponsorship-tiers">
         <h1>Sponsorship Tiers</h1>
         <h2>Diamond - $7500+ Annual Contribution</h2>
+        <p>Description of Diamond level</p>
         {diamondSponsors.length > 0 ? (
           diamondSponsors.map((sponsor, index) => (
             <Sponsor
@@ -114,6 +115,7 @@ function SponsorsDescription() {
         )}
 
         <h2>Platinum - $5000-$7499 Annual Contribution</h2>
+        <p>Description of Platinum level</p>
         {platinumSponsors.length > 0 ? (
           platinumSponsors.map((sponsor, index) => (
             <Sponsor
@@ -129,6 +131,7 @@ function SponsorsDescription() {
         )}
 
         <h2>Gold - $2500-$4999 Annual Contribution</h2>
+        <p>Description of Gold level</p>
         {goldSponsors.length > 0 ? (
           goldSponsors.map((sponsor, index) => (
             <Sponsor
@@ -144,6 +147,7 @@ function SponsorsDescription() {
         )}
 
         <h2>Silver - $1000-$2499 Annual Contribution</h2>
+        <p>Description of Silver level</p>
         {silverSponsors.length > 0 ? (
           silverSponsors.map((sponsor, index) => (
             <Sponsor
@@ -159,6 +163,7 @@ function SponsorsDescription() {
         )}
 
         <h2>Bronze - $500-$999 Annual Contribution</h2>
+        <p>Description of Bronze level</p>
         {bronzeSponsors.length > 0 ? (
           bronzeSponsors.map((sponsor, index) => (
             <Sponsor
@@ -174,6 +179,7 @@ function SponsorsDescription() {
         )}
 
         <h2>Honorable Mention - Below $500 Annual Contribution</h2>
+        <p>Description of Honorable Mention level</p>
         {honorableMentionSponsors.length > 0 ? (
           honorableMentionSponsors.map((sponsor, index) => (
             <Sponsor
