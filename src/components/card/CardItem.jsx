@@ -16,14 +16,19 @@ function CardItem(props) {
     </>
   );
 
+  const linkStyle = {
+    backgroundColor: props.backgroundColor,
+    boxShadow: `0 0 15px 5px ${props.glowColor || "var(--orange)"}`
+  };
+
   return (
     <div className="cards-item">
       {props.path ? (
-        <Link className="cards-item-link" to={props.path} style={{ backgroundColor: props.backgroundColor }}>
+        <Link className="cards-item-link" to={props.path} style={linkStyle}>
           {content}
         </Link>
       ) : (
-        <div className="cards-item-no-link" style={{ backgroundColor: props.backgroundColor }}>
+        <div className="cards-item-no-link" style={linkStyle}>
           {content}
         </div>
       )}
