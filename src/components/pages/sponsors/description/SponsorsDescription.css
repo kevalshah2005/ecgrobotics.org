@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     flex-direction: column;
-    padding: 0px;
+    padding: 0;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -12,13 +12,13 @@
 .sponsors-description-container {
     max-width: 1320px;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1.25rem; /* 20px */
+    margin-bottom: 1.25rem; /* 20px */
     width: 100%;
 }
 
-.sponsors-description-container>img {
-    margin: 20px 20px;
+.sponsors-description-container > img {
+    margin: 1.25rem 1.25rem; /* 20px 20px */
 }
 
 .sponsors-header-text {
@@ -38,7 +38,7 @@
     justify-content: center;
     align-items: center;
 
-    padding: 100px;
+    padding: 6.25rem; /* 100px */
 }
 
 .sponsors-header-text {
@@ -47,40 +47,45 @@
     text-align: center;
 }
 
-.sponsors-header-text>h1 {
+.sponsors-header-text > h1 {
     text-align: center;
-    font-size: 100px;
+    font-size: 6.25rem; /* 100px */
     color: var(--main-text-color);
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem; /* 50px */
 }
 
-.sponsors-header-text>h2 {
+.sponsors-header-text > h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 2.25rem; /* 36px */
     color: var(--main-text-color);
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 0.625rem; /* 10px */
+    margin-bottom: 1.25rem; /* 20px */
 }
 
-.sponsors-header-text>h3 {
+.sponsors-header-text > h3 {
     text-align: center;
-    font-size: 36px;
+    font-size: 2.25rem; /* 36px */
     color: var(--accent-text-color);
-    margin-top: 10px;
+    margin-top: 0.625rem; /* 10px */
 }
 
-.sponsors-description-container>h2 {
+.sponsors-description-container > h2 {
     text-align: center;
-    font-size: 72px;
+    font-size: 4.5rem; /* 72px */
     color: #ffffff;
-    padding: 20px;
+    padding: 1.25rem; /* 20px */
 }
 
-.sponsors-description-container>p {
+.sponsors-description-container > p {
     text-align: left;
-    padding: 30px;
+    padding: 1.875rem; /* 30px */
     color: var(--main-text-color);
-    font-size: 32px;
+    font-size: 2rem; /* 32px */
+}
+
+.sponsors-description-container b {
+    font-weight: bold;
+    color: var(--accent-text-color);
 }
 
 .sponsorship-tiers {
@@ -88,37 +93,37 @@
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem; /* 50px */
 }
 
-.sponsorship-tiers>h1 {
+.sponsorship-tiers > h1 {
     text-align: center;
-    font-size: 72px;
+    font-size: 4.5rem; /* 72px */
     color: var(--main-text-color);
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 0.625rem; /* 10px */
+    margin-bottom: 1.875rem; /* 30px */
 }
 
-.sponsorship-tiers>h2 {
+.sponsorship-tiers > h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 3.125rem; /* 50px */
     color: var(--accent-text-color);
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 0.625rem; /* 10px */
+    margin-bottom: 1.875rem; /* 30px */
 }
 
-.sponsorship-tiers>p {
-    font-size: 32px;
+.sponsorship-tiers > p {
+    font-size: 2rem; /* 32px */
     color: var(--main-text-color);
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem; /* 30px */
 }
 
 @media screen and (max-width: 1500px) {
-    .sponsors-description-container>p {
-        font-size: 28px;
+    .sponsors-description-container > p {
+        font-size: 1.75rem; /* 28px */
     }
 
-    .sponsors-description-container>img {
+    .sponsors-description-container > img {
         margin: 0;
         max-width: 80%;
     }
@@ -126,39 +131,52 @@
 
 @media screen and (max-width: 960px) {
     .sponsors-header-container {
-        padding: 20px;
+        padding: 1.25rem; /* 20px */
     }
 
-    .sponsors-header-text>h1 {
+    .sponsors-header-text > h1 {
         text-align: center;
-        font-size: 72px;
+        font-size: 4.5rem; /* 72px */
         color: var(--main-text-color);
-        margin-bottom: 15px;
+        margin-bottom: 0.9375rem; /* 15px */
     }
 
-    .sponsors-header-text>h2 {
-        font-size: 24px;
-
+    .sponsors-header-text > h2 {
+        font-size: 1.5rem; /* 24px */
     }
 
-    .sponsors-header-text>h3 {
-        font-size: 24px;
+    .sponsors-header-text > h3 {
+        font-size: 1.5rem; /* 24px */
     }
 
-    .sponsors-description-container>p {
-        font-size: 24px;
+    .sponsors-description-container > p {
+        font-size: 1.5rem; /* 24px */
     }
 
-    .sponsors-description-container>img {
+    .sponsors-description-container > img {
         margin: 0;
         max-width: 80%;
     }
 
-    .sponsorship-tiers>h1 {
+    .sponsorship-tiers > h1 {
         text-align: center;
-        font-size: 50px;
+        font-size: 3.125rem; /* 50px */
         color: var(--main-text-color);
-        margin-top: 10px;
-        margin-bottom: 30px;
+        margin-top: 0.625rem; /* 10px */
+        margin-bottom: 1.875rem; /* 30px */
+    }
+
+    .sponsorship-tiers > h2 {
+        text-align: center;
+        font-size: 2rem; /* 50px */
+        color: var(--accent-text-color);
+        margin-top: 0.625rem; /* 10px */
+        margin-bottom: 1.875rem; /* 30px */
+    }
+
+    .sponsorship-tiers > p {
+        font-size: 1.5rem; /* 32px */
+        color: var(--main-text-color);
+        margin-bottom: 1.875rem; /* 30px */
     }
 }

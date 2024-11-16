@@ -6,13 +6,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', 'Lucida Sans Unicode', Arial, sans-serif;
-  font-size: 1.333;
+  font-size: 14px;
 }
 
 :root {
   /* Color Scheme */
   --white: #ffffff;
-  --black: #090909;
+  --black: #09090b;
   --orange: #ff852b;
   --blue: #0070e0;
 
@@ -35,6 +35,11 @@ body {
 /* links */
 a {
   color: var(--link-color);
+  font-size: inherit;
+}
+
+b {
+  font-size: inherit;
 }
 
 img {

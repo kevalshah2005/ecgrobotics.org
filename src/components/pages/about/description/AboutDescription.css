@@ -3,11 +3,11 @@
     width: 100%;
     flex-direction: column;
 
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem; /* 50px */
 }
 
 .about-us-description-container {
-    max-width: 1320px;
+    max-width: 82.5rem; /* 1320px */
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -23,73 +23,67 @@
 
     box-shadow: inset 0 0 0 1000px rgba(9, 9, 11, 0.85);
 
-    padding: 100px;
+    padding: 6.25rem; /* 100px */
 }
 
 .about-us-header-container>h1 {
     text-align: center;
-    font-size: 100px;
+    font-size: 6.25rem; /* 100px */
     color: var(--main-text-color);
 }
 
 .about-us-header-container>h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 2.25rem; /* 36px */
     color: var(--main-text-color);
-    margin-top: 15px;
+    margin-top: 0.9375rem; /* 15px */
 }
 
 .about-us-description-container>h1 {
     text-align: center;
-    font-size: 72px;
+    font-size: 4.5rem; /* 72px */
     color: var(--main-text-color);
-    padding: 20px;
+    padding: 1.25rem; /* 20px */
 }
 
 .about-us-description-container>h2 {
     text-align: center;
-    font-size: 48px;
+    font-size: 3rem; /* 48px */
     color: var(--main-text-color);
-    padding: 20px;
+    padding: 1.25rem; /* 20px */
 }
 
 .about-us-description-container>p {
-    padding: 20px;
+    padding: 1.25rem; /* 20px */
     color: var(--main-text-color);
-    font-size: 32px;
-}
-
-.about-us-description-container>p {
-    padding: 20px;
-    color: var(--main-text-color);
-    font-size: 32px;
+    font-size: 2rem; /* 32px */
 }
 
 @media screen and (max-width: 1500px) {
     .about-us-description-container>h1 {
-        font-size: 84px;
+        font-size: 5.25rem; /* 84px */
     }
 
     .about-us-description-container>p {
-        font-size: 28px;
+        font-size: 1.75rem; /* 28px */
     }
 }
 
 @media screen and (max-width: 960px) {
     .about-us-header-container {
-        padding: 10px;
+        padding: 0.625rem; /* 10px */
     }
 
     .about-us-header-container>h1 {
         text-align: center;
-        font-size: 70px;
+        font-size: 4.375rem; /* 70px */
     }
 
     .about-us-description-container>h1 {
-        font-size: 50px;
+        font-size: 3.125rem; /* 50px */
     }
 
     .about-us-description-container>p {
-        font-size: 24px;
+        font-size: 1.5rem; /* 24px */
     }
 }
