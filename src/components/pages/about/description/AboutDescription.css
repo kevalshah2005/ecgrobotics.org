@@ -7,7 +7,7 @@
 }
 
 .about-us-description-container {
-    max-width: 82.5rem; /* 1320px */
+    max-width: 1320px;
     display: flex;
     flex-flow: column;
     justify-content: center;
