@@ -27,7 +27,7 @@
 
 .fa-typo3 {
   margin-left: 0.5rem;
-  font-size: 1.8rem;
+  font-size: 3rem;
 }
 
 .nav-menu {
@@ -61,7 +61,8 @@
 }
 
 .fa-bars {
-  color: #fff;
+  color: var(--white);
+  font-size: 2rem;
 }
 
 .nav-links-mobile {
@@ -123,7 +124,7 @@
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    font-size: 3rem;
     cursor: pointer;
   }
 

@@ -8,6 +8,7 @@
 
 .about-us-description-container {
     max-width: 1320px;
+    width: 80%;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -71,12 +72,17 @@
 
 @media screen and (max-width: 960px) {
     .about-us-header-container {
-        padding: 0.625rem; /* 10px */
+        padding: 1.25rem; /* 10px */
     }
 
     .about-us-header-container>h1 {
         text-align: center;
         font-size: 4.375rem; /* 70px */
+    }
+
+    .about-us-header-container>h2 {
+        text-align: center;
+        font-size: 1.5rem; /* 70px */
     }
 
     .about-us-description-container>h1 {
