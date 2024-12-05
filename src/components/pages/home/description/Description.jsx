@@ -1,6 +1,6 @@
 import React from 'react'
 import './Description.css'
-import descriptionImage from '../../../../assets/731_2019bot.webp'
+import overviewImage from '../../../../assets/731_2019bot.webp'
 import ftcImage from '../../../../assets/731_2023bot.webp'
 import frcImage from '../../../../assets/1533_2023bot.webp'
 import CardItem from '../../../card/CardItem'
@@ -12,13 +12,13 @@ import logo1533 from '../../../../assets/logo1533.webp'
 
 function Description() {
   return (
-    <div>
-      <div className='description-container'>
+    <div className='description-container'>
+      <div className='overview-container'>
         <div className='text-container'>
           <p>ECG Robotics is a student-led, non-profit robotics club based in Greensboro, NC. Our teams compete in the FIRST Tech Challenge and FIRST Robotics Competition and welcome students from all over Guilford County.</p>
           <p>We inspire students locally, nationally, and internationally to learn about STEM through our award-winning outreach initiatives.</p>
         </div> 
-        <img src={descriptionImage} alt='' className='description-image'/>
+        <img src={overviewImage} alt='' className='overview-image'/>
       </div>
 
       <div className='ftc-container'>
