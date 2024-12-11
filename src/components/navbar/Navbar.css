@@ -3,8 +3,7 @@
 }
 
 .navbar {
-  background: var(--main-bg-color);
-  height: 80px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,19 +11,21 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  padding: 50px;
+  padding: 20px;
 
+  transition: all 0.5s;
+}
+
+.navbar.hidden {
+  background: transparent;
+  border-bottom: transparent;
+}
+
+.navbar.visible {
+  background: var(--main-bg-color);
   border-bottom: grey 1px solid; /* consider changing to orange */
 }
    
-.navbar-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  max-width: 1500px;
-}
-
 .fa-typo3 {
   margin-left: 0.5rem;
   font-size: 3rem;

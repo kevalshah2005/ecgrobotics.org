@@ -30,7 +30,7 @@ const Navbar = () => {
     }
 
     window.addEventListener('resize', showButton);
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll);
 
     return (
         <nav className={`navbar ${visible ? 'visible' : 'hidden'}`}>
