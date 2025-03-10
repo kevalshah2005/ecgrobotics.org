@@ -37,7 +37,6 @@ function Description() {
                   src={logo731}
                   title='Wannabee Strange'
                   number='731'
-                  description="Wannabee Strange is a 12-year team where members learn to apply real-world skills. We've received the NC Inspire award in the last 2 years, gone to Worlds for 4 years running, and in 2019 we received a robot design nomination. 731 gives back with our Varsity Letter Initiative, pushing for the recognition of robotics as a varsity sport worldwide."
                   path='/ftc731'
                   glowColor="var(--orange)"
                 />
@@ -45,7 +44,6 @@ function Description() {
                   src={logo5795}
                   title='Back to the Drawing Board'
                   number='5795'
-                  description="Back to the Drawing Board has 6 years of experience and we have been to the World Championships 3 times! Every day, our team strives to build better robots, help out our sister teams, and spread the core values of FIRST to the community—especially through STEM Education Events—no matter how many times we have to go back to the drawing board."
                   path='/ftc5795'
                   glowColor="var(--orange)"
                 />
@@ -53,7 +51,6 @@ function Description() {
                   src={logo6183}
                   title='Thunderducks'
                   number='6183'
-                  description="The Thunder Ducks were established in 2014 and have consistently gone to the NC State Competition since. Our members are constantly helping other teams, teaching each other, and growing together as we strive together to continue to be better each and every day. We do this with our children's book series—Beek Beek Books—and by cultivating STEM skills for the real-world."
                   path='/ftc6183'
                   glowColor="var(--orange)"
                 />
@@ -61,7 +58,6 @@ function Description() {
                   src={logo10195}
                   title='Night Owls'
                   number='10195'
-                  description="The Night Owls formed in 2015. Every year enthusiastic individuals come to fill old members' shoes. Our team consists of a mixture of students from schools around Greensboro. We've expanded our love for our team by making an owl-themed mascot complete with hand-made wings along with our own owl robot, Otto! We hope to go to Worlds for the first time this year!"
                   path='/ftc10195'
                   glowColor="var(--orange)"
                 />

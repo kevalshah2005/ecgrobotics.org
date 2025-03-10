@@ -20,11 +20,18 @@
   
 .cards-items {
     margin-bottom: 1.5rem; /* 24px */
+
+    display: flex;
+    align-items: stretch;
 }
   
 .cards-item {
     margin: 0 1rem; /* 16px */
     border-radius: 0.625rem; /* 10px */
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
   
 .cards-item-link, .cards-item-no-link {
