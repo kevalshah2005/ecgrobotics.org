@@ -24,7 +24,7 @@ function Description() {
       <div className='ftc-container'>
         <h1>FIRST Tech Challenge</h1>
         <div className='ftc-description-container'>
-          <p>This is filler text. In this space will be an explanation about what FTC is. Ideally I'd like to keep it a general program overview rather than anything about the teams, since that's already below.
+          <p>FIRST Tech Challenge (FTC) is a robotics competition for middle and high school students, where teams design, build, and program robots to complete an annual challenge. Using engineering, coding, and teamwork, students develop problem-solving skills while applying real-world STEM concepts. FTC also encourages outreach, with teams mentoring younger students and promoting STEM in their communities.
           </p>
           <img src={ftcImage} alt='' className='ftc-image' />
         </div>
