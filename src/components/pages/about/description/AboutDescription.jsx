@@ -10,7 +10,7 @@ import teampic_731_2019 from '../../../../assets/731_2019teampic.webp'
 import climb_1533_2018 from '../../../../assets/1533_2018climb.webp'
 import teampic_1533_2018 from '../../../../assets/1533_2018teampic.webp'
 import working_6183 from '../../../../assets/6183_working.webp'
-
+import teampic_10195_2025 from '../../../../assets/10195_2025teampic.webp'
 // Fisher-Yates shuffle
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -33,7 +33,7 @@ function AboutDescription() {
     teampic_1533_2018,
     working_6183,
     teampic_1533_states_2024,
-    teampic_1533_2023,
+    teampic_10195_2025,
   ];
 
   // Randomize order of images
