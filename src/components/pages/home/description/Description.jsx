@@ -24,7 +24,7 @@ function Description() {
       <div className='ftc-container'>
         <h1>FIRST Tech Challenge</h1>
         <div className='ftc-description-container'>
-          <p>FIRST Tech Challenge (FTC) is a robotics competition for middle and high school students (8-12), where teams design, build, and program robots to compete in an annual game challenge while spreading the knowledge of STEAM across the world. Using a combination of engineering, coding, and teamwork, students develop problem-solving skills while applying real-world STEM concepts. FTC encourages innovation and collaboration, with teams using Android-based control systems and Java programming to operate their robots. The competition emphasizes gracious professionalism, inspiring students to think like engineers while fostering a passion for science and technology. FTC also emphasizes outreach, encouraging teams to engage with local organizations, mentor younger students, and promote STEM education to inspire the next generation of innovators.
+          <p>FIRST Tech Challenge (FTC) is a robotics competition for middle and high school students, where teams design, build, and program robots to complete an annual challenge. Using engineering, coding, and teamwork, students develop problem-solving skills while applying real-world STEM concepts. FTC also encourages outreach, with teams mentoring younger students and promoting STEM in their communities.
           </p>
           <img src={ftcImage} alt='' className='ftc-image' />
         </div>
