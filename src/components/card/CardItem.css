@@ -32,7 +32,10 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    min-width: 250px;
+}
+
+.cards-items:has(.cards-item:nth-child(1):nth-last-child(-n+2)) .cards-item {
+    min-width: 250px; /* Enforce min-width only if 1 or 2 items are present */
 }
   
 .cards-item-link, .cards-item-no-link {
