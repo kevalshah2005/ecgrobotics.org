@@ -144,3 +144,17 @@
         color: #ffffff;
     }
 }
+
+/* On mobile: Stack cards vertically */
+@media (max-width: 768px) {
+    .cards-items {
+        flex-direction: column;
+        align-items: center; /* Centers stacked cards */
+    }
+
+    .cards-item {
+        width: 90%; /* Makes cards full width but leaves some margin */
+        max-width: 400px; /* Prevents oversized cards */
+        min-width: unset; /* Removes the earlier min-width rule */
+    }
+}
