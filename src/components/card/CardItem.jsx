@@ -9,8 +9,8 @@ function CardItem(props) {
         <img src={props.src} alt="Team Image" className="cards-item-img" />
       </figure>
       <div className="cards-item-info">
-        <h5 className="cards-item-title">{props.title}</h5>
         <h5 className="cards-item-number">{props.number}</h5>
+        <h5 className="cards-item-title">{props.title}</h5>
         <p className="cards-item-description">{props.description}</p>
       </div>
     </>

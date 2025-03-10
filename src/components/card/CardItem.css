@@ -50,7 +50,7 @@
 .cards-item-pic-wrap {
     position: relative;
     width: 100%;
-    padding-top: 67%;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
 }
   
@@ -70,7 +70,7 @@
     max-width: 100%;
     height: 100%;
     max-height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: all 0.2s linear;
 }
   
