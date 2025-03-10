@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
-
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +25,15 @@
   --button-outline-text-color: var(--white);
   --border-color: var(--white);
   --link-color: var(--blue);
+
+  /* Font Sizes */
+  --font-2xs: 0.75rem;
+  --font-xs: 1rem;
+  --font-sm: 1.5rem;
+  --font-base: 2rem;
+  --font-lg: 3rem;
+  --font-xl: 4.5rem;
+  --font-2xl: 6.25rem;
 }
 
 body {

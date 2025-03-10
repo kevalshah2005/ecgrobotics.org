@@ -8,7 +8,7 @@
     outline: none;
     border: none;
     cursor: pointer;
-  }
+}
   
 .btn--primary {
     background-color: var(--button-solid-color);
@@ -26,12 +26,12 @@
   
 .btn--medium {
     padding: 8px 20px;
-    font-size: 18px;
+    font-size: var(--font-sm);
 }
   
 .btn--large {
     padding: 12px 26px;
-    font-size: 20px;
+    font-size: var(--font-sm);
 }
   
 .btn--large:hover,

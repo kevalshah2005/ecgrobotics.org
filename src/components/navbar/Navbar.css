@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: var(--font-base);
   position: sticky;
   top: 0;
   z-index: 999;
@@ -28,7 +28,7 @@
    
 .fa-typo3 {
   margin-left: 0.5rem;
-  font-size: 3rem;
+  font-size: var(--font-lg);
 }
 
 .nav-menu {
@@ -44,7 +44,7 @@
 
 .nav-item {
   height: 80px;
-  font-size: 1.333rem;
+  font-size: var(--font-sm);
 }
 
 .nav-links {
@@ -63,7 +63,7 @@
 
 .fa-bars {
   color: var(--white);
-  font-size: 2rem;
+  font-size: var(--font-base);
 }
 
 .nav-links-mobile {
@@ -125,13 +125,13 @@
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: 3rem;
+    font-size: var(--font-lg);
     cursor: pointer;
   }
 
   .fa-times {
     color: #fff;
-    font-size: 2rem;
+    font-size: var(--font-base);
   }
 
   .nav-links-mobile {
@@ -141,7 +141,7 @@
     border-radius: 4px;
     width: 80%;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: var(--font-base);
     background-color: transparent;
     color: #fff;
     padding: 14px 20px;

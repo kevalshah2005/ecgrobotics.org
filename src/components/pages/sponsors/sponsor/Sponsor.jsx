@@ -1,6 +1,7 @@
 import React from 'react';
 import './Sponsor.css';
 
+
 const Sponsor = (props) => {
     return (
         <div className={`sponsor-card ${props.index % 2 == 0 ? 'even' : 'odd'}`}>

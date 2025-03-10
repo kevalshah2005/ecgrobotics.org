@@ -6,7 +6,6 @@
     margin-top: 100vh;
 }
 
-
 .overview-container {
     display: flex;
     flex-direction: row;
@@ -21,7 +20,7 @@
     margin-top: 0.5rem; /* 8px */
     margin-bottom: 1rem; /* 16px */
     color: var(--main-text-color);
-    font-size: 2rem; /* 32px */
+    font-size: var(--font-base);
 }
 
 .overview-image {
@@ -32,7 +31,7 @@
 
 @media screen and (max-width: 1500px) {
     .text-container > p {
-        font-size: 1.75rem; /* 28px */
+        font-size: var(--font-sm);
     }
 }
 
@@ -45,7 +44,7 @@
         padding: 1.875rem 1.875rem;
     }
     .text-container > p {
-        font-size: 1.75rem; /* 28px */
+        font-size: var(--font-sm);
     }
     .overview-image {
         max-width: 100%;
@@ -56,7 +55,7 @@
 
 @media screen and (max-width: 768px) {
     .text-container > p {
-        font-size: 1.5rem; /* 24px */
+        font-size: var(--font-sm);
     }
 }
 
@@ -69,7 +68,7 @@
 
 .ftc-container > h1 {
     text-align: center;
-    font-size: 6.25rem; /* 100px */
+    font-size: var(--font-2xl);
     color: var(--main-text-color);
     margin-top: 1.25rem; /* 20px */
 }
@@ -85,7 +84,7 @@
 
 .ftc-description-container > p {
     color: var(--main-text-color);
-    font-size: 2rem; /* 32px */
+    font-size: var(--font-base);
 }
 
 .ftc-image {
@@ -111,7 +110,7 @@
     }
 
     .ftc-description-container > p {
-        font-size: 1.75rem; /* 28px */
+        font-size: var(--font-sm);
     }
 }
 
@@ -127,16 +126,16 @@
         margin-left: 0;
     }
     .ftc-container > h1 {
-        font-size: 3.125rem; /* 50px */
+        font-size: var(--font-lg);
     }
     .ftc-description-container > p {
-        font-size: 1.75rem; /* 28px */
+        font-size: var(--font-sm);
     }
 }
 
 @media screen and (max-width: 768px) {
     .ftc-description-container > p {
-        font-size: 1.5rem; /* 24px */
+        font-size: var(--font-sm);
     }
 }
 
@@ -149,7 +148,7 @@
 
 .frc-container > h1 {
     text-align: center;
-    font-size: 6.25rem; /* 100px */
+    font-size: var(--font-2xl);
     color: var(--main-text-color);
 }
 
@@ -164,7 +163,7 @@
 
 .frc-description-container > p {
     color: #ffffff;
-    font-size: 2rem; /* 32px */
+    font-size: var(--font-base);
 }
 
 .frc-image {
@@ -187,11 +186,11 @@
 
 @media screen and (max-width: 1500px) {
     .frc-container > h1 {
-        font-size: 4.5rem; /* 72px */
+        font-size: var(--font-xl);
     }
 
     .frc-description-container > p {
-        font-size: 1.75rem; /* 28px */
+        font-size: var(--font-sm);
     }
 }
 
@@ -208,15 +207,15 @@
     }
 
     .frc-container > h1 {
-        font-size: 3.125rem; /* 50px */
+        font-size: var(--font-lg);
     }
     .frc-description-container > p {
-        font-size: 1.75rem; /* 28px */
+        font-size: var(--font-sm);
     }
 }
 
 @media screen and (max-width: 768px) {
     .frc-description-container > p {
-        font-size: 1.5rem; /* 24px */
+        font-size: var(--font-sm);
     }
 }

@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     flex-direction: column;
-
     margin-bottom: 3.125rem; /* 50px */
 }
 
@@ -13,7 +12,6 @@
     flex-flow: column;
     justify-content: center;
     margin: auto;
-
     text-align: left;
 }
 
@@ -21,76 +19,74 @@
     background-image: url('../../../../assets/clubphoto.webp');
     background-size: cover;
     background-position: top 20% center;
-
     box-shadow: inset 0 0 0 1000px rgba(9, 9, 11, 0.85);
-
     padding: 6.25rem; /* 100px */
 }
 
-.about-us-header-container>h1 {
+.about-us-header-container > h1 {
     text-align: center;
-    font-size: 6.25rem; /* 100px */
+    font-size: var(--font-2xl);
     color: var(--main-text-color);
-    margin-bottom: 3.125rem;
+    margin-bottom: var(--font-lg);
 }
 
-.about-us-header-container>h2 {
+.about-us-header-container > h2 {
     text-align: center;
-    font-size: 2.25rem; /* 36px */
+    font-size: var(--font-lg);
     color: var(--main-text-color);
     margin-top: 0.9375rem; /* 15px */
 }
 
-.about-us-description-container>h1 {
+.about-us-description-container > h1 {
     text-align: center;
-    font-size: 4.5rem; /* 72px */
+    font-size: var(--font-lg);
     color: var(--main-text-color);
-    padding: 1.25rem; /* 20px */
+    padding: var(--font-xs);
 }
 
-.about-us-description-container>h2 {
+.about-us-description-container > h2 {
     text-align: center;
-    font-size: 3rem; /* 48px */
+    font-size: var(--font-xl);
     color: var(--main-text-color);
-    padding: 1.25rem; /* 20px */
+    padding: var(--font-xs);
 }
 
-.about-us-description-container>p {
-    padding: 1.25rem; /* 20px */
+.about-us-description-container > p {
+    padding: var(--font-xs);
     color: var(--main-text-color);
-    font-size: 2rem; /* 32px */
+    font-size: var(--font-base);
 }
 
 @media screen and (max-width: 1500px) {
-    .about-us-description-container>h1 {
-        font-size: 5.25rem; /* 84px */
+    .about-us-description-container > h1 {
+        font-size: var(--font-lg);
     }
 
-    .about-us-description-container>p {
-        font-size: 1.75rem; /* 28px */
+    .about-us-description-container > p {
+        font-size: var(--font-sm);
     }
 }
 
 @media screen and (max-width: 960px) {
     .about-us-header-container {
-        padding: 1.25rem; /* 10px */
+        padding: var(--font-base);
     }
 
-    .about-us-header-container>h1 {
+    .about-us-header-container > h1 {
         text-align: center;
-        font-size: 4.375rem; /* 70px */
+        font-size: var(--font-xl);
     }
 
-    .about-us-header-container>h2 {
+    .about-us-header-container > h2 {
         text-align: center;
-        font-size: 1.5rem; /* 70px */
+        font-size: var(--font-base);
     }
 
-    .about-us-description-container>h1 {
-        font-size: 3.125rem; /* 50px */
+    .about-us-description-container > h1 {
+        font-size: var(--font-lg);
     }
 
-    .about-us-description-container>p {
-        font-size: 1.5rem; /* 24px */
+    .about-us-description-container > p {
+        font-size: var(--font-sm);
     }
 }
