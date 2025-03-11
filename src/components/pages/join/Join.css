@@ -9,29 +9,14 @@
 
 .join-container > h1 {
     font-size: var(--font-xl);
-    margin-bottom: var(--font-sm);
+    margin-bottom: var(--font-xs);
     color: var(--main-text-color);
 }
 
 .join-container > p {
     font-size: var(--font-base);
-    margin-bottom: var(--font-sm);
+    margin-bottom: var(--font-lg);
     color: var(--main-text-color);
-}
-
-.form-container {
-    width: 100%;
-    position: relative;
-    height: 85vh;
-    max-height: 900px;
-    overflow: hidden;
-}
-
-.form-container > iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    filter: invert(1) hue-rotate(180deg); /* Invert colors to simulate dark mode */
 }
 
 
