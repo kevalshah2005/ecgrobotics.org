@@ -22,18 +22,18 @@
 .form-container {
     width: 100%;
     position: relative;
-    padding-top: 150%;
+    height: 85vh;
+    max-height: 900px;
+    overflow: hidden;
 }
 
 .form-container > iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     border: none;
     filter: invert(1) hue-rotate(180deg); /* Invert colors to simulate dark mode */
 }
+
 
 @media (max-width: 768px) {
     .join-container {
@@ -46,15 +46,5 @@
 
     .join-container > p {
         font-size: var(--font-sm);
-    }
-}
-
-@media (max-width: 480px) {
-    .join-container > h1 {
-        font-size: var(--font-base);
-    }
-
-    .join-container > p {
-        font-size: var(--font-xs);
     }
 }
