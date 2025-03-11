@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 import Home from './components/pages/home/Home'
 import About from './components/pages/about/About';
 import Footer from './components/footer/Footer';
+import Join from './components/pages/join/Join';
 
 import { useEffect } from "react";
 import Sponsors from './components/pages/sponsors/Sponsors';
@@ -30,6 +31,7 @@ function App() {
           <Route path='/' exact element={<Home />} />
           <Route path='/about' exact element={<About />} />
           <Route path='/sponsors' exact element = {<Sponsors />} />
+          <Route path='join' exact element={<Join />} />
         </Routes>
         <Footer />
       </Router>

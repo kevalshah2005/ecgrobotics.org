@@ -66,6 +66,11 @@ const Navbar = () => {
                         Contact
                     </Link>
                 </li>
+                <li className='nav-item'>
+                    <Link to='/join' className='nav-links' onClick={closeMobileMenu}>
+                        Join
+                    </Link>
+                </li>
             </ul>
         </nav>
     )
