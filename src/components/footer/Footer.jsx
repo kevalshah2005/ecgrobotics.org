@@ -25,7 +25,7 @@ function Footer() {
         <div className="social-media-wrap">
             <div className="footer-logo">
                 <Link to='/' className="social-logo-link">
-                    <img src={logo} alt='' className='social-logo'/>
+                    <img src={logo} alt='Social Logo' className='social-logo'/>
                 </Link>
             </div>
             <small className="website-rights">ECG Robotics © 2024</small>

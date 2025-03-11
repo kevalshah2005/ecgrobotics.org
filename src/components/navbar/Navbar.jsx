@@ -35,7 +35,7 @@ const Navbar = () => {
     return (
         <nav className={`navbar ${visible ? 'visible' : 'hidden'}`}>
             <Link to='/'>
-                <img src={logo} alt="" className='logo' />
+                <img src={logo} alt="Logo" className='logo' />
             </Link>
             <div className='menu-icon' onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
