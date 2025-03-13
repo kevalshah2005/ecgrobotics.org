@@ -5,6 +5,7 @@ import Home from './components/pages/home/Home'
 import About from './components/pages/about/About';
 import Footer from './components/footer/Footer';
 import Join from './components/pages/join/Join';
+import TeamPage731 from './components/pages/teamPages/teampage731/TeamPage731';
 
 import { useEffect } from "react";
 import Sponsors from './components/pages/sponsors/Sponsors';
@@ -31,7 +32,8 @@ function App() {
           <Route path='/' exact element={<Home />} />
           <Route path='/about' exact element={<About />} />
           <Route path='/sponsors' exact element = {<Sponsors />} />
-          <Route path='join' exact element={<Join />} />
+          <Route path='/join' exact element={<Join />} />
+          <Route path='/ftc731' exact element={<TeamPage731 />} />
         </Routes>
         <Footer />
       </Router>
