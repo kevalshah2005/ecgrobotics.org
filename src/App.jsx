@@ -5,7 +5,7 @@ import Home from './components/pages/home/Home'
 import About from './components/pages/about/About';
 import Footer from './components/footer/Footer';
 import Join from './components/pages/join/Join';
-import TeamPage731 from './components/pages/teamPages/teamPage731/TeamPage731';
+import TeamPage731 from './components/pages/teamPages/temp/TeamPage731';
 import TeamPage5795 from './components/pages/teamPages/teamPage5795/TeamPage5795';
 import TeamPage6183 from './components/pages/teamPages/teamPage6183/TeamPage6183';
 import TeamPage10195 from './components/pages/teamPages/teamPage10195/TeamPage10195';
