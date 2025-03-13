@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 1500px) {
     .text-container > p {
-        font-size: var(--font-sm);
+        font-size: var(--font-base);
     }
 }
 
@@ -110,7 +110,7 @@
     }
 
     .ftc-description-container > p {
-        font-size: var(--font-sm);
+        font-size: var(--font-base);
     }
 }
 
@@ -190,7 +190,7 @@
     }
 
     .frc-description-container > p {
-        font-size: var(--font-sm);
+        font-size: var(--font-base);
     }
 }
 
