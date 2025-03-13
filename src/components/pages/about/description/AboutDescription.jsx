@@ -51,10 +51,14 @@ function AboutDescription() {
           <Gallery 
             images={galleryImagesLeft}
             left={true}
+            width = {window.innerWidth * 0.3}
+            height = {window.innerWidth * 0.3 * 0.625}
           />
           <Gallery 
             images={galleryImagesRight}
             left={false}
+            width = {window.innerWidth * 0.3}
+            height = {window.innerWidth * 0.3 * 0.625}
           />
 
           <p>ECG Robotics is a student-led club in Greensboro, NC made up of five FIRST Robotics teams, working together each season to not only build robots, but also share our love of robotics and STEM with kids and adults in our community.</p>

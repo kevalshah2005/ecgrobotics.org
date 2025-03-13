@@ -1,0 +1,126 @@
+.team-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 2rem auto;
+    padding: var(--font-lg);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.team-container > h1 {
+    font-size: var(--font-xl);
+    margin-bottom: var(--font-xs);
+    color: var(--main-text-color);
+}
+
+.team-container > p {
+    font-size: var(--font-base);
+    margin-bottom: var(--font-lg);
+    color: var(--main-text-color);
+}
+
+.social-links {
+    margin-bottom: var(--font-lg);
+}
+
+.social-links a {
+    margin: 0 var(--font-xs);
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    margin: 0 var(--font-xs);
+}
+
+.overview, .history, .outreach, .media {
+    margin-bottom: var(--font-lg);
+}
+
+.overview h2, .history h2, .outreach h2, .media h2 {
+    font-size: var(--font-xl);
+    color: var(--main-text-color);
+    margin-bottom: var(--font-xs);
+}
+
+.overview p, .history p, .outreach p {
+    font-size: var(--font-base);
+    color: var(--main-text-color);
+    margin-bottom: var(--font-base);
+}
+
+.history ul, .outreach ul {
+    list-style-type: disc;
+    padding-left: var(--font-base);
+    text-align: left;
+}
+
+.history li, .outreach li {
+    font-size: var(--font-base);
+    color: var(--main-text-color);
+    margin-bottom: var(--font-xs);
+}
+
+.history ul ul {
+    margin-top: var(--font-xs);
+}
+
+.outreach-project {
+    margin-bottom: var(--font-lg);
+}
+
+.outreach-project h3 {
+    font-size: var(--font-lg);
+    color: var(--main-text-color);
+    margin-bottom: var(--font-xs);
+}
+
+.outreach-project p {
+    font-size: var(--font-base);
+    color: var(--main-text-color);
+    margin-bottom: var(--font-xs);
+}
+
+@media (max-width: 768px) {
+    .team-container {
+        padding: var(--font-base);
+    }
+
+    .team-container > h1 {
+        font-size: var(--font-lg);
+    }
+
+    .team-container > p {
+        font-size: var(--font-sm);
+    }
+
+    .overview h2, .history h2, .outreach h2, .media h2 {
+        font-size: var(--font-lg);
+    }
+
+    .overview p, .history p, .outreach p {
+        font-size: var(--font-sm);
+    }
+
+    .history ul, .outreach ul {
+        padding-left: var(--font-sm);
+    }
+
+    .history li, .outreach li {
+        font-size: var(--font-sm);
+    }
+
+    .outreach-project h3 {
+        font-size: var(--font-base);
+    }
+
+    .outreach-project p {
+        font-size: var(--font-sm);
+    }
+}
