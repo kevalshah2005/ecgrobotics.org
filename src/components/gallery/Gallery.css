@@ -10,7 +10,7 @@
 .slide-track {
     width: 100%;
     overflow: hidden;
-    height: 250px;
+    /* height set in Gallery.jsx */
     margin-inline: auto;
     position: relative;
     align-items: stretch;

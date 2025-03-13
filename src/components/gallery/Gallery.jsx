@@ -1,13 +1,13 @@
 import React, {useEffect} from 'react'
 import './Gallery.css'
 
-const Gallery = ({images, speed = 8, left = true}) => {
+const Gallery = ({images, width = 400, height = 250, speed = 8, left = true}) => {
     const numberOfImages = images.length;
     const animationDuration = numberOfImages * speed;
 
     return (
         <div className="gallery">
-            <div className="slide-track">
+            <div className="slide-track" style={{ height: `${height}px` }}>
                 <div className="images">
                     {images.map((image, index) => {
                         const delay = `${(animationDuration / numberOfImages) * (numberOfImages - index) * -1}s`;
@@ -19,14 +19,14 @@ const Gallery = ({images, speed = 8, left = true}) => {
                             animationDuration: `${animationDuration}s`,
                             animationTimingFunction: "linear",
                             animationIterationCount: "infinite",
-                            width: "400px",
-                            height: "250px",
+                            width: `${width}px`,
+                            height: `${height}px`,
                         };
 
                         if (left) {
-                            style.left = `${400 * images.length}px`;
+                            style.left = `${width * images.length}px`;
                         } else {
-                            style.right = `${400 * images.length}px`;
+                            style.right = `${width * images.length}px`;
                         }
 
                         return (
