@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './TeamPage731.css';
 import youtubeLogo from '../../../../assets/logo731.webp';
 import instagramLogo from '../../../../assets/logo731.webp';
@@ -15,12 +15,25 @@ var galleryImages = [
 ];
 
 const TeamPage731 = () => {
+    const teamContainerRef = useRef(null);
+    const [galleryWidth, setGalleryWidth] = useState(0);
+
+    useEffect(() => {
+        if (teamContainerRef.current) {
+            const computedStyle = getComputedStyle(teamContainerRef.current);
+            const maxWidth = parseFloat(computedStyle.maxWidth);
+            setGalleryWidth(maxWidth);
+        }
+    }, []);
+
+    console.log(galleryWidth);
+
     return (
-        <div className="team-container">
+        <div className="team-container" ref={teamContainerRef}>
             <h1>FTC 731 - Wannabee Strange</h1>
             <div className="social-links">
                 <a href="https://youtube.com/FTC731" target="_blank" rel="noopener noreferrer">
-                    <img src={youtubeLogo} alt="Twitter" />
+                    <img src={youtubeLogo} alt="YouTube" />
                 </a>
                 <a href="https://instagram.com/FTC731" target="_blank" rel="noopener noreferrer">
                     <img src={instagramLogo} alt="Instagram" />
@@ -63,8 +76,8 @@ const TeamPage731 = () => {
                     <p>We conducted a robotics workshop at a local school to inspire young students to pursue STEM education and careers.</p>
                     <Gallery 
                         images={galleryImages} 
-                        width = {window.innerWidth * 0.2}
-                        height = {window.innerWidth * 0.2 * 0.625}
+                        width = {Math.min(window.innerWidth, galleryWidth) * 0.2}
+                        height = {Math.min(window.innerWidth, galleryWidth) * 0.2 * 0.625}
                     />
                 </div>
                 <div className="outreach-project">
@@ -72,8 +85,8 @@ const TeamPage731 = () => {
                     <p>Our team organized a community clean-up drive to promote environmental awareness and responsibility.</p>
                     <Gallery 
                         images={galleryImages} 
-                        width = {window.innerWidth * 0.2}
-                        height = {window.innerWidth * 0.2 * 0.625}
+                        width = {Math.min(window.innerWidth, galleryWidth) * 0.2}
+                        height = {Math.min(window.innerWidth, galleryWidth) * 0.2 * 0.625}
                     />
                 </div>
                 {/* Add more outreach projects as needed */}
@@ -82,8 +95,8 @@ const TeamPage731 = () => {
                 <h2>Media Gallery</h2>
                 <Gallery 
                     images={galleryImages} 
-                    width = {window.innerWidth * 0.3}
-                    height = {window.innerWidth * 0.3 * 0.625}
+                    width = {Math.min(window.innerWidth, galleryWidth) * 0.3}
+                    height = {Math.min(window.innerWidth, galleryWidth) * 0.3 * 0.625}
                 />
             </section>
         </div>
