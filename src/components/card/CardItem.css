@@ -1,6 +1,6 @@
 .cards > h1 {
     text-align: center;
-    font-size: var(--font-lg); /* 60px */
+    font-size: var(--font-lg);
     color: var(--main-text-color);
 }
 
@@ -15,24 +15,24 @@
 
 .cards-wrapper {
     position: relative;
-    margin: 3.125rem 0 2.8125rem; /* 50px 0 45px */
+    margin: 3.125rem 0 2.8125rem;
 }
 
 .cards-items {
-    margin-bottom: 1.5rem; /* 24px */
+    margin-bottom: 1.5rem;
     display: flex;
     flex-wrap: wrap; /* Allow the cards to wrap to the next line */
     justify-content: center; /* Center the items horizontally */
 }
 
 .cards-item {
-    margin: 2rem; /* Add some margin between cards */
-    border-radius: 0.625rem; /* 10px */
+    margin: 1rem; /* Add some margin between cards */
+    border-radius: 0.625rem;
     display: flex;
     flex-direction: column;
-    flex: 1 1 300px; /* Grow, shrink, and set a minimum width */
-    max-width: 250px; /* Limit the maximum width of each card */
-    min-width: 250px; /* Ensure each card has at least 250px width */
+    flex: 1 1 200px; /* Grow, shrink, and set a minimum width */
+    max-width: 300px; /* Limit the maximum width of each card */
+    min-width: 200px; /* Ensure each card has at least 250px width */
     text-align: center; /* Ensure that the text aligns properly */
 }
 
@@ -43,10 +43,9 @@
     height: 100%;
     border-color: white;
     border-style: solid;
-    border-radius: 1.625rem; /* 10px */
+    border-radius: 1.625rem;
     overflow: hidden;
     text-decoration: none;
-    max-width: 400px;
     justify-content: space-between; /* This ensures spacing between content elements */
 }
 
@@ -82,7 +81,7 @@
 }
 
 .cards-item-info {
-    padding: var(--font-lg); /* 20px */
+    padding: var(--font-sm);
     display: flex;
     flex-direction: column; /* Ensures content is stacked vertically */
     justify-content: center; /* Centers content vertically */
@@ -90,22 +89,22 @@
 
 .cards-item-title {
     color: var(--main-text-color);
-    font-size: var(--font-base); /* 28px */
+    font-size: var(--font-base);
     text-align: center;
     word-wrap: break-word; /* Allow long words to wrap correctly */
 }
 
 .cards-item-number {
     color: var(--main-text-color);
-    font-size: var(--font-base); /* 28px */
+    font-size: var(--font-base);
     text-align: center;
-    margin-top: 0.3125rem; /* 5px */
+    margin-top: 0.3125rem;
 }
 
 .cards-item-description {
     color: var(--main-text-color);
-    margin-top: 0.625rem; /* 10px */
-    font-size: 1.25rem; /* 20px */
+    margin-top: 0.625rem;
+    font-size: 1.25rem;
     text-align: center; /* Ensure description is centered */
     word-wrap: break-word; /* Ensure the description text wraps if it's too long */
 }
@@ -130,15 +129,15 @@
 
 @media screen and (max-width: 1500px) {
     .cards-item-title {
-        font-size: var(--font-sm); /* 24px */
+        font-size: var(--font-sm);
     }
 
     .cards-item-number {
-        font-size: var(--font-sm); /* 24px */
+        font-size: var(--font-sm);
     }
 
     .cards-item-description {
-        font-size: var(--font-xs); /* 16px */
+        font-size: var(--font-xs);
     }
 }
 
