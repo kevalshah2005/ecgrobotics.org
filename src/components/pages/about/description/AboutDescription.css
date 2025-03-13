@@ -39,7 +39,7 @@
 
 .about-us-description-container > h1 {
     text-align: center;
-    font-size: var(--font-lg);
+    font-size: var(--font-xl);
     color: var(--main-text-color);
     padding: var(--font-xs);
 }
@@ -55,16 +55,6 @@
     padding: var(--font-xs);
     color: var(--main-text-color);
     font-size: var(--font-base);
-}
-
-@media screen and (max-width: 1500px) {
-    .about-us-description-container > h1 {
-        font-size: var(--font-lg);
-    }
-
-    .about-us-description-container > p {
-        font-size: var(--font-sm);
-    }
 }
 
 @media screen and (max-width: 960px) {
