@@ -60,7 +60,7 @@ Join us as we continue to illuminate the future of robotics!</p>
                     </li>
                     <li>2023-2024: CENTERSTAGE
                         <ul>
-                            <li>Southern Guilford Qualifier - Motive Award Winner</li>
+                            <li>Southern Guilford Qualifier - Motivate Award Winner</li>
                             <li>Sanford Qualifier - Connect Award Winner</li>
                             <li>NC State Championship - Motivate Award</li>
                         </ul>
