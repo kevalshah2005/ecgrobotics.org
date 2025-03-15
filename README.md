@@ -75,7 +75,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+# About The Project
 
 [![ECG Robotics Screen Shot][product-screenshot]](https://ecgrobotics.org)
 
@@ -85,7 +85,7 @@ This website is the overhaul of the old ECG Robotics website, which was outdated
 
 
 
-### Built With
+## Built With
 
 * [![React][React.js]][React-url]
 * [![Vite][Vite]][Vite-url]
@@ -96,11 +96,11 @@ This website is the overhaul of the old ECG Robotics website, which was outdated
 
 
 <!-- GETTING STARTED -->
-## Getting Started with Contributing
+# Getting Started with Contributing
 
 To get a local copy up and running, follow these simple steps.
 
-### Prerequisites
+## Prerequisites
 
 To contribute to this project, you need four essential tools:  
 
@@ -111,12 +111,12 @@ To contribute to this project, you need four essential tools:
 
 Follow these steps to ensure you have everything set up:  
 
-#### 1. Create a GitHub Account  
+### 1. Create a GitHub Account  
 
 If you don’t already have a GitHub account, create one by visiting [GitHub](https://github.com/) and signing up.  
 You'll need this to fork the repository, submit pull requests, and collaborate on the project.  
 
-#### 2. Install npm  
+### 2. Install npm  
 
 First, check if npm is already installed by running:  
 ```sh
@@ -124,7 +124,7 @@ npm -v
 ```
 If you see a version number, you're good to go! Otherwise, install npm by following the instructions on the [official npm repository][npm-installation-url].
 
-#### 3. Install Git  
+### 3. Install Git  
 
 Check if Git is installed by running:  
 ```sh
@@ -132,7 +132,7 @@ git -v
 ```  
 If you see a version number, you’re good to go! Otherwise, install Git by visiting the [Git website](https://git-scm.com/) and following the installation instructions for your operating system.  
 
-#### 4. Install a Code Editor (Recommended: Visual Studio Code)  
+### 4. Install a Code Editor (Recommended: Visual Studio Code)  
 
 While you can technically use any text editor, **Visual Studio Code (VS Code)** is highly recommended because of its powerful features like syntax highlighting, autocompletion, and an integrated terminal.
 
@@ -145,7 +145,7 @@ If you see a version number, you're good to go! Otherwise, to install VS Code, p
 2. Select your operating system (Windows, macOS, or Linux).  
 3. Download and install it following the setup instructions.
 
-### Recommended VS Code Extensions  
+#### Recommended VS Code Extensions  
 
 For the best experience, install these extensions: 
 - **GitHub Copilot** – An AI-powered coding assistant that helps write code faster. If you're a student, you can get **GitHub Copilot for free** through the [GitHub Student Developer Pack](https://education.github.com/pack).  
@@ -156,7 +156,7 @@ For the best experience, install these extensions:
 Once you have **npm, Git, and VS Code** installed, you're ready to **clone the repository and start contributing**!
 
 
-### Installation  
+## Installation  
 
 1. **Fork the repository** to create your own copy that you can make changes on. If you'd like to make changes to the website, you'll eventually make a pull request to request for your changes to be put on the website. 
 2. **Open your terminal** and navigate to the folder that you want your project to be hosted in by running:
@@ -209,7 +209,7 @@ Once you have **npm, Git, and VS Code** installed, you're ready to **clone the r
 
 Once your pull request is reviewed and approved, **your changes will be merged into the main project!**
 
-### Top contributors:
+## Top contributors:
 
 <a href="https://github.com/kevalshah2005/ecgrobotics.org/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=kevalshah2005/ecgrobotics.org" alt="contrib.rocks image" />
@@ -219,7 +219,7 @@ Once your pull request is reviewed and approved, **your changes will be merged i
 
 
 <!-- ROADMAP -->
-## Roadmap
+# Roadmap
 
 See the [open issues](https://github.com/kevalshah2005/ecgrobotics.org/issues) for a full list of proposed features (and known issues).
 
@@ -227,7 +227,7 @@ See the [open issues](https://github.com/kevalshah2005/ecgrobotics.org/issues) f
 
 
 <!-- LICENSE -->
-## License
+# License
 
 Distributed under the [MIT License]([license_url]). See `LICENSE` for more information.
 
@@ -236,7 +236,7 @@ Distributed under the [MIT License]([license_url]). See `LICENSE` for more infor
 
 
 <!-- CONTACT -->
-## Contact
+# Contact
 
 Keval Shah - kevals2005@gmail.com
 
@@ -247,7 +247,7 @@ Project Link: [https://github.com/kevalshah2005/ecgrobotics.org](https://github.
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+# Acknowledgments
 
 * All the incredible ECG Robotics students, mentors, and parents. Without your work, this club wouldn't be possible!
 
