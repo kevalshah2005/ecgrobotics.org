@@ -4,12 +4,12 @@ const TypingEffect = ({ text, speed = 100, delay = 0, className = "" }) => {
   const [displayText, setDisplayText] = useState("");
   const [index, setIndex] = useState(0);
   const [startTyping, setStartTyping] = useState(false);
+  const [isTypingDone, setIsTypingDone] = useState(false);
 
   useEffect(() => {
     const delayTimeout = setTimeout(() => {
       setStartTyping(true);
     }, delay);
-
     return () => clearTimeout(delayTimeout);
   }, [delay]);
 
@@ -20,10 +20,16 @@ const TypingEffect = ({ text, speed = 100, delay = 0, className = "" }) => {
         setIndex(index + 1);
       }, speed);
       return () => clearTimeout(timeout);
+    } else if (index === text.length) {
+      setIsTypingDone(true);
     }
   }, [index, text, speed, startTyping]);
 
-  return <span className={className}>{displayText}</span>;
+  return (
+    <span className={`${className} ${isTypingDone ? "cursor-hidden" : ""}`}>
+      {displayText}
+    </span>
+  );
 };
 
 export default TypingEffect;

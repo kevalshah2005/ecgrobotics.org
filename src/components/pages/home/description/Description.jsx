@@ -9,11 +9,12 @@ import logo5795 from '../../../../assets/logo5795.webp'
 import logo6183 from '../../../../assets/logo6183.webp'
 import logo10195 from '../../../../assets/logo10195.webp'
 import logo1533 from '../../../../assets/logo1533.webp'
+import "aos/dist/aos.css";
 
 function Description() {
   return (
     <div className='description-container'>
-      <div className='overview-container'>
+      <div className='overview-container' data-aos="fade-up">
         <div className='text-container'>
           <p>ECG Robotics is a student-led, non-profit robotics club based in Greensboro, NC. Our teams compete in the FIRST Tech Challenge and FIRST Robotics Competition and welcome students from all over Guilford County.</p>
           <p>We inspire students locally, nationally, and internationally to learn about STEM through our award-winning outreach initiatives.</p>
@@ -22,13 +23,13 @@ function Description() {
       </div>
 
       <div className='ftc-container'>
-        <h1>FIRST Tech Challenge</h1>
-        <div className='ftc-description-container'>
+        <h1 data-aos="fade-up">FIRST Tech Challenge</h1>
+        <div className='ftc-description-container' data-aos="fade-up">
           <p>FIRST Tech Challenge (FTC) is a robotics competition for middle and high school students, where teams design, build, and program robots to complete an annual challenge. Using engineering, coding, and teamwork, students develop problem-solving skills while applying real-world STEM concepts. FTC also encourages outreach, with teams mentoring younger students and promoting STEM in their communities.
           </p>
           <img src={ftcImage} alt='' className='ftc-image' />
         </div>
-        <div className='cards'>
+        <div className='cards' data-aos="fade-up">
           <h1>Check out our teams here!</h1>
           <div className="cards-container">
             <div className="cards-wrapper">
@@ -68,13 +69,13 @@ function Description() {
       </div>
 
       <div className="frc-container">
-      <h1>FIRST Robotics Competition</h1>
-        <div className='frc-description-container'>
+      <h1 data-aos="fade-up">FIRST Robotics Competition</h1>
+        <div className='frc-description-container' data-aos="fade-up">
           <p> This is filler text. In this space will be an explanation about what FRC is. Ideally I'd like to keep it a general program overview rather than anything about the team, since that's already below.
           </p>
           <img src={frcImage} alt='' className='frc-image' />
         </div>
-        <div className='cards'>
+        <div className='cards' data-aos="fade-up">
           <h1>Check out our team here!</h1>
           <div className="cards-container">
             <div className="cards-wrapper">
