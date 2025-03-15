@@ -33,11 +33,19 @@ video {
   font-size: var(--font-2xl);
 }
 
-.landing-container > h2 {
-  margin-top: 0.5rem; /* 8px */
-  margin-bottom: 0.5rem; /* 8px */
+.landing-tagline-typing-effect {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   color: var(--main-text-color);
   font-size: var(--font-base);
+  border-right: 3px solid var(--main-text-color);
+  animation: blinkCursor 0.8s steps(2, start) infinite;
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .landing-btns {

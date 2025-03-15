@@ -15,6 +15,9 @@ import { useEffect } from "react";
 import Sponsors from './components/pages/sponsors/Sponsors';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 // For some reason it doesn't automatically scroll to top when switching pages, so this is needed
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -27,6 +30,11 @@ function ScrollToTop() {
 }
 
 function App() {
+  // Initialize AOS
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true });
+  }, []);
+
   return (
     <>
       <Router>
