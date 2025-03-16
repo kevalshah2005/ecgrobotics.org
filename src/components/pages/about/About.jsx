@@ -3,9 +3,9 @@ import AboutDescription from './description/AboutDescription'
 
 function About() {
   return (
-    <>
+    <div>
       <AboutDescription />
-    </>
+    </div>
   )
 }
 

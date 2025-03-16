@@ -11,6 +11,7 @@ import TeamPage5795 from './components/pages/teamPages/teamPage5795/TeamPage5795
 import TeamPage6183 from './components/pages/teamPages/teamPage6183/TeamPage6183';
 import TeamPage10195 from './components/pages/teamPages/teamPage10195/TeamPage10195';
 import TeamPage1533 from './components/pages/teamPages/teamPage1533/TeamPage1533';
+import CADViewer from './components/pages/cadViewer/CADViewer';
 
 import { useEffect } from "react";
 import Sponsors from './components/pages/sponsors/Sponsors';
@@ -52,6 +53,8 @@ function App() {
           <Route path='/ftc6183' exact element={<TeamPage6183 />} />
           <Route path='/ftc10195' exact element={<TeamPage10195 />} />
           <Route path='/frc1533' exact element={<TeamPage1533 />} />
+
+          <Route path="/cad-viewer" element={<CADViewer />} />
         </Routes>
         <Footer />
       </Router>
