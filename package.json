@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@fillout/react": "^1.1.6",
-    "@react-three/drei": "^10.0.4",
+    "@react-three/drei": "^9.122.0",
     "@react-three/fiber": "^8.18.0",
     "@vercel/speed-insights": "^1.0.12",
     "aos": "^2.3.4",
