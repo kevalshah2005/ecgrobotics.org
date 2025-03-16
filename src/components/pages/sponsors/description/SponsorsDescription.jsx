@@ -70,21 +70,21 @@ function SponsorsDescription() {
   return (
     <div className="sponsors-container">
       <div className="sponsors-header-container">
-        <div className="sponsors-header-text" data-aos="fade-up">
+        <div className="sponsors-header-text">
           <h1>Sponsors</h1>
           <h2>ECG Robotics is inspiring tomorrow’s engineers, programmers, designers, and thinkers.</h2>
           <h3>But we can't do it without your help.</h3>
         </div>
       </div>
-      <div className="sponsors-description-container" data-aos="fade-up">
-        <p>Thanks to our generous sponsors, our teams have inspired others while taking home state championship titles and earning places at the FIRST World Championships in Houston.
+      <div className="sponsors-description-container">
+        <p data-aos="fade-up">Thanks to our generous sponsors, our teams have inspired others while taking home state championship titles and earning places at the FIRST World Championships in Houston.
           <b> Your company’s donation helps fund materials, tools, workspaces, and competition expenses </b>
           that will provide students with hands-on experience building not just robots, but
           <b> real-world skills </b>
           that will stay with them into college and beyond.
         </p>
-        <p>Ready? Contact us at <a href="mailto: info@ecgrobotics.org" style={{ fontSize: "inherit" }}>info@ecgrobotics.org</a> and ask how you can help build tomorrow’s engineers, programmers, designers, and thinkers.</p>
-        <img src={sponsorImage} alt="Image showing robot with sponsor logos on it" />
+        <p data-aos="fade-up">Ready? Contact us at <a href="mailto: info@ecgrobotics.org" style={{ fontSize: "inherit" }}>info@ecgrobotics.org</a> and ask how you can help build tomorrow’s engineers, programmers, designers, and thinkers.</p>
+        <img data-aos="fade-up" src={sponsorImage} alt="Image showing robot with sponsor logos on it" />
       </div>
 
       {/* <Gallery3D /> */}

@@ -46,8 +46,8 @@ function AboutDescription() {
     <div>
       <div className="about-us-container">
         <div className="about-us-header-container">
-          <h1 data-aos="fade-up">About ECG Robotics</h1>
-          <h2 data-aos="fade-up">More about the club and its history</h2>
+          <h1>About ECG Robotics</h1>
+          <h2>More about the club and its history</h2>
         </div>
         <div className="about-us-description-container">
           <Gallery 

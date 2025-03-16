@@ -63,6 +63,9 @@ video {
 
 .landing-btns {
   margin-top: 2rem; /* 32px */
+  display: flex; /* Flex container for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically (if needed) */
 }
 
 .landing-btns .btn {
@@ -78,12 +81,13 @@ video {
 
 @media screen and (max-width: 768px) {
   .landing-container > h1 {
-    font-size: var(--font-lg);
+    font-size: var(--font-xl);
     margin-top: -100px;
   }
 
-  .landing-container > p {
-    font-size: 1.875rem; /* 30px */
+  .landing-tagline-typing-effect {
+    border-right: none; /* Remove the blinking cursor on small screens */
+    max-width: 90%;
   }
 
   .btn-mobile {
@@ -93,5 +97,10 @@ video {
 
   .btn {
     width: 100%;
+  }
+
+  .landing-btns .btn {
+    width: auto; /* Remove 100% width */
+    max-width: 90%; /* Limit the width to 90% on smaller screens */
   }
 }
