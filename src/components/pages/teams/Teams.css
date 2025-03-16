@@ -1,0 +1,20 @@
+.teams-container > h1 {
+    font-size: var(--font-xl);
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+@media screen and (max-width: 768px) {
+    .teams-container > h1 {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .teams-container > h1 {
+        font-size: var(--font-lg);
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
