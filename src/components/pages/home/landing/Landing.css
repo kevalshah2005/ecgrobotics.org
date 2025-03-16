@@ -4,11 +4,17 @@ video {
   height: 100%;
   position: absolute;
   z-index: -1;
+  filter: blur(10px); /* Start with a blurred background */
+  transition: filter 1.5s ease-out; /* Gradually unblur the video over 1.5s */
 }
 
 @keyframes video-animation {
-  0% {box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);}
-  75%, 100% {box-shadow: inset 0 0 0 1000px rgba(9, 9, 11, 1);}
+  0% {
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  }
+  75%, 100% {
+    box-shadow: inset 0 0 0 1000px rgba(9, 9, 11, 1);
+  }
 }
 
 .landing-container {
@@ -23,9 +29,12 @@ video {
   align-items: center;
   box-shadow: inset 500px 0 0 120% rgba(9, 9, 11, 0.4);
   object-fit: contain;
-
   animation: video-animation linear forwards;
   animation-timeline: view();
+}
+
+.landing-container.loaded video {
+  filter: blur(0); /* Remove the blur once the page has loaded */
 }
 
 .landing-container > h1 {
@@ -33,15 +42,30 @@ video {
   font-size: var(--font-2xl);
 }
 
-.landing-container > h2 {
-  margin-top: 0.5rem; /* 8px */
-  margin-bottom: 0.5rem; /* 8px */
+.landing-tagline-typing-effect {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   color: var(--main-text-color);
   font-size: var(--font-base);
+  border-right: 3px solid var(--main-text-color);
+  animation: blinkCursor 0.8s steps(2, start) infinite;
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.cursor-hidden {
+  border-right: none;
 }
 
 .landing-btns {
   margin-top: 2rem; /* 32px */
+  display: flex; /* Flex container for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically (if needed) */
 }
 
 .landing-btns .btn {
@@ -57,12 +81,13 @@ video {
 
 @media screen and (max-width: 768px) {
   .landing-container > h1 {
-    font-size: var(--font-lg);
+    font-size: var(--font-xl);
     margin-top: -100px;
   }
 
-  .landing-container > p {
-    font-size: 1.875rem; /* 30px */
+  .landing-tagline-typing-effect {
+    border-right: none; /* Remove the blinking cursor on small screens */
+    max-width: 90%;
   }
 
   .btn-mobile {
@@ -72,5 +97,10 @@ video {
 
   .btn {
     width: 100%;
+  }
+
+  .landing-btns .btn {
+    width: auto; /* Remove 100% width */
+    max-width: 90%; /* Limit the width to 90% on smaller screens */
   }
 }

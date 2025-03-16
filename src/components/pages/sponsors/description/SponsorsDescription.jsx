@@ -77,22 +77,22 @@ function SponsorsDescription() {
         </div>
       </div>
       <div className="sponsors-description-container">
-        <p>Thanks to our generous sponsors, our teams have inspired others while taking home state championship titles and earning places at the FIRST World Championships in Houston.
+        <p data-aos="fade-up">Thanks to our generous sponsors, our teams have inspired others while taking home state championship titles and earning places at the FIRST World Championships in Houston.
           <b> Your company’s donation helps fund materials, tools, workspaces, and competition expenses </b>
           that will provide students with hands-on experience building not just robots, but
           <b> real-world skills </b>
           that will stay with them into college and beyond.
         </p>
-        <p>Ready? Contact us at <a href="mailto: info@ecgrobotics.org" style={{ fontSize: "inherit" }}>info@ecgrobotics.org</a> and ask how you can help build tomorrow’s engineers, programmers, designers, and thinkers.</p>
-        <img src={sponsorImage} alt="Image showing robot with sponsor logos on it" />
+        <p data-aos="fade-up">Ready? Contact us at <a href="mailto: info@ecgrobotics.org" style={{ fontSize: "inherit" }}>info@ecgrobotics.org</a> and ask how you can help build tomorrow’s engineers, programmers, designers, and thinkers.</p>
+        <img data-aos="fade-up" src={sponsorImage} alt="Image showing robot with sponsor logos on it" />
       </div>
 
       {/* <Gallery3D /> */}
 
       <div className="sponsorship-tiers">
-        <h1>Sponsorship Tiers</h1>
-        <h2>Diamond - $7500+ Annual Contribution</h2>
-        <p>Description of Diamond level</p>
+        <h1 data-aos="fade-up">Sponsorship Tiers</h1>
+        <h2 data-aos="fade-up">Diamond - $7500+ Annual Contribution</h2>
+        <p data-aos="fade-up">Description of Diamond level</p>
         {diamondSponsors.length > 0 ? (
           diamondSponsors.map((sponsor, index) => (
             <Sponsor
@@ -107,11 +107,12 @@ function SponsorsDescription() {
           <p>No diamond sponsors yet.</p>
         )}
 
-        <h2>Platinum - $5000-$7499 Annual Contribution</h2>
-        <p>Description of Platinum level</p>
+        <h2 data-aos="fade-up">Platinum - $5000-$7499 Annual Contribution</h2>
+        <p data-aos="fade-up">Description of Platinum level</p>
         {platinumSponsors.length > 0 ? (
           platinumSponsors.map((sponsor, index) => (
             <Sponsor
+              data-aos="fade-up"
               index={index}
               name={sponsor.name}
               logo={sponsor.logo}
@@ -120,11 +121,11 @@ function SponsorsDescription() {
             />
           ))
         ) : (
-          <p>No platinum sponsors yet.</p>
+          <p data-aos="fade-up">No platinum sponsors yet.</p>
         )}
 
-        <h2>Gold - $2500-$4999 Annual Contribution</h2>
-        <p>Description of Gold level</p>
+        <h2 data-aos="fade-up">Gold - $2500-$4999 Annual Contribution</h2>
+        <p data-aos="fade-up">Description of Gold level</p>
         {goldSponsors.length > 0 ? (
           goldSponsors.map((sponsor, index) => (
             <Sponsor
@@ -136,11 +137,11 @@ function SponsorsDescription() {
             />
           ))
         ) : (
-          <p>No gold sponsors yet.</p>
+          <p data-aos="fade-up">No gold sponsors yet.</p>
         )}
 
-        <h2>Silver - $1000-$2499 Annual Contribution</h2>
-        <p>Description of Silver level</p>
+        <h2 data-aos="fade-up">Silver - $1000-$2499 Annual Contribution</h2>
+        <p data-aos="fade-up">Description of Silver level</p>
         {silverSponsors.length > 0 ? (
           silverSponsors.map((sponsor, index) => (
             <Sponsor
@@ -152,11 +153,11 @@ function SponsorsDescription() {
             />
           ))
         ) : (
-          <p>No silver sponsors yet.</p>
+          <p data-aos="fade-up">No silver sponsors yet.</p>
         )}
 
-        <h2>Bronze - $500-$999 Annual Contribution</h2>
-        <p>Description of Bronze level</p>
+        <h2 data-aos="fade-up">Bronze - $500-$999 Annual Contribution</h2>
+        <p data-aos="fade-up">Description of Bronze level</p>
         {bronzeSponsors.length > 0 ? (
           bronzeSponsors.map((sponsor, index) => (
             <Sponsor
@@ -168,11 +169,11 @@ function SponsorsDescription() {
             />
           ))
         ) : (
-          <p>No bronze sponsors yet.</p>
+          <p data-aos="fade-up">No bronze sponsors yet.</p>
         )}
 
-        <h2>Honorable Mention - Below $500 Annual Contribution</h2>
-        <p>Description of Honorable Mention level</p>
+        <h2 data-aos="fade-up">Honorable Mention - Below $500 Annual Contribution</h2>
+        <p data-aos="fade-up">Description of Honorable Mention level</p>
         {honorableMentionSponsors.length > 0 ? (
           honorableMentionSponsors.map((sponsor, index) => (
             <Sponsor
@@ -184,7 +185,7 @@ function SponsorsDescription() {
             />
           ))
         ) : (
-          <p>No honorable mention sponsors yet.</p>
+          <p data-aos="fade-up">No honorable mention sponsors yet.</p>
         )}
       </div>
     </div>

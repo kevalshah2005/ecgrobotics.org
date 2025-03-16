@@ -1,10 +1,13 @@
 import React from 'react';
 import './Sponsor.css';
-
+import 'aos/dist/aos.css';
 
 const Sponsor = (props) => {
     return (
-        <div className={`sponsor-card ${props.index % 2 == 0 ? 'even' : 'odd'}`}>
+        <div 
+            className={`sponsor-card ${props.index % 2 == 0 ? 'even' : 'odd'}`}
+            data-aos="fade-up"
+        >
             <div className="sponsor-logo">
                 <a href={props.link} target="_blank" rel="noopener noreferrer" className="sponsor-link">
                     <img src={props.logo} alt={`${props.name} logo`} />
