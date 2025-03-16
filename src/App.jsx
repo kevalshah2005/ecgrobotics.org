@@ -5,6 +5,7 @@ import Home from './components/pages/home/Home'
 import About from './components/pages/about/About';
 import Footer from './components/footer/Footer';
 import Join from './components/pages/join/Join';
+import Teams from './components/pages/teams/Teams';
 import TeamPage731 from './components/pages/teamPages/teamPage731/TeamPage731';
 import TeamPage5795 from './components/pages/teamPages/teamPage5795/TeamPage5795';
 import TeamPage6183 from './components/pages/teamPages/teamPage6183/TeamPage6183';
@@ -45,6 +46,7 @@ function App() {
           <Route path='/about' exact element={<About />} />
           <Route path='/sponsors' exact element = {<Sponsors />} />
           <Route path='/join' exact element={<Join />} />
+          <Route path='/teams' exact element={<Teams />} />
           <Route path='/ftc731' exact element={<TeamPage731 />} />
           <Route path='/ftc5795' exact element={<TeamPage5795 />} />
           <Route path='/ftc6183' exact element={<TeamPage6183 />} />
