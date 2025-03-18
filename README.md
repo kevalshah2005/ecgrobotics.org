@@ -40,10 +40,11 @@
     <br />
     <a href="https://ecgrobotics.org">View Website</a>
     &middot;
-    <a href=[bug-issue-url]>Report Bug</a>
+    <a href="https://github.com/kevalshah2005/ecgrobotics.org/issues/new?labels=bug&template=bug_report.md">Report Bug</a>
     &middot;
-    <a href=[feature-issue-url]>Request Feature</a>
-  </p>
+    <a href="https://github.com/kevalshah2005/ecgrobotics.org/issues/new?labels=enhancement&template=feature_request.md">Request Feature</a>
+</p>
+
 </div>
 
 
