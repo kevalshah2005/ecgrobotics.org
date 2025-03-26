@@ -13,9 +13,9 @@
 .sponsor-card {
     display: flex;
     align-items: center;
-    border-radius: 0.5rem; /* 8px */
-    padding: 1rem; /* 16px */
-    margin: 1rem 0; /* 16px 0 */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem 0;
     width: 80%;
     box-sizing: border-box; /* Ensure proper box-sizing */
 }
@@ -29,10 +29,10 @@
 }
 
 .sponsor-logo {
-    border-radius: 0.5rem; /* 8px */
-    margin-right: 2.5rem; /* 40px */
+    border-radius: 0.5rem;
+    margin-right: 2.5rem;
     box-sizing: border-box;
-    width: 50%;
+    width: 20%;
     max-width: 100%;
 }
 
@@ -43,7 +43,7 @@
 
 .sponsor-card.even .sponsor-logo {
     margin-right: 0;
-    margin-left: 2.5rem; /* 40px */
+    margin-left: 2.5rem;
 }
 
 .sponsor-details {
@@ -54,9 +54,9 @@
 
 .sponsor-name {
     font-size: var(--font-lg);
-    margin-bottom: 0.625rem; /* 10px */
+    margin-bottom: var(--font-xs);
     color: var(--main-text-color);
-    text-align: center; /* Center-align name on all screen sizes */
+    text-align: center;
 }
 
 .sponsor-description {
@@ -64,14 +64,14 @@
     color: var(--main-text-color);
     text-align: left;
     max-width: 90%;
-    margin: 0 auto; /* Center description text */
+    margin: 0 auto;
 }
 
 @media (max-width: 768px) {
     .sponsor-card {
         flex-direction: column; /* Ensure cards stack vertically on small screens */
         align-items: center;
-        padding: 1.25rem; /* 20px */
+        padding: 1.25rem;
         margin-right: 0;
         margin-left: 0;
         width: 100%;
@@ -80,7 +80,7 @@
     .sponsor-logo {
         width: 60%;
         height: auto; /* Maintain aspect ratio */
-        margin: 0.625rem 0; /* 10px 0 */
+        margin: 0.625rem 0;
     }
 
     .sponsor-link > img {
@@ -89,19 +89,20 @@
     }
 
     .sponsor-name {
-        font-size: 2.25rem; /* 36px */
+        font-size: var(--font-base);
         text-align: center;
     }
 
     .sponsor-description {
-        font-size: 1.25rem; /* 20px */
+        font-size: var(--font-sm);
         text-align: center;
     }
 }
 
 @media (max-width: 480px) {
     .sponsor-card {
-        padding: 0.625rem; /* 10px */
+        padding: 0.625rem;
+        padding: var(--font-xs);
     }
 
     .sponsor-name {
@@ -109,6 +110,10 @@
     }
 
     .sponsor-description {
-        font-size: 1.125rem; /* 18px */
+        font-size: var(--font-sm);
+    }
+
+    .sponsor-logo {
+        width: 100%;
     }
 }
