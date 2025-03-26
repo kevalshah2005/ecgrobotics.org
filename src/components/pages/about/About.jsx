@@ -3,9 +3,7 @@ import AboutDescription from './description/AboutDescription'
 
 function About() {
   return (
-    <>
-      <AboutDescription />
-    </>
+    <AboutDescription />
   )
 }
 
