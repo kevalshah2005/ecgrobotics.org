@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import '../../../../App.css';
 import './Landing.css';
 import rightArrow from '../../../../assets/rightArrow.png';
-import landingVideo from '../../../../assets/landingVideo.mp4';
+import landingVideo_mp4 from '../../../../assets/landingVideo.mp4';
+import landingVideo_webm from '../../../../assets/landingVideo.webm';
 import { Button } from '../../../button/Button';
 import TypingEffect from '../../../typingEffect/TypingEffect';
 import "aos/dist/aos.css";
@@ -21,7 +22,11 @@ function Landing() {
 
   return (
     <div className={`landing-container ${loaded ? 'loaded' : ''}`}>
-      <video src={landingVideo} type='video/mp4' autoPlay loop muted />
+      <video autoPlay loop>
+        <source src={landingVideo_mp4} type='video/mp4' />
+        <source src={landingVideo_webm} type='video/webm' />
+        Your browser does not support the video tag or the file format of this video.
+      </video>
       <h1 data-aos="fade-down">ECG Robotics</h1>
       <TypingEffect 
         className='landing-tagline-typing-effect' 
