@@ -3,22 +3,21 @@ video {
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: -1;
+  z-index: -3;
   filter: blur(10px); /* Start with a blurred background */
   transition: filter 1.5s ease-out; /* Gradually unblur the video over 1.5s */
 }
 
-@keyframes video-animation {
-  0% {
-    -moz-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
-  }
-  75%, 100% {
-    -moz-box-shadow: inset 0 0 0 1000px rgba(9, 9, 11, 1);
-    -webkit-box-shadow: inset 0 0 0 1000px rgba(9, 9, 11, 1);
-    box-shadow: inset 0 0 0 1000px rgba(9, 9, 11, 1);
-  }
+.dark-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-bg-color);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -2;
 }
 
 .landing-container {
@@ -31,14 +30,7 @@ video {
   justify-content: center;
   text-align: center;
   align-items: center;
-  -moz-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
-  -ms-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
-  -o-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
   object-fit: contain;
-  animation: video-animation linear forwards;
-  animation-timeline: view();
 }
 
 .landing-container.loaded video {
@@ -70,19 +62,19 @@ video {
 }
 
 .landing-btns {
-  margin-top: 2rem; /* 32px */
+  margin-top: 2rem;
   display: flex; /* Flex container for centering */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically (if needed) */
 }
 
 .landing-btns .btn {
-  margin: 1.5rem; /* 6px */
+  margin: 1.5rem;
 }
 
 @media screen and (max-width: 960px) {
   .landing-container > h1 {
-    font-size: 4.375rem; /* 70px */
+    font-size: 4.375rem;
     margin-top: -150px;
   }
 }
