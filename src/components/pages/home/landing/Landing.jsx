@@ -22,7 +22,7 @@ function Landing() {
   return (
     <div className={`landing-container ${loaded ? 'loaded' : ''}`}>
       <video src={landingVideo} type='video/mp4' autoPlay loop muted />
-      <h1 data-aos="fade-up">ECG Robotics</h1>
+      <h1 data-aos="fade-down">ECG Robotics</h1>
       <TypingEffect 
         className='landing-tagline-typing-effect' 
         text="North Carolina's premier high school robotics organization" 
