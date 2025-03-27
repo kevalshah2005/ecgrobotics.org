@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 
 function Landing() {
   const [loaded, setLoaded] = useState(false);
-  const initialOpacity = 0.85;
+  const initialOpacity = 0.7;
   const [overlayOpacity, setOverlayOpacity] = useState(initialOpacity);
 
   useEffect(() => {
