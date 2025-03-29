@@ -9,10 +9,10 @@ import instagramLogo from '../../../../assets/InstagramLogo.webp';
 import gmailLogo from '../../../../assets/GmailLogo.png';
 import teamRoster from '../../../../assets/FTC10195/NightOwlsTeamRoster.png';
 import childrensMuseum from '../../../../assets/FTC10195/ChildrensMuseum1.jpg';
-import childrensMuseum2 from '../../../../assets/FTC10195/TeamAtChildrensMuseum2.jpg';
+import childrensMuseum2 from '../../../../assets/FTC10195/ChildrensMuseum2.png';
 import childrensMuseum3 from '../../../../assets/FTC10195/ChildrensMuseum3.jpg';
-import bricksboro1 from '../../../../assets/FTC10195/TeamAtBricksboro1.jpg';
-import bricksboro2 from '../../../../assets/FTC10195/TeamAtBricksboro2.jpg';
+import bricksboro1 from '../../../../assets/FTC10195/Bricksboro1.png';
+import bricksboro2 from '../../../../assets/FTC10195/Bricksboro2.png';
 import someWhereElse from '../../../../assets/FTC10195/TeamSomewhereElse.jpg';
 //team photos!!
 import teamPhoto1 from '../../../../assets/FTC10195/TeamAtStates.jpg';
@@ -149,7 +149,7 @@ Join us as we continue to illuminate the future of robotics!</p>
                 </div>
             </section>
             <section className="media">
-                <h2>Competition</h2>
+                <h2>Competitions</h2>
                 <Gallery 
                     images={galleryImages} 
                     width = {Math.min(window.innerWidth, galleryWidth) * 0.3}
