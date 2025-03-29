@@ -86,6 +86,22 @@
     color: var(--main-text-color);
     margin-bottom: var(--font-xs);
 }
+.team-roster{
+   width: 997px;
+  height: 382px;
+}
+.team-roster:hover{
+    transform: none;
+}
+
+.team-logo{
+    width: 997px;
+   height: 382px;
+ }
+ .team-logo:hover{
+     transform: none;
+ }
+
 
 @media (max-width: 768px) {
     .team-container {
