@@ -87,16 +87,14 @@
     margin-bottom: var(--font-xs);
 }
 .team-roster{
-   width: 997px;
-  height: 382px;
+   width: 90%;
 }
 .team-roster:hover{
     transform: none;
 }
 
 .team-logo{
-    width: 997px;
-   height: 382px;
+    width: 90%;
  }
  .team-logo:hover{
      transform: none;

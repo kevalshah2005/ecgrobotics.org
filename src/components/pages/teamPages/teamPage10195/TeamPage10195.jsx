@@ -1,23 +1,25 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './TeamPage10195.css';
-import teamLogo from '../../../../assets/NightOwlsTempBanner.png';
+
+import exampleGalleryImage from '../../../../assets/731_2019teampic.webp';
+
+import teamLogo from '../../../../assets/FTC10195/NightOwlsTempBanner.png';
 import youtubeLogo from '../../../../assets/YoutubeLogo.webp';
 import instagramLogo from '../../../../assets/InstagramLogo.webp';
 import gmailLogo from '../../../../assets/GmailLogo.png';
-import teamRoster from '../../../../assets/NightOwlsTeamRoster.png';
-import exampleGalleryImage from '../../../../assets/731_2019teampic.webp';
-import childrensMuseum from '../../../../assets/ChildrensMuseum1.jpg';
-import childrensMuseum2 from '../../../../assets/TeamAtChildrensMuseum2.jpg';
-import childrensMuseum3 from '../../../../assets/ChildrensMuseum3.jpg';
-import bricksboro1 from '../../../../assets/TeamAtBricksboro1.jpg';
-import bricksboro2 from '../../../../assets/TeamAtBricksboro2.jpg';
-import someWhereElse from '../../../../assets/TeamSomewhereElse.jpg';
+import teamRoster from '../../../../assets/FTC10195/NightOwlsTeamRoster.png';
+import childrensMuseum from '../../../../assets/FTC10195/ChildrensMuseum1.jpg';
+import childrensMuseum2 from '../../../../assets/FTC10195/TeamAtChildrensMuseum2.jpg';
+import childrensMuseum3 from '../../../../assets/FTC10195/ChildrensMuseum3.jpg';
+import bricksboro1 from '../../../../assets/FTC10195/TeamAtBricksboro1.jpg';
+import bricksboro2 from '../../../../assets/FTC10195/TeamAtBricksboro2.jpg';
+import someWhereElse from '../../../../assets/FTC10195/TeamSomewhereElse.jpg';
 //team photos!!
-import teamPhoto1 from '../../../../assets/TeamAtStates.jpg';
-import teamPhoto2 from '../../../../assets/TeamMechNest.jpg';
-import teamPhoto3 from '../../../../assets/TeamVictory.jpg';
-import teamPhoto4 from '../../../../assets/TeamAtParkingLot.jpg';
-import teamPhoto5 from '../../../../assets/TeamOnBench.jpg';
+import teamPhoto1 from '../../../../assets/FTC10195/TeamAtStates.jpg';
+import teamPhoto2 from '../../../../assets/FTC10195/TeamMechNest.jpg';
+import teamPhoto3 from '../../../../assets/FTC10195/TeamVictory.jpg';
+import teamPhoto4 from '../../../../assets/FTC10195/TeamAtParkingLot.jpg';
+import teamPhoto5 from '../../../../assets/FTC10195/TeamOnBench.jpg';
 
 import Gallery from '../../../gallery/Gallery';
 
