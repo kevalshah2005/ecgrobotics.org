@@ -18,6 +18,13 @@
     margin-bottom: var(--font-lg);
     color: var(--main-text-color);
 }
+.team-photo{
+    width: 100%;;
+}
+.team-photo:hover{
+    transform: none;
+}
+
 
 .social-links {
     margin-bottom: var(--font-lg);

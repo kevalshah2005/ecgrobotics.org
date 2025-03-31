@@ -1,17 +1,25 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './TeamPage6183.css';
-import youtubeLogo from '../../../../assets/logo731.webp';
-import instagramLogo from '../../../../assets/logo731.webp';
-import exampleGalleryImage from '../../../../assets/731_2019teampic.webp';
+import tiktokLogo from '../../../../assets/TikTokLogo.png';
+import instagramLogo from '../../../../assets/InstagramLogo.webp';
+import gmailLogo from '../../../../assets/GmailLogo.png';
 import Gallery from '../../../gallery/Gallery';
 
+import outreach1 from '../../../../assets/FTC6183/Outreach1.png';
+import outreach2 from '../../../../assets/FTC6183/Outreach2.png';
+import outreach3 from '../../../../assets/FTC6183/Outreach3.png';
+import outreach4 from '../../../../assets/FTC6183/Outreach4.png';
+import outreach5 from '../../../../assets/FTC6183/Outreach6.png';
+
+import comp1 from '../../../../assets/FTC6183/Comp1.png';
+
 /* edit gallery images as needed */
-var galleryImages = [
-    exampleGalleryImage,
-    exampleGalleryImage,
-    exampleGalleryImage,
-    exampleGalleryImage,
-    exampleGalleryImage
+var outreachGallery = [
+    outreach1,
+    outreach2,
+    outreach3,
+    outreach4,
+    outreach5
 ];
 
 const TeamPage6183 = () => {
@@ -32,35 +40,46 @@ const TeamPage6183 = () => {
         <div className="team-container" ref={teamContainerRef}>
             <h1>FTC 6183 - Thunderducks</h1>
             <div className="social-links">
-                <a href="https://youtube.com/FTC731" target="_blank" rel="noopener noreferrer">
-                    <img src={youtubeLogo} alt="YouTube" />
+                <a href="https://www.tiktok.com/@ftc6183" target="_blank" rel="noopener noreferrer">
+                    <img src={tiktokLogo} alt="TikTok" />
                 </a>
-                <a href="https://instagram.com/FTC731" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/ftc6183/" target="_blank" rel="noopener noreferrer">
                     <img src={instagramLogo} alt="Instagram" />
+                </a>
+                <a href="mailto:ftc6183@ecgrobotics.org" target="_blank" rel="noopener noreferrer">
+                    <img src={gmailLogo} alt="Gmail" />
                 </a>
                 {/* Add more social links as needed */}
             </div>
             <section className="overview">
                 <h2>Overview</h2>
-                <p>Welcome to the team page for FTC 731, also known as Wannabee Strange. We are a dedicated team of robotics enthusiasts who strive for excellence in every competition.</p>
+                <p> Welcome to the official team page for FTC 6183 – Thunder Ducks!
+                We strive to grow as a team and exemplify the ideals of FIRST and gracious professionalism to the fullest extent. Not only do we focus on making the best robot each season through CAD, mechanical, and programming, but we are always on the lookout for ways to help impact our local and greater community in a positive manner. 
+                Our team is looking forward to this upcoming season as a chance to learn new skill sets, teach kids and organizations in our community, and do our very best as a team to have the best season!
+                    <br/>
+                </p>
             </section>
+            <img src={comp1} alt="Team Picture" className = "team-photo" />
+            <br/>
+            <br/>
             <section className="history">
-                <h2>Team History</h2>
-                <p>FTC 731 has a rich history of achievements and milestones. Our team has consistently performed well in various competitions, earning numerous awards and recognitions.</p>
+                <h2>Awards and Achievements</h2>
+                <br/>
+                <br/>
                 <ul>
-                    <li>2024-2025: INTO THE DEEP
+                    <li> <b> 2024-2025: INTO THE DEEP </b>
                         <ul>
                             <li>XYZ Qualifier - XYZ Award</li>
                             <li>XYZ Qualifier - XYZ Award</li>
                         </ul>
                     </li>
-                    <li>2024-2025: INTO THE DEEP
+                    <li> <b> 2024-2025: INTO THE DEEP </b>
                         <ul>
                             <li>XYZ Qualifier - XYZ Award</li>
                             <li>XYZ Qualifier - XYZ Award</li>
                         </ul>
                     </li>
-                    <li>2024-2025: INTO THE DEEP
+                    <li> <b> 2024-2025: INTO THE DEEP </b>
                         <ul>
                             <li>XYZ Qualifier - XYZ Award</li>
                             <li>XYZ Qualifier - XYZ Award</li>
@@ -72,33 +91,14 @@ const TeamPage6183 = () => {
             <section className="outreach">
                 <h2>Outreach</h2>
                 <div className="outreach-project">
-                    <h3>Robotics Workshop at Local School</h3>
-                    <p>We conducted a robotics workshop at a local school to inspire young students to pursue STEM education and careers.</p>
                     <Gallery 
-                        images={galleryImages} 
-                        width = {Math.min(window.innerWidth, galleryWidth) * 0.2}
-                        height = {Math.min(window.innerWidth, galleryWidth) * 0.2 * 0.625}
-                    />
-                </div>
-                <div className="outreach-project">
-                    <h3>Community Clean-Up Drive</h3>
-                    <p>Our team organized a community clean-up drive to promote environmental awareness and responsibility.</p>
-                    <Gallery 
-                        images={galleryImages} 
-                        width = {Math.min(window.innerWidth, galleryWidth) * 0.2}
-                        height = {Math.min(window.innerWidth, galleryWidth) * 0.2 * 0.625}
+                        images={outreachGallery} 
+                        idth = {Math.min(window.innerWidth, galleryWidth) * 0.3}
+                    height = {Math.min(window.innerWidth, galleryWidth) * 0.3 * 0.625}
                     />
                 </div>
                 {/* Add more outreach projects as needed */}
-            </section>
-            <section className="media">
-                <h2>Media Gallery</h2>
-                <Gallery 
-                    images={galleryImages} 
-                    width = {Math.min(window.innerWidth, galleryWidth) * 0.3}
-                    height = {Math.min(window.innerWidth, galleryWidth) * 0.3 * 0.625}
-                />
-            </section>
+                </section>
         </div>
     );
 };
