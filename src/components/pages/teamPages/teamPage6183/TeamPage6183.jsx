@@ -69,23 +69,28 @@ const TeamPage6183 = () => {
                 <ul>
                     <li> <b> 2024-2025: INTO THE DEEP </b>
                         <ul>
-                            <li>XYZ Qualifier - XYZ Award</li>
-                            <li>XYZ Qualifier - XYZ Award</li>
+                            <li>Ascend Leadership Academy-Saturday Connect Award Winner</li>
+                            <li>Salem Academy-Sunday Connect Award Winner</li>
                         </ul>
                     </li>
-                    <li> <b> 2024-2025: INTO THE DEEP </b>
+                    <li> <b> 2023-2024: CENTERSTAGE </b>
                         <ul>
-                            <li>XYZ Qualifier - XYZ Award</li>
-                            <li>XYZ Qualifier - XYZ Award</li>
+                            <li>NC FTC Southern Guilford High School Control Award 2nd Place </li>
+                            <li>NC FTC Salem Academy Motivate Award Winner</li>
                         </ul>
                     </li>
-                    <li> <b> 2024-2025: INTO THE DEEP </b>
+                    <li> <b> 2022-2023: POWERPLAY </b>
                         <ul>
-                            <li>XYZ Qualifier - XYZ Award</li>
-                            <li>XYZ Qualifier - XYZ Award</li>
+                            <li>NC FTC Salem Academy and College Design Award Winner</li>
+                            <li>NC FTC Western MS Motivate Award 3rd Place, Design Award 2nd Place</li>
                         </ul>
                     </li>
-                    {/* Add more achievements as needed */}
+                    <li> <b> 2021-2022: Freight Frenzy </b>
+                        <ul>
+                            <li>North Carolina State Championship Finalist Alliance 2nd Pick, Design Award 2nd Place</li>
+                            <li>NC Qualifier (Elon) Design Award 2nd Place</li>
+                        </ul>
+                    </li>
                 </ul>
             </section>
             <section className="outreach">
