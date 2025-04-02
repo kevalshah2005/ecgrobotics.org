@@ -15,6 +15,7 @@ import TeamPage1533 from './components/pages/teamPages/teamPage1533/TeamPage1533
 import { useEffect } from "react";
 import Sponsors from './components/pages/sponsors/Sponsors';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from "@vercel/analytics/react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -56,6 +57,7 @@ function App() {
         <Footer />
       </Router>
       <SpeedInsights />
+      <Analytics />
     </>
   );
 }
