@@ -18,6 +18,12 @@
     --team731-glass-edge: rgba(106, 76, 255, 0.25);
     --team731-glass-blur: 20px;
     --team731-glass-radius: 16px;
+
+    --team731-font-xl: 2.75rem;
+    --team731-font-lg: 2rem;
+    --team731-font-base: 1.2rem;
+    --team731-font-sm: 1rem;
+    --team731-font-xs: 0.85rem;
 }
 
 /* Background Container - Scoped */
@@ -58,7 +64,7 @@
 /* Title Text */
 .team731-title-box h1 {
     margin: 0;
-    font-size: 2.2rem;
+    font-size: var(--team731-font-xs);
     font-family: 'Barlow Semi Condensed', sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -147,6 +153,10 @@
     position: relative;
     z-index: 2;
     color: var(--team731-text-light);
+}  
+
+.team731-container p {
+    font-size: var(--team731-font-base);
 }
 
 /* Team Title Box - Scoped */
@@ -166,7 +176,7 @@
 
 .team731-title-box h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: var(--team731-font-xl);
     font-family: 'Barlow Semi Condensed', sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -185,6 +195,28 @@
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3),
                 inset 0 0 20px rgba(106, 76, 255, 0.15);
     animation: team731-fadeIn 0.6s ease-out forwards;
+}
+
+.team731-section h2 {
+    font-size: var(--team731-font-lg);
+    margin-bottom: var(--team731-font-xs);
+}
+
+.team731-history ul {
+    list-style-type: disc;
+    padding-left: var(--team731-font-base);
+    text-align: left;
+    margin-top: var(--team731-font-xs);
+}
+
+.team731-history li {
+    font-size: var(--team731-font-base);
+    color: var(--team731-text-light);
+    margin-bottom: var(--team731-font-xs);
+}
+
+.team731-history ul ul {
+    margin-top: var(--team731-font-xs);
 }
 
 /* Mentorship Program - Scoped */
@@ -224,11 +256,11 @@
     color: var(--team731-secondary);
     font-weight: 600;
     margin: 0.5rem 0;
-    font-size: 1.1rem;
+    font-size: var(--team731-font-base);
 }
 
 .team731-mentor-bio {
-    font-size: 0.95rem;
+    font-size: var(--team731-font-sm);
     line-height: 1.6;
     opacity: 0.9;
 }

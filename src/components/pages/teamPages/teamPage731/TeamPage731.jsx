@@ -24,7 +24,8 @@ import outreach1 from '../../../../assets/FTC731/outreach1.jpg';
 import outreach2 from '../../../../assets/FTC731/outreach2.jpg';
 import outreach3 from '../../../../assets/FTC731/outreach3.jpg';
 import outreach4 from '../../../../assets/FTC731/outreach4.jpg';
-import teamLogo from '../../../../assets/FTC731/logo.jpg'
+import teamLogo from '../../../../assets/FTC731/logo.jpg';
+
 const TeamPage731 = () => {
     const teamContainerRef = useRef(null);
     const [galleryWidth, setGalleryWidth] = useState(0);
@@ -33,7 +34,7 @@ const TeamPage731 = () => {
 
     useEffect(() => {
         document.body.classList.add('team731-page-body');
-        
+
         if (teamContainerRef.current) {
             const computedStyle = getComputedStyle(teamContainerRef.current);
             setGalleryWidth(parseFloat(computedStyle.maxWidth));
@@ -43,14 +44,14 @@ const TeamPage731 = () => {
             const scrollPosition = window.scrollY;
             const windowHeight = window.innerHeight;
             const bgIndex = Math.min(
-                2, 
+                2,
                 Math.floor(scrollPosition / (windowHeight * 0.75))
             );
             setCurrentBg(bgIndex);
         };
 
         window.addEventListener('scroll', handleScroll);
-        
+
         return () => {
             document.body.classList.remove('team731-page-body');
             window.removeEventListener('scroll', handleScroll);
@@ -58,7 +59,7 @@ const TeamPage731 = () => {
     }, []);
 
     const teamMembers = [
-        { id: 1, name: "Ishan Mahapatra", role: "Team Captain - Build", img: patra },
+        { id: 1, name: "Ishan Mahapatra", role: "Team Captain - Build", img: patra, isCaptain: true },
         { id: 2, name: "Nikunj Gupta", role: "Co-Captain - Build/Program", img: nikunj },
         { id: 3, name: "Teja Chitta", role: "Build", img: teja },
         { id: 4, name: "Alex Chen", role: "Build", img: alexc },
@@ -70,15 +71,15 @@ const TeamPage731 = () => {
     ];
 
     const mentors = [
-        { id: 1, name: "Keval Shah", role: "Programming Mentor", img: mentor1, bio: "Current Computer Science student at UT Dallas.", isCaptain:true },
+        { id: 1, name: "Keval Shah", role: "Programming Mentor", img: mentor1, bio: "Current Computer Science student at UT Dallas.", isCaptain: true },
         { id: 2, name: "Kevin Limanto", role: "Engineering Mentor", img: mentor2, bio: "Current Robotics Engineer at Mack Trucks." },
         { id: 3, name: "Timothy Vo", role: "Engineering Mentor", img: mentor3, bio: "Current Mechanical Engineering student at NC state University." },
         { id: 4, name: "Zeel Patel", role: "Cadding and Design Mentor", img: mentor4, bio: "Former Volvo Intern, soon to be a Honda Jet Intern, and an aerospace engineering major from NC State University." },
-        { id: 5, name: "Arihant Singh", role: "Programming Mentor", img: mentor5, bio: "Current Computer Engineering student at Duke University."},
-        { id: 6, name: "Lakshaya Mehta", role: "Engineering Mentor", img: mentor6, bio: "Current Mechanical Engineering at Georgia Tech University."},
-        { id: 7, name: "Aparna Tata", role: "Electrical Engineering Mentor", img: blank, bio: "Current Senior Electrical Engineer at Analog Devices Inc. with over 15 years of experience."},
-        { id: 8, name: "Shiv Oza", role: "Design Mentor", img: blank, bio: "Currently working at SpaceX"},
-        { id: 9, name: "Aarushi Ahuja", role: "Outreach Mentor", img: blank, bio: "Graduate from Stanford University."},
+        { id: 5, name: "Arihant Singh", role: "Programming Mentor", img: mentor5, bio: "Current Computer Engineering student at Duke University." },
+        { id: 6, name: "Lakshaya Mehta", role: "Engineering Mentor", img: mentor6, bio: "Current Mechanical Engineering at Georgia Tech University." },
+        { id: 7, name: "Aparna Tata", role: "Electrical Engineering Mentor", img: blank, bio: "Current Senior Electrical Engineer at Analog Devices Inc. with over 15 years of experience." },
+        { id: 8, name: "Shiv Oza", role: "Design Mentor", img: blank, bio: "Currently working at SpaceX" },
+        { id: 9, name: "Aarushi Ahuja", role: "Outreach Mentor", img: blank, bio: "Graduate from Stanford University." },
     ];
 
     const galleryImages = {
@@ -88,23 +89,25 @@ const TeamPage731 = () => {
     };
 
     return (
-        <div className="team731-page-wrapper" 
-             style={{ 
+        <div
+            className="team731-page-wrapper"
+            style={{
                 backgroundImage: `linear-gradient(rgba(10, 10, 10, 0.75), rgba(10, 10, 10, 0.75)), url(${backgrounds[currentBg]})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundAttachment: 'fixed'
-             }}>
+            }}
+        >
             <div className="team731-container" ref={teamContainerRef}>
                 {/* Boxed Team Title */}
                 <div className="team731-title-box-container">
-            <div className="team731-title-box">
-                <h1>FTC 731 - Wannabee Strange</h1>
-            </div>
-            <div className="team731-logo-container">
-                <img src={teamLogo} alt="Team 731 Logo" className="team731-logo" />
-            </div>
-        </div>
+                    <div className="team731-title-box">
+                        <h1>FTC 731 - Wannabee Strange</h1>
+                    </div>
+                    <div className="team731-logo-container">
+                        <img src={teamLogo} alt="Team 731 Logo" className="team731-logo" />
+                    </div>
+                </div>
                 <div className="team731-social-links">
                     <a href="https://youtube.com/FTC731" target="_blank" rel="noopener noreferrer">
                         <img src={youtubeLogo} alt="YouTube" />
@@ -113,36 +116,36 @@ const TeamPage731 = () => {
                         <img src={instagramLogo} alt="Instagram" />
                     </a>
                 </div>
-                <section className="team731-section overview">
+                <section className="team731-section team731-overview">
                     <h2>Overview</h2>
                     <p>Welcome to FTC 731, Wannabee Strange. We're an innovative robotics team pushing the boundaries of STEM education through competition and community outreach.</p>
                 </section>
-                <section className="team731-section members">
+                <section className="team731-section team731-members">
                     <h2>Our Team</h2>
                     <div className="team731-members-grid">
                         {teamMembers.map(member => (
                             <div key={member.id} className={`team731-member-card ${member.isCaptain ? 'team731-captain' : ''}`}>
                                 {member.img && (
-                                    <img 
-                                        src={member.img} 
-                                        alt={member.name} 
-                                        className="team731-member-avatar" 
+                                    <img
+                                        src={member.img}
+                                        alt={member.name}
+                                        className="team731-member-avatar"
                                     />
                                 )}
-                                <h3>{member.name}</h3>
+                                <p><b>{member.name}</b></p>
                                 <p>{member.role} {member.isCaptain && '⭐'}</p>
                             </div>
                         ))}
                     </div>
                 </section>
-                <section className="team731-section history">
+                <section className="team731-section team731-history">
                     <h2>Team History</h2>
                     <p>Since our founding, we've earned multiple awards for robot design and community impact:</p>
                     <ul>
                         <li>2024-2025: INTO THE DEEP
                             <ul>
                                 <li>Control Award Winner</li>
-                                <li>Design Award Winnter</li>
+                                <li>Design Award Winner</li>
                             </ul>
                         </li>
                         <li>2023-2024: CENTERSTAGE
@@ -180,16 +183,15 @@ const TeamPage731 = () => {
                         </li>
                     </ul>
                 </section>
-
-                <section className="team731-section mentorship">
+                <section className="team731-section team731-mentorship">
                     <h2>STEM Mentorship Program</h2>
                     <div className="team731-mentors-grid">
                         {mentors.map(mentor => (
                             <div key={mentor.id} className="team731-mentor-card">
-                                <img 
-                                    src={mentor.img} 
-                                    alt={mentor.name} 
-                                    className="team731-mentor-avatar" 
+                                <img
+                                    src={mentor.img}
+                                    alt={mentor.name}
+                                    className="team731-mentor-avatar"
                                 />
                                 <h3>{mentor.name}</h3>
                                 <p className="team731-mentor-role">{mentor.role}</p>
@@ -198,60 +200,54 @@ const TeamPage731 = () => {
                         ))}
                     </div>
                 </section>
-                <section className="team731-section outreach">
-    <h2>Community Outreach</h2>
-    
-    {/* Project 1 */}
-    <div className="team731-outreach-project">
-        <h3>Roboween Outreach</h3>
-        <div className="team731-outreach-content">
-            <img 
-                src={galleryImages.outreach[0]} 
-                alt="Roboween" 
-                className="team731-outreach-image"
-            />
-            <div className="team731-outreach-text">
-                <p>As an organization, ECG Robotics does their annual Roboween event. This year we partnered with the United Way Greensboro. At this event, we introduced over 50 people to FIRST robotics, and connected with over a thousand kids.</p>
-                <p>This event was an amazing experience to connect with our community and display the robot along with all its innovative features.</p>
-            </div>
-        </div>
-    </div>
-    
-    {/* Project 2 */}
-    <div className="team731-outreach-project">
-        <h3>Library Outreach</h3>
-        <div className="team731-outreach-content">
-            <img 
-                src={galleryImages.outreach[1]} 
-                alt="Library Outreach" 
-                className="team731-outreach-image"
-            />
-            <div className="team731-outreach-text">
-                <p>We partnered with local public libraries in several demonstrations where some of our members showcased FIRST and fostered interest in STEM from our local youth. A lot of our rookies took part in these demonstrations, so they learned the importance of inspiring youth about STEM and it was a good way for them to reflect on everything they learned this season.</p>
-            </div>
-        </div>
-    </div>
-    <div className="team731-outreach-project">
-        <h3>Bricksboro Outreach</h3>
-        <div className="team731-outreach-content">
-            <img 
-                src={galleryImages.outreach[2]} 
-                alt="Bricksboro" 
-                className="team731-outreach-image"
-            />
-            <div className="team731-outreach-text">
-                <p>We met with several FLL teams and members of our community to showcase our robot. We also answered various questions that kids had about the engineering and design process, about robotics and STEM related fields.</p>
-                <p>Through this event we reached over a thousand people and introduced over 50 students to FIRST Robotics. </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
+                <section className="team731-section team731-outreach">
+                    <h2>Community Outreach</h2>
+                    <div className="team731-outreach-project">
+                        <h3>Roboween Outreach</h3>
+                        <div className="team731-outreach-content">
+                            <img
+                                src={galleryImages.outreach[0]}
+                                alt="Roboween"
+                                className="team731-outreach-image"
+                            />
+                            <div className="team731-outreach-text">
+                                <p>As an organization, ECG Robotics does their annual Roboween event. This year we partnered with the United Way Greensboro. At this event, we introduced over 50 people to FIRST robotics, and connected with over a thousand kids.</p>
+                                <p>This event was an amazing experience to connect with our community and display the robot along with all its innovative features.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="team731-outreach-project">
+                        <h3>Library Outreach</h3>
+                        <div className="team731-outreach-content">
+                            <img
+                                src={galleryImages.outreach[1]}
+                                alt="Library Outreach"
+                                className="team731-outreach-image"
+                            />
+                            <div className="team731-outreach-text">
+                                <p>We partnered with local public libraries in several demonstrations where some of our members showcased FIRST and fostered interest in STEM from our local youth. A lot of our rookies took part in these demonstrations, so they learned the importance of inspiring youth about STEM and it was a good way for them to reflect on everything they learned this season.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="team731-outreach-project">
+                        <h3>Bricksboro Outreach</h3>
+                        <div className="team731-outreach-content">
+                            <img
+                                src={galleryImages.outreach[2]}
+                                alt="Bricksboro"
+                                className="team731-outreach-image"
+                            />
+                            <div className="team731-outreach-text">
+                                <p>We met with several FLL teams and members of our community to showcase our robot. We also answered various questions that kids had about the engineering and design process, about robotics and STEM related fields.</p>
+                                <p>Through this event we reached over a thousand people and introduced over 50 students to FIRST Robotics. </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section className="team731-section media">
                     <h2>Media Gallery</h2>
-                    <Gallery 
-                        images={galleryImages.media} 
+                    <Gallery
+                        images={galleryImages.media}
                         width={Math.min(window.innerWidth, galleryWidth) * 0.3}
                         height={Math.min(window.innerWidth, galleryWidth) * 0.3 * 0.625}
                     />
