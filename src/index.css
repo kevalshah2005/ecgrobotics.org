@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', 'Monsterrat', Arial, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 :root {
@@ -29,13 +29,11 @@
   --link-color: var(--light-blue);
 
   /* Font Sizes */
-  --font-2xs: 0.75rem;
-  --font-xs: 1rem;
-  --font-sm: 1.5rem;
-  --font-base: 2rem;
-  --font-lg: 3rem;
-  --font-xl: 4.5rem;
-  --font-2xl: 6.25rem;
+  --font-xl: 2.5rem;
+    --font-lg: 1.8rem;
+    --font-base: 1.1rem;
+    --font-sm: 0.9rem;
+    --font-xs: 0.75rem;
 }
 
 body {
