@@ -144,41 +144,41 @@ const TeamPage731 = () => {
                     <ul>
                         <li>2024-2025: INTO THE DEEP
                             <ul>
-                                <li>Control Award Winner</li>
-                                <li>Design Award Winner</li>
+                                <li>Control Award Winner - Ascend Leadership Academy</li>
+                                <li>Design Award Winner - Salem Academy</li>
                             </ul>
                         </li>
                         <li>2023-2024: CENTERSTAGE
                             <ul>
-                                <li>Design Award Winner</li>
-                                <li>Inspire Award 2nd Place, Winning Alliance Captain, Control Award Winner</li>
-                                <li>Finalist Alliance Captain at State Championship, Control Award 2nd Place</li>
+                                <li>Design Award Winner - NC FTC Ascend Leadership Academy</li>
+                                <li>Inspire Award 2nd Place, Winning Alliance Captain, Control Award Winner - NC FTC Southern Guilford High School</li>
+                                <li>Finalist Alliance Captain, Control Award 2nd Place - North Carolina FTC State Championship</li>
                             </ul>
                         </li>
                         <li>2022-2023: POWERPLAY
                             <ul>
-                                <li>Inspire Award Winner</li>
-                                <li>Connect Award Winner, Motivate Award 3rd Place</li>
-                                <li>Connect Award 2nd Place</li>
+                                <li>Inspire Award Winner - NC FTC Smithfield-Selma HS</li>
+                                <li>Connect Award Winner, Motivate Award 3rd Place - NC FTC Salem Academy and College</li>
+                                <li>Connect Award 2nd Place - North Carolina FTC State Championship</li>
                             </ul>
                         </li>
                         <li>2021-2022: FREIGHT FRENZY
                             <ul>
-                                <li>Design Award Winner, Dean's List Semifinalist (Matthew Limanto), Dean's List Semifinalist (Zain Bawangaonwala)</li>
-                                <li>Connect Award Winner, Motivate Award 3rd Place</li>
-                                <li>Connect Award 2nd Place</li>
+                                <li>Design Award Winner, Dean's List Semifinalist (Matthew Limanto), Dean's List Semifinalist (Zain Bawangaonwala) - NC FTC Remote Qualifier 3</li>
+                                <li>Connect Award Winner, Motivate Award 3rd Place - NC Qualifier (Elon)</li>
                             </ul>
                         </li>
                         <li>2020-2021: ULTIMATE GOAL
                             <ul>
-                                <li>Design Award Winner, Dean's List Semifinalist (Sonia Akkiangadi), Dean's List Semifinalist (Victoria Uchman)</li>
-                                <li>Innovate Award 3rd Place, Design Award 2nd Place, Dean's List Semifinalist (Victoria Uchman), Dean's List Semifinalist (Sonia Akkiangadi)</li>
+                                <li>Design Award Winner, Dean's List Semifinalist (Sonia Akkiangadi), Dean's List Semifinalist (Victoria Uchman) - NC FTC Qualifier #8 REMOTE</li>
+                                <li>Innovate Award 3rd Place, Design Award 2nd Place, Dean's List Semifinalist (Victoria Uchman), Dean's List Semifinalist (Sonia Akkiangadi) - NC FTC Qualifier #4 REMOTE</li>
                             </ul>
                         </li>
                         <li>2019-2020: SKYSTONE
                             <ul>
-                                <li>Inspire Award 3rd Place, Motivate Award Winner</li>
-                                <li>Think Award Winner, Design Award Winner</li>
+                                <li>Inspire Award 3rd Place, Motivate Award Winner - Northern Guilford High School QT</li>
+                                <li>Think Award Winner - Southern Guilford High School QT</li>
+                                <li>Design Award Winner - North Carolina FIRST Tech Challenge State Championship Tournament</li>
                             </ul>
                         </li>
                     </ul>
@@ -244,14 +244,7 @@ const TeamPage731 = () => {
                         </div>
                     </div>
                 </section>
-                <section className="team731-section media">
-                    <h2>Media Gallery</h2>
-                    <Gallery
-                        images={galleryImages.media}
-                        width={Math.min(window.innerWidth, galleryWidth) * 0.3}
-                        height={Math.min(window.innerWidth, galleryWidth) * 0.3 * 0.625}
-                    />
-                </section>
+                
             </div>
         </div>
     );
