@@ -1,4 +1,4 @@
-.team-container {
+.team5795-team-container {
     max-width: 1200px;
     width: 90%;
     margin: 2rem auto;
@@ -7,120 +7,208 @@
     text-align: center;
 }
 
-.team-container > h1 {
+.team5795-team-container > h1 {
     font-size: var(--font-xl);
     margin-bottom: var(--font-xs);
     color: var(--main-text-color);
 }
 
-.team-container > p {
+.team5795-team-container > p {
     font-size: var(--font-base);
     margin-bottom: var(--font-lg);
     color: var(--main-text-color);
 }
 
-.social-links {
+.team5795-member-section {
+    background-color: #000;
+    padding: 4rem; /* Increased padding for a taller section */
+    border-radius: 12px;
+    margin: 4rem 0; /* Increased margin for spacing */
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem; /* Increased base text size */
+    line-height: 1.8;
+}
+
+.team5795-member-section h2 {
+    font-size: 3rem; /* Much bigger heading */
+    margin-bottom: 2rem; /* More space below the heading */
+    color: #00f6ff;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.team5795-member-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 900px; /* Wider list container */
+}
+
+.team5795-member-section li {
+    font-size: 1.8rem; /* Much larger font size */
+    margin: 1.5rem 0; /* Increased margin between names */
+    font-weight: 500;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .team5795-member-section ul {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .team5795-member-section li {
+        margin: 1rem 0; /* Slightly smaller margin on mobile */
+    }
+
+    .team5795-member-section h2 {
+        font-size: 2.5rem; /* Smaller heading on mobile */
+    }
+
+    .team5795-member-section li {
+        font-size: 1.6rem; /* Slightly smaller font size on mobile */
+    }
+}
+
+
+.team5795-social-links {
     margin-bottom: var(--font-lg);
 }
 
-.social-links a {
+.team5795-social-links a {
     margin: 0 var(--font-xs);
     color: var(--link-color);
     text-decoration: none;
 }
 
-.social-links a:hover {
+.team5795-social-links a:hover {
     text-decoration: underline;
 }
 
-.social-links img {
+.team5795-social-links img {
     width: 40px;
     height: 40px;
     margin: 0 var(--font-xs);
 }
 
-.overview, .history, .outreach, .media {
+.team5795-overview,
+.team5795-history,
+.team5795-outreach,
+.team5795-media {
+    background-color: #0e0e0e;
     margin-bottom: var(--font-lg);
+    padding: 2rem;
+    border-radius: 12px;
+    color: #f0f0f0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    font-family: 'Segoe UI', sans-serif;
 }
 
-.overview h2, .history h2, .outreach h2, .media h2 {
+.team5795-overview h2,
+.team5795-history h2,
+.team5795-outreach h2,
+.team5795-media h2 {
     font-size: var(--font-xl);
-    color: var(--main-text-color);
+    color: #00f6ff;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
     margin-bottom: var(--font-xs);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.overview p, .history p, .outreach p {
+.team5795-overview p,
+.team5795-history p,
+.team5795-outreach p {
     font-size: var(--font-base);
-    color: var(--main-text-color);
+    color: #d0d0d0;
     margin-bottom: var(--font-base);
+    line-height: 1.6;
+    text-align: center;
 }
 
-.history ul, .outreach ul {
+.team5795-history ul,
+.team5795-outreach ul {
     list-style-type: disc;
-    padding-left: var(--font-base);
+    padding-left: 1.5rem;
     text-align: left;
+    margin-top: 1rem;
 }
 
-.history li, .outreach li {
+.team5795-history li,
+.team5795-outreach li {
     font-size: var(--font-base);
-    color: var(--main-text-color);
+    color: #ccc;
     margin-bottom: var(--font-xs);
 }
 
-.history ul ul {
+.team5795-history ul ul {
     margin-top: var(--font-xs);
 }
 
-.outreach-project {
+.team5795-outreach-project {
     margin-bottom: var(--font-lg);
 }
 
-.outreach-project h3 {
+.team5795-outreach-project h3 {
     font-size: var(--font-lg);
-    color: var(--main-text-color);
+    color: #0ff;
+    font-weight: 600;
     margin-bottom: var(--font-xs);
+    text-align: center;
 }
 
-.outreach-project p {
+.team5795-outreach-project p {
     font-size: var(--font-base);
-    color: var(--main-text-color);
+    color: #d0d0d0;
     margin-bottom: var(--font-xs);
+    text-align: center;
 }
 
 @media (max-width: 768px) {
-    .team-container {
+    .team5795-team-container {
         padding: var(--font-base);
     }
 
-    .team-container > h1 {
+    .team5795-team-container > h1 {
         font-size: var(--font-lg);
     }
 
-    .team-container > p {
+    .team5795-team-container > p {
         font-size: var(--font-sm);
     }
 
-    .overview h2, .history h2, .outreach h2, .media h2 {
+    .team5795-overview h2,
+    .team5795-history h2,
+    .team5795-outreach h2,
+    .team5795-media h2 {
         font-size: var(--font-lg);
     }
 
-    .overview p, .history p, .outreach p {
+    .team5795-overview p,
+    .team5795-history p,
+    .team5795-outreach p {
         font-size: var(--font-sm);
     }
 
-    .history ul, .outreach ul {
+    .team5795-history ul,
+    .team5795-outreach ul {
         padding-left: var(--font-sm);
     }
 
-    .history li, .outreach li {
+    .team5795-history li,
+    .team5795-outreach li {
         font-size: var(--font-sm);
     }
 
-    .outreach-project h3 {
+    .team5795-outreach-project h3 {
         font-size: var(--font-base);
     }
 
-    .outreach-project p {
+    .team5795-outreach-project p {
         font-size: var(--font-sm);
     }
+    
 }

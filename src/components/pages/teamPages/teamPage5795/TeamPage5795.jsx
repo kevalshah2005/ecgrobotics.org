@@ -1,17 +1,22 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './TeamPage5795.css';
-import youtubeLogo from '../../../../assets/logo731.webp';
-import instagramLogo from '../../../../assets/logo731.webp';
-import exampleGalleryImage from '../../../../assets/731_2019teampic.webp';
+import youtubeLogo from '../../../../assets/YoutubeLogo.webp';
+import instagramLogo from '../../../../assets/InstagramLogo.webp';
+import image1 from '../../../../assets/FTC5795/hardwork.jpg';
+import image2 from '../../../../assets/FTC5795/table.jpg';
+import image3 from '../../../../assets/5795_working.webp';
+import image4 from '../../../../assets/FTC5795/botdemo.jpg';
+import image5 from '../../../../assets/FTC5795/ahmed.jpg';
 import Gallery from '../../../gallery/Gallery';
-
+import teampic from '../../../../assets/FTC5795/ftc5795teampic.jpg';
+import teamlogo from '../../../../assets/FTC5795/5795NewLogoFinal.png';
 /* edit gallery images as needed */
 var galleryImages = [
-    exampleGalleryImage,
-    exampleGalleryImage,
-    exampleGalleryImage,
-    exampleGalleryImage,
-    exampleGalleryImage
+    image1,
+    image2,
+    image3,
+    image4,
+    image5, 
 ];
 
 const TeamPage5795 = () => {
@@ -27,25 +32,62 @@ const TeamPage5795 = () => {
     }, []);
 
     return (
-        <div className="team-container" ref={teamContainerRef}>
+        <div className="team5795-team-container" ref={teamContainerRef}>
             <h1>FTC 5795 - Back to the Drawing Board</h1>
-            <div className="social-links">
-                <a href="https://youtube.com/FTC731" target="_blank" rel="noopener noreferrer">
+            <div className="team5795-social-links">
+                <a href="https://www.youtube.com/@ftc5795" target="_blank" rel="noopener noreferrer">
                     <img src={youtubeLogo} alt="YouTube" />
                 </a>
-                <a href="https://instagram.com/FTC731" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/ftc5795/?hl=en" target="_blank" rel="noopener noreferrer">
                     <img src={instagramLogo} alt="Instagram" />
                 </a>
             </div>
-            <section className="overview">
+            <div className="team5795-image-container">
+            <img 
+    src={teampic} 
+    alt="Team 5795 Group Photo" 
+    style={{
+        width: '80%',
+        maxWidth: '800px',
+        height: 'auto',
+        borderRadius: '10px',
+        boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
+        marginBottom: '2rem' // <- space
+    }}
+/>
+            </div>
+            <section className="team5795-overview">
                 <h2>Who is FTC 5795?</h2>
                 <p>
-                    5795 is the third of four FTC teams sponsored by ECG Robotics in Greensboro, NC and was founded in 2013 as a team of freshmen who were interested in exploring the opportunities that FIRST had to offer. As our team name suggests, we are never afraid to go Back to the Drawing Board. Each year brings new robot designs and redesigns, outreach and more outreach, and both long-term and short-term goals.
+                    
                 </p>
+                <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', margin: 0 }}>
+    <img 
+        src={teamlogo} 
+        alt="Team Logo" 
+        style={{ 
+            width: '300px',  // Image size
+            height: 'auto', 
+            float: 'left', 
+            marginRight: '40px',  // More space between the image and the text
+            marginBottom: '20px', // More space below the image
+            padding: '15px' // Optional padding around the image
+        }} 
+    />
+    <p style={{ 
+        fontSize: '2rem',  // Increased font size for more emphasis
+        lineHeight: '1.8',   // Adjusted line height for better readability
+        color: 'inherit',    // Keeps the existing color (inherits from parent)
+        maxWidth: '800px',   // Optional: Limit text width for better layout
+    }}>
+        5795 is the third of four FTC teams sponsored by ECG Robotics in Greensboro, NC and was founded in 2013 as a team of freshmen who were interested in exploring the opportunities that FIRST had to offer. As our team name suggests, we are never afraid to go Back to the Drawing Board. Each year brings new robot designs and redesigns, outreach and more outreach, and both long-term and short-term goals.
+    </p>
+</div>
+                
             </section>
-            <section className="history">
-                <h2>Team History</h2>
-                <ul>
+            <section className="team5795-history">
+                <h2 style={{ marginBottom: '1.5rem' }}>Team History</h2>
+                    <ul>
                     <li>2014 BLOCK PARTY! - Control Award at Southern Guilford Qualifier</li>
                     <li>2015 CASCADE EFFECT - 2nd Place Alliance Team</li>
                     <li>2016 FIRST RES-Q
@@ -66,7 +108,7 @@ const TeamPage5795 = () => {
                     <li>2024 INTO THE DEEP - Control Award 1st at States</li>
                 </ul>
             </section>
-            <section className="team-members">
+            <section className="team5795-member-section">
                 <h2>Team Members</h2>
                 <ul>
                     <li>Suhaan - Captain & Programming</li>
@@ -78,34 +120,20 @@ const TeamPage5795 = () => {
                     <li>Ahmed - Mechanical</li>
                 </ul>
             </section>
-            <section className="outreach">
+            <section className="team5795-outreach">
                 <h2>Outreach</h2>
-                <div className="outreach-project">
-                    <h3>Robotics Workshop at Local School</h3>
-                    <p>We conducted a robotics workshop at a local school to inspire young students to pursue STEM education and careers.</p>
-                    <Gallery 
-                        images={galleryImages} 
-                        width={Math.min(window.innerWidth, galleryWidth) * 0.2}
-                        height={Math.min(window.innerWidth, galleryWidth) * 0.2 * 0.625}
-                    />
-                </div>
-                <div className="outreach-project">
-                    <h3>Community Clean-Up Drive</h3>
-                    <p>Our team organized a community clean-up drive to promote environmental awareness and responsibility.</p>
-                    <Gallery 
-                        images={galleryImages} 
-                        width={Math.min(window.innerWidth, galleryWidth) * 0.2}
-                        height={Math.min(window.innerWidth, galleryWidth) * 0.2 * 0.625}
-                    />
+                <div className="team5795-outreach-project">
+                    <h3>India Initiative</h3>
+                    <p>We conducted a 12 week online course to help kids in India learn about mechatronics and programming concepts.</p>
                 </div>
             </section>
-            <section className="media">
+            <section className="team5795-media">
                 <h2>Media Gallery</h2>
                 <Gallery 
-                    images={galleryImages} 
-                    width={Math.min(window.innerWidth, galleryWidth) * 0.3}
-                    height={Math.min(window.innerWidth, galleryWidth) * 0.3 * 0.625}
-                />
+    images={galleryImages} 
+    width={Math.min(window.innerWidth, galleryWidth) * 0.3}
+    height={Math.min(window.innerWidth, galleryWidth) * 0.3 * 0.85} // Increased multiplier to make images taller
+/>
             </section>
         </div>
     );
