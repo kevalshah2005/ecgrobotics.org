@@ -26,8 +26,6 @@ const TeamPage5795 = () => {
         }
     }, []);
 
-    console.log(galleryWidth);
-
     return (
         <div className="team-container" ref={teamContainerRef}>
             <h1>FTC 5795 - Back to the Drawing Board</h1>
@@ -38,35 +36,46 @@ const TeamPage5795 = () => {
                 <a href="https://instagram.com/FTC731" target="_blank" rel="noopener noreferrer">
                     <img src={instagramLogo} alt="Instagram" />
                 </a>
-                {/* Add more social links as needed */}
             </div>
             <section className="overview">
-                <h2>Overview</h2>
-                <p>Welcome to the team page for FTC 731, also known as Wannabee Strange. We are a dedicated team of robotics enthusiasts who strive for excellence in every competition.</p>
+                <h2>Who is FTC 5795?</h2>
+                <p>
+                    5795 is the third of four FTC teams sponsored by ECG Robotics in Greensboro, NC and was founded in 2013 as a team of freshmen who were interested in exploring the opportunities that FIRST had to offer. As our team name suggests, we are never afraid to go Back to the Drawing Board. Each year brings new robot designs and redesigns, outreach and more outreach, and both long-term and short-term goals.
+                </p>
             </section>
             <section className="history">
                 <h2>Team History</h2>
-                <p>FTC 731 has a rich history of achievements and milestones. Our team has consistently performed well in various competitions, earning numerous awards and recognitions.</p>
                 <ul>
-                    <li>2024-2025: INTO THE DEEP
+                    <li>2014 BLOCK PARTY! - Control Award at Southern Guilford Qualifier</li>
+                    <li>2015 CASCADE EFFECT - 2nd Place Alliance Team</li>
+                    <li>2016 FIRST RES-Q
                         <ul>
-                            <li>XYZ Qualifier - XYZ Award</li>
-                            <li>XYZ Qualifier - XYZ Award</li>
+                            <li>Inspire Award at all qualifiers and state competition</li>
+                            <li>Finalist Alliance 2nd Pick at States</li>
+                            <li>Winning Alliance 2nd Pick at Southern Super-Regional</li>
+                            <li>Advanced to Worlds, placed 30th in Edison Division (Top 2% Overall)</li>
                         </ul>
                     </li>
-                    <li>2024-2025: INTO THE DEEP
+                    <li>2017 VELOCITY VORTEX
                         <ul>
-                            <li>XYZ Qualifier - XYZ Award</li>
-                            <li>XYZ Qualifier - XYZ Award</li>
+                            <li>Think Award and Inspire Award at all qualifiers and state competition</li>
+                            <li>2nd Place Inspire and 1st Place Rockwell Collins Innovate Award at Super-Regionals</li>
+                            <li>Worlds: Promote Award and PTC Design Award Finalist, 13th in division</li>
                         </ul>
                     </li>
-                    <li>2024-2025: INTO THE DEEP
-                        <ul>
-                            <li>XYZ Qualifier - XYZ Award</li>
-                            <li>XYZ Qualifier - XYZ Award</li>
-                        </ul>
-                    </li>
-                    {/* Add more achievements as needed */}
+                    <li>2024 INTO THE DEEP - Control Award 1st at States</li>
+                </ul>
+            </section>
+            <section className="team-members">
+                <h2>Team Members</h2>
+                <ul>
+                    <li>Suhaan - Captain & Programming</li>
+                    <li>Nick - Programming Lead</li>
+                    <li>Rishi - Co-Mechanical Lead</li>
+                    <li>Achint - Co-Mechanical Lead</li>
+                    <li>Ohm - Mechanical</li>
+                    <li>Nayani - Programming</li>
+                    <li>Ahmed - Mechanical</li>
                 </ul>
             </section>
             <section className="outreach">
@@ -76,8 +85,8 @@ const TeamPage5795 = () => {
                     <p>We conducted a robotics workshop at a local school to inspire young students to pursue STEM education and careers.</p>
                     <Gallery 
                         images={galleryImages} 
-                        width = {Math.min(window.innerWidth, galleryWidth) * 0.2}
-                        height = {Math.min(window.innerWidth, galleryWidth) * 0.2 * 0.625}
+                        width={Math.min(window.innerWidth, galleryWidth) * 0.2}
+                        height={Math.min(window.innerWidth, galleryWidth) * 0.2 * 0.625}
                     />
                 </div>
                 <div className="outreach-project">
@@ -85,18 +94,17 @@ const TeamPage5795 = () => {
                     <p>Our team organized a community clean-up drive to promote environmental awareness and responsibility.</p>
                     <Gallery 
                         images={galleryImages} 
-                        width = {Math.min(window.innerWidth, galleryWidth) * 0.2}
-                        height = {Math.min(window.innerWidth, galleryWidth) * 0.2 * 0.625}
+                        width={Math.min(window.innerWidth, galleryWidth) * 0.2}
+                        height={Math.min(window.innerWidth, galleryWidth) * 0.2 * 0.625}
                     />
                 </div>
-                {/* Add more outreach projects as needed */}
             </section>
             <section className="media">
                 <h2>Media Gallery</h2>
                 <Gallery 
                     images={galleryImages} 
-                    width = {Math.min(window.innerWidth, galleryWidth) * 0.3}
-                    height = {Math.min(window.innerWidth, galleryWidth) * 0.3 * 0.625}
+                    width={Math.min(window.innerWidth, galleryWidth) * 0.3}
+                    height={Math.min(window.innerWidth, galleryWidth) * 0.3 * 0.625}
                 />
             </section>
         </div>
