@@ -1,126 +1,85 @@
-.team-container {
-    max-width: 1200px;
-    width: 90%;
-    margin: 2rem auto;
-    padding: var(--font-lg);
-    border-radius: 10px;
+.team5795-container {
+    background-image: url('../../../../assets/5795_working.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .team5795-content {
+    max-width: 900px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 24px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    color: #ffffff;
     text-align: center;
-}
-
-.team-container > h1 {
-    font-size: var(--font-xl);
-    margin-bottom: var(--font-xs);
-    color: var(--main-text-color);
-}
-
-.team-container > p {
-    font-size: var(--font-base);
-    margin-bottom: var(--font-lg);
-    color: var(--main-text-color);
-}
-
-.social-links {
-    margin-bottom: var(--font-lg);
-}
-
-.social-links a {
-    margin: 0 var(--font-xs);
-    color: var(--link-color);
-    text-decoration: none;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-}
-
-.social-links img {
-    width: 40px;
-    height: 40px;
-    margin: 0 var(--font-xs);
-}
-
-.overview, .history, .outreach, .media {
-    margin-bottom: var(--font-lg);
-}
-
-.overview h2, .history h2, .outreach h2, .media h2 {
-    font-size: var(--font-xl);
-    color: var(--main-text-color);
-    margin-bottom: var(--font-xs);
-}
-
-.overview p, .history p, .outreach p {
-    font-size: var(--font-base);
-    color: var(--main-text-color);
-    margin-bottom: var(--font-base);
-}
-
-.history ul, .outreach ul {
-    list-style-type: disc;
-    padding-left: var(--font-base);
+  }
+  
+  .team5795-header {
+    margin-bottom: 2rem;
+  }
+  
+  .team5795-logo {
+    width: 120px;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+  }
+  
+  .team5795-header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .team5795-socials img {
+    width: 36px;
+    margin: 0 0.5rem;
+    transition: transform 0.2s;
+  }
+  
+  .team5795-socials img:hover {
+    transform: scale(1.1);
+  }
+  
+  .team5795-section {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
     text-align: left;
-}
-
-.history li, .outreach li {
-    font-size: var(--font-base);
-    color: var(--main-text-color);
-    margin-bottom: var(--font-xs);
-}
-
-.history ul ul {
-    margin-top: var(--font-xs);
-}
-
-.outreach-project {
-    margin-bottom: var(--font-lg);
-}
-
-.outreach-project h3 {
-    font-size: var(--font-lg);
-    color: var(--main-text-color);
-    margin-bottom: var(--font-xs);
-}
-
-.outreach-project p {
-    font-size: var(--font-base);
-    color: var(--main-text-color);
-    margin-bottom: var(--font-xs);
-}
-
-@media (max-width: 768px) {
-    .team-container {
-        padding: var(--font-base);
-    }
-
-    .team-container > h1 {
-        font-size: var(--font-lg);
-    }
-
-    .team-container > p {
-        font-size: var(--font-sm);
-    }
-
-    .overview h2, .history h2, .outreach h2, .media h2 {
-        font-size: var(--font-lg);
-    }
-
-    .overview p, .history p, .outreach p {
-        font-size: var(--font-sm);
-    }
-
-    .history ul, .outreach ul {
-        padding-left: var(--font-sm);
-    }
-
-    .history li, .outreach li {
-        font-size: var(--font-sm);
-    }
-
-    .outreach-project h3 {
-        font-size: var(--font-base);
-    }
-
-    .outreach-project p {
-        font-size: var(--font-sm);
-    }
-}
+  }
+  
+  .team5795-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .team5795-section p,
+  .team5795-section ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f0f0f0;
+  }
+  
+  .team5795-section ul {
+    padding-left: 1.5rem;
+    list-style: disc;
+  }
+  
+  .team5795-gallery {
+    margin-top: 2rem;
+  }
+  
+  .team5795-gallery h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
