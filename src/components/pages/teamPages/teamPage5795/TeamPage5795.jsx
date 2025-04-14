@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './TeamPage5795.css';
 import youtubeLogo from '../../../../assets/logo5795.webp';
-import instagramLogo from '../../../../assets/instagramLogo.webp';
+import instagramLogo from '../../../../assets/InstagramLogo.webp';
 import exampleGalleryImage from '../../../../assets/731_2019teampic.webp';
 import teamPhoto from '../../../../assets/5795_working.webp';
 import backgroundVideo from '../../../../assets/FTC5795/IMG_8266.mp4';
