@@ -2,8 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import './TeamPage5795.css';
 import youtubeLogo from '../../../../assets/logo5795.webp';
 import instagramLogo from '../../../../assets/InstagramLogo.webp';
-import exampleGalleryImage from '../../../../assets/731_2019teampic.webp';
-import teamPhoto from '../../../../assets/5795_working.webp';
+import GalleryImage1 from '../../../../assets/FTC5795/outreach1.webp';
+import GalleryImage2 from '../../../../assets/FTC5795/outreach2.jpg';
+import GalleryImage3 from '../../../../assets/FTC5795/outreach3.webp';
+import teamPhoto from '../../../../assets/FTC5795/TEAM.webp';
 import backgroundVideo from '../../../../assets/FTC5795/IMG_8266.mp4';
 import Gallery from '../../../gallery/Gallery';
 
@@ -23,8 +25,8 @@ const TeamPage5795 = () => {
     { name: "Suhaan Temkar", role: "Team Captain - code ★" },
     { name: "Ishaan Sinha", role: "Lead outreach-mechanical" },
     { name: "Ohm Patel", role: "outreach/build" },
-    { name: "Rishi K", role: "Build" },
-    { name: "Nick J", role: "Programming" },
+    { name: "Rishi K", role: "Build Lead" },
+    { name: "Nick J", role: "Programming Lead" },
     { name: "Nayani Annamalai", role: "Build/Outreach" },
   ];
 
@@ -86,14 +88,6 @@ We take pride not just in building competitive robots, but in building a communi
           </div>
         </section>
 
-        {/* Rest of your existing sections */}
-        <section className="team5795-section">
-          <h2>Outreach</h2>
-          <p>
-            Our team mentors FLL teams, hosts community events, and actively supports STEM education across the region.
-          </p>
-        </section>
-
         <section className="team5795-section">
           <h2>Awards</h2>
           <ul>
@@ -105,9 +99,15 @@ We take pride not just in building competitive robots, but in building a communi
           </ul>
         </section>
 
+        <section className="team5795-section">
+          <h2>Outreach</h2>
+          <p>
+            Our team mentors FLL teams, hosts community events, and actively supports STEM education across the region.
+          </p>
+        </section>
+
         <section className="team5795-gallery">
-          <h2>Gallery</h2>
-          <Gallery images={[exampleGalleryImage]} />
+          <Gallery images={[GalleryImage1, GalleryImage2, GalleryImage3]} />
         </section>
       </div>
     </div>
