@@ -39,6 +39,16 @@
     margin: 0 var(--font-xs);
 }
 
+.team1533-highlight {
+    background: #ffd16633;
+    border-radius: 0.5em;
+    font-weight: bold;
+    padding: 0.1em 0.4em;
+    color: #d48b00;
+    box-shadow: 0 0 0.25em #ffd16677;
+    font-size: var(--font-base);
+}
+
 .team1533-overview,
 .team1533-history,
 .team1533-outreach,
