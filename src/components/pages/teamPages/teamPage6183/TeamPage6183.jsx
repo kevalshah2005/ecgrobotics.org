@@ -37,9 +37,9 @@ const TeamPage6183 = () => {
     console.log(galleryWidth);
 
     return (
-        <div className="team-container" ref={teamContainerRef}>
+        <div className="team6183-team-container" ref={teamContainerRef}>
             <h1>FTC 6183 - Thunderducks</h1>
-            <div className="social-links">
+            <div className="team6183-social-links">
                 <a href="https://www.tiktok.com/@ftc6183" target="_blank" rel="noopener noreferrer">
                     <img src={tiktokLogo} alt="TikTok" />
                 </a>
@@ -51,7 +51,7 @@ const TeamPage6183 = () => {
                 </a>
                 {/* Add more social links as needed */}
             </div>
-            <section className="overview">
+            <section className="team6183-overview">
                 <h2>Overview</h2>
                 <p> Welcome to the official team page for FTC 6183 – Thunder Ducks!
                 We strive to grow as a team and exemplify the ideals of FIRST and gracious professionalism to the fullest extent. Not only do we focus on making the best robot each season through CAD, mechanical, and programming, but we are always on the lookout for ways to help impact our local and greater community in a positive manner. 
@@ -59,10 +59,10 @@ const TeamPage6183 = () => {
                     <br/>
                 </p>
             </section>
-            <img src={comp1} alt="Team Picture" className = "team-photo" />
+            <img src={comp1} alt="Team Picture" className="team6183-team-photo" />
             <br/>
             <br/>
-            <section className="history">
+            <section className="team6183-history">
                 <h2>Awards and Achievements</h2>
                 <br/>
                 <br/>
@@ -93,17 +93,17 @@ const TeamPage6183 = () => {
                     </li>
                 </ul>
             </section>
-            <section className="outreach">
+            <section className="team6183-outreach">
                 <h2>Outreach</h2>
-                <div className="outreach-project">
+                <div className="team6183-outreach-project">
                     <Gallery 
                         images={outreachGallery} 
-                        idth = {Math.min(window.innerWidth, galleryWidth) * 0.3}
-                    height = {Math.min(window.innerWidth, galleryWidth) * 0.3 * 0.625}
+                        width={Math.min(window.innerWidth, galleryWidth) * 0.3}
+                        height={Math.min(window.innerWidth, galleryWidth) * 0.3 * 0.625}
                     />
                 </div>
                 {/* Add more outreach projects as needed */}
-                </section>
+            </section>
         </div>
     );
 };

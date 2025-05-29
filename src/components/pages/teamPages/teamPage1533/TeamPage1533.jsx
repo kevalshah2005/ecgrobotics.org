@@ -29,9 +29,9 @@ const TeamPage1533 = () => {
     console.log(galleryWidth);
 
     return (
-        <div className="team-container" ref={teamContainerRef}>
+        <div className="team1533-team-container" ref={teamContainerRef}>
             <h1>FRC 1533 - Tiiple Strarge</h1>
-            <div className="social-links">
+            <div className="team1533-social-links">
                 <a href="https://youtube.com/FTC731" target="_blank" rel="noopener noreferrer">
                     <img src={youtubeLogo} alt="YouTube" />
                 </a>
@@ -40,11 +40,11 @@ const TeamPage1533 = () => {
                 </a>
                 {/* Add more social links as needed */}
             </div>
-            <section className="overview">
+            <section className="team1533-overview">
                 <h2>Overview</h2>
                 <p>Welcome to the team page for FTC 731, also known as Wannabee Strange. We are a dedicated team of robotics enthusiasts who strive for excellence in every competition.</p>
             </section>
-            <section className="history">
+            <section className="team1533-history">
                 <h2>Team History</h2>
                 <p>FTC 731 has a rich history of achievements and milestones. Our team has consistently performed well in various competitions, earning numerous awards and recognitions.</p>
                 <ul>
@@ -69,9 +69,9 @@ const TeamPage1533 = () => {
                     {/* Add more achievements as needed */}
                 </ul>
             </section>
-            <section className="outreach">
+            <section className="team1533-outreach">
                 <h2>Outreach</h2>
-                <div className="outreach-project">
+                <div className="team1533-outreach-project">
                     <h3>Robotics Workshop at Local School</h3>
                     <p>We conducted a robotics workshop at a local school to inspire young students to pursue STEM education and careers.</p>
                     <Gallery 
@@ -80,7 +80,7 @@ const TeamPage1533 = () => {
                         height = {Math.min(window.innerWidth, galleryWidth) * 0.2 * 0.625}
                     />
                 </div>
-                <div className="outreach-project">
+                <div className="team1533-outreach-project">
                     <h3>Community Clean-Up Drive</h3>
                     <p>Our team organized a community clean-up drive to promote environmental awareness and responsibility.</p>
                     <Gallery 
@@ -91,7 +91,7 @@ const TeamPage1533 = () => {
                 </div>
                 {/* Add more outreach projects as needed */}
             </section>
-            <section className="media">
+            <section className="team1533-media">
                 <h2>Media Gallery</h2>
                 <Gallery 
                     images={galleryImages} 

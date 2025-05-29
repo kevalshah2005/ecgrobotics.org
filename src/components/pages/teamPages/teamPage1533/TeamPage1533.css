@@ -1,4 +1,4 @@
-.team-container {
+.team1533-team-container {
     max-width: 1200px;
     width: 90%;
     margin: 2rem auto;
@@ -7,120 +7,137 @@
     text-align: center;
 }
 
-.team-container > h1 {
+.team1533-team-container > h1 {
     font-size: var(--font-xl);
     margin-bottom: var(--font-xs);
     color: var(--main-text-color);
 }
 
-.team-container > p {
+.team1533-team-container > p {
     font-size: var(--font-base);
     margin-bottom: var(--font-lg);
     color: var(--main-text-color);
 }
 
-.social-links {
+.team1533-social-links {
     margin-bottom: var(--font-lg);
 }
 
-.social-links a {
+.team1533-social-links a {
     margin: 0 var(--font-xs);
     color: var(--link-color);
     text-decoration: none;
 }
 
-.social-links a:hover {
+.team1533-social-links a:hover {
     text-decoration: underline;
 }
 
-.social-links img {
+.team1533-social-links img {
     width: 40px;
     height: 40px;
     margin: 0 var(--font-xs);
 }
 
-.overview, .history, .outreach, .media {
+.team1533-overview,
+.team1533-history,
+.team1533-outreach,
+.team1533-media {
     margin-bottom: var(--font-lg);
 }
 
-.overview h2, .history h2, .outreach h2, .media h2 {
+.team1533-overview h2,
+.team1533-history h2,
+.team1533-outreach h2,
+.team1533-media h2 {
     font-size: var(--font-xl);
     color: var(--main-text-color);
     margin-bottom: var(--font-xs);
 }
 
-.overview p, .history p, .outreach p {
+.team1533-overview p,
+.team1533-history p,
+.team1533-outreach p {
     font-size: var(--font-base);
     color: var(--main-text-color);
     margin-bottom: var(--font-base);
 }
 
-.history ul, .outreach ul {
+.team1533-history ul,
+.team1533-outreach ul {
     list-style-type: disc;
     padding-left: var(--font-base);
     text-align: left;
 }
 
-.history li, .outreach li {
+.team1533-history li,
+.team1533-outreach li {
     font-size: var(--font-base);
     color: var(--main-text-color);
     margin-bottom: var(--font-xs);
 }
 
-.history ul ul {
+.team1533-history ul ul {
     margin-top: var(--font-xs);
 }
 
-.outreach-project {
+.team1533-outreach-project {
     margin-bottom: var(--font-lg);
 }
 
-.outreach-project h3 {
+.team1533-outreach-project h3 {
     font-size: var(--font-lg);
     color: var(--main-text-color);
     margin-bottom: var(--font-xs);
 }
 
-.outreach-project p {
+.team1533-outreach-project p {
     font-size: var(--font-base);
     color: var(--main-text-color);
     margin-bottom: var(--font-xs);
 }
 
 @media (max-width: 768px) {
-    .team-container {
+    .team1533-team-container {
         padding: var(--font-base);
     }
 
-    .team-container > h1 {
+    .team1533-team-container > h1 {
         font-size: var(--font-lg);
     }
 
-    .team-container > p {
+    .team1533-team-container > p {
         font-size: var(--font-sm);
     }
 
-    .overview h2, .history h2, .outreach h2, .media h2 {
+    .team1533-overview h2,
+    .team1533-history h2,
+    .team1533-outreach h2,
+    .team1533-media h2 {
         font-size: var(--font-lg);
     }
 
-    .overview p, .history p, .outreach p {
+    .team1533-overview p,
+    .team1533-history p,
+    .team1533-outreach p {
         font-size: var(--font-sm);
     }
 
-    .history ul, .outreach ul {
+    .team1533-history ul,
+    .team1533-outreach ul {
         padding-left: var(--font-sm);
     }
 
-    .history li, .outreach li {
+    .team1533-history li,
+    .team1533-outreach li {
         font-size: var(--font-sm);
     }
 
-    .outreach-project h3 {
+    .team1533-outreach-project h3 {
         font-size: var(--font-base);
     }
 
-    .outreach-project p {
+    .team1533-outreach-project p {
         font-size: var(--font-sm);
     }
 }
