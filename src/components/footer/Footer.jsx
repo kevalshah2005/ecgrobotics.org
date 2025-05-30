@@ -44,7 +44,7 @@ function Footer() {
                     <Link to="/" className="footer-logo">
                         <img src={logo} alt="ECG Robotics Logo" className="social-logo" />
                     </Link>
-                    <small className="website-rights">ECG Robotics © 2024</small>
+                    <small className="website-rights">ECG Robotics © 2025</small>
                     <div className="social-icons">
                         <a
                             href="https://www.instagram.com/ecg.robotics/"
