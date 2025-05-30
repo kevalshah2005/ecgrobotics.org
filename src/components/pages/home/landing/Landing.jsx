@@ -52,7 +52,7 @@ function Landing() {
       <h1 data-aos="fade-down">ECG Robotics</h1>
       <TypingEffect 
         className='landing-tagline-typing-effect' 
-        text="North Carolina's premier high school robotics organization" 
+        text="Unusually good at the impossible" 
         speed={50}
         delay={1500}
       />
