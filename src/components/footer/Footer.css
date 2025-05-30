@@ -4,20 +4,14 @@
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-self: center;
     align-items: center;
 }
 
 .footer-join {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    color: var(--main-text-color);
     text-align: center;
     margin-bottom: var(--font-base);
-    padding: var(--font-base);
-    color: var(--main-text-color);
+    width: 100%;
 }
 
 .footer-join > h1 {
@@ -25,14 +19,30 @@
     font-size: var(--font-xl);
 }
 
-.footer-join > h2 {
-    margin-bottom: var(--font-sm);
-    font-size: var(--font-lg);
+.footer-join-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.footer-join > p {
-    margin-bottom: var(--font-sm);
+.footer-join-section {
+    flex: 1 1 250px;
+    min-width: 250px;
+    color: var(--main-text-color);
+}
+
+.footer-join-section > h2 {
+    font-size: var(--font-lg);
+    margin-bottom: 0.5rem;
+}
+
+.footer-join-section > p {
     font-size: var(--font-sm);
+    margin: 0;
 }
 
 .social-media {
@@ -43,45 +53,77 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
     width: 90%;
-    margin: 2.5rem auto 0 auto;
+    margin: 2rem auto 0 auto;
+    gap: 1rem;
 }
 
-.social-logo {
-    max-width: 180px;
+.footer-logo img.social-logo {
+    max-width: 150px;
+    height: auto;
 }
 
 .website-rights {
     color: var(--main-text-color);
-    margin-bottom: var(--font-sm);
+    font-size: var(--font-xs);
 }
 
-@media screen and (max-width: 960px) {
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-icon-link {
+    display: inline-block;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon-link:hover {
+    opacity: 0.7;
+}
+
+.social-icon-img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
     .footer-container {
-        padding: 0.75rem;
+        padding: 1.5rem;
     }
 
     .footer-join > h1 {
+        font-size: var(--font-lg);
+    }
+
+    .footer-join-section > h2 {
         font-size: var(--font-base);
     }
 
-    .footer-join > h2 {
-        font-size: var(--font-sm);
-    }
-
-    .footer-join > p {
+    .footer-join-section > p {
         font-size: var(--font-xs);
     }
 
     .social-media-wrap {
-        margin: 0.5rem auto 0 auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    .social-logo {
-        max-width: 100px;
+    .footer-logo img.social-logo {
+        max-width: 120px;
     }
 
     .website-rights {
         font-size: var(--font-xxs);
+    }
+
+    .social-icon-img {
+        width: 24px;
+        height: 24px;
     }
 }
