@@ -12,6 +12,8 @@ function Landing() {
   const [loaded, setLoaded] = useState(false);
   const initialOpacity = 0.7;
   const [overlayOpacity, setOverlayOpacity] = useState(initialOpacity);
+  const [hovered, setHovered] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     // Trigger the "loaded" class after the component mounts
@@ -39,6 +41,17 @@ function Landing() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
   return (
     <div className={`landing-container ${loaded ? 'loaded' : ''}`}>
       <div className="dark-overlay" style={{opacity: overlayOpacity}}></div>
@@ -49,7 +62,13 @@ function Landing() {
         Your browser does not support the video tag or the file format of this video.
       </video>
       
-      <h1 data-aos="fade-down">ECG Robotics</h1>
+      <h1
+        className={`landing-heading ${hovered ? 'animate-out' : 'animate-in'}`}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+      >
+        ECG Robotics
+      </h1>
       <TypingEffect 
         className='landing-tagline-typing-effect' 
         text="Unusually good at the impossible" 
@@ -61,9 +80,14 @@ function Landing() {
           Learn more <img src={rightArrow} alt="" />
         </Button>
         <Button className='btn' buttonStyle='btn--primary' buttonSize='btn--large' location='/join'>
-          Join <img src={rightArrow} alt="" />
-        </Button>
+          Join <img src={rightArrow} alt="" /></Button>
       </div>
+
+      <div className={`scroll-indicator ${scrolled ? 'hide' : ''}`}>
+        <span>Scroll down</span>
+        <div className="scroll-arrow">&#8595;</div> {/* Unicode down arrow */}
+      </div>
+
     </div>
   );
 }

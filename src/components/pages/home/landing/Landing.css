@@ -31,16 +31,76 @@ video {
   text-align: center;
   align-items: center;
   object-fit: contain;
+
+  animation: video-animation linear forwards;
+  animation-timeline: view();
 }
 
-.landing-container.loaded video {
-  filter: blur(0); /* Remove the blur once the page has loaded */
-}
 
-.landing-container > h1 {
+/* .landing-container > h1 {
   color: var(--main-text-color);
   font-size: var(--font-2xl);
+} */
+
+@font-face {
+  font-family: "Meta";
+  src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
 }
+
+.landing-heading {
+  font-family: "Meta", sans-serif;
+  font-size: 10rem;
+  -webkit-text-stroke: 4px var(--main-text-color);
+  color: transparent;
+  text-align: center;
+  cursor: pointer;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fontWeightIn {
+  from {
+    font-variation-settings: "wght" 100, "ital" 0;
+    text-shadow: none;
+  }
+  to {
+    font-variation-settings: "wght" 900, "ital" 1;
+    text-shadow:
+      10px 10px 0px #07bccc,
+      15px 15px 0px #e601c0,
+      20px 20px 0px #e9019a,
+      25px 25px 0px #f40468,
+      45px 45px 10px #09090ba0;
+  }
+}
+
+@keyframes fontWeightOut {
+  from {
+    font-variation-settings: "wght" 900, "ital" 1;
+    text-shadow:
+      10px 10px 0px #07bccc,
+      15px 15px 0px #e601c0,
+      20px 20px 0px #e9019a,
+      25px 25px 0px #f40468,
+      45px 45px 10px #09090ba0;
+  }
+  to {
+    font-variation-settings: "wght" 100, "ital" 0;
+    text-shadow: none;
+    /* color: var(--main-text-color); */
+  }
+}
+
+.landing-heading.animate-in {
+  animation-name: fontWeightIn;
+}
+
+.landing-heading.animate-out {
+  animation-name: fontWeightOut;
+}
+
 
 .landing-tagline-typing-effect {
   margin-top: 0.5rem;
@@ -98,9 +158,78 @@ video {
   .btn {
     width: 100%;
   }
+}
 
-  .landing-btns .btn {
-    width: auto; /* Remove 100% width */
-    max-width: 90%; /* Limit the width to 90% on smaller screens */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  text-align: center;
+  color: var(--main-text-color);
+  font-size: var(--font-sm);
+  opacity: 0.8;
+  z-index: 2;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-indicator span {
+  display: block;
+  margin-bottom: 0.3rem;
+  letter-spacing: 1px;
+}
+
+.scroll-arrow {
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.scroll-indicator.hide {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  text-align: center;
+  color: var(--main-text-color);
+  font-size: var(--font-sm);
+  opacity: 0.8;
+  z-index: 2;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-indicator span {
+  display: block;
+  margin-bottom: 0.3rem;
+  letter-spacing: 1px;
+}
+
+.scroll-arrow {
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.scroll-indicator.hide {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
 }
