@@ -6,7 +6,7 @@ function CardItem(props) {
   const content = (
     <>
       <figure className="cards-item-pic-wrap">
-        <img src={props.src} alt="Team Image" className="cards-item-img" />
+        <img src={props.src} alt="Card Image" className="cards-item-img" />
       </figure>
       <div className="cards-item-info">
         {props.number && <h1 className="cards-item-number">{props.number}</h1>}
