@@ -1,7 +1,7 @@
 import React from 'react';
 import CardItem from '../../../card/CardItem';
 
-function SponsorTierSection({ title, description, sponsors, fallback }) {
+function SponsorTierSection({ title, description, sponsors, fallback, width }) {
   return (
     <>
       <h2 data-aos="fade-up">{title}</h2>
@@ -18,6 +18,7 @@ function SponsorTierSection({ title, description, sponsors, fallback }) {
                       title={sponsor.name}
                       src={sponsor.logo}
                       path={sponsor.link}
+                      width={width}
                     />
                   ))}
                 </ul>

@@ -85,6 +85,8 @@ function SponsorsDescription() {
   const bronzeSponsors = getSponsorsByLevel('bronze');
   const honorableMentionSponsors = getSponsorsByLevel('honorable mention')
 
+  const cardWidth = '300px';
+
   return (
     <div className="sponsors-container">
       <div className="sponsors-header-container">
@@ -105,15 +107,14 @@ function SponsorsDescription() {
         <img src={sponsorImage} alt="Image showing robot with sponsor logos on it" />
       </div>
 
-      {/* <Gallery3D /> */}
-
       <div className="sponsorship-tiers">
-        <h1 data-aos="fade-up">Sponsorship Tiers</h1>
+        <h1 data-aos="fade-up">Our Sponsors</h1>
         <SponsorTierSection
           title="Diamond - $7500+ Annual Contribution"
           description="Description of Diamond level"
           sponsors={diamondSponsors}
           fallback="No diamond sponsors yet."
+          width={cardWidth}
         />
 
         <SponsorTierSection
@@ -121,6 +122,7 @@ function SponsorsDescription() {
           description="Description of Platinum level"
           sponsors={platinumSponsors}
           fallback="No platinum sponsors yet."
+          width={cardWidth}
         />
 
         <SponsorTierSection
@@ -128,6 +130,7 @@ function SponsorsDescription() {
           description="Description of Gold level"
           sponsors={goldSponsors}
           fallback="No gold sponsors yet."
+          width={cardWidth}
         />
 
         <SponsorTierSection
@@ -135,6 +138,7 @@ function SponsorsDescription() {
           description="Description of Silver level"
           sponsors={silverSponsors}
           fallback="No silver sponsors yet."
+          width={cardWidth}
         />
 
         <SponsorTierSection
@@ -142,6 +146,7 @@ function SponsorsDescription() {
           description="Description of Bronze level"
           sponsors={bronzeSponsors}
           fallback="No bronze sponsors yet."
+          width={cardWidth}
         />
 
         <SponsorTierSection
@@ -149,6 +154,7 @@ function SponsorsDescription() {
           description="Description of Honorable Mention level"
           sponsors={honorableMentionSponsors}
           fallback="No honorable mention sponsors yet."
+          width={cardWidth}
         />
 
       </div>

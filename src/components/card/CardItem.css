@@ -144,7 +144,7 @@
 @media screen and (max-width: 960px) {
     .cards > h1 {
         text-align: center;
-        font-size: 2.25rem; /* 36px */
+        font-size: var(--font-base); /* 36px */
         color: #ffffff;
     }
 }
