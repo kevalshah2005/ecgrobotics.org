@@ -42,48 +42,48 @@
     transition: 250ms;
 }
 
-.btn--primary {
-    background-color: var(--button-solid-color);
-    color: #242424;
-    border: 1px solid var(--button-solid-color);
+.glow-on-hover {
+    cursor: pointer;
     position: relative;
     z-index: 0;
-    overflow: hidden;
-    border-radius: 20px;
-    transition: all 0.3s ease-out;
+    border-radius: 10px;
 }
 
-.btn--primary::before {
+.glow-on-hover:before {
     content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
     top: -2px;
-    left: -2px;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    left:-2px;
     background-size: 400%;
     z-index: -1;
-    filter: blur(5px);
+    filter: blur(3px);
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    animation: glowing 20s linear infinite;
     opacity: 0;
     transition: opacity .3s ease-in-out;
-    border-radius: 20px;
-    animation: glowing 20s linear infinite;
+    border-radius: 10px;
 }
 
-.btn--primary:hover::before {
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
     opacity: 1;
 }
 
-.btn--primary::after {
+.glow-on-hover:after {
+    z-index: -1;
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     background: var(--button-solid-color);
-    top: 0;
     left: 0;
-    z-index: -2;
-    border-radius: 20px;
+    top: 0;
+    border-radius: 10px;
 }
 
 @keyframes glowing {
@@ -91,4 +91,3 @@
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
-
