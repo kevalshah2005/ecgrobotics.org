@@ -49,15 +49,18 @@ function Landing() {
         Your browser does not support the video tag or the file format of this video.
       </video>
       
-      <h1 data-aos="fade-down">ECG Robotics</h1>
+      <div data-aos="fade-down">
+        <h1>ECG Robotics</h1>
+        <h2 className='landing-tagline-typing-effect'>North Carolina's leading high school robotics organization</h2>
+      </div>
       <TypingEffect 
-        className='landing-tagline-typing-effect' 
-        text="Unusually good at the impossible" 
+        className='landing-motto-typing-effect'
+        text="&quot;Unusually good at the impossible&quot;" 
         speed={50}
         delay={1500}
       />
       <div className='landing-btns'>
-        <Button className='btn' buttonStyle='btn--outline' buttonSize='btn--large' location='/about'>
+        <Button className='btn' buttonStyle='btn--primary' buttonSize='btn--large' location='/about'>
           Learn more <img src={rightArrow} alt="" />
         </Button>
         <Button className='btn' buttonStyle='btn--primary' buttonSize='btn--large' location='/join'>
