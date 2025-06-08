@@ -23,8 +23,8 @@ function CardItem(props) {
 
   const cardItemStyle = {
     width: props.width || 'auto',
-    "minWidth": props.width || '300px',
-    "maxWidth": props.width || '400px',
+    "minWidth": props.width || '200px',
+    "maxWidth": props.width || '300px',
   };
 
   return (
