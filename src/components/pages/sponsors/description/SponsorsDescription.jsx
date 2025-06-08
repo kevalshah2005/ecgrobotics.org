@@ -97,13 +97,13 @@ function SponsorsDescription() {
         </div>
       </div>
       <div className="sponsors-description-container">
-        <p data-aos="fade-up">Thanks to our generous sponsors, our teams have inspired others while taking home state championship titles and earning places at the FIRST World Championships in Houston.
+        <p>Thanks to our generous sponsors, our teams have inspired others while taking home state championship titles and earning places at the FIRST World Championships in Houston.
           <b> Your company’s donation helps fund materials, tools, workspaces, and competition expenses </b>
           that will provide students with hands-on experience building not just robots, but
           <b> real-world skills </b>
           that will stay with them into college and beyond.
         </p>
-        <p data-aos="fade-up">Ready? Contact us at <a href="mailto: info@ecgrobotics.org" style={{ fontSize: "inherit" }}>info@ecgrobotics.org</a> and ask how you can help build tomorrow’s engineers, programmers, designers, and thinkers.</p>
+        <p>Ready? Contact us at <a href="mailto: info@ecgrobotics.org" style={{ fontSize: "inherit" }}>info@ecgrobotics.org</a> and ask how you can help build tomorrow’s engineers, programmers, designers, and thinkers.</p>
         <img src={sponsorImage} alt="Image showing robot with sponsor logos on it" />
       </div>
 
