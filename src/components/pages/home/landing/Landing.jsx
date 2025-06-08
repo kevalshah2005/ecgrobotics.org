@@ -51,7 +51,7 @@ function Landing() {
       
       <div data-aos="fade-down">
         <h1>ECG Robotics</h1>
-        <h2 className='landing-tagline-typing-effect'>North Carolina's leading high school robotics organization</h2>
+        <h2 className='landing-tagline'>North Carolina's leading high school robotics organization</h2>
       </div>
       <TypingEffect 
         className='landing-motto-typing-effect'
