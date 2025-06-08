@@ -50,7 +50,7 @@ function Landing() {
       </video>
       
       <div data-aos="fade-down">
-        <h1>ECG Robotics</h1>
+        <h1 className="landing-title">ECG Robotics</h1>
         <h2 className='landing-tagline'>North Carolina's leading high school robotics organization</h2>
       </div>
       <TypingEffect 

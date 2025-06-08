@@ -37,7 +37,7 @@ video {
   filter: blur(0); /* Remove the blur once the page has loaded */
 }
 
-h1 {
+.landing-title {
   color: var(--main-text-color);
   font-size: var(--font-2xl);
 }
@@ -81,14 +81,14 @@ h1 {
 }
 
 @media screen and (max-width: 960px) {
-  h1 {
+  .landing-title {
     font-size: var(--font-xl);
     margin-top: -150px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  h1 {
+  .landing-title {
     margin-top: -100px;
   }
 
