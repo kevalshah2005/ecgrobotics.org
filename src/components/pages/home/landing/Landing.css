@@ -37,18 +37,26 @@ video {
   filter: blur(0); /* Remove the blur once the page has loaded */
 }
 
-.landing-container > h1 {
+.landing-title {
   color: var(--main-text-color);
   font-size: var(--font-2xl);
 }
 
-.landing-tagline-typing-effect {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.landing-tagline {
+  margin-bottom: 1rem;
   color: var(--main-text-color);
   font-size: var(--font-base);
+  /* border-right: 3px solid var(--main-text-color);
+  animation: blinkCursor 0.8s steps(2, start) infinite; */
+}
+
+.landing-motto-typing-effect {
+  margin-top: 1rem;
+  color: var(--main-text-color);
+  font-size: var(--font-sm);
   border-right: 3px solid var(--main-text-color);
   animation: blinkCursor 0.8s steps(2, start) infinite;
+  font-style: italic;
 }
 
 @keyframes blinkCursor {
@@ -73,21 +81,27 @@ video {
 }
 
 @media screen and (max-width: 960px) {
-  .landing-container > h1 {
-    font-size: 4.375rem;
+  .landing-title {
+    font-size: var(--font-xl);
     margin-top: -150px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .landing-container > h1 {
-    font-size: var(--font-xl);
+  .landing-title {
     margin-top: -100px;
   }
 
-  .landing-tagline-typing-effect {
+  .landing-tagline {
+    font-size: var(--font-sm);
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+
+  .landing-motto-typing-effect {
     border-right: none; /* Remove the blinking cursor on small screens */
     max-width: 90%;
+    margin-top: 2rem;
   }
 
   .btn-mobile {

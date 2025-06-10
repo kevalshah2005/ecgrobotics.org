@@ -11,12 +11,13 @@ export const Button = ({children, type, onClick, buttonStyle, buttonSize, locati
 
     return (
         <Link to={location} className='btn-mobile'>
-            <button className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+            <button className={`glow-on-hover btn ${checkButtonStyle} ${checkButtonSize}`}
                 onClick={onClick}
                 type={type}
             >
                 {children}
             </button>
         </Link>
-    );
+);
+
 };
