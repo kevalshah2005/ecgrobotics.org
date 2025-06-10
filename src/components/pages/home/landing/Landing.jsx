@@ -55,7 +55,7 @@ function Landing() {
       </div>
       <TypingEffect 
         className='landing-motto-typing-effect'
-        text="&quot;Unusually good at the impossible&quot;" 
+        text='"Unusually good at the impossible"' 
         speed={50}
         delay={1500}
       />
