@@ -3,10 +3,15 @@ import { Link } from 'react-router-dom';
 import './CardItem.css';
 
 function CardItem(props) {
+  const imgStyle = {
+    width: props.imageWidth || '100%',
+    "maxWidth": props.imageWidth || '100%',
+  }
+
   const content = (
     <>
       <figure className="cards-item-pic-wrap">
-        <img src={props.src} alt="Card Image" className="cards-item-img" />
+        <img src={props.src} alt="Card Image" className="cards-item-img" style={imgStyle}/>
       </figure>
       <div className="cards-item-info">
         {props.number && <h1 className="cards-item-number">{props.number}</h1>}

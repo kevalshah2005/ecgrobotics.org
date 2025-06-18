@@ -74,6 +74,7 @@
     max-height: 100%;
     object-fit: contain;
     transition: all 0.2s linear;
+    margin: auto;
 }
 
 .cards-item-img:hover {
