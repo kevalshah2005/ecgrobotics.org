@@ -4,6 +4,7 @@ import './Landing.css';
 import rightArrow from '../../../../assets/rightArrow.png';
 import landingVideo_mp4 from '../../../../assets/landingVideo.mp4';
 import landingVideo_webm from '../../../../assets/landingVideo.webm';
+import landingVideoThumbnail from '../../../../assets/LandingVideoThumbnail.webp';
 import { Button } from '../../../button/Button';
 import TypingEffect from '../../../typingEffect/TypingEffect';
 import "aos/dist/aos.css";
@@ -43,7 +44,7 @@ function Landing() {
     <div className={`landing-container ${loaded ? 'loaded' : ''}`}>
       <div className="dark-overlay" style={{opacity: overlayOpacity}}></div>
 
-      <video className="video-background" autoPlay muted loop>
+      <video className="video-background" poster={landingVideoThumbnail} autoPlay muted loop>
         <source src={landingVideo_mp4} type='video/mp4' />
         <source src={landingVideo_webm} type='video/webm' />
         Your browser does not support the video tag or the file format of this video.
