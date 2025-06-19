@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import '../../../../App.css';
 import './Landing.css';
 import rightArrow from '../../../../assets/rightArrow.png';
@@ -11,16 +11,22 @@ import "aos/dist/aos.css";
 
 function Landing() {
   const [loaded, setLoaded] = useState(false);
+  const [videoReady, setVideoReady] = useState(false);
+  const videoRef = useRef(null);
+
   const initialOpacity = 0.7;
   const [overlayOpacity, setOverlayOpacity] = useState(initialOpacity);
 
   useEffect(() => {
-    // Trigger the "loaded" class after the component mounts
-    const timer = setTimeout(() => {
-      setLoaded(true);
-    }, 100); // Delay slightly to ensure the video is ready
-
+    const timer = setTimeout(() => setLoaded(true), 100);
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    const handleLoaded = () => setVideoReady(true);
+    video.addEventListener('loadeddata', handleLoaded);
+    return () => video.removeEventListener('loadeddata', handleLoaded);
   }, []);
 
   useEffect(() => {
@@ -42,14 +48,28 @@ function Landing() {
 
   return (
     <div className={`landing-container ${loaded ? 'loaded' : ''}`}>
-      <div className="dark-overlay" style={{opacity: overlayOpacity}}></div>
+      <div className="dark-overlay" style={{ opacity: overlayOpacity }}></div>
 
-      <video className="video-background" poster={landingVideoThumbnail} autoPlay muted loop>
-        <source src={landingVideo_mp4} type='video/mp4' />
-        <source src={landingVideo_webm} type='video/webm' />
-        Your browser does not support the video tag or the file format of this video.
-      </video>
-      
+      <div className="video-wrapper">
+        <img
+          src={landingVideoThumbnail}
+          alt="Landing Poster"
+          className={`video-poster ${videoReady ? 'fade-out' : ''}`}
+        />
+        <video
+          ref={videoRef}
+          className="video-background"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src={landingVideo_mp4} type="video/mp4" />
+          <source src={landingVideo_webm} type="video/webm" />
+          Your browser does not support the video tag or the file format of this video.
+        </video>
+      </div>
+
       <div data-aos="fade-down">
         <h1 className="landing-title">ECG Robotics</h1>
         <h2 className='landing-tagline'>North Carolina's leading high school robotics organization</h2>
