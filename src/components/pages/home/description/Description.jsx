@@ -12,6 +12,8 @@ import logo1533 from '../../../../assets/logo1533.webp'
 import "aos/dist/aos.css";
 
 function Description() {
+  var cardWidth = window.innerWidth < 600 ? '100%' : window.innerWidth < 1400 ? '200px' : '250px';
+
   return (
     <div className='description-container'>
       <div className='overview-container' data-aos="fade-up">
@@ -40,6 +42,8 @@ function Description() {
                   number='731'
                   path='/ftc731'
                   glowColor="var(--orange)"
+                  width={cardWidth}
+                  imageWidth="100%"
                 />
                 <CardItem 
                   src={logo5795}
@@ -47,6 +51,8 @@ function Description() {
                   number='5795'
                   path='/ftc5795'
                   glowColor="var(--orange)"
+                  width={cardWidth}
+                  imageWidth="100%"
                 />
                 <CardItem 
                   src={logo6183}
@@ -54,6 +60,8 @@ function Description() {
                   number='6183'
                   path='/ftc6183'
                   glowColor="var(--orange)"
+                  width={cardWidth}
+                  imageWidth="100%"
                 />
                 <CardItem 
                   src={logo10195}
@@ -61,6 +69,8 @@ function Description() {
                   number='10195'
                   path='/ftc10195'
                   glowColor="var(--orange)"
+                  width={cardWidth}
+                  imageWidth="100%"
                 />
               </ul>
             </div>
@@ -86,6 +96,8 @@ function Description() {
                   number='1533'
                   path='/frc1533'
                   glowColor="var(--blue)"
+                  width={cardWidth}
+                  imageWidth="100%"
                 />
               </ul>
             </div>
