@@ -118,3 +118,40 @@ video {
     max-width: 90%; /* Limit the width to 90% on smaller screens */
   }
 }
+
+.scroll-indicator.hide {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  text-align: center;
+  color: var(--main-text-color);
+  opacity: 0.8;
+  z-index: 2;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-indicator span {
+  display: block;
+  margin-bottom: 0.3rem;
+  letter-spacing: 1px;
+  font-size: var(--font-xs);
+}
+
+.scroll-arrow {
+  font-size: var(--font-base);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}

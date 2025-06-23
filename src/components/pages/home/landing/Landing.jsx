@@ -12,6 +12,7 @@ function Landing() {
   const [loaded, setLoaded] = useState(false);
   const initialOpacity = 0.7;
   const [overlayOpacity, setOverlayOpacity] = useState(initialOpacity);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     // Trigger the "loaded" class after the component mounts
@@ -33,6 +34,8 @@ function Landing() {
 
       const opacity = (1 - initialOpacity) * Math.min(Math.max((scrollPosition - videoTop) / videoHeight, 0), 1) + initialOpacity;
       setOverlayOpacity(opacity);
+
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -66,6 +69,10 @@ function Landing() {
         <Button className='btn' buttonStyle='btn--primary' buttonSize='btn--large' location='/join'>
           Join <img src={rightArrow} alt="" />
         </Button>
+      </div>
+      <div className={`scroll-indicator ${scrolled ? 'hide' : ''}`}>
+        <span>Scroll down</span>
+        <div className="scroll-arrow">&#8595;</div> {/* Unicode down arrow */}
       </div>
     </div>
   );
