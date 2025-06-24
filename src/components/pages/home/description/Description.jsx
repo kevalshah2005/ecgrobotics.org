@@ -81,7 +81,7 @@ function Description() {
       <div className="frc-container">
       <h1 data-aos="fade-up">FIRST Robotics Competition</h1>
         <div className='frc-description-container' data-aos="fade-up">
-          <p> This is filler text. In this space will be an explanation about what FRC is. Ideally I'd like to keep it a general program overview rather than anything about the team, since that's already below.
+          <p> FIRST Robotics Competition (FRC) is a high school robotics program where teams build large, industrial-style robots to compete in a new global challenge each year. Combining advanced engineering, programming, and strategy, FRC pushes students to collaborate, innovate, and solve complex problems under time constraints. Teams also engage in outreach, community impact, and STEM advocacy as core parts of the experience.
           </p>
           <img src={frcImage} alt='' className='frc-image' />
         </div>
