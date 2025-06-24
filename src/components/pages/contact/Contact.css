@@ -21,6 +21,12 @@
   text-align: center;
 }
 
+.contacts-header u {
+  color: var(--main-text-color);
+  font-size: var(--font-lg);
+  margin-bottom: 2.5rem;
+}
+
 .contact-info {
   margin-bottom: 2.5rem;
   font-size: var(--font-sm);
@@ -39,5 +45,17 @@
   }
   .contact-form {
     padding: 1rem 0.5rem;
+  }
+
+  .contact-container h1 {
+    font-size: var(--font-xl);
+  }
+
+  .contact-container p {
+    font-size: var(--font-sm);
+  }
+
+  .contacts-header u {
+    font-size: var(--font-base);
   }
 }
