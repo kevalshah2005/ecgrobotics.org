@@ -8,6 +8,8 @@ import logo10195 from '../../../assets/logo10195.webp'
 import logo1533 from '../../../assets/logo1533.webp'
 
 function Teams() {
+    var cardWidth = window.innerWidth < 600 ? '100%' : window.innerWidth < 1400 ? '200px' : '250px';
+
     return (
         <div className='teams-container'>
             <h1>FIRST Tech Challenge</h1>
@@ -21,6 +23,8 @@ function Teams() {
                                 number='731'
                                 path='/ftc731'
                                 glowColor="var(--orange)"
+                                width={cardWidth}
+                                imageWidth="100%"
                             />
                             <CardItem 
                                 src={logo5795}
@@ -28,6 +32,8 @@ function Teams() {
                                 number='5795'
                                 path='/ftc5795'
                                 glowColor="var(--orange)"
+                                width={cardWidth}
+                                imageWidth="100%"
                             />
                             <CardItem 
                                 src={logo6183}
@@ -35,6 +41,8 @@ function Teams() {
                                 number='6183'
                                 path='/ftc6183'
                                 glowColor="var(--orange)"
+                                width={cardWidth}
+                                imageWidth="100%"
                             />
                             <CardItem 
                                 src={logo10195}
@@ -42,6 +50,8 @@ function Teams() {
                                 number='10195'
                                 path='/ftc10195'
                                 glowColor="var(--orange)"
+                                width={cardWidth}
+                                imageWidth="100%"
                             />
                         </ul>
                     </div>
@@ -59,6 +69,8 @@ function Teams() {
                                 number='1533'
                                 path='/frc1533'
                                 glowColor="var(--blue)"
+                                width={cardWidth}
+                                imageWidth="100%"
                             />
                         </ul>
                     </div>
