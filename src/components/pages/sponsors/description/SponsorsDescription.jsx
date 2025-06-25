@@ -166,7 +166,7 @@ function SponsorsDescription() {
         />
 
         <SponsorTierSection
-          title="Honorable Mention - $100-$500 Annual Contribution"
+          title="Honorable Mention - $100-$499 Annual Contribution"
           description="Description of Honorable Mention level"
           sponsors={honorableMentionSponsors}
           fallback="No honorable mention sponsors yet."
