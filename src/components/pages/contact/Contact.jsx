@@ -32,6 +32,9 @@ const Contact = () => (
                 <b className="contacts-header"><u>Leadership Contacts</u></b><br />
                 <b>Parent President:</b> <a href="mailto:boardpresident@ecgrobotics.org">boardpresident@ecgrobotics.org</a><br />
                 <b>Student President:</b> <a href="mailto:studentpresident@ecgrobotics.org">studentpresident@ecgrobotics.org</a><br />
+                <b>Student Vice President:</b> <a href="mailto:studentvp@ecgrobotics.org">studentvp@ecgrobotics.org</a><br />
+                <b>Student Treasurer:</b> <a href="mailto:student-treasurer@ecgrobotics.org">student-treasurer@ecgrobotics.org</a><br />
+                <b>Outreach:</b> <a href="mailto:outreach@ecgrobotics.org">outreach@ecgrobotics.org</a><br />
             </p>
         </div>
     </div>
