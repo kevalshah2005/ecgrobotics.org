@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './components/navbar/Navbar'
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from 'react-router-dom';
 import Home from './components/pages/home/Home'
 import About from './components/pages/about/About';
 import Footer from './components/footer/Footer';
@@ -49,6 +49,7 @@ function App() {
           <Route path='/sponsors' exact element = {<Sponsors />} />
           <Route path='/contact' exact element= {<Contact />} />
           <Route path='/join' exact element={<Join />} />
+          <Route path="/join-ecg-robotics" element={<Navigate to="/join" replace />} />
           <Route path='/teams' exact element={<Teams />} />
           <Route path='/ftc731' exact element={<TeamPage731 />} />
           <Route path='/ftc5795' exact element={<TeamPage5795 />} />
