@@ -1,14 +1,14 @@
 import React from 'react'
 import './Description.css'
-import overviewImage from '../../../../assets/731_2019bot.webp'
-import ftcImage from '../../../../assets/731_2023bot.webp'
-import frcImage from '../../../../assets/1533_2023bot.webp'
+import overviewImage from '/assets/731_2019bot.webp'
+import ftcImage from '/assets/731_2023bot.webp'
+import frcImage from '/assets/1533_2023bot.webp'
 import CardItem from '../../../card/CardItem'
-import logo731 from '../../../../assets/logo731.webp'
-import logo5795 from '../../../../assets/logo5795.webp'
-import logo6183 from '../../../../assets/logo6183.webp'
-import logo10195 from '../../../../assets/logo10195.webp'
-import logo1533 from '../../../../assets/logo1533.webp'
+import logo731 from '/assets/logo731.webp'
+import logo5795 from '/assets/logo5795.webp'
+import logo6183 from '/assets/logo6183.webp'
+import logo10195 from '/assets/logo10195.webp'
+import logo1533 from '/assets/logo1533.webp'
 import "aos/dist/aos.css";
 
 function Description() {

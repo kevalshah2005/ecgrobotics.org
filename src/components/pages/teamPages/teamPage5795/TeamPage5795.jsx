@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import './TeamPage5795.css';
-import youtubeLogo from '../../../../assets/logo5795.webp';
-import instagramLogo from '../../../../assets/InstagramLogo.webp';
-import GalleryImage1 from '../../../../assets/FTC5795/outreach1.webp';
-import GalleryImage2 from '../../../../assets/FTC5795/outreach2.jpg';
-import GalleryImage3 from '../../../../assets/FTC5795/outreach3.webp';
-import teamPhoto from '../../../../assets/FTC5795/TEAM.webp';
-import backgroundVideo from '../../../../assets/FTC5795/IMG_8266.mp4';
+import youtubeLogo from '/assets/logo5795.webp';
+import instagramLogo from '/assets/InstagramLogo.webp';
+import GalleryImage1 from '/assets/FTC5795/outreach1.webp';
+import GalleryImage2 from '/assets/FTC5795/outreach2.jpg';
+import GalleryImage3 from '/assets/FTC5795/outreach3.webp';
+import teamPhoto from '/assets/FTC5795/TEAM.webp';
+import backgroundVideo from '/assets/FTC5795/IMG_8266.mp4';
 import Gallery from '../../../gallery/Gallery';
 
 const TeamPage5795 = () => {

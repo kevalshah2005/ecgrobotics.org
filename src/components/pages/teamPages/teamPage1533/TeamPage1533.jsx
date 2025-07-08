@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './TeamPage1533.css';
-import youtubeLogo from '../../../../assets/YoutubeLogo.webp';
-import instagramLogo from '../../../../assets/InstagramLogo.webp';
-import frc1533_2023bot from '../../../../assets/1533_2023bot.webp';
-import frc1533_2024statesteam from '../../../../assets/1533_2024statesteam.webp';
-import frc1533_2018teampic from '../../../../assets/1533_2018teampic.webp';
+import youtubeLogo from '/assets/YoutubeLogo.webp';
+import instagramLogo from '/assets/InstagramLogo.webp';
+import frc1533_2023bot from '/assets/1533_2023bot.webp';
+import frc1533_2024statesteam from '/assets/1533_2024statesteam.webp';
+import frc1533_2018teampic from '/assets/1533_2018teampic.webp';
 import Gallery from '../../../gallery/Gallery';
 
 const galleryImages = [

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import logo from '../../assets/logo.webp';
-import instagramLogo from '../../assets/InstagramLogo.webp';
+import logo from '/assets/logo.webp';
+import instagramLogo from '/assets/InstagramLogo.webp';
 
 function Footer() {
     return (

@@ -1,17 +1,17 @@
 import React from 'react'
 import './SponsorsDescription.css'
-import sponsorImage from '../../../../assets/sponsorImage.webp'
+import sponsorImage from '/assets/sponsorImage.webp'
 import SponsorTierSection from './SponsorTierSection'
 
 // Sponsor logos
-import GeneHaasLogo from '../../../../assets/SponsorLogos/GeneHaasLogo.webp'
-import TEConnectivityLogo from '../../../../assets/SponsorLogos/TEConnectivityLogo.svg'
-import PGFoundationLogo from '../../../../assets/SponsorLogos/PGFoundationLogo.svg'
-import HondaJetLogo from '../../../../assets/SponsorLogos/HondaJetLogo.svg'
-import PublixLogo from '../../../../assets/SponsorLogos/PublixLogo.svg'
-import HarrisTeeterLogo from '../../../../assets/SponsorLogos/HarrisTeeterLogo.svg'
-import UnitedWayLogo from '../../../../assets/SponsorLogos/UnitedWayLogo.svg'
-import CollinsAerospaceLogo from '../../../../assets/SponsorLogos/CollinsAerospaceLogo.svg'
+import GeneHaasLogo from '/assets/SponsorLogos/GeneHaasLogo.webp'
+import TEConnectivityLogo from '/assets/SponsorLogos/TEConnectivityLogo.svg'
+import PGFoundationLogo from '/assets/SponsorLogos/PGFoundationLogo.svg'
+import HondaJetLogo from '/assets/SponsorLogos/HondaJetLogo.svg'
+import PublixLogo from '/assets/SponsorLogos/PublixLogo.svg'
+import HarrisTeeterLogo from '/assets/SponsorLogos/HarrisTeeterLogo.svg'
+import UnitedWayLogo from '/assets/SponsorLogos/UnitedWayLogo.svg'
+import CollinsAerospaceLogo from '/assets/SponsorLogos/CollinsAerospaceLogo.svg'
 
 const sponsors = [
   {

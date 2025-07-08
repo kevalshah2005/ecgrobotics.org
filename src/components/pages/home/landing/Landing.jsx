@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import '../../../../App.css';
 import './Landing.css';
-import rightArrow from '../../../../assets/rightArrow.png';
-import landingVideo_mp4 from '../../../../assets/landingVideo.mp4';
-import landingVideo_webm from '../../../../assets/landingVideo.webm';
+import rightArrow from '/assets/rightArrow.png';
+import landingVideo_mp4 from '/assets/landingVideo.mp4';
+import landingVideo_webm from '/assets/landingVideo.webm';
 import { Button } from '../../../button/Button';
 import TypingEffect from '../../../typingEffect/TypingEffect';
 import "aos/dist/aos.css";
