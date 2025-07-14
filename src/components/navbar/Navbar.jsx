@@ -37,7 +37,7 @@ const Navbar = () => {
     return (
         <nav className={`navbar ${visible ? 'visible' : 'hidden'}`}>
             <Link to='/'>
-                <img src={logo} alt="Logo" className='logo' />
+                <img src={logo} alt="Logo" className='logo' fetchpriority="high" decoding="async"/>
             </Link>
             <div className='menu-icon' onClick={handleClick}>
                 <img src={click ? CloseIcon : MenuIcon} alt="Menu Icon" />
