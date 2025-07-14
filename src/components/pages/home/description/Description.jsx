@@ -29,7 +29,7 @@ function Description() {
         <div className='ftc-description-container' data-aos="fade-up">
           <p>FIRST Tech Challenge (FTC) is a robotics competition for middle and high school students, where teams design, build, and program robots to complete an annual challenge. Using engineering, coding, and teamwork, students develop problem-solving skills while applying real-world STEM concepts. FTC also encourages outreach, with teams mentoring younger students and promoting STEM in their communities.
           </p>
-          <img src={ftcImage} alt='' className='ftc-image' />
+          <img src={ftcImage} alt='' className='ftc-image' loading='lazy'/>
         </div>
         <div className='cards' data-aos="fade-up">
           <h1>Check out our teams here!</h1>
@@ -83,7 +83,7 @@ function Description() {
         <div className='frc-description-container' data-aos="fade-up">
           <p> FIRST Robotics Competition (FRC) is a high school robotics program where teams build large, industrial-style robots to compete in a new global challenge each year. Combining advanced engineering, programming, and strategy, FRC pushes students to collaborate, innovate, and solve complex problems under time constraints. Teams also engage in outreach, community impact, and STEM advocacy as core parts of the experience.
           </p>
-          <img src={frcImage} alt='' className='frc-image' />
+          <img src={frcImage} alt='' className='frc-image' loading='lazy'/>
         </div>
         <div className='cards' data-aos="fade-up">
           <h1>Check out our team here!</h1>
