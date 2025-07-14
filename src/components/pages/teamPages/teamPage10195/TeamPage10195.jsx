@@ -6,7 +6,7 @@ import exampleGalleryImage from '/assets/731_2019teampic.webp';
 import teamLogo from '/assets/FTC10195/NightOwlsTempBanner.png';
 import youtubeLogo from '/assets/YoutubeLogo.webp';
 import instagramLogo from '/assets/InstagramLogo.webp';
-import gmailLogo from '/assets/GmailLogo.png';
+import gmailLogo from '/assets/GmailLogo.webp';
 import teamRoster from '/assets/FTC10195/NightOwlsTeamRoster.png';
 import childrensMuseum from '/assets/FTC10195/ChildrensMuseum1.jpg';
 import childrensMuseum2 from '/assets/FTC10195/ChildrensMuseum2.png';

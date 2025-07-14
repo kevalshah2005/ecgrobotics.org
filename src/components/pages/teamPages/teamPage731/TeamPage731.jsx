@@ -7,7 +7,7 @@ import background1 from '/assets/731_2024bot.webp';
 import background2 from '/assets/731_2019teampic.webp';
 import background3 from '/assets/731_2024bot.webp';
 import Gallery from '../../../gallery/Gallery';
-import blank from '/assets/blank.jpg';
+import blank from '/assets/blank.webp';
 import mentor1 from '/assets/mentors/kevalshah.jpg';
 import mentor2 from '/assets/mentors/kevinlimanto.jpg';
 import mentor3 from '/assets/mentors/timothyvo.jpg';

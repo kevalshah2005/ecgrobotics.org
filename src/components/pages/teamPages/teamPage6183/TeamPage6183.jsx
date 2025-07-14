@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './TeamPage6183.css';
-import tiktokLogo from '/assets/TikTokLogo.png';
+import tiktokLogo from '/assets/TikTokLogo.webp';
 import instagramLogo from '/assets/InstagramLogo.webp';
-import gmailLogo from '/assets/GmailLogo.png';
+import gmailLogo from '/assets/GmailLogo.webp';
 import Gallery from '../../../gallery/Gallery';
 
 import outreach1 from '/assets/FTC6183/Outreach1.png';
