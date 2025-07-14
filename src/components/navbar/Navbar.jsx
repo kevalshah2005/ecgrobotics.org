@@ -3,6 +3,8 @@ import './Navbar.css'
 import logo from '/assets/logo.webp'
 import { Link } from 'react-router-dom'
 import { Button } from '../button/Button.jsx'
+import MenuIcon from '/assets/ei--navicon.svg'
+import CloseIcon from '/assets/ei--close.svg'
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
@@ -38,7 +40,7 @@ const Navbar = () => {
                 <img src={logo} alt="Logo" className='logo' />
             </Link>
             <div className='menu-icon' onClick={handleClick}>
-                <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
+                <img src={click ? CloseIcon : MenuIcon} alt="Menu Icon" />
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                 <li className='nav-item'>
