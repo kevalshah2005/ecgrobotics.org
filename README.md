@@ -29,7 +29,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/kevalshah2005/ecgrobotics.org">
-    <img src="src/assets/logo.webp" alt="Logo" width="168" height="80">
+    <img src="/public/assets/logo.webp" alt="Logo" width="160" height="90">
   </a>
 
 <h3 align="center">ECG Robotics Website</h3>
