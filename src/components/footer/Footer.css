@@ -16,7 +16,7 @@
 
 .footer-join > h1 {
     margin-bottom: var(--font-base);
-    font-size: var(--font-xl);
+    font-size: var(--font-lg);
 }
 
 .footer-join-grid {
@@ -36,7 +36,7 @@
 }
 
 .footer-join-section > h2 {
-    font-size: var(--font-lg);
+    font-size: var(--font-base);
     margin-bottom: 0.5rem;
 }
 
