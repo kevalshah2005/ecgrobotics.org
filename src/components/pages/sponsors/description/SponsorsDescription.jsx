@@ -12,12 +12,13 @@ import PublixLogo from '/assets/SponsorLogos/PublixLogo.svg'
 import HarrisTeeterLogo from '/assets/SponsorLogos/HarrisTeeterLogo.svg'
 import UnitedWayLogo from '/assets/SponsorLogos/UnitedWayLogo.svg'
 import CollinsAerospaceLogo from '/assets/SponsorLogos/CollinsAerospaceLogo.svg'
+import QorvoLogo from '/assets/SponsorLogos/QorvoLogo.webp';
 
 const sponsors = [
   {
     name: 'Qorvo',
     level: 'diamond',
-    // logo: Insert Qorvo logo here,
+    logo: QorvoLogo,
     link: 'https://www.qorvo.com',
   },
   {
