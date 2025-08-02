@@ -139,7 +139,8 @@
 }
 
 .team-logo{
-    width: 105%;
+   
+    width: 100%;
  }
  .team-logo:hover{
      transform: none;
