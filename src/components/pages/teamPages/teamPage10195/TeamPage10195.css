@@ -1,11 +1,41 @@
+.video-background {
+  position: fixed; /* Stay behind content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Behind everything */
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fills screen while preserving aspect ratio */
+  filter: blur(8px) brightness(0.5); /* Slight blur + darken */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2); /* Optional tint */
+}
 .team-container {
+  background: rgba(0, 0, 0, 0.5); /* dark and transparent */
     max-width: 1200px;
     width: 90%;
     margin: 2rem auto;
     padding: var(--font-lg);
     border-radius: 10px;
     text-align: center;
+  color: white; /* white text */
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* optional subtle shadow */
 }
+
 
 .team-container > h1 {
     font-size: var(--font-xl);
@@ -49,22 +79,37 @@
     margin-bottom: var(--font-xs);
 }
 
-.overview p, .history p, .outreach p {
+.outreach p {
     font-size: var(--font-base);
     color: var(--main-text-color);
     margin-bottom: var(--font-base);
 }
+.overview p{
+    font-size: 20px;
+}
 
+.history p{
+    color: orange;
+    font-size: 28px;
+    text-align: left;
+    font-weight: bold;
+
+}
 .history ul, .outreach ul {
     list-style-type: disc;
     padding-left: var(--font-base);
     text-align: left;
 }
 
-.history li, .outreach li {
+ .outreach li {
     font-size: var(--font-base);
     color: var(--main-text-color);
     margin-bottom: var(--font-xs);
+}
+.history li{
+    color: var(--main-text-color);
+    margin-bottom: var(--font-xs);
+    font-size: 12px;
 }
 
 .history ul ul {
@@ -94,7 +139,7 @@
 }
 
 .team-logo{
-    width: 90%;
+    width: 105%;
  }
  .team-logo:hover{
      transform: none;
