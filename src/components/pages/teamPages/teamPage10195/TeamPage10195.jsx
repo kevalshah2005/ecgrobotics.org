@@ -3,7 +3,8 @@ import './TeamPage10195.css';
 
 import exampleGalleryImage from '/assets/731_2019teampic.webp';
 
-import teamLogo from '/assets/FTC10195/NightOwlsTempBanner.png';
+import teamLogo from '/assets/FTC10195/NightOwlsWebsiteLogoTemp.png';
+import AutoSixSamp from '/assets/FTC10195/AutoSixSamp.mp4';
 import youtubeLogo from '/assets/YoutubeLogo.webp';
 import instagramLogo from '/assets/InstagramLogo.webp';
 import gmailLogo from '/assets/GmailLogo.png';
@@ -54,7 +55,16 @@ const TeamPage10195 = () => {
     console.log(galleryWidth);
 
     return (
+          <div>
+            <div className="video-background">
+      <video autoPlay muted loop playsInline className="video">
+        <source src={AutoSixSamp} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="overlay" />
+    </div>
         <div className="team-container" ref={teamContainerRef}>
+        
             <h1 className = "team-logo">
             <img src={teamLogo} alt="TeamLogo" className = "team-logo" />
             </h1>
@@ -96,9 +106,8 @@ Join us as we continue to illuminate the future of robotics!</p>
             <br />
             <br />
             <section className="history">
-                <h2>Team History</h2>
                 <br />
-                <p>FTC 10195 has soared through achievements and milestones. Our team has consistently performed well in various competitions, earning numerous awards and recognitions. Here are some of our major awards we've won over the years.</p>
+                <p>Awards</p>
                 <br />
                 <br />
                 <ul>
@@ -107,6 +116,7 @@ Join us as we continue to illuminate the future of robotics!</p>
                             <li>Salem Qualifier - Inspire Award 2nd Place</li>
                             <li>Sanford Qualifier - Inspire Award Winner & Finalist Aliance</li>
                             <li>NC State Championship - Innovate Award 2nd Place</li>
+                            <li>LOKI - Intelligent Integration Award Winner</li>
                         </ul>
                     </li>
                     <li> <b>2023-2024: CENTERSTAGE</b>
@@ -156,6 +166,7 @@ Join us as we continue to illuminate the future of robotics!</p>
                     height = {Math.min(window.innerWidth, galleryWidth) * 0.3 * 0.625}
                 />
             </section>
+        </div>
         </div>
     );
 };
