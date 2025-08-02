@@ -7,7 +7,7 @@ import Favicon from '/assets/logo1533.ico'
 function Home() {
     return (
         <>
-            <link rel="icon" href={Favicon}></link> /* Set the favicon path */
+            <link rel="icon" href={Favicon}></link>
             <Landing />
             <Description />
         </>
