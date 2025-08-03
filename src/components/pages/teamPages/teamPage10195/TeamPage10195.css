@@ -25,7 +25,7 @@
   background: rgba(0,0,0,0.2); /* Optional tint */
   
 }
-.team-container {
+.team-container-10195 {
   background: rgba(22, 22, 22, 0.6); /* dark and transparent */
     max-width: 1200px;
     width: 90%;
@@ -39,152 +39,152 @@
 }
 
 
-.team-container > h1 {
+.team-container-10195 > h1 {
     font-size: var(--font-xl);
     margin-bottom: var(--font-xs);
     color: var(--main-text-color);
 }
 
-.team-container > p {
+.team-container-10195 > p {
     font-size: var(--font-base);
     margin-bottom: var(--font-lg);
     color: var(--main-text-color);
 }
 
-.social-links {
+.social-links-10195 {
     margin-bottom: var(--font-lg);
 }
 
-.social-links a {
+.social-links-10195 a {
     margin: 0 var(--font-xs);
     color: var(--link-color);
     text-decoration: none;
 }
 
-.social-links a:hover {
+.social-links-10195 a:hover {
     text-decoration: underline;
 }
 
-.social-links img {
+.social-links-10195 img {
     width: 40px;
     height: 40px;
     margin: 0 var(--font-xs);
 }
 
-.overview, .history, .outreach, .media {
+.overview-10195, .history-10195, .outreach-10195, .media-10195 {
     margin-bottom: var(--font-lg);
 }
 
-.overview h2, .history h2, .outreach h2, .media h2 {
+.overview-10195 h2, .history-10195 h2, .outreach-10195 h2, .media-10195 h2 {
     font-size: var(--font-xl);
     color: var(--main-text-color);
     margin-bottom: var(--font-xs);
 }
 
-.outreach p {
+.outreach-10195 p {
     font-size: var(--font-base);
     color: var(--main-text-color);
     margin-bottom: var(--font-base);
 }
-.overview p{
+.overview-10195 p{
     font-size: 20px;
     font-family:  sans-serif;
 }
 
-.history p{
+.history-10195 p{
     color: orange;
     font-size: 28px;
     text-align: left;
     font-weight: bold;
 
 }
-.history ul, .outreach ul {
+.history-10195 ul, .outreach-10195 ul {
     list-style-type: disc;
     padding-left: var(--font-base);
     text-align: left;
 }
 
- .outreach li {
+ .outreach-10195 li {
     font-size: var(--font-base);
     color: var(--main-text-color);
     margin-bottom: var(--font-xs);
 }
-.history li{
+.history-10195 li{
     color: var(--main-text-color);
     margin-bottom: var(--font-xs);
     font-size: 12px;
 }
 
-.history ul ul {
+.history-10195 ul ul {
     margin-top: var(--font-xs);
 }
 
-.outreach-project {
+.outreach-project-10195 {
     margin-bottom: var(--font-lg);
 }
 
-.outreach-project h3 {
+.outreach-project-10195 h3 {
     font-size: var(--font-lg);
     color: var(--main-text-color);
     margin-bottom: var(--font-xs);
 }
 
-.outreach-project p {
+.outreach-project-10195 p {
     
     font-size: var(--font-base);
     color: var(--main-text-color);
     margin-bottom: var(--font-xs);
 }
-.team-roster{
+.team-roster-10195{
    width: 90%;
 }
-.team-roster:hover{
+.team-roster-10195:hover{
     transform: none;
 }
 
-.team-logo{
+.team-logo-10195{
    
     width: 100%;
  }
- .team-logo:hover{
+ .team-logo-10195:hover{
      transform: none;
  }
 
 
 @media (max-width: 768px) {
-    .team-container {
+    .team-container-10195 {
         padding: var(--font-base);
     }
 
-    .team-container > h1 {
+    .team-container-10195 > h1 {
         font-size: var(--font-lg);
     }
 
-    .team-container > p {
+    .team-container-10195 > p {
         font-size: var(--font-sm);
     }
 
-    .overview h2, .history h2, .outreach h2, .media h2 {
+    .overview-10195 h2, .history-10195 h2, .outreach-10195 h2, .media-10195 h2 {
         font-size: var(--font-lg);
     }
 
-    .overview p, .history p, .outreach p {
+    .overview-10195 p, .history-10195 p, .outreach-10195 p {
         font-size: var(--font-sm);
     }
 
-    .history ul, .outreach ul {
+    .history-10195 ul, .outreach-10195 ul {
         padding-left: var(--font-sm);
     }
 
-    .history li, .outreach li {
+    .history-10195 li, .outreach-10195 li {
         font-size: var(--font-sm);
     }
 
-    .outreach-project h3 {
+    .outreach-project-10195 h3 {
         font-size: var(--font-base);
     }
 
-    .outreach-project p {
+    .outreach-project-10195 p {
         font-size: var(--font-sm);
     }
 }

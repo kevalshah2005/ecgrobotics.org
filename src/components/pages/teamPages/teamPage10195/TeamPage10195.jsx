@@ -64,14 +64,14 @@ const TeamPage10195 = () => {
       </video>
       <div className="overlay-10195"  />
     </div>
-        <div className="team-container" ref={teamContainerRef}>
+        <div className="team-container-10195" ref={teamContainerRef}>
         
-            <h1 className = "team-logo">
-            <img src={teamLogo} alt="TeamLogo" className = "team-logo" />
+            <h1 className = "team-logo-10195">
+            <img src={teamLogo} alt="TeamLogo" className = "team-logo-10195" />
             </h1>
             <br />
                 <br />
-            <div className="social-links">
+            <div className="social-links-10195">
                 <a href="https://www.youtube.com/@ftc10195">
                     <img src={youtubeLogo} alt="YouTube" />
                 </a>
@@ -85,7 +85,7 @@ const TeamPage10195 = () => {
             </div>
             <br />
                 <br />
-            <section className="overview">
+            <section className="overview-10195">
                 <h2>Overview</h2>
                 <p>Welcome to the official team page for FTC 10195 – Night Owls!
 We are a powerhouse of innovation, teamwork, and cooperation. As a 10-year veteran team, we’ve spent the past decade sharpening our skills, pushing technological boundaries, and soaring to new heights across the globe.
@@ -99,14 +99,14 @@ Join us as we continue to illuminate the future of robotics!</p>
             <br />
             <br />
             <br />
-            <img src={teamRoster} alt="teamRoster" className = "team-roster" />
+            <img src={teamRoster} alt="teamRoster" className = "team-roster-10195" />
             <br />
             <br />
             <br />
             <br />
             <br />
             <br />
-            <section className="history">
+            <section className="history-10195">
                 <br />
                 <p>Awards</p>
                 <br />
@@ -149,9 +149,9 @@ Join us as we continue to illuminate the future of robotics!</p>
                 <br />
                 <br />
             </section>
-            <section className="outreach">
+            <section className="outreach-10195">
                 <h2>Outreach</h2>
-                <div className="outreach-project">
+                <div className="outreach-project-10195">
                     <Gallery 
                         images={outreachGallery} 
                         width = {Math.min(window.innerWidth, galleryWidth) * 0.2}
@@ -159,7 +159,7 @@ Join us as we continue to illuminate the future of robotics!</p>
                     />
                 </div>
             </section>
-            <section className="media">
+            <section className="media-10195">
                 <h2>Competitions</h2>
                 <Gallery 
                     images={galleryImages} 
