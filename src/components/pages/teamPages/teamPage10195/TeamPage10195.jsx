@@ -23,7 +23,6 @@ import teamPhoto4 from '/assets/FTC10195/TeamAtParkingLot.jpg';
 import teamPhoto5 from '/assets/FTC10195/TeamOnBench.jpg';
 
 import Gallery from '../../../gallery/Gallery';
-
 /* edit gallery images as needed */
 var outreachGallery = [
     childrensMuseum,
@@ -54,14 +53,16 @@ const TeamPage10195 = () => {
 
     console.log(galleryWidth);
 
+
+
     return (
           <div>
-            <div className="video-background">
-      <video autoPlay muted loop playsInline className="video">
+            <div className="video-background-10195">
+      <video autoPlay muted loop playsInline className="video-10195">
         <source src={AutoSixSamp} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="overlay" />
+      <div className="overlay-10195"  />
     </div>
         <div className="team-container" ref={teamContainerRef}>
         
