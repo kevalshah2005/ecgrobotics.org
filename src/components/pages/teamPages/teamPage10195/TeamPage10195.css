@@ -28,7 +28,7 @@
 .team-container-10195 {
   background: rgba(22, 22, 22, 0.6); /* dark and transparent */
     max-width: 1200px;
-    width: 90%;
+    width: 80%;
     margin: 2rem auto;
     padding: var(--font-lg);
     border-radius: 10px;
@@ -150,6 +150,50 @@
      transform: none;
  }
 
+.award-picture-10195{
+    width: 90%;
+    border-radius: 10px;
+  color: white; /* white text */
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0px 0px 10px rgb(132, 132, 132); /* optional subtle shadow */
+}
+ .award-picture-10195:hover{
+     transform: none;
+ }
+
+ .timeline-container-10195 {
+    width: 100%;
+  text-align: center;
+  margin: auto;
+}
+.timeline-content-10195 h2{
+    font-size: var(--font-xl);
+    margin-bottom: var(--font-xs);
+    color: var(--main-text-color);
+}
+.timeline-10195 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+
+.timeline-seasons-10195{
+         background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2) 0%,   /* Light center */
+    rgba(68, 68, 68, 0.2) 70%,    /* Mid tone */
+    rgba(17, 17, 17, 0.2) 100%    /* Dark edges */
+  );
+     width: 40%;
+     max-width: 400px;
+    border-radius: 10px;
+  color: white; /* white text */
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0px 0px 10px rgb(255, 255, 255, .4); /* optional subtle shadow */
+}
 
 @media (max-width: 768px) {
     .team-container-10195 {

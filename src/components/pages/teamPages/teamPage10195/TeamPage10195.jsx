@@ -2,18 +2,17 @@ import React, { useEffect, useState, useRef } from 'react';
 import './TeamPage10195.css';
 
 import exampleGalleryImage from '/assets/731_2019teampic.webp';
+import IntoTheDeepPage10195 from './INTOTHEDEEP10195/IntoTheDeepPage10195'; // No curly braces
+import DecodePage10195 from './DECODE10195/DecodePage10195'; // No curly braces
 
 import teamLogo from '/assets/FTC10195/NightOwlsWebsiteLogoTemp.png';
+import IntoTheDeepLogo from '/assets/FTC10195/IntoTheDeepLogo.webp';
+import DecodeLogo from '/assets/FTC10195/DecodeLogo.webp';
 import AutoSixSamp from '/assets/FTC10195/AutoSixSamp.mp4';
 import youtubeLogo from '/assets/YoutubeLogo.webp';
 import instagramLogo from '/assets/InstagramLogo.webp';
 import gmailLogo from '/assets/GmailLogo.png';
 import teamRoster from '/assets/FTC10195/NightOwlsTeamRoster.png';
-import childrensMuseum from '/assets/FTC10195/ChildrensMuseum1.jpg';
-import childrensMuseum2 from '/assets/FTC10195/ChildrensMuseum2.png';
-import childrensMuseum3 from '/assets/FTC10195/ChildrensMuseum3.jpg';
-import bricksboro1 from '/assets/FTC10195/Bricksboro1.png';
-import bricksboro2 from '/assets/FTC10195/Bricksboro2.png';
 import someWhereElse from '/assets/FTC10195/TeamSomewhereElse.jpg';
 //team photos!!
 import teamPhoto1 from '/assets/FTC10195/TeamAtStates.jpg';
@@ -23,25 +22,18 @@ import teamPhoto4 from '/assets/FTC10195/TeamAtParkingLot.jpg';
 import teamPhoto5 from '/assets/FTC10195/TeamOnBench.jpg';
 
 import Gallery from '../../../gallery/Gallery';
+
 /* edit gallery images as needed */
-var outreachGallery = [
-    childrensMuseum,
-    childrensMuseum2,
-    childrensMuseum3,
-    bricksboro1,
-    bricksboro2
-];
-var galleryImages = [
-    teamPhoto1,
-    teamPhoto2,
-    teamPhoto3,
-    teamPhoto4,
-    teamPhoto5
-];
+
+const yearData = {
+  INTOTHEDEEP: "",
+  DECODE: ""
+};
 
 const TeamPage10195 = () => {
     const teamContainerRef = useRef(null);
     const [galleryWidth, setGalleryWidth] = useState(0);
+    const [activeYear, setActiveYear] = useState('DECODE');
 
     useEffect(() => {
         if (teamContainerRef.current) {
@@ -148,25 +140,62 @@ Join us as we continue to illuminate the future of robotics!</p>
                 </ul>
                 <br />
                 <br />
+                 <img src={teamPhoto3} alt="teamPhoto3" className = "award-picture-10195" />
             </section>
-            <section className="outreach-10195">
-                <h2>Outreach</h2>
-                <div className="outreach-project-10195">
-                    <Gallery 
-                        images={outreachGallery} 
-                        width = {Math.min(window.innerWidth, galleryWidth) * 0.2}
-                        height = {Math.min(window.innerWidth, galleryWidth) * 0.2 * 0.625}
-                    />
-                </div>
-            </section>
-            <section className="media-10195">
-                <h2>Competitions</h2>
-                <Gallery 
-                    images={galleryImages} 
-                    width = {Math.min(window.innerWidth, galleryWidth) * 0.3}
-                    height = {Math.min(window.innerWidth, galleryWidth) * 0.3 * 0.625}
-                />
-            </section>
+           
+           
+        </div>
+
+         <div className="team-container-10195" ref={teamContainerRef}>
+               <h1>
+                    Seasons
+                </h1>
+
+            <div className="timeline-container-10195">
+                
+      <div className="timeline-10195">
+        {Object.keys(yearData).map((year) => (
+          <div 
+            key={year} 
+
+            onClick={() => setActiveYear(year)}
+          >
+             {(() => {
+      switch (year) {
+        case "INTOTHEDEEP":
+          return  <img src={IntoTheDeepLogo} alt="IntoTheDeepLogo" className = "timeline-seasons-10195" />;
+        case "DECODE":
+          return <img src={DecodeLogo} alt="DecodeLogo" className = "timeline-seasons-10195" />;
+        default:
+          return activeYear;
+      }
+    })()}
+
+          </div>
+        ))}
+      </div>
+      
+      {/* Content Area */}
+      <div className="timeline-content-10195">
+          <h2>
+    {(() => {
+      switch (activeYear) {
+        case "INTOTHEDEEP":
+           return <IntoTheDeepPage10195 onClick/>;
+          
+        case "DECODE":
+          return <DecodePage10195 onClick/>;
+        default:
+          return activeYear;
+      }
+    })()}
+
+  </h2>
+        <p>{
+            yearData[activeYear]
+        }</p>
+      </div>
+    </div>
         </div>
         </div>
     );
