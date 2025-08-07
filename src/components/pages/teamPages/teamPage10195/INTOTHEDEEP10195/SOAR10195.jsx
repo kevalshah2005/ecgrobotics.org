@@ -86,7 +86,7 @@ const SOAR10195 = (onClick) => {
               Claw
               </h3>
               <br />
-              Orignally utilized a double roller active intake. However, it was too heavy, leading to support pieces breaking and arm struggling to rotate
+              Originally utilized a double roller active intake. However, it was too heavy, leading to support pieces breaking and arm struggling to rotate
 and could only intake samples of a narrow range of orientations.
  <br />
   <br />
