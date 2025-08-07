@@ -25,7 +25,11 @@ const SOAR10195 = (onClick) => {
   if (state == selectedSubsystem){
     setSubsystem('NONE');
     setSelected (false);
-  }else{
+  }
+  if (state != 'NONE' && selectedSubsystem != 'NONE'){
+    setSubsystem('NONE');
+    setSelected (false);
+  }else if (state != 'NONE' && selectedSubsystem == 'NONE'){
     setSubsystem(state);
     setSelected (true);
   }

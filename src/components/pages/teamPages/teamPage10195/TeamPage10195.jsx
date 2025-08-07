@@ -110,6 +110,7 @@ Join us as we continue to illuminate the future of robotics!</p>
                             <li>Sanford Qualifier - Inspire Award Winner & Finalist Aliance</li>
                             <li>NC State Championship - Innovate Award 2nd Place</li>
                             <li>LOKI - Intelligent Integration Award Winner</li>
+                             <li>Carolina Premire Event - Semi-Finalist Alliance</li>
                         </ul>
                     </li>
                     <li> <b>2023-2024: CENTERSTAGE</b>
