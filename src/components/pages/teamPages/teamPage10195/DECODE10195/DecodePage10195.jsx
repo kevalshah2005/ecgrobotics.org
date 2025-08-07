@@ -28,7 +28,7 @@ const DecodePage10195 = (onClick) => {
     <h1>
     DECODE
     </h1>
-    (Febraury 2025 - Present)
+    (February 2025 - Present)
     <br />
     <br />
     <br />
@@ -36,14 +36,19 @@ const DecodePage10195 = (onClick) => {
       {Object.keys(tabs).map((tab) => (
           <div 
           className = "tab-10195-decode"
+        
             key={tab} 
 
             onClick={() => setTab(tab)}
+            
           >
+            
              {(() => {
       switch (tab) {
+        case selectedTab:
+        return <div className = "tab-10195-decode-selected"> <p> {tabs[tab]} </p> </div>;
         default:
-          return tabs[tab];
+          return <p> {tabs[tab]} </p>;
       }
     })()}
 

@@ -181,12 +181,7 @@
 
 
 .timeline-seasons-10195{
-         background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.2) 0%,   /* Light center */
-    rgba(68, 68, 68, 0.2) 70%,    /* Mid tone */
-    rgba(17, 17, 17, 0.2) 100%    /* Dark edges */
-  );
+         background: rgba(26, 26, 26, 0.4);
      width: 40%;
      max-width: 400px;
     border-radius: 10px;

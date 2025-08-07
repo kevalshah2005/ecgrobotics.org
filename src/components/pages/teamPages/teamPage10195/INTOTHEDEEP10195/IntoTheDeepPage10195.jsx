@@ -34,17 +34,22 @@ const IntoTheDeepPage10195 = (onClick) => {
     <br />
     <br />
     <div className = "tab-container-10195">
-      {Object.keys(tabs).map((tab) => (
+       {Object.keys(tabs).map((tab) => (
           <div 
           className = "tab-10195"
+        
             key={tab} 
 
             onClick={() => setTab(tab)}
+            
           >
+            
              {(() => {
       switch (tab) {
+        case selectedTab:
+        return <div className = "tab-10195-selected"> <p> {tabs[tab]} </p> </div>;
         default:
-          return tabs[tab];
+          return <p> {tabs[tab]} </p>;
       }
     })()}
 
