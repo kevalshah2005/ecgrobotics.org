@@ -6,7 +6,7 @@ import SOAR from './SOAR10195'; // No curly braces
 
 
 /* edit gallery images as needed */
-const teamMembers = ['Nikhil Nataraju', 'Ethan Kim ✨ROOKIE✨', 'Altijani Ahmed', 'Samarth Veiju ✨ROOKIE✨', 'Shanmukh Malyala','Aryan Khowala', 'Hashini Karthik ✨ROOKIE✨','Ishanvi Golla ✨ROOKIE✨','Samit Sinha ✨ROOKIE✨','Gunjan Verma ✨ROOKIE✨','Namita Chaudhary ✨ROOKIE✨', 'Dev Patel ✨ROOKIE✨', 'Mark Man', 'Sahasra Karthick ✨ROOKIE✨'];
+const teamMembers = ['Nikhil Nataraju', 'Ethan Kim ✨ROOKIE✨', 'Altijani Ahmed', 'Samarth Vejju ✨ROOKIE✨', 'Shanmukh Malyala','Aryan Khowala', 'Hashini Karthik ✨ROOKIE✨','Ishanvi Golla ✨ROOKIE✨','Samit Sinha ✨ROOKIE✨','Gunjan Verma ✨ROOKIE✨','Namita Chaudhary ✨ROOKIE✨', 'Dev Patel ✨ROOKIE✨', 'Mark Man', 'Sahasra Karthick ✨ROOKIE✨'];
 const roles = ['🌟 Captain + 🛠️ Lead Mechanical', '⭐💻 Lead Programming', '⭐🌐 Lead Outreach', '⭐📷 Lead Marketing','🛠️ Mechanical','🛠️ Mechanical','💻 Programming + 📷 Marketing','💻 Programming + 📷 Marketing','🛠️ Mechanical','💻 Programming + 📷 Marketing','🛠️ Mechanical + 📷 Marketing','🛠️ Mechanical','💻 Programming','💻 Programming'];
 const TeamMembers10195 = (onClick) => {
 

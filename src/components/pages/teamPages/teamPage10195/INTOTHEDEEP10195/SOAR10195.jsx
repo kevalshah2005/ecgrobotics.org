@@ -101,7 +101,8 @@ and could only intake samples of a narrow range of orientations.
 - Substantially better grip
   <br />
         </div> 
-        </div> 
+         </div> 
+        return;
         case "SLIDES":
           return <div className = "subsystem-grid-10195">
                 <video autoPlay muted loop playsInline className="subsystem-video-10195">
