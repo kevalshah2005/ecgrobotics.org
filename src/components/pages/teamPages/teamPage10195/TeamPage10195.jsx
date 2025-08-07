@@ -79,11 +79,21 @@ const TeamPage10195 = () => {
                 <br />
             <section className="overview-10195">
                 <h2>Overview</h2>
-                <p>Welcome to the official team page for FTC 10195 – Night Owls!
-We are a powerhouse of innovation, teamwork, and cooperation. As a 10-year veteran team, we’ve spent the past decade sharpening our skills, pushing technological boundaries, and soaring to new heights across the globe.
-Much like our nocturnal namesake, we are sharp-eyed, adaptive, and always on the hunt for excellence. Our commitment to FTC, creative problem-solving, and our initiatives have earned us 12+ awards.
-With every season, we strive to innovate and dominate the competition while fostering a spirit of collaboration and ingenuity. Whether it’s through precise coding, strategic game play, or designing cutting-edge mechanisms, the Night Owls are always ready to take flight.
-Join us as we continue to illuminate the future of robotics!</p>
+                <p>
+Welcome to the official team page for FTC 10195 the Night Owls! Our team is composed of 13 members from 3 different high schools across the Piedmont Triad Area. We participate in FTC to develop skills, meet new people, have fun, and, most importantly, promote and expand STEM in our community.
+<br />
+<br />
+ Founded in 2015, we are the newest FTC team in ECG Robotics. 
+The year 2025 marks eleven years of us existing as a team, however, despite our extensive history, we have yet to go to the FIRST Tech Challenge World Championship.
+<br />
+ We hope that our hard work, innovation, and the generations of alumni and mentors who came before us will provide the push we need.
+  This year, after eleven years, we will make it! 
+  Houston here we come! 
+  <br />
+  Hoot Hoot!
+
+
+</p>
             </section>
             <br />
             <br />
@@ -110,7 +120,7 @@ Join us as we continue to illuminate the future of robotics!</p>
                             <li>Sanford Qualifier - Inspire Award Winner & Finalist Aliance</li>
                             <li>NC State Championship - Innovate Award 2nd Place</li>
                             <li>LOKI - Intelligent Integration Award Winner</li>
-                             <li>Carolina Premire Event - Semi-Finalist Alliance</li>
+                             <li>Carolina Premier Event - 3rd Place Alliance</li>
                         </ul>
                     </li>
                     <li> <b>2023-2024: CENTERSTAGE</b>
