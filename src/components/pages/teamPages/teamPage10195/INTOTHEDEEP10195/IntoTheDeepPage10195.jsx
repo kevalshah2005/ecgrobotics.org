@@ -17,7 +17,7 @@ const tabs = {
 };
 
 const IntoTheDeepPage10195 = (onClick) => {
- const [selectedTab, setTab] = useState('TEAM');
+ const [selectedTab, setTab] = useState('ROBOT');
 
  const handleClick = (state) => {
   setTab(state);

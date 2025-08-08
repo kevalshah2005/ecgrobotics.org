@@ -33,7 +33,7 @@ const yearData = {
 const TeamPage10195 = () => {
     const teamContainerRef = useRef(null);
     const [galleryWidth, setGalleryWidth] = useState(0);
-    const [activeYear, setActiveYear] = useState('DECODE');
+    const [activeYear, setActiveYear] = useState('INTOTHEDEEP');
 
     useEffect(() => {
         if (teamContainerRef.current) {
