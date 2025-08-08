@@ -1,140 +1,251 @@
-.team-container {
+.video-background-10195 {
+
+  position: fixed; /* Stay behind content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Behind everything */
+}
+
+.video-10195 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fills screen while preserving aspect ratio */
+  filter: blur(8px) brightness(0.5); /* Slight blur + darken */
+}
+
+.overlay-10195 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2); /* Optional tint */
+  
+}
+.team-container-10195 {
+  background: rgba(22, 22, 22, 0.6); /* dark and transparent */
     max-width: 1200px;
-    width: 90%;
+    width: 80%;
     margin: 2rem auto;
     padding: var(--font-lg);
     border-radius: 10px;
     text-align: center;
+  color: white; /* white text */
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0px 0px 10px rgb(0, 0, 0); /* optional subtle shadow */
 }
 
-.team-container > h1 {
+
+.team-container-10195 > h1 {
     font-size: var(--font-xl);
     margin-bottom: var(--font-xs);
     color: var(--main-text-color);
 }
 
-.team-container > p {
+.team-container-10195 > p {
     font-size: var(--font-base);
     margin-bottom: var(--font-lg);
     color: var(--main-text-color);
 }
 
-.social-links {
+.social-links-10195 {
     margin-bottom: var(--font-lg);
 }
 
-.social-links a {
+.social-links-10195 a {
     margin: 0 var(--font-xs);
     color: var(--link-color);
     text-decoration: none;
 }
 
-.social-links a:hover {
+.social-links-10195 a:hover {
     text-decoration: underline;
 }
 
-.social-links img {
+.social-links-10195 img {
     width: 40px;
     height: 40px;
     margin: 0 var(--font-xs);
 }
 
-.overview, .history, .outreach, .media {
+.overview-10195, .history-10195, .outreach-10195, .media-10195 {
     margin-bottom: var(--font-lg);
 }
 
-.overview h2, .history h2, .outreach h2, .media h2 {
+.overview-10195 h2, .history-10195 h2, .outreach-10195 h2, .media-10195 h2 {
     font-size: var(--font-xl);
     color: var(--main-text-color);
     margin-bottom: var(--font-xs);
 }
 
-.overview p, .history p, .outreach p {
+.outreach-10195 p {
     font-size: var(--font-base);
     color: var(--main-text-color);
     margin-bottom: var(--font-base);
 }
+.overview-10195 p{
+    font-size: 20px;
+    font-family:  sans-serif;
+}
 
-.history ul, .outreach ul {
+.history-10195 p{
+    color: orange;
+    font-size: 28px;
+    text-align: left;
+    font-weight: bold;
+
+}
+.history-10195 ul, .outreach-10195 ul {
     list-style-type: disc;
     padding-left: var(--font-base);
     text-align: left;
 }
 
-.history li, .outreach li {
+ .outreach-10195 li {
     font-size: var(--font-base);
     color: var(--main-text-color);
     margin-bottom: var(--font-xs);
 }
+.history-10195 li{
+    color: var(--main-text-color);
+    margin-bottom: var(--font-xs);
+    font-size: 14px;
+}
 
-.history ul ul {
+.history-10195 ul ul {
     margin-top: var(--font-xs);
 }
 
-.outreach-project {
+.outreach-project-10195 {
     margin-bottom: var(--font-lg);
 }
 
-.outreach-project h3 {
+.outreach-project-10195 h3 {
     font-size: var(--font-lg);
     color: var(--main-text-color);
     margin-bottom: var(--font-xs);
 }
 
-.outreach-project p {
+.outreach-project-10195 p {
+    
     font-size: var(--font-base);
     color: var(--main-text-color);
     margin-bottom: var(--font-xs);
 }
-.team-roster{
+.team-roster-10195{
    width: 90%;
 }
-.team-roster:hover{
+.team-roster-10195:hover{
     transform: none;
 }
 
-.team-logo{
-    width: 90%;
+.team-logo-10195{
+   
+    width: 100%;
  }
- .team-logo:hover{
+ .team-logo-10195:hover{
      transform: none;
  }
 
+.award-picture-10195{
+    width: 90%;
+    border-radius: 10px;
+  color: white; /* white text */
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0px 0px 10px rgb(132, 132, 132); /* optional subtle shadow */
+}
+ .award-picture-10195:hover{
+     transform: none;
+ }
 
+ .timeline-container-10195 {
+    width: 100%;
+  text-align: center;
+  margin: auto;
+}
+.timeline-content-10195 h2{
+    font-size: var(--font-xl);
+    margin-bottom: var(--font-xs);
+    color: var(--main-text-color);
+}
+.timeline-10195 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+
+.timeline-seasons-10195{
+         background: rgba(26, 26, 26, 0.4);
+     width: 15%;
+     max-width: 200px;
+    border-radius: 10px;
+  color: white; /* white text */
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0px 0px 10px rgb(255, 255, 255, .4); /* optional subtle shadow */
+  transition: transform 0.3s ease;
+}
+.timeline-seasons-10195:hover{
+     transform: scale(1.05);
+}
+.timeline-seasons-10195-selected:hover{
+     transform: scale(1.05);
+}
+.timeline-seasons-10195-selected{
+         background: rgba(26, 26, 26, 0.4);
+     width: 20%;
+     max-width: 250px;
+    border-radius: 10px;
+  color: white; /* white text */
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0px 0px 10px rgba(255, 179, 0, 0.8); /* optional subtle shadow */
+   transition: transform 0.3s ease;
+}
+.timeline-seasons-picture-10195{
+     width: 95%;
+     max-width: 400px;
+}.timeline-seasons-picture-10195:hover{
+    transform: none;
+}
 @media (max-width: 768px) {
-    .team-container {
+    .team-container-10195 {
         padding: var(--font-base);
     }
 
-    .team-container > h1 {
+    .team-container-10195 > h1 {
         font-size: var(--font-lg);
     }
 
-    .team-container > p {
+    .team-container-10195 > p {
         font-size: var(--font-sm);
     }
 
-    .overview h2, .history h2, .outreach h2, .media h2 {
+    .overview-10195 h2, .history-10195 h2, .outreach-10195 h2, .media-10195 h2 {
         font-size: var(--font-lg);
     }
 
-    .overview p, .history p, .outreach p {
+    .overview-10195 p, .history-10195 p, .outreach-10195 p {
         font-size: var(--font-sm);
     }
 
-    .history ul, .outreach ul {
+    .history-10195 ul, .outreach-10195 ul {
         padding-left: var(--font-sm);
     }
 
-    .history li, .outreach li {
+    .history-10195 li, .outreach-10195 li {
         font-size: var(--font-sm);
     }
 
-    .outreach-project h3 {
+    .outreach-project-10195 h3 {
         font-size: var(--font-base);
     }
 
-    .outreach-project p {
+    .outreach-project-10195 p {
         font-size: var(--font-sm);
     }
 }

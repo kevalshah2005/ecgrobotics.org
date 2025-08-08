@@ -2,17 +2,17 @@ import React, { useEffect, useState, useRef } from 'react';
 import './TeamPage10195.css';
 
 import exampleGalleryImage from '/assets/731_2019teampic.webp';
+import IntoTheDeepPage10195 from './INTOTHEDEEP10195/IntoTheDeepPage10195'; // No curly braces
+import DecodePage10195 from './DECODE10195/DecodePage10195'; // No curly braces
 
-import teamLogo from '/assets/FTC10195/NightOwlsTempBanner.png';
+import teamLogo from '/assets/FTC10195/NightOwlsWebsiteLogoTemp.png';
+import IntoTheDeepLogo from '/assets/FTC10195/IntoTheDeepLogo.webp';
+import DecodeLogo from '/assets/FTC10195/DecodeLogo.webp';
+import AutoSixSamp from '/assets/FTC10195/AutoSixSamp.mp4';
 import youtubeLogo from '/assets/YoutubeLogo.webp';
 import instagramLogo from '/assets/InstagramLogo.webp';
 import gmailLogo from '/assets/GmailLogo.png';
 import teamRoster from '/assets/FTC10195/NightOwlsTeamRoster.png';
-import childrensMuseum from '/assets/FTC10195/ChildrensMuseum1.jpg';
-import childrensMuseum2 from '/assets/FTC10195/ChildrensMuseum2.png';
-import childrensMuseum3 from '/assets/FTC10195/ChildrensMuseum3.jpg';
-import bricksboro1 from '/assets/FTC10195/Bricksboro1.png';
-import bricksboro2 from '/assets/FTC10195/Bricksboro2.png';
 import someWhereElse from '/assets/FTC10195/TeamSomewhereElse.jpg';
 //team photos!!
 import teamPhoto1 from '/assets/FTC10195/TeamAtStates.jpg';
@@ -24,24 +24,16 @@ import teamPhoto5 from '/assets/FTC10195/TeamOnBench.jpg';
 import Gallery from '../../../gallery/Gallery';
 
 /* edit gallery images as needed */
-var outreachGallery = [
-    childrensMuseum,
-    childrensMuseum2,
-    childrensMuseum3,
-    bricksboro1,
-    bricksboro2
-];
-var galleryImages = [
-    teamPhoto1,
-    teamPhoto2,
-    teamPhoto3,
-    teamPhoto4,
-    teamPhoto5
-];
+
+const yearData = {
+  INTOTHEDEEP: "",
+  DECODE: ""
+};
 
 const TeamPage10195 = () => {
     const teamContainerRef = useRef(null);
     const [galleryWidth, setGalleryWidth] = useState(0);
+    const [activeYear, setActiveYear] = useState('INTOTHEDEEP');
 
     useEffect(() => {
         if (teamContainerRef.current) {
@@ -53,14 +45,25 @@ const TeamPage10195 = () => {
 
     console.log(galleryWidth);
 
+
+
     return (
-        <div className="team-container" ref={teamContainerRef}>
-            <h1 className = "team-logo">
-            <img src={teamLogo} alt="TeamLogo" className = "team-logo" />
+          <div>
+            <div className="video-background-10195">
+      <video autoPlay muted loop playsInline className="video-10195">
+        <source src={AutoSixSamp} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="overlay-10195"  />
+    </div>
+        <div className="team-container-10195" ref={teamContainerRef}>
+        
+            <h1 className = "team-logo-10195">
+            <img src={teamLogo} alt="TeamLogo" className = "team-logo-10195" />
             </h1>
             <br />
                 <br />
-            <div className="social-links">
+            <div className="social-links-10195">
                 <a href="https://www.youtube.com/@ftc10195">
                     <img src={youtubeLogo} alt="YouTube" />
                 </a>
@@ -74,13 +77,23 @@ const TeamPage10195 = () => {
             </div>
             <br />
                 <br />
-            <section className="overview">
+            <section className="overview-10195">
                 <h2>Overview</h2>
-                <p>Welcome to the official team page for FTC 10195 – Night Owls!
-We are a powerhouse of innovation, teamwork, and cooperation. As a 10-year veteran team, we’ve spent the past decade sharpening our skills, pushing technological boundaries, and soaring to new heights across the globe.
-Much like our nocturnal namesake, we are sharp-eyed, adaptive, and always on the hunt for excellence. Our commitment to FTC, creative problem-solving, and our initiatives have earned us 12+ awards.
-With every season, we strive to innovate and dominate the competition while fostering a spirit of collaboration and ingenuity. Whether it’s through precise coding, strategic game play, or designing cutting-edge mechanisms, the Night Owls are always ready to take flight.
-Join us as we continue to illuminate the future of robotics!</p>
+                <p>
+Welcome to the official team page for FTC 10195 the Night Owls! Our team is composed of 13 members from 3 different high schools across the Piedmont Triad Area. We participate in FTC to develop skills, meet new people, have fun, and, most importantly, promote and expand STEM in our community.
+<br />
+<br />
+ Founded in 2015, we are the newest FTC team in ECG Robotics. 
+The year 2025 marks eleven years of us existing as a team, however, despite our extensive history, we have yet to go to the FIRST Tech Challenge World Championship.
+<br />
+ We hope that our hard work, innovation, and the generations of alumni and mentors who came before us will provide the push we need.
+  This year, after eleven years, we will make it! 
+  Houston here we come! 
+  <br />
+  Hoot Hoot!
+
+
+</p>
             </section>
             <br />
             <br />
@@ -88,17 +101,16 @@ Join us as we continue to illuminate the future of robotics!</p>
             <br />
             <br />
             <br />
-            <img src={teamRoster} alt="teamRoster" className = "team-roster" />
+            <img src={teamRoster} alt="teamRoster" className = "team-roster-10195" />
             <br />
             <br />
             <br />
             <br />
             <br />
             <br />
-            <section className="history">
-                <h2>Team History</h2>
+            <section className="history-10195">
                 <br />
-                <p>FTC 10195 has soared through achievements and milestones. Our team has consistently performed well in various competitions, earning numerous awards and recognitions. Here are some of our major awards we've won over the years.</p>
+                <p>Awards</p>
                 <br />
                 <br />
                 <ul>
@@ -107,6 +119,8 @@ Join us as we continue to illuminate the future of robotics!</p>
                             <li>Salem Qualifier - Inspire Award 2nd Place</li>
                             <li>Sanford Qualifier - Inspire Award Winner & Finalist Aliance</li>
                             <li>NC State Championship - Innovate Award 2nd Place</li>
+                            <li>LOKI - Intelligent Integration Award Winner</li>
+                             <li>Carolina Premier Event - 3rd Place Alliance</li>
                         </ul>
                     </li>
                     <li> <b>2023-2024: CENTERSTAGE</b>
@@ -137,25 +151,69 @@ Join us as we continue to illuminate the future of robotics!</p>
                 </ul>
                 <br />
                 <br />
+                 <img src={teamPhoto3} alt="teamPhoto3" className = "award-picture-10195" />
             </section>
-            <section className="outreach">
-                <h2>Outreach</h2>
-                <div className="outreach-project">
-                    <Gallery 
-                        images={outreachGallery} 
-                        width = {Math.min(window.innerWidth, galleryWidth) * 0.2}
-                        height = {Math.min(window.innerWidth, galleryWidth) * 0.2 * 0.625}
-                    />
-                </div>
-            </section>
-            <section className="media">
-                <h2>Competitions</h2>
-                <Gallery 
-                    images={galleryImages} 
-                    width = {Math.min(window.innerWidth, galleryWidth) * 0.3}
-                    height = {Math.min(window.innerWidth, galleryWidth) * 0.3 * 0.625}
-                />
-            </section>
+           
+           
+        </div>
+
+         <div className="team-container-10195" ref={teamContainerRef}>
+               <h1>
+                    Seasons
+                </h1>
+                <p>
+                  Click on a season to see more info
+                  </p>
+
+            <div className="timeline-container-10195">
+                
+      <div className="timeline-10195">
+        {Object.keys(yearData).map((year) => (
+          <div 
+            key={year} 
+className={`timeline-seasons-10195${year === activeYear ? '-selected' : ''}`}
+            onClick={() => setActiveYear(year)}
+          >  
+            
+             {(() => {
+            switch (year) {
+        case "INTOTHEDEEP":
+          return  <img src={IntoTheDeepLogo} alt="IntoTheDeepLogo" className = "timeline-seasons-picture-10195"/>;
+        case "DECODE":
+          return <img src={DecodeLogo} alt="DecodeLogo" className = "timeline-seasons-picture-10195"/>;
+      }
+      
+     
+    })()}
+
+
+ 
+          </div>
+        ))}
+      </div>
+      
+      {/* Content Area */}
+      <div className="timeline-content-10195">
+          <h2>
+    {(() => {
+      switch (activeYear) {
+        case "INTOTHEDEEP":
+           return <IntoTheDeepPage10195 onClick/>;
+          
+        case "DECODE":
+          return <DecodePage10195 onClick/>;
+        default:
+          return activeYear;
+      }
+    })()}
+
+  </h2>
+        <p>{
+            yearData[activeYear]
+        }</p>
+      </div>
+    </div>
+        </div>
         </div>
     );
 };
