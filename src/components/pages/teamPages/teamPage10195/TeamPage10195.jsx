@@ -161,6 +161,9 @@ The year 2025 marks eleven years of us existing as a team, however, despite our 
                <h1>
                     Seasons
                 </h1>
+                <p>
+                  Click on a season to see more info
+                  </p>
 
             <div className="timeline-container-10195">
                 
@@ -168,20 +171,23 @@ The year 2025 marks eleven years of us existing as a team, however, despite our 
         {Object.keys(yearData).map((year) => (
           <div 
             key={year} 
-
+className={`timeline-seasons-10195${year === activeYear ? '-selected' : ''}`}
             onClick={() => setActiveYear(year)}
-          >
+          >  
+            
              {(() => {
-      switch (year) {
+            switch (year) {
         case "INTOTHEDEEP":
-          return  <img src={IntoTheDeepLogo} alt="IntoTheDeepLogo" className = "timeline-seasons-10195" />;
+          return  <img src={IntoTheDeepLogo} alt="IntoTheDeepLogo" className = "timeline-seasons-picture-10195"/>;
         case "DECODE":
-          return <img src={DecodeLogo} alt="DecodeLogo" className = "timeline-seasons-10195" />;
-        default:
-          return activeYear;
+          return <img src={DecodeLogo} alt="DecodeLogo" className = "timeline-seasons-picture-10195"/>;
       }
+      
+     
     })()}
 
+
+ 
           </div>
         ))}
       </div>

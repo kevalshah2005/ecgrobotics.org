@@ -179,8 +179,15 @@ text-align: left;
     font-style: italic;
 }
 .bot-10195 h2{
+  text-align: center;
     font-size: 32px;
     font-weight: normal;
+}
+.bot-10195 h3{
+    margin-top: calc(-30px - 10%);
+    text-align: center;
+    font-size: 34px;
+    font-style: italic;
 }
 .soar-container-10195{
 position: relative;
@@ -225,9 +232,9 @@ position: relative;
 .subsystem-info-10195{
     position: absolute;
     background: rgba(27, 27, 27, 1); /* dark and transparent */
-    max-width: 1200px;
+    max-width: 1400px;
     left: 15%;
-    width: 70%;
+    width: 80%;
 z-index: 10;
     margin: 2rem auto;
     padding: var(--font-lg);
@@ -259,18 +266,21 @@ z-index: 10;
   text-align: left;
   font-weight: normal;
    align-items: top;
+   font-size: 14px;
     align-content: top;
       word-wrap: break-word; /* Ensures long words are broken if needed */
   overflow-wrap: break-word; /* Modern alternative */
-  width: calc(100% - 350px - 30px - 2rem);  
+   width: calc(100% - 390px - 2rem);   
   position: relative;
   left: -2rem;
-  min-width: 170px;
+  min-width: 200px;  
   height: 70px + 1vy;
   box-shadow: 0px 0px 2px rgb(255, 255, 255,1);
   transition: transform 0.2s;
 }
+
 .subsystem-text-10195 h3{
+  margin-top: 0;
   font-size: 18px;
 }
 .subsystem-video-10195{
@@ -298,4 +308,38 @@ z-index: 10;
   top: 10px;
   right: 2rem;
   font-size: 36px;
+}
+.code-picture-10195{
+  height: auto;
+  max-width: 300px;
+  width: 50%;
+}
+.code-text-10195{
+   background: rgba(255, 149, 0, 0.3);
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+   align-items: center;
+    align-content: center;
+      word-wrap: break-word; /* Ensures long words are broken if needed */
+  overflow-wrap: break-word; /* Modern alternative */
+  width: calc(100% - 180px - 30px - 2rem);  
+  min-width: 170px;
+  height: 70px + 1vy;
+  box-shadow: -4px 0px 2px rgb(255, 153, 0);
+  transition: transform 0.2s;
+}
+.code-text-10195 h2{
+  font-size: 20px;
+  font-weight: bold;
+}
+.code-video-10195{
+    max-width: 200px;
+  width: 50%;
+  object-fit: cover; /* Fills screen while preserving aspect ratio */
+  filter: blur(0) brightness(1); /* Slight blur + darken */
+  position: relative;
+
 }

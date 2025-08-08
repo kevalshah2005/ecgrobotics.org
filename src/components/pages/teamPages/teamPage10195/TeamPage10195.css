@@ -182,14 +182,36 @@
 
 .timeline-seasons-10195{
          background: rgba(26, 26, 26, 0.4);
-     width: 40%;
-     max-width: 400px;
+     width: 15%;
+     max-width: 200px;
     border-radius: 10px;
   color: white; /* white text */
   border-radius: 10px; /* rounded corners */
   box-shadow: 0px 0px 10px rgb(255, 255, 255, .4); /* optional subtle shadow */
+  transition: transform 0.3s ease;
 }
-
+.timeline-seasons-10195:hover{
+     transform: scale(1.05);
+}
+.timeline-seasons-10195-selected:hover{
+     transform: scale(1.05);
+}
+.timeline-seasons-10195-selected{
+         background: rgba(26, 26, 26, 0.4);
+     width: 20%;
+     max-width: 250px;
+    border-radius: 10px;
+  color: white; /* white text */
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0px 0px 10px rgba(255, 179, 0, 0.8); /* optional subtle shadow */
+   transition: transform 0.3s ease;
+}
+.timeline-seasons-picture-10195{
+     width: 95%;
+     max-width: 400px;
+}.timeline-seasons-picture-10195:hover{
+    transform: none;
+}
 @media (max-width: 768px) {
     .team-container-10195 {
         padding: var(--font-base);
