@@ -4,6 +4,7 @@
 .main-10195 h1{
     font-size: 36px;
     font-weight: bold;
+    
 }
 .outreach-container-10195{
   text-align: left;
@@ -170,7 +171,7 @@ flex: 1; /* Each tab takes equal space */
     font-style: normal;
 }
 .bot-10195{
-text-align: left;
+text-align: center;
 }
 .bot-10195 h1{
     margin-top: 20px;
@@ -190,6 +191,7 @@ text-align: left;
     font-style: italic;
 }
 .soar-container-10195{
+  text-align: center;
 position: relative;
 }
 .soar-10195{
@@ -311,7 +313,7 @@ z-index: 10;
 }
 .code-picture-10195{
   height: auto;
-  max-width: 300px;
+  max-width: 200px;
   width: 50%;
 }
 .code-text-10195{

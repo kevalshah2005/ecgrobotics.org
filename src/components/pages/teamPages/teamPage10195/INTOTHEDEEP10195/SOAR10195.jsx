@@ -292,9 +292,9 @@ The system identifies one long side of the sample’s rectangular outline to cal
           </div>
           </div>
   <h2>
-           Autonomous
+           Autonomous 
       </h2>
-
+#1 OPR in NC, #142 in World, 98th percentile
        <div className = "outreach-grid-10195">
           <img src={auto1} className = "code-picture-10195" alt="autoSamp" />
         <div className = "code-text-10195">
@@ -325,8 +325,9 @@ The system identifies one long side of the sample’s rectangular outline to cal
           </div>
 
   <h2>
-           Tele Op
+           Tele Op 
       </h2>
+       #704 in World, 90th percentile
 <div className = "outreach-grid-10195">
   
         <div className = "code-text-10195">
