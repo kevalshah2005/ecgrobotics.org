@@ -1,6 +1,7 @@
 import React from 'react';
 import './NotFound.css';
 import { Button } from '../../button/Button';
+import Noise from '/assets/noise.png';
 
 export default function NotFound() {
     return (
@@ -14,6 +15,7 @@ export default function NotFound() {
             <Button className='btn' buttonStyle='btn--primary' buttonSize='btn--large' location='/'>
                 Return to Home
             </Button>
+            <div className='fuzzy-overlay'></div>
         </div>
     );
 }

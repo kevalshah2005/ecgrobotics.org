@@ -7,6 +7,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    overflow: hidden;
 }
 
 .glitch {
@@ -73,4 +75,22 @@
     margin-bottom: var(--font-xl);
     text-align: center;
     max-width: 600px;
+}
+
+.fuzzy-overlay {
+    position: absolute;
+    inset: -200%;
+    background-image: url("/assets/noise.png");
+    opacity: 10%;
+    animation: shift 0.2s linear infinite both;
+    pointer-events: none;
+}
+
+@keyframes shift {
+    0% {
+        transform: translateX(10%) translateY(10%);
+    }
+    100% {
+        transform: translateX(-10%) translateY(-10%);
+    }
 }
