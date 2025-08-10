@@ -39,7 +39,7 @@ function AppContent() {
   return (
     <>
       <ScrollToTop />
-      <Navbar />
+      {location.pathname !== '/404' && <Navbar />}
       <Routes>
         <Route path='/' exact element={<Home />} />
         <Route path='/about' exact element={<About />} />

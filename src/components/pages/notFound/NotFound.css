@@ -1,22 +1,63 @@
 .notfound-container {
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-color: var(--main-bg-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden; /* Keeps noise from spilling out */
 }
 
+/* ===== Noise Overlay ===== */
+.notfound-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+
+    /* Creates a pixel-grid style noise */
+    background:
+        repeating-linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.1) 0px,
+            rgba(255, 255, 255, 0.15) 1px,
+            transparent 1px,
+            transparent 2px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.05) 0px,
+            rgba(255, 255, 255, 0.05) 1px,
+            transparent 1px,
+            transparent 2px
+        );
+
+    background-size: 100% 2px, 2px 100%;
+    animation: noise-shift 0.2s infinite;
+    mix-blend-mode: screen;
+}
+
+@keyframes noise-shift {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-1px, 1px); }
+    50% { transform: translate(1px, -1px); }
+    75% { transform: translate(-1px, -1px); }
+    100% { transform: translate(0, 0); }
+}
+
+/* ===== Glitch Text ===== */
 .glitch {
     position: relative;
     color: var(--white);
-    font-size: var(--font-3xl);
+    font-size: var(--font-2xl);
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
     margin: 0;
+    z-index: 2; /* Above noise */
 }
 
 .glitch::before,
@@ -27,50 +68,64 @@
     left: 0;
     right: 0;
     overflow: hidden;
-    background-color: var(--main-bg-color);
+    background-color: transparent;
     color: var(--white);
 }
 
 .glitch::before {
-    left: 10px;
+    left: 5px;
     text-shadow: 5px 0 #3cd1e9;
-    animation: effect 3s infinite alternate linear;
+    animation: glitch-effect 3s infinite alternate linear;
 }
 
 .glitch::after {
-    left: 4px;
+    left: -4px;
     text-shadow: -5px 0 #ff1d6f;
-    animation: effect 2s infinite alternate linear;
+    animation: glitch-effect 1.5s infinite both linear;
 }
 
-@keyframes effect {
-    0% { clip: rect(55px, 9999px, 56px, 0); }
-    5% { clip: rect(47px, 9999px, 30px, 0); }
-    10% { clip: rect(33px, 9999px, 36px, 0); }
-    15% { clip: rect(35px, 9999px, 9px, 0); }
-    20% { clip: rect(63px, 9999px, 59px, 0); }
-    25% { clip: rect(96px, 9999px, 98px, 0); }
-    30% { clip: rect(48px, 9999px, 77px, 0); }
-    35% { clip: rect(50px, 9999px, 34px, 0); }
-    40% { clip: rect(60px, 9999px, 72px, 0); }
-    45% { clip: rect(10px, 9999px, 81px, 0); }
-    50% { clip: rect(2px, 9999px, 60px, 0); }
-    55% { clip: rect(23px, 9999px, 59px, 0); }
-    60% { clip: rect(76px, 9999px, 90px, 0); }
-    65% { clip: rect(62px, 9999px, 30px, 0); }
-    70% { clip: rect(60px, 9999px, 73px, 0); }
-    75% { clip: rect(60px, 9999px, 87px, 0); }
-    80% { clip: rect(2px, 9999px, 14px, 0); }
-    85% { clip: rect(28px, 9999px, 87px, 0); }
-    90% { clip: rect(73px, 9999px, 50px, 0); }
-    95% { clip: rect(79px, 9999px, 70px, 0); }
-    100% { clip: rect(17px, 9999px, 79px, 0); }
+@keyframes glitch-effect {
+    0% { clip-path: inset(55px 0 56px 0); }
+    5% { clip-path: inset(47px 0 30px 0); }
+    10% { clip-path: inset(33px 0 36px 0); }
+    15% { clip-path: inset(35px 0 9px 0); }
+    20% { clip-path: inset(63px 0 59px 0); }
+    25% { clip-path: inset(96px 0 98px 0); }
+    30% { clip-path: inset(48px 0 77px 0); }
+    35% { clip-path: inset(50px 0 34px 0); }
+    40% { clip-path: inset(60px 0 72px 0); }
+    45% { clip-path: inset(10px 0 81px 0); }
+    50% { clip-path: inset(2px 0 60px 0); }
+    55% { clip-path: inset(23px 0 59px 0); }
+    60% { clip-path: inset(76px 0 90px 0); }
+    65% { clip-path: inset(62px 0 30px 0); }
+    70% { clip-path: inset(60px 0 73px 0); }
+    75% { clip-path: inset(60px 0 87px 0); }
+    80% { clip-path: inset(2px 0 14px 0); }
+    85% { clip-path: inset(28px 0 87px 0); }
+    90% { clip-path: inset(73px 0 50px 0); }
+    95% { clip-path: inset(79px 0 70px 0); }
+    100% { clip-path: inset(17px 0 79px 0); }
 }
 
+/* ===== Message ===== */
 .notfound-container .message {
     color: var(--main-text-color);
     font-size: var(--font-base);
     margin-bottom: var(--font-xl);
     text-align: center;
     max-width: 600px;
+    z-index: 2; /* Above noise */
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .glitch::before,
+    .glitch::after {
+        animation: none;
+        opacity: 0;
+    }
+    .notfound-container::before {
+        animation: none;
+        opacity: 0;
+    }
 }
