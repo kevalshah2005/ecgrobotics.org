@@ -12,6 +12,7 @@ import TeamPage5795 from './components/pages/teamPages/teamPage5795/TeamPage5795
 import TeamPage6183 from './components/pages/teamPages/teamPage6183/TeamPage6183';
 import TeamPage10195 from './components/pages/teamPages/teamPage10195/TeamPage10195';
 import TeamPage1533 from './components/pages/teamPages/teamPage1533/TeamPage1533';
+import NotFound from './components/pages/notFound/NotFound';
 
 import { useEffect } from "react";
 import Sponsors from './components/pages/sponsors/Sponsors';
@@ -32,6 +33,34 @@ function ScrollToTop() {
   return null;
 }
 
+function AppContent() {
+  const location = useLocation();
+
+  return (
+    <>
+      <ScrollToTop />
+      <Navbar />
+      <Routes>
+        <Route path='/' exact element={<Home />} />
+        <Route path='/about' exact element={<About />} />
+        <Route path='/sponsors' exact element={<Sponsors />} />
+        <Route path='/contact' exact element={<Contact />} />
+        <Route path='/join' exact element={<Join />} />
+        <Route path="/join-ecg-robotics" element={<Navigate to="/join" replace />} />
+        <Route path='/teams' exact element={<Teams />} />
+        <Route path='/ftc731' exact element={<TeamPage731 />} />
+        <Route path='/ftc5795' exact element={<TeamPage5795 />} />
+        <Route path='/ftc6183' exact element={<TeamPage6183 />} />
+        <Route path='/ftc10195' exact element={<TeamPage10195 />} />
+        <Route path='/frc1533' exact element={<TeamPage1533 />} />
+        <Route path='/404' exact element={<NotFound />} />
+        <Route path="*" element={<Navigate to="/404" replace />} />
+      </Routes>
+      {location.pathname !== '/404' && <Footer /> }
+    </>
+  );
+}
+
 function App() {
   // Initialize AOS
   useEffect(() => {
@@ -41,23 +70,7 @@ function App() {
   return (
     <>
       <Router>
-        <ScrollToTop />
-        <Navbar />
-        <Routes>
-          <Route path='/' exact element={<Home />} />
-          <Route path='/about' exact element={<About />} />
-          <Route path='/sponsors' exact element = {<Sponsors />} />
-          <Route path='/contact' exact element= {<Contact />} />
-          <Route path='/join' exact element={<Join />} />
-          <Route path="/join-ecg-robotics" element={<Navigate to="/join" replace />} />
-          <Route path='/teams' exact element={<Teams />} />
-          <Route path='/ftc731' exact element={<TeamPage731 />} />
-          <Route path='/ftc5795' exact element={<TeamPage5795 />} />
-          <Route path='/ftc6183' exact element={<TeamPage6183 />} />
-          <Route path='/ftc10195' exact element={<TeamPage10195 />} />
-          <Route path='/frc1533' exact element={<TeamPage1533 />} />
-        </Routes>
-        <Footer />
+        <AppContent />
       </Router>
       <SpeedInsights />
       <Analytics />
