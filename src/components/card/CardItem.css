@@ -159,7 +159,5 @@
 
     .cards-item {
         width: 90%; /* Makes cards full width but leaves some margin */
-        max-width: 400px; /* Prevents oversized cards */
-        min-width: unset; /* Removes the earlier min-width rule */
     }
 }
