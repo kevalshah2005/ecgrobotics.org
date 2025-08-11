@@ -18,12 +18,6 @@ import TSFoundationLogo from '/assets/SponsorLogos/TSFoundationLogo.webp'
 
 const sponsors = [
   {
-    name: 'ECG Robotics',
-    level: 'strange',
-    logo: 'https://ecgrobotics.org/assets/logo.webp',
-    link: 'https://ecgrobotics.org/',
-  },
-  {
     name: 'Qorvo',
     level: 'diamond',
     logo: QorvoLogo,
