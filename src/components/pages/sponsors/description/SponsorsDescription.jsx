@@ -13,6 +13,8 @@ import HarrisTeeterLogo from '/assets/SponsorLogos/HarrisTeeterLogo.svg'
 import UnitedWayLogo from '/assets/SponsorLogos/UnitedWayLogo.svg'
 import CollinsAerospaceLogo from '/assets/SponsorLogos/CollinsAerospaceLogo.svg'
 import QorvoLogo from '/assets/SponsorLogos/QorvoLogo.webp';
+import IntuitiveLogo from '/assets/SponsorLogos/IntuitiveLogo.webp'
+import TSFoundationLogo from '/assets/SponsorLogos/TSFoundationLogo.webp'
 
 const sponsors = [
   {
@@ -48,7 +50,7 @@ const sponsors = [
   {
     name: 'Tannenbaum-Sternberger Foundation',
     level: 'platinum',
-    // logo: insert Tannenbaum-Sternberger logo here,
+    logo: TSFoundationLogo,
     link: 'https://www.tsfoundation.com',
   },
   {
@@ -66,8 +68,8 @@ const sponsors = [
   {
     name: 'Intuitive',
     level: 'gold',
-    logo: 'https://media.licdn.com/dms/image/v2/C560BAQE2wfXIjiCzWA/company-logo_200_200/company-logo_200_200/0/1630649619968/intuitivesurgical_logo?e=1736985600&v=beta&t=zOMSNuS7nky-MN-FxubP7cMlbQizj-RMBPtRq7V5E6I',
-    link: 'https://www.intuitive.com',
+    logo: IntuitiveLogo,
+    link: 'https://www.intuitive-foundation.org/',
   },
   {
     name: 'Publix Charity',
