@@ -89,7 +89,6 @@ const sponsors = [
   //   level: 'strange',
   //   logo: ExampleLogo,
   //   link: 'https://example.com',
-  // },
 ];
 
 const imageWidth = '80%';
