@@ -125,10 +125,7 @@
 }
 
 .team6183-member-card p {
-    color: var(--main-text-color);
-    margin: 0.2rem 0;
-    border: 1px solid var(--accent-color);
-    border-radius: 190px;
+    border-radius: 50%;
     padding: 0.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
