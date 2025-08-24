@@ -133,14 +133,14 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.team6183-member-card .member-email {
+.team6183-member-card {
     display: grid;
     margin-top: 0.5rem;
     color: var(--accent-color);
     text-decoration: none;
 }
 
-.team6183-member-card .member-email:hover {
+.team6183-member-card  {
     text-decoration: underline;
 }
 
