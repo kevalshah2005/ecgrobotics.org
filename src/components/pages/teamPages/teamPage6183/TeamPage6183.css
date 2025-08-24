@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+:root {
+    --accent-color: #FFD700;
+    /* Gold */
+    --main-text-color: #E0E0E0;
+    --link-color: #FFD700;
+
+    --font-xxl: 2.2rem;
+    --font-xl: 1.8rem;
+    --font-lg: 1.4rem;
+    --font-base: 1rem;
+    --font-sm: 0.95rem;
+    --font-xs: 0.75rem;
+}
+
+/* Page container */
 .team6183-team-container {
     max-width: 1200px;
     width: 90%;
@@ -7,43 +24,141 @@
     text-align: center;
 }
 
-.team6183-team-container > h1 {
-    font-size: var(--font-xl);
+/* Headers - unified style for section headings */
+h1,
+h2,
+h3,
+p,
+.overview-text {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Main page title */
+.team6183-team-container>h1 {
+    font-size: var(--font-lg);
     margin-bottom: var(--font-xs);
-    color: var(--main-text-color);
+    color: var(--accent-color);
+    opacity: 0;
+    animation: fadeInDown 1s ease forwards;
 }
 
-.team6183-team-container > p {
+/* Section headings - center and slightly smaller */
+.team6183-overview h2,
+.team6183-history h2,
+.team6183-outreach h2,
+.team6183-media h2,
+.team6183-members h2 {
+    font-size: 2.2rem;
+    color: var(--accent-color);
+    margin-bottom: var(--font-xs);
+    text-align: center;
+    /* center aligned */
+    opacity: 0;
+    animation: fadeInDown 0.8s ease forwards;
+}
+
+/* Keep Overview paragraph text centered too */
+.overview-text {
     font-size: var(--font-base);
-    margin-bottom: var(--font-lg);
     color: var(--main-text-color);
+    text-align: center;
+    /* center aligned */
+    margin: 0.5rem 0 1rem 0;
 }
 
-.team6183-team-photo {
+/* Team logo */
+.team6183-logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team6183-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px var(--accent-color);
+}
+
+/* Team photo */
+.team6183-photo-container {
+    width: 300px;
+    margin: 2rem auto;
+}
+
+.team6183-photo-container img.team6183-team-photo-small {
     width: 100%;
-}
-.team6183-team-photo:hover {
-    transform: none;
-}
-
-.team6183-social-links {
-    margin-bottom: var(--font-lg);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.team6183-social-links a {
-    margin: 0 var(--font-xs);
-    color: var(--link-color);
+.team6183-photo-container img.team6183-team-photo-small:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px var(--accent-color);
+}
+
+/* Team members grid */
+.team6183-member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.team6183-member-card {
+    background: rgba(255, 215, 0, 0.05);
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.team6183-member-card h3 {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    margin: 0.3rem 0;
+}
+
+.team6183-member-card p {
+    color: var(--main-text-color);
+    margin: 0.2rem 0;
+    border: 1px solid var(--accent-color);
+    border-radius: 190px;
+    padding: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team6183-member-card .member-email {
+    display: grid;
+    margin-top: 0.5rem;
+    color: var(--accent-color);
     text-decoration: none;
 }
 
-.team6183-social-links a:hover {
+.team6183-member-card .member-email:hover {
     text-decoration: underline;
 }
 
-.team6183-social-links img {
-    width: 40px;
-    height: 40px;
-    margin: 0 var(--font-xs);
+.member-portrait {
+    width: 50px;
+    height: 50px;
+    background: var(--accent-color);
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.5rem auto;
+}
+
+/* Outreach gallery & sections */
+.team6183-outreach-project {
+    margin-bottom: var(--font-lg);
 }
 
 .team6183-overview,
@@ -51,15 +166,6 @@
 .team6183-outreach,
 .team6183-media {
     margin-bottom: var(--font-lg);
-}
-
-.team6183-overview h2,
-.team6183-history h2,
-.team6183-outreach h2,
-.team6183-media h2 {
-    font-size: var(--font-xl);
-    color: var(--main-text-color);
-    margin-bottom: var(--font-xs);
 }
 
 .team6183-overview p,
@@ -88,63 +194,44 @@
     margin-top: var(--font-xs);
 }
 
-.team6183-outreach-project {
+/* Social links */
+.team6183-social-links {
     margin-bottom: var(--font-lg);
 }
 
-.team6183-outreach-project h3 {
-    font-size: var(--font-lg);
-    color: var(--main-text-color);
-    margin-bottom: var(--font-xs);
+.team6183-social-links a img {
+    width: 35px;
+    height: 35px;
+    margin: 0 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.team6183-outreach-project p {
-    font-size: var(--font-base);
-    color: var(--main-text-color);
-    margin-bottom: var(--font-xs);
+.team6183-social-links a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--accent-color);
 }
 
-@media (max-width: 768px) {
-    .team6183-team-container {
-        padding: var(--font-base);
+/* Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
     }
 
-    .team6183-team-container > h1 {
-        font-size: var(--font-lg);
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
     }
 
-    .team6183-team-container > p {
-        font-size: var(--font-sm);
-    }
-
-    .team6183-overview h2,
-    .team6183-history h2,
-    .team6183-outreach h2,
-    .team6183-media h2 {
-        font-size: var(--font-lg);
-    }
-
-    .team6183-overview p,
-    .team6183-history p,
-    .team6183-outreach p {
-        font-size: var(--font-sm);
-    }
-
-    .team6183-history ul,
-    .team6183-outreach ul {
-        padding-left: var(--font-sm);
-    }
-
-    .team6183-history li,
-    .team6183-outreach li {
-        font-size: var(--font-sm);
-    }
-
-    .team6183-outreach-project h3 {
-        font-size: var(--font-base);
-    }
-
-    .team6183-outreach-project p {
-        font-size: var(--font-sm);
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

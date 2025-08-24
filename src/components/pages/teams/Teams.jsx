@@ -37,7 +37,7 @@ function Teams() {
                             />
                             <CardItem 
                                 src={logo6183}
-                                title='Thunderducks'
+                                title='Triple Paradox'
                                 number='6183'
                                 path='/ftc6183'
                                 glowColor="var(--orange)"
