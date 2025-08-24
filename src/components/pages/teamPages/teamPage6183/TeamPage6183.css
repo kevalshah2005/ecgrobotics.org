@@ -22,14 +22,16 @@
     padding: var(--font-lg);
     border-radius: 10px;
     text-align: center;
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%);
+    border: 1px solid rgba(59, 130, 246, 0.2);
 }
 
-/* Headers - unified style for section headings */
-h1,
-h2,
-h3,
-p,
-.overview-text {
+/* Headers - unified style for section headings - SCOPED to team container */
+.team6183-team-container h1,
+.team6183-team-container h2,
+.team6183-team-container h3,
+.team6183-team-container p,
+.team6183-team-container .overview-text {
     font-family: 'Orbitron', sans-serif;
 }
 

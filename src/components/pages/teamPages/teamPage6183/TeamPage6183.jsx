@@ -17,18 +17,18 @@ import teamLogo from '/assets/logo6183.webp';
 const outreachGallery = [outreach1, outreach2, outreach3, outreach4, outreach5];
 
 const members = [
-    { name: "Luke St. Clair", roles: ["Co-Captain", "Mechanical", "Fabrication", "Outreach", "Lead Mechanical"], email: "Lmstclair10@gmail.com", grade: "Junior", registration: "Returning" },
-    { name: "Cheick Amadou", roles: ["Co-Captain", "Programming", "Lead Programming", "Outreach"], email: "camadou@guilford.edu", grade: "Senior", registration: "Returning" },
-    { name: "Xander Martinez", roles: ["Mechanical", "Website Programming", "Fabrication"], email: "xanmarm09@icloud.com", grade: "Junior", registration: "Recruited" },
-    { name: "Kristian Cook", roles: ["Programming", "Website Programming"], email: "misttwist@icloud.com", grade: "Sophomore", registration: "Recruited" },
-    { name: "Samy Gaire", roles: ["Mechanical", "Outreach"], email: "sgaire@guilford.edu", grade: "Sophomore", registration: "Returning" },
-    { name: "Kingston Morgan", roles: ["Programming"], email: "KingstonMorgan08@gmail.com", grade: "Senior", registration: "Recruited" },
-    { name: "Shreyas Josyula", roles: ["Programming"], email: "Shreyas.josyula@gmail.com", grade: "Sophomore", registration: "Drafted" },
-    { name: "Aryan Ranabhat", roles: ["Mechanical"], email: "aryanranabhat15@gmail.com", grade: "Freshman", registration: "Drafted" },
-    { name: "Rudra Patel", roles: ["Media", "Graphic Design", "Outreach"], email: "rudrap7604@gmail.com", grade: "Freshman", registration: "Drafted" },
-    { name: "Ronith Budde", roles: [], email: "ronithbudde@gmail.com", grade: "Freshman", registration: "Drafted" },
-    { name: "Ernest Hu", roles: ["Mechanical"], email: "ehu1@guilford.edu", grade: "Sophomore", registration: "Switched" },
-    { name: "Micah Edwards", roles: ["Mechanical", "Graphic Design", "Media", "Outreach"], email: "micahedwards584@gmail.com", grade: "Senior", registration: "Recruited" }
+    { name: "Luke St. Clair", roles: ["Co-Captain", "Mechanical", "Fabrication", "Outreach", "Lead Mechanical"], grade: "Junior", registration: "Returning" },
+    { name: "Cheick Amadou", roles: ["Co-Captain", "Programming", "Lead Programming", "Outreach"], grade: "Senior", registration: "Returning" },
+    { name: "Xander Martinez", roles: ["Mechanical", "Website Programming", "Fabrication"], grade: "Junior", registration: "Recruited" },
+    { name: "Kristian Cook", roles: ["Programming", "Website Programming"], grade: "Sophomore", registration: "Recruited" },
+    { name: "Samy Gaire", roles: ["Mechanical", "Outreach"], grade: "Sophomore", registration: "Returning" },
+    { name: "Kingston Morgan", roles: ["Programming"], grade: "Senior", registration: "Recruited" },
+    { name: "Shreyas Josyula", roles: ["Programming"], grade: "Sophomore", registration: "Drafted" },
+    { name: "Aryan Ranabhat", roles: ["Mechanical"], grade: "Freshman", registration: "Drafted" },
+    { name: "Rudra Patel", roles: ["Media", "Graphic Design", "Outreach"], grade: "Freshman", registration: "Drafted" },
+    { name: "Ronith Budde", roles: [], grade: "Freshman", registration: "Drafted" },
+    { name: "Ernest Hu", roles: ["Mechanical"], grade: "Sophomore", registration: "Switched" },
+    { name: "Micah Edwards", roles: ["Mechanical", "Graphic Design", "Media", "Outreach"], grade: "Senior", registration: "Recruited" }
 ];
 
 const TeamPage6183 = () => {
@@ -70,7 +70,7 @@ const TeamPage6183 = () => {
                 <section className="team6183-overview centered">
                     <h2>Overview</h2>
                     <p className="overview-text">
-                        Welcome to the official team page for FTC 6183 – Triple Paradox
+                        Welcome to the official team page for FTC 6183 – Triple Paradox.
                         We strive to grow as a team and exemplify the ideals of FIRST and gracious professionalism to the fullest extent. Not only do we focus on making the best robot each season through CAD, mechanical, and programming, but we are always on the lookout for ways to help impact our local and greater community in a positive manner.
                         Our team is looking forward to this upcoming season as a chance to learn new skill sets, teach kids and organizations in our community, and do our very best as a team to have the best season!
                     </p>
@@ -81,41 +81,38 @@ const TeamPage6183 = () => {
                     <img src={teamPhoto} alt="Team Picture" className="team6183-team-photo-small" />
                 </div>
 
-                <br />
-                <br />
+                {/* Awards */}
                 <section className="team6183-history">
                     <h2>Awards and Achievements</h2>
-                    <br />
-                    <br />
                     <ul>
-                        <li> <b> 2024-2025: INTO THE DEEP </b>
+                        <li><b>2024-2025: INTO THE DEEP</b>
                             <ul>
-                                <li>Ascend Leadership Academy-Saturday Connect Award Winner</li>
-                                <li>Salem Academy-Sunday Connect Award Winner</li>
+                                <li>Ascend Leadership Academy - Saturday Connect Award Winner</li>
+                                <li>Salem Academy - Sunday Connect Award Winner</li>
                             </ul>
                         </li>
-                        <li> <b> 2023-2024: CENTERSTAGE </b>
+                        <li><b>2023-2024: CENTERSTAGE</b>
                             <ul>
-                                <li>NC FTC Southern Guilford High School Control Award 2nd Place </li>
+                                <li>NC FTC Southern Guilford HS Control Award 2nd Place</li>
                                 <li>NC FTC Salem Academy Motivate Award Winner</li>
                             </ul>
                         </li>
-                        <li> <b> 2022-2023: POWERPLAY </b>
+                        <li><b>2022-2023: POWERPLAY</b>
                             <ul>
-                                <li>NC FTC Salem Academy and College Design Award Winner</li>
-                                <li>NC FTC Western MS Motivate Award 3rd Place, Design Award 2nd Place</li>
+                                <li>NC FTC Salem Academy Design Award Winner</li>
+                                <li>NC FTC Western MS Motivate 3rd, Design 2nd</li>
                             </ul>
                         </li>
-                        <li> <b> 2021-2022: Freight Frenzy </b>
+                        <li><b>2021-2022: FREIGHT FRENZY</b>
                             <ul>
-                                <li>North Carolina State Championship Finalist Alliance 2nd Pick, Design Award 2nd Place</li>
+                                <li>NC State Championship Finalist Alliance 2nd Pick, Design 2nd</li>
                                 <li>NC Qualifier (Elon) Design Award 2nd Place</li>
                             </ul>
                         </li>
                     </ul>
                 </section>
 
-                {/* Team Members */}
+                {/* Members */}
                 <section className="team6183-members">
                     <h2>Team Members</h2>
                     <div className="team6183-member-grid">
@@ -125,7 +122,6 @@ const TeamPage6183 = () => {
                                 <h3>{member.name}</h3>
                                 <p>{member.roles.join(', ') || 'No roles listed'}</p>
                                 <p><b>Grade:</b> {member.grade}</p>
-                                <a href={`mailto:${member.email}`} className="member-email">Contact</a>
                             </div>
                         ))}
                     </div>
@@ -142,7 +138,6 @@ const TeamPage6183 = () => {
                         />
                     </div>
                 </section>
-
             </div>
         </div>
     );
