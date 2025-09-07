@@ -59,6 +59,29 @@
     animation: fadeInDown 0.8s ease forwards;
 }
 
+/* Section headings - unified style for both h2 and h3 */
+.team6183-overview h2,
+.team6183-history h2,
+.team6183-outreach h2,
+.team6183-media h2,
+.team6183-members h2,
+.team6183-members h3 {
+    font-size: 2.2rem;
+    color: var(--accent-color);
+    margin-bottom: var(--font-xs);
+    text-align: center;
+    opacity: 0;
+    animation: fadeInDown 0.8s ease forwards;
+}
+
+/* Make h3s slightly smaller than h2s */
+.team6183-members h3 {
+    font-size: 1.6rem;
+    margin-top: var(--font-sm);
+    font-weight: 600;
+}
+
+
 /* Keep Overview paragraph text centered too */
 .overview-text {
     font-size: var(--font-base);
@@ -89,23 +112,33 @@
     margin: 2rem auto;
 }
 
+/* Center co-captains row */
+.team6183-member-grid.co-captains,
+.team6183-member-grid.outreach,
+.team6183-member-grid.programming {
+    justify-content: center;
+    gap: 2rem;
+}
+
 .team6183-photo-container img.team6183-team-photo-small {
-    width: 100%;
+    width: 75%;
     border-radius: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .team6183-photo-container img.team6183-team-photo-small:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     box-shadow: 0 0 15px var(--accent-color);
 }
 
 /* Team members grid */
 .team6183-member-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
     margin-top: 1rem;
+    justify-content: center;
+    /* centers grid items */
 }
 
 .team6183-member-card {
@@ -116,6 +149,12 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 0;
     animation: fadeInUp 0.5s ease forwards;
+    display: grid;
+    margin-top: 0.5rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    text-decoration: underline;
+
 }
 
 .team6183-member-card h3 {
@@ -128,17 +167,6 @@
     border-radius: 50%;
     padding: 0.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team6183-member-card {
-    display: grid;
-    margin-top: 0.5rem;
-    color: var(--accent-color);
-    text-decoration: none;
-}
-
-.team6183-member-card  {
-    text-decoration: underline;
 }
 
 .member-portrait {
@@ -233,4 +261,12 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+@media (max-width: 768px) {
+    .team6183-photo-container img.team6183-team-photo-small {
+        width: 75%;
+        margin-right: 25%;
+    }
+
 }
