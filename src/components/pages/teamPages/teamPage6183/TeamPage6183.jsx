@@ -48,13 +48,13 @@ const TeamPage6183 = () => {
     // Group members by their primary role only (first role)
     const coCaptains = members.filter(m => m.roles[0] === "Co-Captain");
     const mechanical = members.filter(
-        m => m.roles[0] === "Mechanical" && m.roles[0] !== "Co-Captain"
+        m => m.roles[0] === "Mechanical" && !m.roles.includes("Co-Captain")
     );
     const programming = members.filter(
-        m => m.roles[0] === "Programming" && m.roles[0] !== "Co-Captain"
+        m => m.roles[0] === "Programming" && !m.roles.includes("Co-Captain")
     );
     const outreach = members.filter(
-        m => m.roles[0] === "Outreach" && m.roles[0] !== "Co-Captain"
+        m => m.roles[0] === "Outreach" && !m.roles.includes("Co-Captain")
     );
 
     // Keep a fallback for other roles (media, outreach, etc.)

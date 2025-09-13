@@ -152,7 +152,6 @@
     display: grid;
     margin-top: 0.5rem;
     color: var(--accent-color);
-    text-decoration: none;
     text-decoration: underline;
 
 }
