@@ -3,7 +3,7 @@ import './TeamPage6183.css';
 import tiktokLogo from '/assets/TikTokLogo.png';
 import instagramLogo from '/assets/InstagramLogo.webp';
 import gmailLogo from '/assets/GmailLogo.png';
-import Gallery from '../../../gallery/Gallery';
+/*import Gallery from '../../../gallery/Gallery';*/
 
 import outreach1 from '/assets/FTC6183/Outreach1.png';
 import outreach2 from '/assets/FTC6183/Outreach2.png';
@@ -21,14 +21,16 @@ const members = [
     { name: "Cheick Amadou", roles: ["Co-Captain", "Programming", "Lead Programming", "Outreach"], grade: "Senior", registration: "Returning" },
     { name: "Xander Martinez", roles: ["Mechanical", "Website Programming", "Fabrication"], grade: "Junior", registration: "Recruited" },
     { name: "Kristian Cook", roles: ["Programming", "Website Programming"], grade: "Sophomore", registration: "Recruited" },
-    { name: "Samy Gaire", roles: ["Mechanical", "Outreach"], grade: "Sophomore", registration: "Returning" },
+    { name: "Samy Gaire", roles: ["Outreach", "Mechanical"], grade: "Sophomore", registration: "Returning" },
     { name: "Kingston Morgan", roles: ["Programming"], grade: "Senior", registration: "Recruited" },
     { name: "Shreyas Josyula", roles: ["Programming"], grade: "Sophomore", registration: "Drafted" },
     { name: "Aryan Ranabhat", roles: ["Mechanical"], grade: "Freshman", registration: "Drafted" },
-    { name: "Rudra Patel", roles: ["Media", "Graphic Design", "Outreach"], grade: "Freshman", registration: "Drafted" },
-    { name: "Ronith Budde", roles: [], grade: "Freshman", registration: "Drafted" },
+    { name: "Rudra Patel", roles: ["Outreach", "Mechanical", "Media", "Graphic Design"], grade: "Freshman", registration: "Drafted" },
     { name: "Ernest Hu", roles: ["Mechanical"], grade: "Sophomore", registration: "Switched" },
-    { name: "Micah Edwards", roles: ["Mechanical", "Graphic Design", "Media", "Outreach"], grade: "Senior", registration: "Recruited" }
+    { name: "Micah Edwards", roles: ["Outreach", "Graphic Design", "Media", "Mechanical"], grade: "Senior", registration: "Recruited" },
+    { name: "Pralove Shah", roles: ["Programming"], grade: "Freshman", registration: "Recruited" },
+    { name: "Arden Bankman", roles: ["Mechanical"], grade: "Freshman", registration: "Recruited" },
+    { name: "Ronith Budde", roles: ["Mechanical"], grade: "Freshman", registration: "Recruited" },
 ];
 
 const TeamPage6183 = () => {
@@ -42,6 +44,27 @@ const TeamPage6183 = () => {
             setGalleryWidth(maxWidth);
         }
     }, []);
+
+    // Group members by their primary role only (first role)
+    const coCaptains = members.filter(m => m.roles[0] === "Co-Captain");
+    const mechanical = members.filter(
+        m => m.roles[0] === "Mechanical" && !m.roles.includes("Co-Captain")
+    );
+    const programming = members.filter(
+        m => m.roles[0] === "Programming" && !m.roles.includes("Co-Captain")
+    );
+    const outreach = members.filter(
+        m => m.roles[0] === "Outreach" && !m.roles.includes("Co-Captain")
+    );
+
+    // Keep a fallback for other roles (media, outreach, etc.)
+    const others = members.filter(
+        m =>
+            !m.roles.includes("Co-Captain") &&
+            !m.roles.includes("Mechanical") &&
+            !m.roles.includes("Programming") &&
+            !m.roles.includes("Outreach")
+    );
 
     return (
         <div className="team6183-page">
@@ -115,28 +138,57 @@ const TeamPage6183 = () => {
                 {/* Members */}
                 <section className="team6183-members">
                     <h2>Team Members</h2>
-                    <div className="team6183-member-grid">
-                        {members.map((member, index) => (
-                            <div key={index} className="team6183-member-card" style={{ animationDelay: `${index * 0.1}s` }}>
+
+                    {/* Co-Captains */}
+                    <div className="team6183-member-grid co-captains">
+                        {coCaptains.map((member, index) => (
+                            <div key={index} className="team6183-member-card">
                                 <div className="member-portrait">{member.name.charAt(0)}</div>
                                 <h3>{member.name}</h3>
-                                <p>{member.roles.join(', ') || 'No roles listed'}</p>
+                                <p>{member.roles.join(", ")}</p>
                                 <p><b>Grade:</b> {member.grade}</p>
                             </div>
                         ))}
                     </div>
-                </section>
 
-                {/* Outreach */}
-                <section className="team6183-outreach">
-                    <h2>Outreach</h2>
-                    <div className="team6183-outreach-project">
-                        <Gallery
-                            images={outreachGallery}
-                            width={Math.min(window.innerWidth, galleryWidth) * 0.2}
-                            height={Math.min(window.innerWidth, galleryWidth) * 0.2 * 0.625}
-                        />
+                    {/* Mechanical */}
+                    <h3>Mechanical</h3>
+                    <div className="team6183-member-grid">
+                        {mechanical.map((member, index) => (
+                            <div key={index} className="team6183-member-card">
+                                <div className="member-portrait">{member.name.charAt(0)}</div>
+                                <h3>{member.name}</h3>
+                                <p>{member.roles.join(", ")}</p>
+                                <p><b>Grade:</b> {member.grade}</p>
+                            </div>
+                        ))}
                     </div>
+
+                    {/* Programming */}
+                    <h3>Programming</h3>
+                    <div className="team6183-member-grid programming">
+                        {programming.map((member, index) => (
+                            <div key={index} className="team6183-member-card">
+                                <div className="member-portrait">{member.name.charAt(0)}</div>
+                                <h3>{member.name}</h3>
+                                <p>{member.roles.join(", ")}</p>
+                                <p><b>Grade:</b> {member.grade}</p>
+                            </div>
+                        ))}
+                    </div>
+                    {/* Outreach / Other Roles */}
+                    <h3>Outreach</h3>
+                    <div className="team6183-member-grid outreach">
+                        {outreach.map((member, index) => (
+                            <div key={index} className="team6183-member-card">
+                                <div className="member-portrait">{member.name.charAt(0)}</div>
+                                <h3>{member.name}</h3>
+                                <p>{member.roles.join(", ")}</p>
+                                <p><b>Grade:</b> {member.grade}</p>
+                            </div>
+                        ))}
+                    </div>
+
                 </section>
             </div>
         </div>
