@@ -1,0 +1,39 @@
+.Article-main{
+    color: white;
+    text-align: center;
+}
+.Article-main h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.Article-info{
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+.Article-body{
+    width: 90%;
+    margin-left: 5%;
+    font-size: 18px;
+}
+.Article-image{
+    margin-top: 10px;
+      max-width: fit-content; /* Allows the div to shrink to its content's width */
+  margin-left: auto;
+  margin-right: auto;
+    min-width: 300px;
+    width: 60%;
+      overflow: hidden;    /* hides any part of the image that goes outside */
+    object-fit: cover;   /* keeps image filling container without distortion */
+  display: block;
+}
+.Article-caption{
+    color: rgb(193, 193, 193);
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.Article-image:hover{
+    transform: none;
+}
+

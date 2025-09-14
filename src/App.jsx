@@ -15,7 +15,13 @@ import TeamPage1533 from './components/pages/teamPages/teamPage1533/TeamPage1533
 
 import { useEffect } from "react";
 import Sponsors from './components/pages/sponsors/Sponsors';
+
+
 import Blog from './components/pages/blog/Blog';
+import Article1 from './components/pages/blog/Blogs/10195_091125_NightOwlsCompeteAtTheCarolinaPremierEvent/Article.jsx';
+
+
+
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Analytics } from "@vercel/analytics/react";
 
@@ -58,6 +64,10 @@ function App() {
           <Route path='/ftc6183' exact element={<TeamPage6183 />} />
           <Route path='/ftc10195' exact element={<TeamPage10195 />} />
           <Route path='/frc1533' exact element={<TeamPage1533 />} />
+         
+         {/* BLOG ARTICLES HERE*/}
+         <Route path='/blog/10195_091125_NightOwlsCompeteAtTheCarolinaPremierEvent' exact element={<Article1 />} />
+
         </Routes>
         <Footer />
       </Router>
