@@ -61,6 +61,11 @@ const Navbar = () => {
                         Our Teams
                     </Link>
                 </li>
+                 <li className='nav-item'>
+                    <Link to='/blog' className='nav-links' onClick={closeMobileMenu}>
+                        Blog
+                    </Link>
+                </li>
                 <li className='nav-item'>
                     <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
                         Contact
@@ -70,6 +75,7 @@ const Navbar = () => {
                     <Link to='/join' className='nav-links' onClick={closeMobileMenu}>
                         Join
                     </Link>
+                    
                 </li>
             </ul>
         </nav>
