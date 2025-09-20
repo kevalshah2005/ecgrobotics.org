@@ -98,7 +98,7 @@ export default function Blog() {
   return (
     <div className="blogs-main">
       <h1>Welcome to the ECG Robotics Blog!</h1>
-      <p>
+      <p className = "blogs-text">
         This is where you can find blogs from ECG Robotics, FTC 731, 5795, 6183, 10195, and FRC 1533.
       </p>
 

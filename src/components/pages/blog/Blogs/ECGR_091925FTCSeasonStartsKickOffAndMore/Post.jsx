@@ -1,10 +1,10 @@
 import React from 'react'
-import thumbnail from '/assets/Blog/10195/CPE4.JPG'
+import thumbnail from '/assets/Blog/ECGR/KickoffDecode1.png'
 
 export const postData = {
-  title: "Night Owls Compete at the Carolina Premier Event",
-  author: "FTC 10195",
-  publishDate: "09-11-2025", //MM-DD-YYYY
+  title: "FTC Season Starts! Kickoff and More",
+  author: "ECGR",
+  publishDate: "09-19-2025", //MM-DD-YYYY
   thumbnail
 }
 

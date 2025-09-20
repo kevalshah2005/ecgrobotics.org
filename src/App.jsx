@@ -19,7 +19,7 @@ import Sponsors from './components/pages/sponsors/Sponsors';
 
 import Blog from './components/pages/blog/Blog';
 import Article1 from './components/pages/blog/Blogs/10195_091125_NightOwlsCompeteAtTheCarolinaPremierEvent/Article.jsx';
-
+import Article2 from './components/pages/blog/Blogs/ECGR_091925FTCSeasonStartsKickOffAndMore/Article.jsx';
 
 
 import { SpeedInsights } from '@vercel/speed-insights/react';
@@ -67,6 +67,8 @@ function App() {
          
          {/* BLOG ARTICLES HERE*/}
          <Route path='/blog/10195_091125_NightOwlsCompeteAtTheCarolinaPremierEvent' exact element={<Article1 />} />
+         <Route path='/blog/ECGR_091925FTCSeasonStartsKickOffAndMore' exact element={<Article2 />} />
+
 
         </Routes>
         <Footer />

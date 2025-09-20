@@ -1,10 +1,10 @@
 import React from 'react'
 import './Article.css'
-import image1 from '/assets/FTC10195/CPE1.png'
-import image2 from '/assets/FTC10195/CPE4.JPG'
-import image3 from '/assets/FTC10195/CPE5.png'
-import image4 from '/assets/FTC10195/CPE6.png'
-import image5 from '/assets/FTC10195/CPE2.png'
+import image1 from '/assets/Blog/10195/CPE1.png'
+import image2 from '/assets/Blog/10195/CPE4.JPG'
+import image3 from '/assets/Blog/10195/CPE5.png'
+import image4 from '/assets/Blog/10195/CPE6.png'
+import image5 from '/assets/Blog/10195/CPE2.png'
 
 export const postData = {
   title: "Night Owls Compete at the Carolina Premier Event",
@@ -16,7 +16,10 @@ export default function Article() {
   return (
     <div className="Article-main">
       <h1>{postData.title}</h1>
-      <p className = "Article-info">By {postData.author}, published {postData.publishDate}</p>
+      <p className = "Article-info"> Written by Hashini Karthick, FTC {postData.author}
+        <br />
+        Published {postData.publishDate}
+      </p>
       <p className = "Article-body">
         On July 25–27, 2024, the Night Owls FTC Robotics Team competed in the Carolina Premier Tournament, facing off against teams from around the world in three days of intense competition. The event featured 15 qualifier matches and a high-stakes playoff bracket, offering students a chance to showcase their engineering skills, strategic thinking, and teamwork.
       </p>
@@ -49,6 +52,9 @@ export default function Article() {
       <p className = "Article-caption">
         From left to right: China, Mexico and Romania
       </p>
+    
+      <br />
+       <br /> 
       </p>
     </div>
   )
