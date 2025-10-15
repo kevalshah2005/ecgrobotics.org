@@ -1,4 +1,3 @@
-// src/components/pages/blog/Blog.jsx
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Blog.css'

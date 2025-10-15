@@ -1,17 +1,28 @@
 .Article-main{
     color: white;
     text-align: center;
+    font-size: 24px;
 }
 .Article-main h1{
     font-size: 48px;
     margin-bottom: 10px;
 }
 .Article-info{
-    font-size: 24px;
     font-style: italic;
     margin-bottom: 40px;
+    font-size: 18px;
+}
+.Article-info p{
+    font-style: italic;
+    margin-bottom: 40px;
+    font-size: 18px;
 }
 .Article-body{
+    width: 90%;
+    margin-left: 5%;
+    font-size: 18px;
+}
+.Article-body p{
     width: 90%;
     margin-left: 5%;
     font-size: 18px;
@@ -33,7 +44,12 @@
     font-style: italic;
     margin-bottom: 10px;
 }
+.Article-caption p{
+    color: rgb(193, 193, 193);
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
 .Article-image:hover{
     transform: none;
 }
-
