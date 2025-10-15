@@ -4,8 +4,8 @@ import './DecodePage10195.css';
 
 
 /* edit gallery images as needed */
-const teamMembers = ['Shanmukh Malyala', 'Ethan Kim', 'Hashini Karthik', 'Nikhil Nataraju', 'Gunjan Verma', 'Altijani Ahmed', 'Aiden Li ✨ROOKIE✨', 'Samarth Vejju', 'Aryan Khowala', 'Ishanvi Golla', 'Samit Sinha', 'Namita Chaudhary', 'Atharva Gupta ✨ROOKIE✨'];
-const roles = ['🌟 Captain + 🛠️ Mechanical', '🌟 Captain + 💻 Programming','🌟 Secretary + 💻 Programming + 📷 Marketing', '⭐🛠️ Lead Mechanical', '⭐💻 Lead Programming + 📷 Marketing', '⭐🌐 Lead Outreach', '⭐📷 Lead Marketing', '💻 Programming', '🛠️ Mechanical', '💻 Programming', '🛠️ Mechanical', '🛠️ Mechanical + 📷 Marketing', '🛠️ Mechanical'];
+const teamMembers = ['Shanmukh Malyala', 'Ethan Kim', 'Hashini Karthik', 'Nikhil Nataraju', 'Gunjan Verma', 'Altijani Ahmed', 'Aiden Li ✨ROOKIE✨', 'Samarth Vejju', 'Aryan Khowala', 'Ishanvi Golla', 'Samit Sinha', 'Namita Chaudhary', 'Atharva Gupta ✨ROOKIE✨','Ved Jha ✨ROOKIE✨','Jessie Stinson ✨ROOKIE✨' ];
+const roles = ['🌟 Captain + 🛠️ Mechanical', '🌟 Captain + 💻 Programming','🌟 Secretary + 💻 Programming + 📷 Marketing', '⭐🛠️ Lead Mechanical', '⭐💻 Lead Programming + 📷 Marketing', '⭐🌐 Lead Outreach', '⭐📷 Lead Marketing', '💻 Programming', '🛠️ Mechanical', '💻 Programming', '🛠️ Mechanical', '🛠️ Mechanical + 📷 Marketing', '🛠️ Mechanical', '🛠️ Mechanical', '🛠️ Mechanical+ 📷 Marketing'];
 const TeamMembers10195 = (onClick) => {
 
   return<div>
