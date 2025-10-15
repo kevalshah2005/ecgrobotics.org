@@ -5,6 +5,7 @@ export const postData = {
   title: "Night Owls Compete at the Carolina Premier Event",
   author: "FTC 10195",
   publishDate: "09-11-2025", //MM-DD-YYYY
+  description: "Competed with international and local teams alike!",
   thumbnail
 }
 

@@ -85,8 +85,17 @@
 }
 .blog-learn-more{
     position: absolute;
+    top: 375px;
     left: 40px;
+    font-size: 18px;
+}
+.blog-description{
+    margin-left: 5px;
+    margin-right: 5px;
+    position: absolute;
+    left: 1w;
     top: 340px;
+    font-size: 14px;
 }
 
 @media  (max-width: 767px) {

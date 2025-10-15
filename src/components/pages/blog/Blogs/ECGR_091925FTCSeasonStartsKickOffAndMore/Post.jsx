@@ -5,6 +5,7 @@ export const postData = {
   title: "FTC Season Starts! Kickoff and More",
   author: "ECGR",
   publishDate: "09-19-2025", //MM-DD-YYYY
+  description: "Presentations, shooter game, good food and more!",
   thumbnail
 }
 

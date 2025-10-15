@@ -103,7 +103,7 @@ export default function Blog() {
 
       <div className="blogs-container">
         {posts.length === 0 ? (
-          <p className="no-posts">No posts found — check the browser console for debugging output.</p>
+          <p className="no-posts">No posts found</p>
         ) : (
           posts.map((post, i) => (
             <div key={i} className="blog-card" style={{ width: cardWidth }} onClick={() => navigate(`/blog/${post.folderName}`)}>
@@ -125,6 +125,11 @@ export default function Blog() {
               <p className = "blog-learn-more">
                 Click here to learn more!
                 </p>
+
+              <div className = "blog-description">
+                {post.postData?.description} 
+                </div>
+            
             </div>
           ))
         )}
