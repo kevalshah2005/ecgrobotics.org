@@ -106,7 +106,7 @@ export default function Blog() {
           <p className="no-posts">No posts found</p>
         ) : (
           posts.map((post, i) => (
-            <div key={i} className="blog-card" style={{ width: cardWidth }} onClick={() => navigate(`/blog/${post.folderName}`)}>
+            <div key={i} className="blog-card" style={{ width: cardWidth }} onClick={() => navigate(`/blog/${post.postData.path}`)}>
                 
                   <p className="blog-author">
                 {post.postData?.author}

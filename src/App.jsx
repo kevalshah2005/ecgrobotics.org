@@ -21,7 +21,6 @@ import Blog from './components/pages/blog/Blog';
 import Article1 from './components/pages/blog/Blogs/10195_091125_NightOwlsCompeteAtTheCarolinaPremierEvent/Article.jsx';
 import Article2 from './components/pages/blog/Blogs/ECGR_091925FTCSeasonStartsKickOffAndMore/Article.jsx';
 
-
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Analytics } from "@vercel/analytics/react";
 
@@ -66,8 +65,8 @@ function App() {
           <Route path='/frc1533' exact element={<TeamPage1533 />} />
          
          {/* BLOG ARTICLES HERE*/}
-         <Route path='/blog/10195_091125_NightOwlsCompeteAtTheCarolinaPremierEvent' exact element={<Article1 />} />
-         <Route path='/blog/ECGR_091925FTCSeasonStartsKickOffAndMore' exact element={<Article2 />} />
+         <Route path='/blog/Night-Owls-Compete-At-The-Carolina-Premier-Event' exact element={<Article1 />} />
+          <Route path='/blog/FTC-Season-Starts-Kickoff-And-More' exact element={<Article2/>} />
 
 
         </Routes>

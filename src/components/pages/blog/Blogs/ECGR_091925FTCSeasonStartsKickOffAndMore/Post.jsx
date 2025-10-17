@@ -6,6 +6,7 @@ export const postData = {
   author: "ECGR",
   publishDate: "09-19-2025", //MM-DD-YYYY
   description: "Presentations, shooter game, good food and more!",
+  path: "FTC-Season-Starts-Kickoff-And-More",
   thumbnail
 }
 
