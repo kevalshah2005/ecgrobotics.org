@@ -19,8 +19,8 @@
 }
 
 .blogs-container {
- display: grid;
-  grid-template-columns: 300px 300px;
+display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
   gap: 20px;
   padding: 10px;
   margin: 0 auto;
