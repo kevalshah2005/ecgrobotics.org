@@ -1,0 +1,105 @@
+.blogs-main{
+    font-size: var(--font-xl);
+    text-align: center;
+    color: var(--main-text-color);
+}
+.blogs-main p{
+    font-size: 18px;
+     margin-bottom: 10px;
+}
+.blogs-main h1{
+    font-weight: bold;
+    font-size: 48px;
+     margin-bottom: 5px;
+}
+.blogs-text{
+    margin-left: 5%;
+    text-align: center;
+    width: 90%;
+}
+
+.blogs-container {
+display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 20px;
+  padding: 10px;
+  margin: 0 auto;
+  margin: 20px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  width: 100%;
+}
+.blog-card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(22, 22, 22,.5);
+    transition: transform 0.2s ease; /* Smooth animation */
+    cursor: pointer; /* Changes mouse to a hand when hovering */
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgb(255, 255, 255,1);
+}
+.blog-card:hover{
+    transform: scale(1.05); /* Grow 5% bigger on hover */
+}
+.blog-thumbnail{
+  height: 240px;       /* max visible height */
+  overflow: hidden;    /* hides any part of the image that goes outside */
+    object-fit: cover;   /* keeps image filling container without distortion */
+  display: block;
+    position: absolute;
+    left: 10%;
+    top: 80px;
+    width: 240px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(255, 255, 255,.9);
+}
+.blog-thumbnail:hover{
+    transform: none;
+}
+.blog-author{
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    font-size: 14px;
+}
+.blog-date{
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    font-size: 14px;
+}
+.blog-title{
+    left: 1w;
+    position: absolute;
+    text-align: center;
+    top: 25px;
+    font-size: 20px;
+    width: 100%;
+    font-weight: bold;
+      display: -webkit-box;
+  -webkit-line-clamp: 2;  /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.blog-learn-more{
+    position: absolute;
+    top: 375px;
+    left: 40px;
+    font-size: 18px;
+}
+.blog-description{
+    margin-left: 5px;
+    margin-right: 5px;
+    position: absolute;
+    left: 1w;
+    top: 340px;
+    font-size: 14px;
+}
+
+@media  (max-width: 767px) {
+  .blogs-container { grid-template-columns: 1fr; margin-left: 0px; }
+  .blog-card { max-width: 300px; margin: 0 auto; }
+}
+
