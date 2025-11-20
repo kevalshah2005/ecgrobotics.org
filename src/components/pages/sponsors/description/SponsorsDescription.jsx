@@ -15,7 +15,7 @@ import CollinsAerospaceLogo from '/assets/SponsorLogos/CollinsAerospaceLogo.svg'
 import QorvoLogo from '/assets/SponsorLogos/QorvoLogo.webp'
 import IntuitiveLogo from '/assets/SponsorLogos/IntuitiveLogo.webp'
 import TSFoundationLogo from '/assets/SponsorLogos/TSFoundationLogo.webp'
-import AnalogDevicesLogo from '/assets/SponsorLogos/AnalogDevices.png'
+import AnalogDevicesLogo from '/assets/SponsorLogos/AnalogDevicesLogo.jpg'
 import CotalityLogo from '/assets/SponsorLogos/Cotality.png'
 import GDTLogo from '/assets/SponsorLogos/GDTLogo.png'
 const sponsors = [
@@ -52,7 +52,7 @@ const sponsors = [
   },
   {
     name: 'HondaJet',
-    level: 'gold',
+    level: 'strange',
     logo: HondaJetLogo,
     link: 'https://www.hondajet.com',
   },
@@ -60,7 +60,7 @@ const sponsors = [
   {
     name: 'Analog Devices',
     level: 'gold',
-    logo: CollinsAerospaceLogo,
+    logo: AnalogDevicesLogo,
     link: 'https://www.collinsaerospace.com',
   },
   
