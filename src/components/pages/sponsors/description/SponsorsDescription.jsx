@@ -25,7 +25,7 @@ const sponsors = [
     logo: QorvoLogo,
     link: 'https://www.qorvo.com',
   },
-  /*{
+  {
     name: 'P&G Foundation',
     level: 'diamond',
     logo: PGFoundationLogo,
@@ -63,7 +63,7 @@ const sponsors = [
     logo: CollinsAerospaceLogo,
     link: 'https://www.collinsaerospace.com',
   },
-  */
+  
   {
     name: 'Intuitive',
     level: 'silver',
@@ -81,6 +81,24 @@ const sponsors = [
     level: 'bronze',
     logo: GDTLogo,
     link: 'https://www.GDT.com',
+  },
+  {
+    name: 'United Way',
+    level: 'bronze',
+    logo: UnitedWayLogo,
+    link: 'https://www.unitedwaygso.org/',
+  },
+  {
+    name: 'Publix',
+    level: 'bronze',
+    logo: PublixLogo,
+    link: 'https://www.publix.com/',
+  },
+  {
+    name: 'Harris Teeter',
+    level: 'bronze',
+    logo: HarrisTeeterLogo,
+    link: 'https://www.harristeeter.com/',
   },
   // Example Strange sponsor
   // {
