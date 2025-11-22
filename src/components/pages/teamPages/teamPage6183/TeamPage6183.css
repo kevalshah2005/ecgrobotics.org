@@ -1,272 +1,352 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
 
 :root {
-    --accent-color: #FFD700;
-    /* Gold */
-    --main-text-color: #E0E0E0;
-    --link-color: #FFD700;
+    --accent-color: #ffd700;
+    /* gold */
+    --muted: #cbd5e1;
+    --bg-glass: rgba(16, 24, 40, 0.35);
+    --card-glass: rgba(255, 255, 255, 0.04);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --main-text-color: #e6eef8;
 
-    --font-xxl: 2.2rem;
+    --font-xxl: 2.4rem;
     --font-xl: 1.8rem;
-    --font-lg: 1.4rem;
+    --font-lg: 1.2rem;
     --font-base: 1rem;
-    --font-sm: 0.95rem;
-    --font-xs: 0.75rem;
+    --font-sm: 0.9rem;
+    --radius: 12px;
 }
 
-/* Page container */
+/* Page wrapper (glass) */
 .team6183-team-container {
     max-width: 1200px;
-    width: 90%;
-    margin: 2rem auto;
-    padding: var(--font-lg);
-    border-radius: 10px;
+    width: 92%;
+    margin: 2.4rem auto;
+    padding: 1.6rem;
+    border-radius: var(--radius);
+    color: var(--main-text-color);
+    /* stronger, lighter glass so effect is visible */
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(10px) saturate(130%);
+    -webkit-backdrop-filter: blur(10px) saturate(130%);
+    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.5);
     text-align: center;
-    background: linear-gradient(135deg, rgba(30, 58, 138, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%);
-    border: 1px solid rgba(59, 130, 246, 0.2);
-}
-
-/* Headers - unified style for section headings - SCOPED to team container */
-.team6183-team-container h1,
-.team6183-team-container h2,
-.team6183-team-container h3,
-.team6183-team-container p,
-.team6183-team-container .overview-text {
     font-family: 'Orbitron', sans-serif;
 }
 
-/* Main page title */
+/* Headings */
 .team6183-team-container>h1 {
-    font-size: var(--font-lg);
-    margin-bottom: var(--font-xs);
+    font-size: var(--font-xxl);
     color: var(--accent-color);
-    opacity: 0;
-    animation: fadeInDown 1s ease forwards;
+    margin: 0 0 0.4rem 0;
 }
 
-/* Section headings - center and slightly smaller */
-.team6183-overview h2,
-.team6183-history h2,
-.team6183-outreach h2,
-.team6183-media h2,
-.team6183-members h2 {
-    font-size: 2.2rem;
+.team6183-team-container h2 {
+    font-size: var(--font-xl);
     color: var(--accent-color);
-    margin-bottom: var(--font-xs);
-    text-align: center;
-    /* center aligned */
-    opacity: 0;
-    animation: fadeInDown 0.8s ease forwards;
+    margin: 1.2rem 0 0.4rem 0;
 }
 
-/* Section headings - unified style for both h2 and h3 */
-.team6183-overview h2,
-.team6183-history h2,
-.team6183-outreach h2,
-.team6183-media h2,
-.team6183-members h2,
-.team6183-members h3 {
-    font-size: 2.2rem;
-    color: var(--accent-color);
-    margin-bottom: var(--font-xs);
-    text-align: center;
-    opacity: 0;
-    animation: fadeInDown 0.8s ease forwards;
+.team6183-team-container h3 {
+    font-size: 1.05rem;
+    margin: 0.4rem 0 0.6rem 0;
 }
 
-/* Make h3s slightly smaller than h2s */
-.team6183-members h3 {
-    font-size: 1.6rem;
-    margin-top: var(--font-sm);
-    font-weight: 600;
-}
-
-
-/* Keep Overview paragraph text centered too */
 .overview-text {
     font-size: var(--font-base);
-    color: var(--main-text-color);
-    text-align: center;
-    /* center aligned */
-    margin: 0.5rem 0 1rem 0;
+    color: var(--muted);
+    line-height: 1.5;
+    max-width: 900px;
+    margin: 0.6rem auto 1.2rem auto;
 }
 
-/* Team logo */
+/* Logo & photo */
 .team6183-logo {
-    width: 120px;
-    height: auto;
-    display: block;
-    margin: 1rem auto;
+    width: 110px;
+    margin: 0.6rem auto;
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform .32s ease, box-shadow .32s ease;
 }
 
 .team6183-logo:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 12px var(--accent-color);
+    transform: scale(1.06);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.12);
 }
 
-/* Team photo */
 .team6183-photo-container {
-    width: 300px;
-    margin: 2rem auto;
-}
-
-/* Center co-captains row */
-.team6183-member-grid.co-captains,
-.team6183-member-grid.outreach,
-.team6183-member-grid.programming {
-    justify-content: center;
-    gap: 2rem;
+    width: 320px;
+    margin: 1.2rem auto;
 }
 
 .team6183-photo-container img.team6183-team-photo-small {
-    width: 75%;
-    border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    border-radius: 14px;
+    display: block;
 }
 
-.team6183-photo-container img.team6183-team-photo-small:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 15px var(--accent-color);
+/* Social */
+.team6183-social-links {
+    margin-top: 0.6rem;
 }
 
-/* Team members grid */
+.team6183-social-links a img {
+    width: 36px;
+    height: 36px;
+    margin: 0 0.4rem;
+    transition: transform .2s ease;
+}
+
+.team6183-social-links a img:hover {
+    transform: translateY(-3px);
+    filter: drop-shadow(0 6px 18px rgba(255, 215, 0, 0.12));
+}
+
+/* MEMBER GRID - centered and responsive */
 .team6183-member-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    /* center rows consistently for any number of items */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.15rem;
     margin-top: 1rem;
+    align-items: flex-start;
     justify-content: center;
-    /* centers grid items */
+    /* centers the whole row */
 }
 
-.team6183-member-card {
-    background: rgba(255, 215, 0, 0.05);
-    border: 1px solid var(--accent-color);
-    border-radius: 10px;
-    padding: 1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 0;
-    animation: fadeInUp 0.5s ease forwards;
-    display: grid;
-    margin-top: 0.5rem;
-    color: var(--accent-color);
-    text-decoration: none;
-    text-decoration: underline;
+.team6183-member-grid.co-captains {
+    justify-content: center;
+}
 
+/* MEMBER CARD (glass) */
+.team6183-member-card {
+    width: 100%;
+    max-width: 320px;
+    /* slightly more visible card glass */
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    color: var(--main-text-color);
+    box-shadow: 0 8px 20px rgba(2, 6, 23, 0.45);
+    transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+    text-align: center;
+}
+
+.team6183-member-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(2, 6, 23, 0.6);
+    border-color: rgba(255, 215, 0, 0.14);
 }
 
 .team6183-member-card h3 {
     color: var(--accent-color);
-    font-size: 1.2rem;
-    margin: 0.3rem 0;
+    margin-bottom: 0.2rem;
 }
 
-.team6183-member-card p {
-    border-radius: 50%;
-    padding: 0.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.team6183-member-card .roles {
+    color: var(--muted);
+    font-size: .92rem;
+    margin-bottom: .6rem;
+}
+
+.team6183-member-card .meta {
+    color: rgba(230, 238, 248, 0.7);
+    font-size: .85rem;
 }
 
 .member-portrait {
-    width: 50px;
-    height: 50px;
-    background: var(--accent-color);
-    color: #000;
-    font-weight: bold;
-    font-size: 1.2rem;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.95), rgba(255, 160, 0, 0.9));
+    color: #0b1020;
+    font-weight: 700;
+    font-size: 1.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 0.5rem auto;
+    margin: 0 auto 0.6rem auto;
+    box-shadow: 0 6px 18px rgba(255, 160, 0, 0.12);
 }
 
-/* Outreach gallery & sections */
-.team6183-outreach-project {
-    margin-bottom: var(--font-lg);
-}
-
+/* Sections spacing */
 .team6183-overview,
 .team6183-history,
 .team6183-outreach,
 .team6183-media {
-    margin-bottom: var(--font-lg);
-}
-
-.team6183-overview p,
-.team6183-history p,
-.team6183-outreach p {
-    font-size: var(--font-base);
-    color: var(--main-text-color);
-    margin-bottom: var(--font-base);
+    margin-bottom: 1.4rem;
 }
 
 .team6183-history ul,
 .team6183-outreach ul {
-    list-style-type: disc;
-    padding-left: var(--font-base);
+    list-style: disc;
+    padding-left: 1.1rem;
+    text-align: left;
+    color: var(--muted);
+}
+
+.team6183-history li {
+    margin-bottom: .35rem;
+}
+
+/* Timeline container glass */
+.timeline-container-6183 {
+    max-width: 1200px;
+    width: 92%;
+    margin: 1.2rem auto 3rem auto;
+    padding: 1rem;
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(6px) saturate(120%);
+}
+
+/* Awards: two-column, centered, larger and glassy cards */
+.team6183-history {
+    display: flex;
+    flex-direction: column; /* ensure title stacks above the awards grid */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.team6183-history h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0.2rem 0 0.6rem 0;
+    font-size: 1.4rem; /* clamp title for better mobile fit */
+}
+
+.team6183-history>ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    /* force 2 columns */
+    gap: 1rem 1.25rem;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 980px;
+    box-sizing: border-box;
+}
+
+.team6183-history>ul>li {
+    list-style: none;
+    /* remove top-level bullet */
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 10px;
+    padding: 0.9rem 1rem;
+    color: var(--main-text-color);
+    font-size: 1.05rem;
+    /* slightly bigger */
+    box-shadow: 0 8px 20px rgba(2, 6, 23, 0.35);
+    text-align: center;
+    /* season title centered */
+}
+
+.team6183-history>ul>li>b {
+    display: block;
+    margin-bottom: 0.45rem;
+    font-size: 1.08rem;
+}
+
+.team6183-history>ul>li>ul {
+    margin: 0.4rem 0 0 0;
+    padding-left: 1rem;
+    /* keep nested items readable */
     text-align: left;
 }
 
-.team6183-history li,
-.team6183-outreach li {
-    font-size: var(--font-base);
-    color: var(--main-text-color);
-    margin-bottom: var(--font-xs);
+.team6183-history>ul>li>ul>li {
+    font-size: 0.98rem;
+    margin-bottom: 0.35rem;
+    color: var(--muted);
 }
 
-.team6183-history ul ul {
-    margin-top: var(--font-xs);
+@media (max-width: 760px) {
+    .team6183-history>ul {
+        grid-template-columns: 1fr;
+    }
+
+    .team6183-history>ul>li {
+        width: 100%;
+    }
 }
 
-/* Social links */
-.team6183-social-links {
-    margin-bottom: var(--font-lg);
+/* Additional mobile fixes to prevent awards overflow */
+@media (max-width: 520px) {
+    .team6183-history {
+        align-items: stretch;
+        padding: 0 0.6rem;
+    }
+
+    .team6183-history>ul {
+        margin: 0 auto;
+        max-width: calc(100% - 1.2rem);
+        grid-template-columns: 1fr;
+        gap: 0.6rem;
+    }
+
+    .team6183-history>ul>li {
+        padding: 0.7rem 0.85rem;
+        font-size: 1rem;
+    }
+
+    .team6183-history>ul>li>ul {
+        padding-left: 0.9rem;
+    }
 }
 
-.team6183-social-links a img {
-    width: 35px;
-    height: 35px;
-    margin: 0 0.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team6183-social-links a img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px var(--accent-color);
+/* small utilities */
+.centered {
+    text-align: center;
 }
 
 /* Animations */
 @keyframes fadeInDown {
     0% {
         opacity: 0;
-        transform: translateY(-15px);
+        transform: translateY(-10px);
     }
 
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: none;
     }
 }
 
 @keyframes fadeInUp {
     0% {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(8px);
     }
 
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: none;
     }
 }
 
-@media (max-width: 768px) {
-    .team6183-photo-container img.team6183-team-photo-small {
-        width: 75%;
-        margin-right: 25%;
+/* Responsive tweaks */
+@media (max-width: 880px) {
+    .team6183-team-container {
+        padding: 1rem;
     }
 
+    .team6183-photo-container {
+        width: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+    .team6183-member-card {
+        padding: 0.8rem;
+    }
+
+    .member-portrait {
+        width: 56px;
+        height: 56px;
+    }
 }
