@@ -15,10 +15,6 @@ const tabs = {
 const DecodePage10195 = (onClick) => {
   const [selectedTab, setTab] = useState('TEAM');
 
-  const handleClick = (state) => {
-    setTab(state);
-  };
-
   return <div className='main-10195-decode'>
     <br />
     <br />
