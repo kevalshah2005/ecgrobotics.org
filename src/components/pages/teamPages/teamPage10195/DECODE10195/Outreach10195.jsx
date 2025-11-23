@@ -153,7 +153,7 @@ const Outreach10195 = (onClick) => {
           <br />
           Expanded multilingual curriculum to serve learners across language barriers
           <br />
-          Part of our the Five Rings Initiative
+          Part of the Five Rings Initiative
           <br />
         </div>
       </div>
