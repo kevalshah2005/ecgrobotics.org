@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './TeamPage6183.css';
+import DecodePage6183 from './DECODE6183/DecodePage6183'; // Correct import
 import tiktokLogo from '/assets/TikTokLogo.png';
 import instagramLogo from '/assets/InstagramLogo.webp';
 import gmailLogo from '/assets/GmailLogo.png';
-/*import Gallery from '../../../gallery/Gallery';*/
 
 import outreach1 from '/assets/FTC6183/Outreach1.png';
 import outreach2 from '/assets/FTC6183/Outreach2.png';
@@ -13,8 +13,13 @@ import outreach5 from '/assets/FTC6183/Outreach6.png';
 
 import teamPhoto from '/assets/FTC6183/Comp1.png';
 import teamLogo from '/assets/logo6183.webp';
+import DecodeLogo from '/assets/FTC10195/DecodeLogo.webp';
 
 const outreachGallery = [outreach1, outreach2, outreach3, outreach4, outreach5];
+
+const yearData6183 = {
+    DECODE: "", // placeholder, can add text if needed
+};
 
 const members = [
     { name: "Luke St. Clair", roles: ["Co-Captain", "Mechanical", "Fabrication", "Outreach", "Lead Mechanical"], grade: "Junior", registration: "Returning" },
@@ -23,7 +28,6 @@ const members = [
     { name: "Kristian Cook", roles: ["Programming", "Website Programming"], grade: "Sophomore", registration: "Recruited" },
     { name: "Samy Gaire", roles: ["Outreach", "Mechanical"], grade: "Sophomore", registration: "Returning" },
     { name: "Kingston Morgan", roles: ["Programming"], grade: "Senior", registration: "Recruited" },
-    { name: "Shreyas Josyula", roles: ["Programming"], grade: "Sophomore", registration: "Drafted" },
     { name: "Aryan Ranabhat", roles: ["Mechanical"], grade: "Freshman", registration: "Drafted" },
     { name: "Rudra Patel", roles: ["Outreach", "Mechanical", "Media", "Graphic Design"], grade: "Freshman", registration: "Drafted" },
     { name: "Ernest Hu", roles: ["Mechanical"], grade: "Sophomore", registration: "Switched" },
@@ -89,22 +93,7 @@ const TeamPage6183 = () => {
                     </a>
                 </div>
 
-                {/* Overview */}
-                <section className="team6183-overview centered">
-                    <h2>Overview</h2>
-                    <p className="overview-text">
-                        Welcome to the official team page for FTC 6183 – Triple Paradox.
-                        We strive to grow as a team and exemplify the ideals of FIRST and gracious professionalism to the fullest extent. Not only do we focus on making the best robot each season through CAD, mechanical, and programming, but we are always on the lookout for ways to help impact our local and greater community in a positive manner.
-                        Our team is looking forward to this upcoming season as a chance to learn new skill sets, teach kids and organizations in our community, and do our very best as a team to have the best season!
-                    </p>
-                </section>
-
-                {/* Team Photo */}
-                <div className="team6183-photo-container">
-                    <img src={teamPhoto} alt="Team Picture" className="team6183-team-photo-small" />
-                </div>
-
-                {/* Awards */}
+                {/* Awards (moved to top) */}
                 <section className="team6183-history">
                     <h2>Awards and Achievements</h2>
                     <ul>
@@ -134,6 +123,22 @@ const TeamPage6183 = () => {
                         </li>
                     </ul>
                 </section>
+
+                {/* Overview */}
+                <section className="team6183-overview centered">
+                    <h2>Overview</h2>
+                    <p className="overview-text">
+                        Welcome to the official team page for FTC 6183 – Triple Paradox.
+                        We strive to grow as a team and exemplify the ideals of FIRST and gracious professionalism to the fullest extent. Not only do we focus on making the best robot each season through CAD, mechanical, and programming, but we are always on the lookout for ways to help impact our local and greater community in a positive manner.
+                        Our team is looking forward to this upcoming season as a chance to learn new skill sets, teach kids and organizations in our community, and do our very best as a team to have the best season!
+                    </p>
+                </section>
+
+                {/* Team Photo */}
+                <div className="team6183-photo-container">
+                    <img src={teamPhoto} alt="Team Picture" className="team6183-team-photo-small" />
+                </div>
+
 
                 {/* Members */}
                 <section className="team6183-members">
@@ -191,6 +196,24 @@ const TeamPage6183 = () => {
 
                 </section>
             </div>
+            <div className="timeline-container-6183">
+                <h2>Season</h2>
+                <div className="timeline-6183">
+                    <div className="timeline-seasons-6183"> {/* Add this wrapper */}
+                        <img
+                            src={DecodeLogo}
+                            alt="DecodeLogo"
+                            className="timeline-seasons-picture-6183"
+                        />
+                    </div>
+                </div>
+
+                <div className="timeline-content-6183">
+                    <DecodePage6183 />
+                    {yearData6183["DECODE"] && <p>{yearData6183["DECODE"]}</p>}
+                </div>
+            </div>
+
         </div>
     );
 };
