@@ -15,6 +15,13 @@ import TeamPage1533 from './components/pages/teamPages/teamPage1533/TeamPage1533
 
 import { useEffect } from "react";
 import Sponsors from './components/pages/sponsors/Sponsors';
+
+
+import Blog from './components/pages/blog/Blog';
+import Article1 from './components/pages/blog/Blogs/10195_091125_NightOwlsCompeteAtTheCarolinaPremierEvent/Article.jsx';
+import Article2 from './components/pages/blog/Blogs/ECGR_091925FTCSeasonStartsKickOffAndMore/Article.jsx';
+import Article3 from './components/pages/blog/Blogs/ECGR_102425RobotInFiveWeeksScrimmage/Article.jsx';
+
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Analytics } from "@vercel/analytics/react";
 
@@ -50,12 +57,19 @@ function App() {
           <Route path='/contact' exact element= {<Contact />} />
           <Route path='/join' exact element={<Join />} />
           <Route path="/join-ecg-robotics" element={<Navigate to="/join" replace />} />
+          <Route path='/blog' exact element={<Blog />} />
           <Route path='/teams' exact element={<Teams />} />
           <Route path='/ftc731' exact element={<TeamPage731 />} />
           <Route path='/ftc5795' exact element={<TeamPage5795 />} />
           <Route path='/ftc6183' exact element={<TeamPage6183 />} />
           <Route path='/ftc10195' exact element={<TeamPage10195 />} />
           <Route path='/frc1533' exact element={<TeamPage1533 />} />
+         
+         {/* BLOG ARTICLES HERE*/}
+         <Route path='/blog/Night-Owls-Compete-At-The-Carolina-Premier-Event' exact element={<Article1 />} />
+          <Route path='/blog/FTC-Season-Starts-Kickoff-And-More' exact element={<Article2/>} />
+        <Route path='/blog/Robot-In-Five-Weeks-Scrimmage' exact element={<Article3/>} />
+
         </Routes>
         <Footer />
       </Router>
