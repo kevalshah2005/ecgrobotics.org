@@ -63,7 +63,7 @@ const Outreach10195 = (onClick) => {
         <div className="outreach-text-container-10195">
           Attended at a local Hindu temple, where we set up a stall showcasing our catapult bot and allowed them to play robot cornhole
           <br />
-          While we were there we  we gave them some insights about ECG Robotics and what we do as an organization
+          While we were there we gave them some insights about ECG Robotics and what we do as an organization
           <br />
           Reached 1000+ people
           <br />
