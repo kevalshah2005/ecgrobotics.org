@@ -139,7 +139,6 @@ const TeamPage6183 = () => {
                     <img src={teamPhoto} alt="Team Picture" className="team6183-team-photo-small" />
                 </div>
 
-                {/* Awards (moved earlier) - removed duplicate later in file */}
 
                 {/* Members */}
                 <section className="team6183-members">
