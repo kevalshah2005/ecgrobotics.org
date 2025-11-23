@@ -14,7 +14,7 @@ const DecodePage6183 = () => {
     return (
         <div className="main-6183-decode">
             <h1>DECODE</h1>
-            <p className="date">Setempber 6th 2025 - Present</p>
+            <p className="date">September 6th 2025 - Present</p>
 
             {/* Tabs */}
             <div className="tab-container-6183-decode" role="tablist" aria-label="Decode tabs">
