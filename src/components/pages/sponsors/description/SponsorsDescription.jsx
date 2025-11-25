@@ -150,7 +150,7 @@ function SponsorsDescription() {
         <div className="sponsorship-tiers">
           <h1 data-aos="fade-up">Our Sponsors</h1>
 
-          <div className="strange-tier">
+          <div data-aos="fade-up" className="strange-tier">
             <div className="strange-tier-inner">
               <SponsorTierSection
                 title="Strange - $10,000+ Annual Contribution"
