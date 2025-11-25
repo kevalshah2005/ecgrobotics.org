@@ -18,6 +18,8 @@ import TSFoundationLogo from '/assets/SponsorLogos/TSFoundationLogo.webp'
 import AnalogDevicesLogo from '/assets/SponsorLogos/AnalogDevicesLogo.jpg';
 import CotalityLogo from '/assets/SponsorLogos/Cotality.png';
 import GDTLogo from '/assets/SponsorLogos/GDTLogo.png';
+import HondaLogo from '/assets/SponsorLogos/HondaLogo.svg';
+
 const sponsors = [
   {
     name: 'Qorvo',
@@ -51,10 +53,10 @@ const sponsors = [
     link: 'https://www.tsfoundation.com',
   },
   {
-    name: 'HondaJet',
+    name: 'Honda',
     level: 'strange',
-    logo: HondaJetLogo,
-    link: 'https://www.hondajet.com',
+    logo: HondaLogo,
+    link: 'https://www.honda.com',
   },
   
   {
@@ -100,12 +102,6 @@ const sponsors = [
     logo: HarrisTeeterLogo,
     link: 'https://www.harristeeter.com/',
   },
-  // Example Strange sponsor
-  // {
-  //   name: 'Example Strange Sponsor',
-  //   level: 'strange',
-  //   logo: ExampleLogo,
-  //   link: 'https://example.com',
 ];
 
 const imageWidth = '80%';
