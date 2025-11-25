@@ -57,7 +57,7 @@ const TeamPage731 = () => {
     const teamMembers = [
         { id: 1, name: "Ishan Mahapatra", role: "Team Captain - Mechanical/Marketing Lead", img: patra, isCaptain: true },
         { id: 2, name: "Nikunj Gupta", role: "Co-Captain - Programming/Mechanical Lead", img: nikunj },
-        { id: 10, name: "Jason Ngueyn", role: "Lead Programming", img: jason },
+        { id: 10, name: "Jason Nguyen", role: "Lead Programming", img: jason },
         { id: 9, name: "Jimmy Ma", role: "Programming", img: blank },
         { id: 5, name: "Alex Wang", role: "Programming", img: alexw },
         { id: 3, name: "Teja Chitta", role: "Mechanical", img: teja },
