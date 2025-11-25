@@ -12,14 +12,16 @@ import PublixLogo from '/assets/SponsorLogos/PublixLogo.svg'
 import HarrisTeeterLogo from '/assets/SponsorLogos/HarrisTeeterLogo.svg'
 import UnitedWayLogo from '/assets/SponsorLogos/UnitedWayLogo.svg'
 import CollinsAerospaceLogo from '/assets/SponsorLogos/CollinsAerospaceLogo.svg'
-import QorvoLogo from '/assets/SponsorLogos/QorvoLogo.webp';
+import QorvoLogo from '/assets/SponsorLogos/QorvoLogo.webp'
 import IntuitiveLogo from '/assets/SponsorLogos/IntuitiveLogo.webp'
 import TSFoundationLogo from '/assets/SponsorLogos/TSFoundationLogo.webp'
-
+import AnalogDevicesLogo from '/assets/SponsorLogos/AnalogDevicesLogo.jpg';
+import CotalityLogo from '/assets/SponsorLogos/Cotality.png';
+import GDTLogo from '/assets/SponsorLogos/GDTLogo.png';
 const sponsors = [
   {
     name: 'Qorvo',
-    level: 'diamond',
+    level: 'silver',
     logo: QorvoLogo,
     link: 'https://www.qorvo.com',
   },
@@ -29,6 +31,7 @@ const sponsors = [
     logo: PGFoundationLogo,
     link: 'https://us.pg.com/',
   },
+  
   {
     name: 'GENE HAAS Corp',
     level: 'platinum',
@@ -49,39 +52,53 @@ const sponsors = [
   },
   {
     name: 'HondaJet',
-    level: 'gold',
+    level: 'strange',
     logo: HondaJetLogo,
     link: 'https://www.hondajet.com',
   },
+  
   {
-    name: 'Collins Aerospace',
+    name: 'Analog Devices',
     level: 'gold',
-    logo: CollinsAerospaceLogo,
-    link: 'https://www.collinsaerospace.com',
+    logo: AnalogDevicesLogo,
+    link: 'https://www.analog.com',
   },
+  
   {
     name: 'Intuitive',
-    level: 'gold',
+    level: 'silver',
     logo: IntuitiveLogo,
     link: 'https://www.intuitive-foundation.org/',
   },
   {
-    name: 'Publix Charity',
-    level: 'bronze',
-    logo: PublixLogo,
-    link: 'https://www.publix.com',
+    name: 'Cotality',
+    level: 'silver',
+    logo: CotalityLogo,
+    link: 'https://www.cotality.com/',
   },
   {
-    name: 'Harris Teeter',
+    name: 'GDT',
     level: 'bronze',
-    logo: HarrisTeeterLogo,
-    link: 'https://www.harristeeter.com',
+    logo: GDTLogo,
+    link: 'https://www.GDT.com',
   },
   {
     name: 'United Way',
     level: 'bronze',
     logo: UnitedWayLogo,
-    link: 'https://www.unitedway.org',
+    link: 'https://www.unitedwaygso.org/',
+  },
+  {
+    name: 'Publix',
+    level: 'bronze',
+    logo: PublixLogo,
+    link: 'https://www.publix.com/',
+  },
+  {
+    name: 'Harris Teeter',
+    level: 'bronze',
+    logo: HarrisTeeterLogo,
+    link: 'https://www.harristeeter.com/',
   },
   // Example Strange sponsor
   // {

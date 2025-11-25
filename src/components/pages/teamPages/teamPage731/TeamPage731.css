@@ -5,6 +5,7 @@
     width: 100%;
     height: 100%;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
 }
 
 /* Color Variables - Scoped to this page */
@@ -26,12 +27,13 @@
     --team731-font-xs: 0.85rem;
 }
 
-/* Background Container - Scoped */
+/* Background Container */
 .team731-page-wrapper {
     min-height: 100vh;
     width: 100%;
     position: relative;
     transition: background-image 1s ease-in-out;
+    overflow-x: hidden;
 }
 
 .team731-page-wrapper::before {
@@ -44,107 +46,8 @@
     background: rgba(10, 10, 10, 0.75);
     z-index: 1;
 }
-.team731-title-box {
-    background: var(--team731-glass-bg);
-    backdrop-filter: blur(var(--team731-glass-blur));
-    -webkit-backdrop-filter: blur(var(--team731-glass-blur));
-    border-radius: var(--team731-glass-radius);
-    border: 1px solid var(--team731-glass-edge);
-    padding: 1.5rem 2rem;
-    margin: 0 auto 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3),
-                inset 0 0 20px rgba(106, 76, 255, 0.2);
-    max-width: 800px;
-    position: relative;
-}
 
-/* Title Text */
-.team731-title-box h1 {
-    margin: 0;
-    font-size: var(--team731-font-xs);
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-shadow: 0 0 15px rgba(106, 76, 255, 0.6);
-    padding-right: 1rem;
-}
-
-/* Logo Container - Integrated */
-.team731-logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-left: 1px solid rgba(106, 76, 255, 0.3);
-    
-}
-
-/* Logo Image */
-.team731-logo {
-    height: 70px;
-    width: auto;
-    max-width: 100px;
-    object-fit: contain;
-    filter: drop-shadow(0 0 5px rgba(106, 76, 255, 0.5));
-    transition: transform 0.3s ease;
-}
-
-/* Hover Effects */
-.team731-logo:hover {
-    transform: scale(1.05);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .team731-title-box {
-        flex-direction: column;
-        padding: 1.5rem;
-        text-align: center;
-    }
-    
-    .team731-title-box h1 {
-        font-size: 1.8rem;
-        padding-right: 0;
-        margin-bottom: 1rem;
-    }
-    
-    .team731-logo-container {
-        border-left: none;
-        border-top: 1px solid rgba(106, 76, 255, 0.3);
-        padding-left: 0;
-        margin-left: 0;
-        padding-top: 1rem;
-        margin-top: 1rem;
-        width: 100%;
-    }
-    
-    .team731-logo {
-        height: 60px;
-    }
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .team731-logo-container {
-        padding: 8px;
-        transform: translateY(30%);
-    }
-    
-    .team731-logo {
-        width: 50px;
-        max-height: 45px;
-    }
-    
-    .team731-title-box {
-        padding-right: 70px;
-    }
-}
-
-
-
-/* Main Content Container - Scoped */
+/* Main Content Container */
 .team731-container {
     max-width: 1200px;
     width: 90%;
@@ -153,25 +56,29 @@
     position: relative;
     z-index: 2;
     color: var(--team731-text-light);
-}  
-
-.team731-container p {
-    font-size: var(--team731-font-base);
 }
 
-/* Team Title Box - Scoped */
+/* Unified Title Box with Logo */
+.team731-title-box-container {
+    display: flex;
+    align-items: stretch;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
 .team731-title-box {
+    flex-grow: 1;
     background: var(--team731-glass-bg);
     backdrop-filter: blur(var(--team731-glass-blur));
     -webkit-backdrop-filter: blur(var(--team731-glass-blur));
-    border-radius: var(--team731-glass-radius);
+    border-radius: var(--team731-glass-radius) 0 0 var(--team731-glass-radius);
     border: 1px solid var(--team731-glass-edge);
-    padding: 1.5rem 3rem;
-    margin: 0 auto 3rem;
-    display: inline-block;
+    border-right: none;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3),
                 inset 0 0 20px rgba(106, 76, 255, 0.2);
-    transition: all 0.4s ease;
 }
 
 .team731-title-box h1 {
@@ -183,7 +90,110 @@
     text-shadow: 0 0 15px rgba(106, 76, 255, 0.6);
 }
 
-/* Sections - Scoped */
+.team731-logo-container {
+    width: 120px;
+    background: var(--team731-glass-bg);
+    backdrop-filter: blur(var(--team731-glass-blur));
+    -webkit-backdrop-filter: blur(var(--team731-glass-blur));
+    border-radius: 0 var(--team731-glass-radius) var(--team731-glass-radius) 0;
+    border: 1px solid var(--team731-glass-edge);
+    border-left: none;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2),
+                inset 0 0 10px rgba(106, 76, 255, 0.1);
+}
+
+.team731-logo {
+    max-width: 100%;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.team731-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Social Links */
+.team731-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.team731-social-links img {
+    width: 48px;
+    height: 48px;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 8px rgba(0, 168, 232, 0.3));
+}
+
+.team731-social-links img:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 12px rgba(0, 168, 232, 0.5));
+}
+
+/* Team Photo Section */
+.team731-team-photo {
+    padding: 0;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin-bottom: 3rem;
+}
+
+.team731-team-photo-container {
+    position: relative;
+    border-radius: var(--team731-glass-radius);
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+}
+
+.team731-team-image {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.team731-team-photo-container:hover .team731-team-image {
+    transform: scale(1.03);
+}
+
+.team731-team-photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(10, 10, 10, 0.9), transparent);
+    padding: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.team731-team-photo-caption h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.team731-team-photo-caption p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin: 0;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Sections - General */
 .team731-section {
     background: var(--team731-glass-bg);
     backdrop-filter: blur(var(--team731-glass-blur));
@@ -202,24 +212,48 @@
     margin-bottom: var(--team731-font-xs);
 }
 
-.team731-history ul {
-    list-style-type: disc;
-    padding-left: var(--team731-font-base);
-    text-align: left;
-    margin-top: var(--team731-font-xs);
+/* Team Members Grid */
+.team731-members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
 }
 
-.team731-history li {
-    font-size: var(--team731-font-base);
-    color: var(--team731-text-light);
-    margin-bottom: var(--team731-font-xs);
+.team731-member-card {
+    background: rgba(40, 40, 40, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(106, 76, 255, 0.2);
+    transition: all 0.3s ease;
 }
 
-.team731-history ul ul {
-    margin-top: var(--team731-font-xs);
+.team731-member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(106, 76, 255, 0.3);
 }
 
-/* Mentorship Program - Scoped */
+.team731-captain {
+    background: linear-gradient(135deg, 
+                rgba(106, 76, 255, 0.25), 
+                rgba(106, 76, 255, 0.4));
+    box-shadow: 0 0 30px rgba(106, 76, 255, 0.4);
+}
+
+.team731-member-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+    border: 2px solid var(--team731-primary);
+    box-shadow: 0 0 15px rgba(106, 76, 255, 0.4);
+}
+
+/* Mentors Grid */
 .team731-mentors-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -265,53 +299,27 @@
     opacity: 0.9;
 }
 
-/* Members Grid - Scoped */
-.team731-members-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1.5rem;
-    margin-top: 2rem;
+/* Outreach Section */
+.team731-outreach-project {
+    margin-bottom: 3rem;
 }
 
-.team731-member-card {
-    background: rgba(40, 40, 40, 0.5);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 12px;
-    padding: 1.5rem;
-    text-align: center;
-    border: 1px solid rgba(106, 76, 255, 0.2);
-    transition: all 0.3s ease;
+.team731-outreach-project h3 {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.team731-captain {
-    background: linear-gradient(135deg, 
-                rgba(106, 76, 255, 0.25), 
-                rgba(106, 76, 255, 0.4));
-    box-shadow: 0 0 30px rgba(106, 76, 255, 0.4);
-}
-
-.team731-member-avatar {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto 1rem;
-    border: 2px solid var(--team731-primary);
-    box-shadow: 0 0 15px rgba(106, 76, 255, 0.4);
-}
-
-/* Outreach Section - Updated */
 .team731-outreach-content {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     align-items: flex-start;
     margin-top: 0.5rem;
 }
 
 .team731-outreach-image-container {
-    flex: 0 0 25%; /* Takes up 25% width */
-    max-height: 25vh; /* 25% of viewport height */
+    flex: 0 0 30%;
+    max-height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -323,20 +331,13 @@
 }
 
 .team731-outreach-image {
-    max-width: 25%;
-    max-height: 25%;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .team731-outreach-text {
     flex: 1;
-    gap: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
     background: var(--team731-glass-bg);
     backdrop-filter: blur(var(--team731-glass-blur));
     -webkit-backdrop-filter: blur(var(--team731-glass-blur));
@@ -347,39 +348,39 @@
                 inset 0 0 10px rgba(106, 76, 255, 0.1);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .team731-outreach-content {
-        flex-direction: column;
-    }
-    
-    .team731-outreach-image-container {
-        flex: 0 0 auto;
-        width: 100%;
-        max-height: 200px;
-    }
-}
-/* Social Links - Scoped */
-.team731-social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin: 2rem 0;
+/* History Section */
+.team731-history ul {
+    list-style-type: disc;
+    padding-left: var(--team731-font-base);
+    text-align: left;
+    margin-top: var(--team731-font-xs);
 }
 
-.team731-social-links img {
-    width: 48px;
-    height: 48px;
-    transition: all 0.3s ease;
-    filter: drop-shadow(0 0 8px rgba(0, 168, 232, 0.3));
+.team731-history li {
+    font-size: var(--team731-font-base);
+    color: var(--team731-text-light);
+    margin-bottom: var(--team731-font-xs);
 }
 
-.team731-social-links img:hover {
-    transform: scale(1.15);
-    filter: drop-shadow(0 0 12px rgba(0, 168, 232, 0.5));
+.team731-history ul ul {
+    margin-top: var(--team731-font-xs);
 }
 
-/* Responsive Design - Scoped */
+/* Animations */
+@keyframes team731-fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Section Animation Delays */
+.team731-section:nth-of-type(1) { animation-delay: 0.2s; }
+.team731-section:nth-of-type(2) { animation-delay: 0.4s; }
+.team731-section:nth-of-type(3) { animation-delay: 0.6s; }
+.team731-section:nth-of-type(4) { animation-delay: 0.8s; }
+.team731-section:nth-of-type(5) { animation-delay: 1s; }
+.team731-section:nth-of-type(6) { animation-delay: 1.2s; }
+
+/* Responsive Design */
 @media (max-width: 1200px) {
     .team731-members-grid,
     .team731-mentors-grid {
@@ -388,17 +389,44 @@
 }
 
 @media (max-width: 768px) {
-    .team731-title-box {
-        padding: 1rem 1.5rem;
+    .team731-title-box-container {
+        flex-direction: column;
     }
     
-    .team731-title-box h1 {
-        font-size: 1.8rem;
+    .team731-title-box {
+        border-radius: var(--team731-glass-radius) var(--team731-glass-radius) 0 0;
+        border-right: 1px solid var(--team731-glass-edge);
+        border-bottom: none;
+    }
+    
+    .team731-logo-container {
+        width: 100%;
+        border-radius: 0 0 var(--team731-glass-radius) var(--team731-glass-radius);
+        border-left: 1px solid var(--team731-glass-edge);
+        border-top: none;
     }
     
     .team731-members-grid,
     .team731-mentors-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .team731-team-photo-caption h2 {
+        font-size: 1.8rem;
+    }
+    
+    .team731-team-photo-caption p {
+        font-size: 1rem;
+    }
+    
+    .team731-outreach-content {
+        flex-direction: column;
+    }
+    
+    .team731-outreach-image-container {
+        flex: 0 0 auto;
+        width: 100%;
+        max-height: 200px;
     }
     
     .team731-section {
@@ -410,18 +438,8 @@
         width: 80px;
         height: 80px;
     }
+    
+    .team731-title-box h1 {
+        font-size: 1.8rem;
+    }
 }
-
-/* Animations - Scoped */
-@keyframes team731-fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Section Animation Delays - Scoped */
-.team731-section:nth-of-type(1) { animation-delay: 0.2s; }
-.team731-section:nth-of-type(2) { animation-delay: 0.4s; }
-.team731-section:nth-of-type(3) { animation-delay: 0.6s; }
-.team731-section:nth-of-type(4) { animation-delay: 0.8s; }
-.team731-section:nth-of-type(5) { animation-delay: 1s; }
-.team731-section:nth-of-type(6) { animation-delay: 1.2s; }
