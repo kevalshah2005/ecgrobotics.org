@@ -61,7 +61,7 @@ const sponsors = [
     name: 'Analog Devices',
     level: 'gold',
     logo: AnalogDevicesLogo,
-    link: 'https://www.collinsaerospace.com',
+    link: 'https://www.analog.com',
   },
   
   {
