@@ -1,0 +1,86 @@
+/* Outreach slideshow/gallery styles */
+:root {
+	--glass-bg: rgba(255,255,255,0.05);
+	--glass-border: rgba(255,255,255,0.10);
+	--accent: #ffd700;
+	--gallery-max-width: 760px;
+	--gallery-max-height: 360px;
+}
+
+.outreach-container-6183 {
+	max-width: 980px;
+	margin: 0.8rem auto 1.6rem auto;
+	padding: 0.8rem 1rem;
+	border-radius: 12px;
+	background: var(--glass-bg);
+	border: 1px solid var(--glass-border);
+	backdrop-filter: blur(8px) saturate(120%);
+}
+
+.section-title-6183 { text-align: center; color: var(--accent); margin-bottom: .6rem; }
+
+.outreach-gallery-6183 {
+	overflow: hidden;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+.outreach-track-6183 {
+	display: flex;
+	will-change: transform;
+	animation: outreach-slide-6183 24s ease-in-out infinite;
+}
+
+.outreach-gallery-6183:hover .outreach-track-6183 { animation-play-state: paused; }
+
+.outreach-item-6183 {
+	flex: 0 0 100%;
+	min-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem;
+}
+
+.outreach-item-6183 img {
+	width: 100%;
+	max-width: var(--gallery-max-width);
+	max-height: var(--gallery-max-height);
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 8px 22px rgba(2,6,23,0.35);
+	transition: transform .45s cubic-bezier(.22,.9,.37,1), box-shadow .45s ease, filter .45s ease;
+}
+
+.outreach-item-6183 img:hover { transform: translateY(-4px) scale(1.01); box-shadow: 0 14px 36px rgba(2,6,23,0.4); filter: saturate(1.03); }
+
+@keyframes outreach-slide-6183 {
+	/* 5 slides: each slide ~20% of the animation. Hold then transition */
+	0% { transform: translateX(0%); }
+	16% { transform: translateX(0%); }
+	20% { transform: translateX(-100%); }
+
+	36% { transform: translateX(-100%); }
+	40% { transform: translateX(-200%); }
+
+	56% { transform: translateX(-200%); }
+	60% { transform: translateX(-300%); }
+
+	76% { transform: translateX(-300%); }
+	80% { transform: translateX(-400%); }
+
+	96% { transform: translateX(-400%); }
+	100% { transform: translateX(-400%); }
+}
+
+/* Responsive tweaks */
+@media (max-width: 880px) {
+	:root { --gallery-max-width: 640px; --gallery-max-height: 320px; }
+}
+
+@media (max-width: 520px) {
+	:root { --gallery-max-width: 420px; --gallery-max-height: 260px; }
+	.outreach-container-6183 { padding: 0.6rem 0.8rem; }
+}
+
