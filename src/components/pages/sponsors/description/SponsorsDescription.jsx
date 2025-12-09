@@ -107,12 +107,7 @@ const sponsors = [
     logo: IFGILogo,
     link: 'https://inventionsforgood.org/',
   },
-  // Example Strange sponsor
-  // {
-  //   name: 'Example Strange Sponsor',
-  //   level: 'strange',
-  //   logo: ExampleLogo,
-  //   link: 'https://example.com',
+ 
 ];
 
 const imageWidth = '80%';
