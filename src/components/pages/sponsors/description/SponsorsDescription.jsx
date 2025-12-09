@@ -11,6 +11,7 @@ import HondaJetLogo from '/assets/SponsorLogos/HondaJetLogo.svg'
 import PublixLogo from '/assets/SponsorLogos/PublixLogo.svg'
 import HarrisTeeterLogo from '/assets/SponsorLogos/HarrisTeeterLogo.svg'
 import UnitedWayLogo from '/assets/SponsorLogos/UnitedWayLogo.svg'
+import IFGILogo from '/assets/SponsorLogos/IFGI.png'
 import CollinsAerospaceLogo from '/assets/SponsorLogos/CollinsAerospaceLogo.svg'
 import QorvoLogo from '/assets/SponsorLogos/QorvoLogo.webp'
 import IntuitiveLogo from '/assets/SponsorLogos/IntuitiveLogo.webp'
@@ -99,6 +100,12 @@ const sponsors = [
     level: 'bronze',
     logo: HarrisTeeterLogo,
     link: 'https://www.harristeeter.com/',
+  },
+  {
+    name: 'Inventions for Good',
+    level: 'strange',
+    logo: IFGILogo,
+    link: 'https://inventionsforgood.org/',
   },
   // Example Strange sponsor
   // {
