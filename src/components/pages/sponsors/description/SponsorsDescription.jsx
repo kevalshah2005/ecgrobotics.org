@@ -16,9 +16,11 @@ import CollinsAerospaceLogo from '/assets/SponsorLogos/CollinsAerospaceLogo.svg'
 import QorvoLogo from '/assets/SponsorLogos/QorvoLogo.webp'
 import IntuitiveLogo from '/assets/SponsorLogos/IntuitiveLogo.webp'
 import TSFoundationLogo from '/assets/SponsorLogos/TSFoundationLogo.webp'
-import AnalogDevicesLogo from '/assets/SponsorLogos/AnalogDevicesLogo.jpg'
-import CotalityLogo from '/assets/SponsorLogos/Cotality.png'
-import GDTLogo from '/assets/SponsorLogos/GDTLogo.png'
+import AnalogDevicesLogo from '/assets/SponsorLogos/AnalogDevicesLogo.jpg';
+import CotalityLogo from '/assets/SponsorLogos/Cotality.png';
+import GDTLogo from '/assets/SponsorLogos/GDTLogo.png';
+import HondaLogo from '/assets/SponsorLogos/HondaLogo.svg';
+
 const sponsors = [
   {
     name: 'Qorvo',
@@ -51,17 +53,17 @@ const sponsors = [
     link: 'https://www.tsfoundation.com',
   },
   {
-    name: 'HondaJet',
+    name: 'Honda',
     level: 'strange',
-    logo: HondaJetLogo,
-    link: 'https://www.hondajet.com',
+    logo: HondaLogo,
+    link: 'https://www.honda.com',
   },
   
   {
     name: 'Analog Devices',
     level: 'gold',
     logo: AnalogDevicesLogo,
-    link: 'https://www.collinsaerospace.com',
+    link: 'https://www.analog.com',
   },
   
   {
@@ -151,7 +153,7 @@ function SponsorsDescription() {
         <div className="sponsorship-tiers">
           <h1 data-aos="fade-up">Our Sponsors</h1>
 
-          <div className="strange-tier">
+          <div data-aos="fade-up" className="strange-tier">
             <div className="strange-tier-inner">
               <SponsorTierSection
                 title="Strange - $10,000+ Annual Contribution"
