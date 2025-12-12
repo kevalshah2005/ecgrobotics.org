@@ -250,7 +250,7 @@ Project Link: [https://github.com/kevalshah2005/ecgrobotics.org](https://github.
 <!-- ACKNOWLEDGMENTS -->
 # Acknowledgments
 
-* All the incredible ECG Robotics students, mentors, and parents. Without your work, this club wouldn't be possible!
+All the incredible ECG Robotics students, mentors, and parents. Without your work, this club wouldn't be possible!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
