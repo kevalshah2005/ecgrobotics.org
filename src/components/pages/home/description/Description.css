@@ -59,12 +59,37 @@
     }
 }
 
+.section-box {
+    position: relative;
+    width: 90%;
+    margin: 3rem auto;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ftc-box {
+    box-shadow: 0 0 15px 5px var(--orange)
+}
+
+.frc-box {
+    box-shadow: 0 0 15px 5px var(--blue)
+}
+
+.ftc-container, .frc-container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 2rem;
+    /* box-shadow: inset 0 0 0 1000px rgba(9, 9, 11, 0.5); overlay */
+}
+
 .ftc-container {
     position: relative;
     width: 100%;
     flex-direction: column;
     padding: 1.75rem 5rem; /* 60px 80px */
-    background-image: url('../../../../assets/LandingVideoThumbnail.webp');
     box-shadow: inset 0 0 0 1000px rgba(9, 9, 11, 0.75);
 }
 
@@ -146,7 +171,6 @@
     width: 100%;
     flex-direction: column;
     padding: 1.75rem 5rem; /* 40px 80px */
-    background-image: url('../../../../assets/FRCSectionBackground.png');
     box-shadow: inset 0 0 0 1000px rgba(9, 9, 11, 0.75);
 }
 
@@ -221,5 +245,13 @@
 @media screen and (max-width: 768px) {
     .frc-description-container > p {
         font-size: var(--font-sm);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .ftc-image, .frc-image {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 2rem;
     }
 }
