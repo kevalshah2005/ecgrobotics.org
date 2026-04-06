@@ -33,6 +33,7 @@
     box-shadow: 0 10px 30px rgba(2, 6, 23, 0.5);
     text-align: center;
     font-family: 'Orbitron', sans-serif;
+    border-color: royalblue;
 }
 
 /* Headings */
@@ -131,6 +132,8 @@
     box-shadow: 0 8px 20px rgba(2, 6, 23, 0.45);
     transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
     text-align: center;
+    border-radius: 4%;
+    border: 1px solid var(--accent-color);
 }
 
 .team6183-member-card:hover {
@@ -205,7 +208,8 @@
 /* Awards: two-column, centered, larger and glassy cards */
 .team6183-history {
     display: flex;
-    flex-direction: column; /* ensure title stacks above the awards grid */
+    flex-direction: column;
+    /* ensure title stacks above the awards grid */
     justify-content: flex-start;
     align-items: center;
     gap: 0.6rem;
@@ -215,7 +219,8 @@
     width: 100%;
     text-align: center;
     margin: 0.2rem 0 0.6rem 0;
-    font-size: 1.4rem; /* clamp title for better mobile fit */
+    font-size: 1.4rem;
+    /* clamp title for better mobile fit */
 }
 
 .team6183-history>ul {

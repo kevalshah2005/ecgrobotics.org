@@ -97,6 +97,12 @@ const TeamPage6183 = () => {
                 <section className="team6183-history">
                     <h2>Awards and Achievements</h2>
                     <ul>
+                        <li><b>2025-2026: Decode</b>
+                            <ul>
+                                <li>NC FTC Southwest Academy Innovate Award Winner</li>
+                                <li>NC FTC Ascend Leadership Academy Connect Award Winner</li>
+                            </ul>
+                        </li>
                         <li><b>2024-2025: INTO THE DEEP</b>
                             <ul>
                                 <li>Ascend Leadership Academy - Saturday Connect Award Winner</li>
