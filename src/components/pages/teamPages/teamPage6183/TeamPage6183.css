@@ -54,7 +54,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    max-height: calc(100vh - 80px);
+    max-height: calc(100vh);
     z-index: 0;
     pointer-events: none;
     overflow: hidden;
