@@ -30,7 +30,7 @@ const awards = [
     {
         season: "2025–2026", name: "Decode", items: [
             "NC FTC Southwest Academy Innovate Award Winner",
-            "NC FTC Ascend Leadership Academy Connect Award Winner",
+            "NC FTC Ascend Leadership Acadmey",
         ]
     },
     {
