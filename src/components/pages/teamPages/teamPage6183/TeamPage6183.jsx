@@ -9,7 +9,6 @@ import teamPhoto from '/assets/FTC6183/Comp1.png';
 import teamLogo from '/assets/logo6183.webp';
 import DecodeLogo from '/assets/FTC10195/DecodeLogo.webp';
 
-// ── REPLACE THIS with your actual video path ──────────────────────────────────
 const BG_VIDEO = '/assets/FTC6183/background.mp4';
 // ─────────────────────────────────────────────────────────────────────────────
 
