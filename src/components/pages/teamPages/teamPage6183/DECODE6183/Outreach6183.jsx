@@ -1,11 +1,11 @@
 import React from 'react';
 import './Outreach6183.css';
 
-import outreach1 from '/assets/FTC6183/Outreach1.png';
-import outreach2 from '/assets/FTC6183/Outreach2.png';
-import outreach3 from '/assets/FTC6183/Outreach3.png';
-import outreach4 from '/assets/FTC6183/Outreach4.png';
-import outreach5 from '/assets/FTC6183/Outreach6.png';
+import outreach1 from '/assets/FTC6183/Outreach1.jpg';
+import outreach2 from '/assets/FTC6183/Outreach2.jpg';
+import outreach3 from '/assets/FTC6183/Outreach3.jpg';
+import outreach4 from '/assets/FTC6183/Outreach4.jpg';
+import outreach5 from '/assets/FTC6183/Outreach6.jpg';
 
 const images = [outreach1, outreach2, outreach3, outreach4, outreach5];
 

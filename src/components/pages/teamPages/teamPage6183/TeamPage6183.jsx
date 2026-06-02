@@ -1,7 +1,6 @@
 import React from 'react';
 import './TeamPage6183.css';
 import DecodePage6183 from './DECODE6183/DecodePage6183';
-import tiktokLogo from '/assets/TikTokLogo.png';
 import instagramLogo from '/assets/InstagramLogo.webp';
 import gmailLogo from '/assets/GmailLogo.png';
 
@@ -28,8 +27,7 @@ const members = [
 const awards = [
     {
         season: "2025–2026", name: "Decode", items: [
-            "NC FTC Southwest Academy Innovate Award Winner",
-            "NC FTC Ascend Leadership Acadmey",
+            "NC FTC Southeast Guilford HS Qualifier 2 – Collins Aerospace Innovate Award Winner",
         ]
     },
     {
@@ -40,20 +38,21 @@ const awards = [
     },
     {
         season: "2023–2024", name: "Centerstage", items: [
-            "NC FTC Southern Guilford HS Control Award 2nd Place",
-            "NC FTC Salem Academy Motivate Award Winner",
+            "NC Salem Academy Motivate Award Winner",
         ]
     },
     {
         season: "2022–2023", name: "Powerplay", items: [
-            "NC FTC Salem Academy Design Award Winner",
-            "NC FTC Western MS Motivate 3rd, Design 2nd",
+            "NC State Championship – Qual Rank #31",
+            "NC Salem Academy and College – Semifinals",
+            "NC Western MS – Qual Rank #7",
         ]
     },
     {
         season: "2021–2022", name: "Freight Frenzy", items: [
-            "NC State Championship Finalist Alliance 2nd Pick, Design 2nd",
-            "NC Qualifier (Elon) Design Award 2nd Place",
+            "NC State Championship – Finalist Alliance 2nd Pick, Design Award Finalist",
+            "NC Qualifier (Elon) – Design Award Finalist, Semifinals",
+            "NC Remote Qualifier 1-2 – Collins Aerospace Innovate Award Finalist, Design Award Winner",
         ]
     },
 ];
@@ -108,9 +107,6 @@ const TeamPage6183 = () => {
                         <p className="t6183-tagline">Three Systems - One Paradox</p>
                     </div>
                     <div className="t6183-socials">
-                        <a href="https://www.tiktok.com/@ftc6183" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-                            <img src={tiktokLogo} alt="TikTok" />
-                        </a>
                         <a href="https://www.instagram.com/ftc6183/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <img src={instagramLogo} alt="Instagram" />
                         </a>
