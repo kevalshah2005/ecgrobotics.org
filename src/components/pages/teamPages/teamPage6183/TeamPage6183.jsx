@@ -4,7 +4,7 @@ import DecodePage6183 from './DECODE6183/DecodePage6183';
 import instagramLogo from '/assets/InstagramLogo.webp';
 import gmailLogo from '/assets/GmailLogo.png';
 
-import teamPhoto from '/assets/FTC6183/Comp1.png';
+import teamPhoto from '/assets/FTC6183/Comp1.webp';
 import teamLogo from '/assets/logo6183.webp';
 import DecodeLogo from '/assets/FTC10195/DecodeLogo.webp';
 
@@ -38,12 +38,11 @@ const awards = [
     },
     {
         season: "2023–2024", name: "Centerstage", items: [
-            "NC Salem Academy Motivate Award Winner",
+            "NC Salem Academy – Motivate Award Winner",
         ]
     },
     {
         season: "2022–2023", name: "Powerplay", items: [
-            "NC State Championship – Qual Rank #31",
             "NC Salem Academy and College – Semifinals",
             "NC Western MS – Qual Rank #7",
         ]
@@ -53,6 +52,29 @@ const awards = [
             "NC State Championship – Finalist Alliance 2nd Pick, Design Award Finalist",
             "NC Qualifier (Elon) – Design Award Finalist, Semifinals",
             "NC Remote Qualifier 1-2 – Collins Aerospace Innovate Award Finalist, Design Award Winner",
+        ]
+    },
+    {
+        season: "2019–2020", name: "Skystone", items: [
+            "NC Championship – Connect Award Finalist",
+            "Southern Guilford HS QT – Inspire Award Winner",
+            "Northern Guilford HS QT – Inspire Award 2nd Place, Connect Award Winner, Finalist Alliance 2nd Pick",
+        ]
+    },
+    {
+        season: "2018–2019", name: "Rover Ruckus", items: [
+            "NC Championship – Design Award Finalist, Motivate Award Finalist",
+            "Southern Guilford HS QT – Connect Award Winner, Semifinals",
+        ]
+    },
+    {
+        season: "2017–2018", name: "Relic Recovery", items: [
+            "Southern Guilford HS QT – Think Award Winner, Connect Award Finalist, Motivate Award Finalist, Semifinals",
+        ]
+    },
+    {
+        season: "2016–2017", name: "Velocity Vortex", items: [
+            "Southern Guilford HS QUAL – Finalist Alliance, Semifinals",
         ]
     },
 ];
@@ -71,7 +93,9 @@ const MemberCard = ({ member }) => (
 const MemberGroup = ({ title, list }) => list.length === 0 ? null : (
     <div className="t6183-group">
         <p className="t6183-group-label">{title}</p>
-        <div className="t6183-grid">{list.map((m, i) => <MemberCard key={i} member={m} />)}</div>
+        <div className={`t6183-grid ${list.length === 1 ? 't6183-grid--solo' : ''}`}>
+            {list.map((m, i) => <MemberCard key={i} member={m} />)}
+        </div>
     </div>
 );
 
