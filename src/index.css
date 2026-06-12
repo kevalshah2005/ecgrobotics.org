@@ -29,13 +29,13 @@
   --link-color: var(--light-blue);
 
   /* Font Sizes */
-  --font-2xs: 0.75rem;
-  --font-xs: 1rem;
-  --font-sm: 1.5rem;
-  --font-base: 2rem;
-  --font-lg: 3rem;
-  --font-xl: 4.5rem;
-  --font-2xl: 6.25rem;
+  --font-2xs: 0.6rem;
+  --font-xs: 0.85rem;
+  --font-sm: 1.2rem;
+  --font-base: 1.5rem;
+  --font-lg: 2rem;
+  --font-xl: 3rem;
+  --font-2xl: 5rem;
 }
 
 body {
