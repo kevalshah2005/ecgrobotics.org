@@ -27,6 +27,29 @@
     --team731-font-xs: 0.85rem;
 }
 
+.team731-logo-number{
+    color: white;
+    text-align: center;
+    font-size: 10rem;
+    font-weight: 900;
+    transform-style: preserve-3d;
+    animation: spin 6s linear infinite;
+    text-shadow:
+    1px 1px 0 #555,
+    2px 2px 0 #444,
+    3px 3px 0 #333,
+    4px 4px 0 #222;
+}
+
+@keyframes spin {
+    from {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    to {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
 /* Background Container */
 .team731-page-wrapper {
     min-height: 100vh;
@@ -151,6 +174,41 @@
     border: none !important;
     box-shadow: none !important;
     margin-bottom: 3rem;
+}
+
+#hero, canvas {
+    position: relative;
+    /* Tell the browser to prioritize sharp pixels over blurry smoothing */
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+#hero {
+    margin-left: 0;
+    padding-left: 0;
+    width: 100vw;
+}
+
+#hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+    background-size: 100% 4px;
+    z-index: 2;
+    pointer-events: none;
+
+    animation: scanlineCrawl 20s linear infinite;
+}
+
+@keyframes scanlineCrawl {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 100%; 
+    }
 }
 
 .team731-team-photo-container {
@@ -340,6 +398,143 @@
     opacity: 0.9;
 }
 
+/* Sponsors Grid */
+.team731-sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.team731-sponsor-card {
+    background: rgba(40, 40, 40, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 1.8rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 212, 160, 0.2);
+}
+
+.team731-sponsor-card[data-tier="Bronze"] {
+    border-color: #cd7f32;
+}
+.team731-sponsor-card[data-tier="Silver"] {
+    border-color: silver;
+}
+.team731-sponsor-card[data-tier="Gold"] {
+    border-color: gold;
+}
+.team731-sponsor-card[data-tier="Platinum"] {
+    border-color: #E5E4E2;
+}
+.team731-sponsor-card[data-tier="Diamond"] {
+    border-color: #B9F2FF;
+}
+.team731-sponsor-card[data-tier="Strange"] {
+    border-color: orange;
+}
+
+.team731-sponsor-card:hover {
+    transform: translateY(-5px);
+}
+
+.team731-sponsor-card:hover[data-tier="Bronze"] {
+    box-shadow: 0 8px 25px #cd7f32;
+}
+.team731-sponsor-card:hover[data-tier="Silver"] {
+    box-shadow: 0 8px 25px silver;
+}
+.team731-sponsor-card:hover[data-tier="Gold"] {
+    box-shadow: 0 8px 25px gold;
+}
+.team731-sponsor-card:hover[data-tier="Platinum"] {
+    box-shadow: 0 8px 25px #E5E4E2;
+}
+.team731-sponsor-card:hover[data-tier="Diamond"] {
+    box-shadow: 0 8px 25px #B9F2FF;
+}
+.team731-sponsor-card:hover[data-tier="Strange"] {
+    box-shadow: 0 8px 25px orange;
+}
+
+.team731-sponsor-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin: 0 auto 1.2rem;
+}
+
+.team731-section.strange-club h2{
+    color: white;
+    text-shadow:  0 0 10px #FF6600, 0 0 20px #FF6600;
+}
+
+.team731-section-subtitle {
+    color: var(--team731-secondary);
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+    opacity: 0.85;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+/* Benefits Grid */
+.team731-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.team731-benefit-card {
+    background: rgba(40, 40, 40, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 1.8rem;
+    border: 1px solid rgba(255, 209, 102, 0.3);
+    transition: all 0.3s ease;
+}
+
+.team731-benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 209, 102, 0.2);
+    border-color: rgba(255, 209, 102, 0.6);
+}
+
+.team731-benefit-card h3 {
+    color: var(--team731-accent);
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.team731-benefit-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.team731-benefit-card li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: var(--team731-font-sm);
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.team731-benefit-card li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--team731-secondary);
+    font-weight: bold;
+}
+
 /* Outreach Section */
 .team731-outreach-project {
     margin-bottom: 3rem;
@@ -388,6 +583,69 @@
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2),
                 inset 0 0 10px rgba(106, 76, 255, 0.1);
 }
+
+/* Gallery Section */
+
+.team731-gallery-album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team731-gallery-album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.team731-gallery-album-grid > div {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.team731-gallery-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.team731-gallery-cell {
+    width: 33.33%;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.team731-gallery-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0);
+    color: white;
+    text-shadow: 0 0 10px #FF6600, 0 0 20px #FF8800;
+    opacity: 0.8;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    margin: 0;
+    transition: transform 0.5s cubic-bezier(0.87, -1.38, 0.03, 1.54);
+    box-shadow: 0 0 15px #FF6600, 0 0 25px #FF8800;
+}
+
+.team731-gallery-cell:hover figcaption {
+    opacity: 1;
+    transform: scale(1.15) translateY(1.15rem);
+}
+
 
 /* History Section - card grid */
 .team731-history-grid {
@@ -507,7 +765,8 @@
 /* Responsive Design */
 @media (max-width: 1200px) {
     .team731-members-grid,
-    .team731-mentors-grid {
+    .team731-mentors-grid,
+    .team731-benefits-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -531,7 +790,8 @@
     }
     
     .team731-members-grid,
-    .team731-mentors-grid {
+    .team731-mentors-grid,
+    .team731-benefits-grid {
         grid-template-columns: repeat(2, 1fr);
     }
     
@@ -566,4 +826,9 @@
     .team731-title-box h1 {
         font-size: 1.8rem;
     }
+}
+
+ol > li > ul {
+    margin-left: 20px !important;  /* Pushes the sub-list to the right */
+    padding-left: 20px !important; /* Creates space between bullets and text */
 }
