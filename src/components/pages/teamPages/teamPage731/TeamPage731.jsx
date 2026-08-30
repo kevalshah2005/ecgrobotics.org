@@ -13,22 +13,12 @@ import mentor3 from '/assets/mentors/timothyvo.jpg';
 import mentor4 from '/assets/mentors/srikanth.png';
 import mentor5 from '/assets/mentors/arihantsingh.jpg';
 import mentor6 from '/assets/mentors/lakshayamehta.jpg';
-import mentor7 from '/assets/mentors/antonio.png';
-import mentor8 from '/assets/mentors/ken.png';
-import patra from '/assets/FTC731/patra.png';
-import luna from '/assets/FTC731/luna.png';
-import divit from '/assets/FTC731/divit.png';
-import dev from '/assets/FTC731/dev.png';
-import jimmy from '/assets/FTC731/jimmy.png';
-import joel from '/assets/FTC731/jojo.png';
-import aiden from '/assets/FTC731/aiden.png';
-import teja from '/assets/FTC731/teja.png';
-import nikunj from '/assets/FTC731/nikunj.png';
-import anika from '/assets/FTC731/anika.png';
+import patra from '/assets/FTC731/patra.jpg';
+import nikunj from '/assets/FTC731/nikunj.jpg';
+import anika from '/assets/FTC731/anika.jpg';
 import noah from '/assets/FTC731/noah.png';
 import jason from '/assets/FTC731/jason.png';
-import alexw from '/assets/FTC731/alexw.png';
-import alexc from '/assets/FTC731/alexc.png';
+import divit from '/assets/FTC731/divit.png';
 import outreach1 from '/assets/FTC731/outreach1.jpg';
 import outreach2 from '/assets/FTC731/outreach2.jpg';
 import outreach3 from '/assets/FTC731/outreach3.jpg';
@@ -85,38 +75,87 @@ const TeamPage731 = () => {
         };
     }, []);
 
-    useEffect(() => {
-        const canvas = document.getElementById("c");
-        startLogoAnimation(canvas);
-    }, []);
-
-    const getTierColor = (tier) => {
-        const tierColors = {
-            "Bronze": "#CD7F32",
-            "Silver": "silver",
-            "Gold": "gold",
-            "Platinum": "#E5E4E2",
-            "Diamond": "#B9F2FF",
-            "Strange": "orange"
-        };
-        return tierColors[tier] || "transparent";
-    };
-
+    // NOTE: Each member object keeps its own `img` reference, so when the
+    // array is re-ordered or filtered, the picture always travels with the
+    // correct person. Anyone without a dedicated photo on file falls back
+    // to the shared `blank` placeholder until a real photo is added.
     const teamMembers = [
-        { id: 2, name: "Nikunj Gupta", role: "Co-Captain", img: nikunj, isCaptain: true },
-        { id: 10, name: "Jason Nguyen", role: "Co-Captain", img: jason, isCaptain: true },
-        { id: 1, name: "Ishan Mahapatra", role: "Marketing", img: patra },
-        { id: 9, name: "Jimmy Ma", role: "Programming Lead", img: jimmy },
-        // { id: 5, name: "Alex Wang", role: "Programming", img: alexw },
-        { id: 3, name: "Teja Chitta", role: "Mechanical", img: teja },
-        // { id: 4, name: "Alex Chen", role: "Mechanical", img: alexc },
-        { id: 6, name: "Anika Nayanar", role: "Marketing Lead", img: anika },
-        { id: 7, name: "Noah King", role: "Marketing/Mechanical", img: noah },
-        { id: 8, name: "Dev Patel", role: "Mechanical/Mechanical", img: dev },
-        { id: 11, name: "Divit Rao", role: "Marketing/Mechanical", img: divit },
-        {id: 12, name: "Joel Sekyama", role: "Programming", img: joel },
-        {id: 13, name: "Aiden Bell", role: "Mechanical", img: aiden },
-        {id: 14, name: "Luna Smith Yanez", role: "Marketing/Outreach", img: luna },
+        { id: 2, name: "Nikunj Gupta", role: "Co-Captain - Mechanical", img: nikunj, isCaptain: true },
+        { id: 10, name: "Jason Nguyen", role: "Co-Captain - Programming", img: jason, isCaptain: true },
+        { id: 12, name: "Levi Snyder", role: "Mechanical Lead", img: blank },
+        { id: 9, name: "Jimmy Ma", role: "Programming Lead", img: blank },
+        { id: 6, name: "Anika Nayanar", role: "Outreach Lead", img: anika },
+        { id: 1, name: "Ishan Mahapatra", role: "Outreach/Marketing", img: patra },
+        { id: 7, name: "Noah King", role: "Outreach/Marketing", img: noah },
+        { id: 8, name: "Dev Patel", role: "Mechanical/Outreach", img: blank },
+        { id: 11, name: "Divit Rao", role: "Mechanical", img: divit },
+        { id: 13, name: "Aiden Bell", role: "Mechanical", img: blank },
+        { id: 14, name: "Rishi Kandala", role: "Mechanical/Outreach", img: blank },
+        { id: 15, name: "Amogh Prashanth", role: "Programming", img: blank },
+        { id: 16, name: "Aadvik \"Rio\" Jandhyala", role: "Outreach/Mechanical", img: blank },
+        { id: 17, name: "Akshaya \"Zee\" Jandhyala", role: "Outreach/Marketing", img: blank },
+    ];
+
+    const seasons = [
+        {
+            years: "2025-2026",
+            name: "Decode",
+            awards: [
+                "Pinnacle Classical Academy Qualifier – Inspire Award",
+                "North Carolina Championship – Connect Award"
+            ]
+        },
+        {
+            years: "2024-2025",
+            name: "Into the Deep",
+            awards: [
+                "Ascend Leadership Academy – Control Award Winner",
+                "Salem Academy – Design Award Winner"
+            ]
+        },
+        {
+            years: "2023-2024",
+            name: "Centerstage",
+            awards: [
+                "NC FTC Ascend Leadership Academy – Design Award Winner",
+                "NC FTC Southern Guilford High School – Inspire Award 2nd Place, Winning Alliance Captain, Control Award Winner",
+                "North Carolina FTC State Championship – Finalist Alliance Captain, Control Award 2nd Place"
+            ]
+        },
+        {
+            years: "2022-2023",
+            name: "Powerplay",
+            awards: [
+                "NC FTC Smithfield-Selma HS – Inspire Award Winner",
+                "NC FTC Salem Academy and College – Connect Award Winner, Motivate Award 3rd Place",
+                "North Carolina FTC State Championship – Connect Award 2nd Place"
+            ]
+        },
+        {
+            years: "2021-2022",
+            name: "Freight Frenzy",
+            awards: [
+                "NC FTC Remote Qualifier 3 – Design Award Winner, Dean's List Semifinalist (Matthew Limanto), Dean's List Semifinalist (Zain Bawangaonwala)",
+                "NC Qualifier (Elon) – Connect Award Winner, Motivate Award 3rd Place"
+            ]
+        },
+        {
+            years: "2020-2021",
+            name: "Ultimate Goal",
+            awards: [
+                "NC FTC Qualifier #8 REMOTE – Design Award Winner, Dean's List Semifinalist (Sonia Akkiangadi), Dean's List Semifinalist (Victoria Uchman)",
+                "NC FTC Qualifier #4 REMOTE – Innovate Award 3rd Place, Design Award 2nd Place, Dean's List Semifinalist (Victoria Uchman), Dean's List Semifinalist (Sonia Akkiangadi)"
+            ]
+        },
+        {
+            years: "2019-2020",
+            name: "Skystone",
+            awards: [
+                "Northern Guilford High School QT – Inspire Award 3rd Place, Motivate Award Winner",
+                "Southern Guilford High School QT – Think Award Winner",
+                "North Carolina FIRST Tech Challenge State Championship Tournament – Design Award Winner"
+            ]
+        }
     ];
 
     const mentors = [
@@ -263,8 +302,24 @@ const TeamPage731 = () => {
                 <section className="team731-section team731-overview">
                     <h2>Overview</h2>
                     <p>
-                    FTC Team 731 Wannabee Strange is a 19-year veteran team based in Greensboro, NC. We are one of four FTC teams in the ECG Robotics Organization, with 14 members from across the Triad area. We actively uphold our team values of innovation (being 'strange') and teamwork (Bees of a colony). <br />
-                    Wannabee Strange is entirely student-led, with captains and division leads managing finances, logistics, bot duties, tasks, projects, and goals. This structure helps members develop valuable skills beyond robotics, including communication and productivity.
+                        Wannabee Strange (FTC Team 731) is a student-led FIRST Tech Challenge team based in
+                        Greensboro, North Carolina, and part of ECG Robotics. Founded in 2007, Team 731 has
+                        spent nearly two decades developing students through hands-on experience in engineering,
+                        programming, mechanical design, teamwork, leadership, and outreach.
+                    </p>
+                    <p>
+                        The team has built a strong competitive legacy, qualifying for the FIRST Championship
+                        in Houston multiple times — including a 13th-place division finish in 2017 as first
+                        pick of the third-seeded alliance, and an Inspire Award at the 2018 NC State
+                        Championship that sent the team to Worlds. In 2023, Wannabee Strange served as
+                        Finalist Alliance Captain at the North Carolina Championship.
+                    </p>
+                    <p>
+                        Beyond competition, Team 731 is committed to STEM outreach and to promoting robotics
+                        as an activity that builds the same qualities found in traditional athletics:
+                        dedication, teamwork, leadership, discipline, and perseverance. As one of North
+                        Carolina's longest-running FTC teams, Wannabee Strange continues to inspire students
+                        to build ambitious robots and become the next generation of engineers and innovators.
                     </p>
                 </section>
 
@@ -272,8 +327,12 @@ const TeamPage731 = () => {
                 <section className="team731-section team731-members">
                     <h2>Team Members</h2>
                     <div className="team731-members-grid">
-                        {teamMembers.map(member => (
-                            <div key={member.id} className={`team731-member-card ${member.isCaptain ? 'team731-captain' : ''}`}>
+                        {teamMembers.map((member, index) => (
+                            <div
+                                key={member.id}
+                                className={`team731-member-card ${member.isCaptain ? 'team731-captain' : ''}`}
+                                style={{ animationDelay: `${0.05 * index}s` }}
+                            >
                                 {member.img && (
                                     <img
                                         src={member.img}
@@ -281,8 +340,9 @@ const TeamPage731 = () => {
                                         className="team731-member-avatar"
                                     />
                                 )}
+                                {member.isCaptain && <span className="team731-captain-badge">★ Co-Captain</span>}
                                 <p><b>{member.name}</b></p>
-                                <p>{member.role} {member.isCaptain && '⭐'}</p>
+                                <p>{member.role}</p>
                             </div>
                         ))}
                     </div>
@@ -292,47 +352,23 @@ const TeamPage731 = () => {
                 <section className="team731-section team731-history">
                     <h2>Team History</h2>
                     <p>Since our founding, we've earned multiple awards for robot design and community impact:</p>
-                    <ul>
-                        <li>2024-2025: INTO THE DEEP
-                            <ul>
-                                <li>Control Award Winner - Ascend Leadership Academy</li>
-                                <li>Design Award Winner - Salem Academy</li>
-                            </ul>
-                        </li>
-                        <li>2023-2024: CENTERSTAGE
-                            <ul>
-                                <li>Design Award Winner - NC FTC Ascend Leadership Academy</li>
-                                <li>Inspire Award 2nd Place, Winning Alliance Captain, Control Award Winner - NC FTC Southern Guilford High School</li>
-                                <li>Finalist Alliance Captain, Control Award 2nd Place - North Carolina FTC State Championship</li>
-                            </ul>
-                        </li>
-                        <li>2022-2023: POWERPLAY
-                            <ul>
-                                <li>Inspire Award Winner - NC FTC Smithfield-Selma HS</li>
-                                <li>Connect Award Winner, Motivate Award 3rd Place - NC FTC Salem Academy and College</li>
-                                <li>Connect Award 2nd Place - North Carolina FTC State Championship</li>
-                            </ul>
-                        </li>
-                        <li>2021-2022: FREIGHT FRENZY
-                            <ul>
-                                <li>Design Award Winner, Dean's List Semifinalist (Matthew Limanto), Dean's List Semifinalist (Zain Bawangaonwala) - NC FTC Remote Qualifier 3</li>
-                                <li>Connect Award Winner, Motivate Award 3rd Place - NC Qualifier (Elon)</li>
-                            </ul>
-                        </li>
-                        <li>2020-2021: ULTIMATE GOAL
-                            <ul>
-                                <li>Design Award Winner, Dean's List Semifinalist (Sonia Akkiangadi), Dean's List Semifinalist (Victoria Uchman) - NC FTC Qualifier #8 REMOTE</li>
-                                <li>Innovate Award 3rd Place, Design Award 2nd Place, Dean's List Semifinalist (Victoria Uchman), Dean's List Semifinalist (Sonia Akkiangadi) - NC FTC Qualifier #4 REMOTE</li>
-                            </ul>
-                        </li>
-                        <li>2019-2020: SKYSTONE
-                            <ul>
-                                <li>Inspire Award 3rd Place, Motivate Award Winner - Northern Guilford High School QT</li>
-                                <li>Think Award Winner - Southern Guilford High School QT</li>
-                                <li>Design Award Winner - North Carolina FIRST Tech Challenge State Championship Tournament</li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <div className="team731-history-grid">
+                        {seasons.map((season, index) => (
+                            <div
+                                key={season.years}
+                                className={`team731-history-card ${index === 0 ? 'team731-history-current' : ''}`}
+                            >
+                                {index === 0 && <span className="team731-history-current-badge">Latest Season</span>}
+                                <span className="team731-history-years">{season.years}</span>
+                                <h3 className="team731-history-season">{season.name}</h3>
+                                <ul>
+                                    {season.awards.map((award, i) => (
+                                        <li key={i}>{award}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
                 </section>
 
                 {/* Mentorship Section */}

@@ -110,6 +110,10 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
+    background: linear-gradient(90deg, var(--team731-text-light) 0%, var(--team731-text-light) 55%, var(--team731-secondary) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-shadow: 0 0 15px rgba(106, 76, 255, 0.6);
 }
 
@@ -270,6 +274,19 @@
     margin-bottom: var(--team731-font-xs);
 }
 
+/* Overview Section - condensed so it doesn't dominate the page */
+.team731-overview p {
+    font-size: 0.98rem;
+    line-height: 1.55;
+    opacity: 0.92;
+    margin: 0 0 0.85rem 0;
+    max-width: 900px;
+}
+
+.team731-overview p:last-child {
+    margin-bottom: 0;
+}
+
 /* Team Members Grid */
 .team731-members-grid {
     display: grid;
@@ -279,6 +296,7 @@
 }
 
 .team731-member-card {
+    position: relative;
     background: rgba(40, 40, 40, 0.5);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -287,6 +305,8 @@
     text-align: center;
     border: 1px solid rgba(106, 76, 255, 0.2);
     transition: all 0.3s ease;
+    opacity: 0;
+    animation: team731-memberIn 0.5s ease-out forwards;
 }
 
 .team731-member-card:hover {
@@ -299,6 +319,22 @@
                 rgba(106, 76, 255, 0.25), 
                 rgba(106, 76, 255, 0.4));
     box-shadow: 0 0 30px rgba(106, 76, 255, 0.4);
+    animation: team731-memberIn 0.5s ease-out forwards, team731-captainGlow 3s ease-in-out infinite 0.5s;
+}
+
+.team731-captain-badge {
+    display: block;
+    width: fit-content;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--team731-text-dark);
+    background: var(--team731-accent);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    margin: -0.35rem auto 0.9rem;
+    box-shadow: 0 0 10px rgba(255, 209, 102, 0.5);
 }
 
 .team731-member-avatar {
@@ -309,6 +345,11 @@
     margin: 0 auto 1rem;
     border: 2px solid var(--team731-primary);
     box-shadow: 0 0 15px rgba(106, 76, 255, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.team731-member-card:hover .team731-member-avatar {
+    transform: scale(1.08);
 }
 
 /* Mentors Grid */
@@ -604,28 +645,112 @@ figcaption {
     transform: scale(1.15) translateY(1.15rem);
 }
 
-/* History Section */
-.team731-history ul {
-    list-style-type: disc;
-    padding-left: var(--team731-font-base);
+
+/* History Section - card grid */
+.team731-history-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.team731-history-card {
+    position: relative;
+    background: rgba(40, 40, 40, 0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 1.6rem 1.8rem;
+    border: 1px solid rgba(106, 76, 255, 0.2);
     text-align: left;
-    margin-top: var(--team731-font-xs);
+    transition: all 0.3s ease;
 }
 
-.team731-history li {
-    font-size: var(--team731-font-base);
+.team731-history-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(106, 76, 255, 0.25);
+}
+
+.team731-history-current {
+    border-color: rgba(0, 212, 160, 0.45);
+    background: linear-gradient(135deg, rgba(0, 212, 160, 0.14), rgba(40, 40, 40, 0.55));
+    box-shadow: 0 0 25px rgba(0, 212, 160, 0.25);
+}
+
+.team731-history-current-badge {
+    position: absolute;
+    top: -0.65rem;
+    right: 1.2rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--team731-text-dark);
+    background: var(--team731-secondary);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    box-shadow: 0 0 10px rgba(0, 212, 160, 0.5);
+}
+
+.team731-history-years {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--team731-secondary);
+    margin-bottom: 0.3rem;
+}
+
+.team731-history-season {
+    font-size: 1.35rem;
+    margin: 0 0 0.9rem 0;
+    color: var(--team731-accent);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.team731-history-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.team731-history-card li {
+    position: relative;
+    padding-left: 1.1rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.92rem;
+    line-height: 1.5;
     color: var(--team731-text-light);
-    margin-bottom: var(--team731-font-xs);
+    opacity: 0.92;
 }
 
-.team731-history ul ul {
-    margin-top: var(--team731-font-xs);
+.team731-history-card li:last-child {
+    margin-bottom: 0;
+}
+
+.team731-history-card li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--team731-secondary);
 }
 
 /* Animations */
 @keyframes team731-fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes team731-memberIn {
+    from { opacity: 0; transform: translateY(15px) scale(0.96); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes team731-captainGlow {
+    0%, 100% { box-shadow: 0 0 30px rgba(106, 76, 255, 0.4); }
+    50% { box-shadow: 0 0 45px rgba(106, 76, 255, 0.7); }
 }
 
 /* Section Animation Delays */

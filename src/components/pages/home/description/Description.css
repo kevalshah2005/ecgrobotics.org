@@ -12,25 +12,29 @@
     justify-content: center;
     align-items: center;
     background-color: var(--main-bg-color);
-    padding: 2.5rem 5rem; /* 40px 80px */
+    padding: 2.5rem 5rem;
+    /* 40px 80px */
 }
 
-.text-container > p {
+.text-container>p {
     max-width: 100%;
-    margin-top: 0.5rem; /* 8px */
-    margin-bottom: 1rem; /* 16px */
+    margin-top: 0.5rem;
+    /* 8px */
+    margin-bottom: 1rem;
+    /* 16px */
     color: var(--main-text-color);
     font-size: var(--font-base);
 }
 
 .overview-image {
     max-width: 45%;
-    margin-left: 6.25rem; /* 100px */
+    margin-left: 6.25rem;
+    /* 100px */
     border-radius: 5%;
 }
 
 @media screen and (max-width: 1500px) {
-    .text-container > p {
+    .text-container>p {
         font-size: var(--font-base);
     }
 }
@@ -39,13 +43,16 @@
     .description-container {
         width: 100%;
     }
+
     .overview-container {
         flex-direction: column;
         padding: 1.875rem 1.875rem;
     }
-    .text-container > p {
+
+    .text-container>p {
         font-size: var(--font-sm);
     }
+
     .overview-image {
         max-width: 100%;
         margin-top: 2rem;
@@ -54,7 +61,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .text-container > p {
+    .text-container>p {
         font-size: var(--font-sm);
     }
 }
@@ -63,14 +70,16 @@
     position: relative;
     width: 100%;
     flex-direction: column;
-    padding: 1.75rem 5rem; /* 60px 80px */
+    padding: 1.75rem 5rem;
+    /* 60px 80px */
 }
 
-.ftc-container > h1 {
+.ftc-container>h1 {
     text-align: center;
     font-size: var(--font-2xl);
     color: var(--main-text-color);
-    margin-top: 1.25rem; /* 20px */
+    margin-top: 1.25rem;
+    /* 20px */
 }
 
 .ftc-description-container {
@@ -78,38 +87,45 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2.5rem; /* 40px */
-    margin-top: 2.5rem; /* 40px */
+    margin-bottom: 2.5rem;
+    /* 40px */
+    margin-top: 2.5rem;
+    /* 40px */
 }
 
-.ftc-description-container > p {
+.ftc-description-container>p {
     color: var(--main-text-color);
     font-size: var(--font-base);
 }
 
 .ftc-image {
     max-width: 45%;
-    margin-left: 6.25rem; /* 100px */
+    margin-left: 6.25rem;
+    /* 100px */
     border-radius: 5%;
 }
 
 .ftc-text-box {
     position: absolute;
-    bottom: 0.3125rem; /* 5px */
+    bottom: 0.3125rem;
+    /* 5px */
     right: 0;
-    padding: 0.625rem; /* 10px */
-    border-radius: 0.3125rem; /* 5px */
-    font-size: 5.625rem; /* 90px */
+    padding: 0.625rem;
+    /* 10px */
+    border-radius: 0.3125rem;
+    /* 5px */
+    font-size: 5.625rem;
+    /* 90px */
     max-width: 40%;
     max-height: 30%;
 }
 
 @media screen and (max-width: 1500px) {
-    .ftc-container > h1 {
-        font-size: 6rem; /* 96px */
+    .ftc-container>h1 {
+        font-size: var(--font-2xl);
     }
 
-    .ftc-description-container > p {
+    .ftc-description-container>p {
         font-size: var(--font-base);
     }
 }
@@ -117,24 +133,28 @@
 @media screen and (max-width: 960px) {
     .ftc-description-container {
         flex-direction: column;
-        padding: 0.625rem; /* 10px */
+        padding: 0.625rem;
+        /* 10px */
     }
+
     .ftc-image {
         max-width: 100%;
         margin-top: 2rem;
         margin-bottom: 2rem;
         margin-left: 0;
     }
-    .ftc-container > h1 {
+
+    .ftc-container>h1 {
         font-size: var(--font-lg);
     }
-    .ftc-description-container > p {
+
+    .ftc-description-container>p {
         font-size: var(--font-sm);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .ftc-description-container > p {
+    .ftc-description-container>p {
         font-size: var(--font-sm);
     }
 }
@@ -143,13 +163,16 @@
     position: relative;
     width: 100%;
     flex-direction: column;
-    padding: 1.75rem 5rem; /* 40px 80px */
+    padding: 1.75rem 5rem;
+    /* 40px 80px */
 }
 
-.frc-container > h1 {
+.frc-container>h1 {
     text-align: center;
     font-size: var(--font-2xl);
     color: var(--main-text-color);
+    margin-top: 1.25rem;
+    /* 20px */
 }
 
 .frc-description-container {
@@ -157,39 +180,46 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 2.5rem; /* 40px */
-    margin-bottom: 2.5rem; /* 40px */
+    margin-top: 2.5rem;
+    /* 40px */
+    margin-bottom: 2.5rem;
+    /* 40px */
 }
 
-.frc-description-container > p {
+.frc-description-container>p {
     color: #ffffff;
     font-size: var(--font-base);
 }
 
 .frc-image {
     max-width: 45%;
-    margin-left: 6.25rem; /* 100px */
+    margin-left: 6.25rem;
+    /* 100px */
     border-radius: 5%;
 }
 
 .frc-text-box {
     position: absolute;
-    bottom: 0.3125rem; /* 5px */
+    bottom: 0.3125rem;
+    /* 5px */
     right: 0;
     color: #ffffff;
-    padding: 0.625rem; /* 10px */
-    border-radius: 0.3125rem; /* 5px */
-    font-size: 5.625rem; /* 90px */
+    padding: 0.625rem;
+    /* 10px */
+    border-radius: 0.3125rem;
+    /* 5px */
+    font-size: 5.625rem;
+    /* 90px */
     max-width: 40%;
     max-height: 30%;
 }
 
 @media screen and (max-width: 1500px) {
-    .frc-container > h1 {
-        font-size: var(--font-xl);
+    .frc-container>h1 {
+        font-size: var(--font-2xl);
     }
 
-    .frc-description-container > p {
+    .frc-description-container>p {
         font-size: var(--font-base);
     }
 }
@@ -197,8 +227,10 @@
 @media screen and (max-width: 960px) {
     .frc-description-container {
         flex-direction: column;
-        padding: 0.625rem; /* 10px */
+        padding: 0.625rem;
+        /* 10px */
     }
+
     .frc-image {
         max-width: 100%;
         margin-top: 2rem;
@@ -206,16 +238,17 @@
         margin-left: 0;
     }
 
-    .frc-container > h1 {
+    .frc-container>h1 {
         font-size: var(--font-lg);
     }
-    .frc-description-container > p {
+
+    .frc-description-container>p {
         font-size: var(--font-sm);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .frc-description-container > p {
+    .frc-description-container>p {
         font-size: var(--font-sm);
     }
 }
