@@ -13,6 +13,8 @@ import mentor3 from '/assets/mentors/timothyvo.jpg';
 import mentor4 from '/assets/mentors/srikanth.png';
 import mentor5 from '/assets/mentors/arihantsingh.jpg';
 import mentor6 from '/assets/mentors/lakshayamehta.jpg';
+import mentor7 from '/assets/mentors/antonio.png';
+import mentor8 from '/assets/mentors/ken.png';
 import patra from '/assets/FTC731/patra.jpg';
 import nikunj from '/assets/FTC731/nikunj.jpg';
 import anika from '/assets/FTC731/anika.jpg';
