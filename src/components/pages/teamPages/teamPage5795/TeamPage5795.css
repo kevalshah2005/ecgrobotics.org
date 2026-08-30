@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Patrick+Hand&display=swap');
+
 /* Container */
 .team5795-container {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -5,29 +7,9 @@
     position: relative;
     overflow: hidden;
     min-height: 100vh;
+    background: #060606;
   }
-  
-  /* Video Background */
-  .team5795-video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -2;
-    overflow: hidden;
-  }
-  
-  .team5795-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .team5795-video-overlay {
-    background: none; /* transparent overlay */
-  }
-  
+
   /* Main Centered Card */
   .team5795-content {
     position: relative;
@@ -35,30 +17,31 @@
     max-width: 960px;
     margin: 2rem auto;
     padding: 2rem;
-    background: rgba(0, 0, 0, 0.6); /* dark semi-transparent card */
+    background: rgba(18, 14, 11, 0.72); /* warm dark drawing-board card */
     border-radius: 20px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-    backdrop-filter: none; /* no blur effect */
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: none;
+    border: 1px solid rgba(230, 180, 120, 0.2);
   }
-  
+
   /* Header Layout */
   .team5795-header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px dashed rgba(230, 180, 120, 0.3);
   }
-  
+
   .team5795-logo {
     height: 60px;
     width: auto;
     object-fit: contain;
   }
-  
+
   .team5795-header h1 {
     flex: 1;
     color: #fff;
@@ -66,40 +49,166 @@
     text-align: center;
     margin: 0;
   }
-  
+
   .team5795-socials {
     display: flex;
     align-items: center;
     gap: 1rem;
   }
-  
+
   .team5795-socials img {
     width: 32px;
     height: 32px;
     transition: transform 0.2s;
     cursor: pointer;
   }
-  
+
   .team5795-socials img:hover {
     transform: scale(1.1);
   }
-  
+
   /* Section Styling */
   .team5795-section {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
+    position: relative;
   }
-  
-  .team5795-section h2 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    color: #aad1ff;
-  }
-  
+
   .team5795-section p,
   .team5795-section ul {
     line-height: 1.6;
   }
-  
+
+  /* Drawing-board style section headers */
+  .team5795-board-header {
+    display: inline-block;
+    font-family: 'Bungee', 'Segoe UI', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff8ee;
+    background: linear-gradient(135deg, #fbb16c, #b8752f);
+    padding: 0.55rem 1.6rem;
+    margin-bottom: 1rem;
+    transform: rotate(-1deg);
+    clip-path: polygon(0% 15%, 3% 0%, 20% 8%, 40% 2%, 60% 10%, 80% 0%, 100% 12%, 98% 85%, 100% 100%, 70% 92%, 50% 100%, 30% 90%, 10% 100%, 0% 88%);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  }
+
+  .team5795-handwritten {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.15rem;
+    color: #fbb16c;
+    margin: 0 0 1rem 0.25rem;
+  }
+
+  /* Doodle drawings (from the team's own portfolio) */
+  .doodle {
+    pointer-events: none;
+    user-select: none;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+  }
+
+  .doodle-header-cone {
+    position: absolute;
+    width: 44px;
+    top: -14px;
+    left: 70px;
+    transform: rotate(-8deg);
+  }
+
+  .doodle-about-pencil {
+    position: absolute;
+    width: 80px;
+    top: -34px;
+    right: 0;
+    transform: rotate(10deg);
+  }
+
+  .doodle-team-robot {
+    position: absolute;
+    width: 60px;
+    top: -30px;
+    right: 6px;
+    transform: rotate(-6deg);
+  }
+
+  .doodle-coaches-hat {
+    width: 34px;
+    transform: rotate(-8deg);
+  }
+
+  .doodle-awards-trophy {
+    position: absolute;
+    width: 56px;
+    top: -22px;
+    right: 40px;
+    transform: rotate(6deg);
+  }
+
+  .doodle-awards-star {
+    position: absolute;
+    width: 34px;
+    top: -10px;
+    right: 0;
+    transform: rotate(-10deg);
+  }
+
+  .doodle-field-cone {
+    position: absolute;
+    width: 68px;
+    top: -28px;
+    right: 60px;
+    transform: rotate(-6deg);
+  }
+
+  .doodle-field-basketball {
+    position: absolute;
+    width: 32px;
+    top: -8px;
+    right: 10px;
+    transform: rotate(8deg);
+  }
+
+  .doodle-outreach-plane {
+    position: absolute;
+    width: 64px;
+    top: -20px;
+    right: 4px;
+    transform: rotate(6deg);
+  }
+
+  .doodle-highlights-magnify {
+    width: 28px;
+    transform: rotate(-6deg);
+  }
+
+  .doodle-gallery-camera {
+    position: absolute;
+    width: 46px;
+    top: -28px;
+    left: 4px;
+    transform: rotate(-8deg);
+  }
+
+  .team5795-signature {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    opacity: 0.8;
+  }
+
+  .doodle-signature-pencil {
+    width: 70px;
+    transform: rotate(-6deg);
+  }
+
+  .doodle-signature-cone {
+    width: 56px;
+    transform: rotate(6deg);
+  }
+
   /* Team Photo Section */
   .team5795-photo-section {
     margin-top: 2rem;
@@ -107,36 +216,50 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .team5795-team-photo {
     width: 60%;
     max-width: 500px;
     height: auto;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(230, 180, 120, 0.25);
     transition: transform 0.3s ease;
   }
-  
+
   .team5795-team-photo:hover {
     transform: scale(1.02);
   }
-  
+
+  .team5795-banner-photo {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(230, 180, 120, 0.25);
+    transition: transform 0.3s ease;
+  }
+
+  .team5795-banner-photo:hover {
+    transform: scale(1.02);
+  }
+
   /* Team Members Section */
   .team5795-members-section {
     background-color: rgba(255, 255, 255, 0.05);
     padding: 1rem;
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px dashed rgba(230, 180, 120, 0.25);
   }
-  
+
   .team5795-members-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 1rem;
     margin-top: 1.5rem;
   }
-  
+
   .team5795-member-card {
     background: rgba(0, 0, 50, 0.3);
     padding: 1.2rem;
@@ -144,56 +267,255 @@
     border-left: 4px solid #4a90e2;
     transition: transform 0.3s, box-shadow 0.3s;
   }
-  
+
   .team5795-member-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     background: rgba(0, 0, 70, 0.4);
   }
-  
+
   .team5795-member-name {
     font-weight: bold;
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
     color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
-  
+
+  .team5795-new-badge {
+    font-family: 'Bungee', 'Segoe UI', sans-serif;
+    font-size: 0.6rem;
+    background: #e8954f;
+    color: #fff8ee;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    transform: rotate(-4deg);
+  }
+
   .team5795-member-role {
-    color: #aad1ff;
+    color: #9dd4f3;
     font-size: 0.9rem;
+    display: flex;
+    align-items: center;
   }
-  
+
   .team5795-role-icon {
-    margin-right: 6px;
-    filter: drop-shadow(0 0 2px rgba(0, 150, 255, 0.7));
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    margin-right: 8px;
+    flex-shrink: 0;
   }
-  
+
+  /* Coaches Section */
+  .team5795-coaches-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #fbb16c;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.4rem;
+  }
+
+  .team5795-coaches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+
+  .team5795-coach-card {
+    background: rgba(0, 0, 50, 0.3);
+    padding: 1.2rem;
+    border-radius: 12px;
+    border-left: 4px solid #e2a34a;
+  }
+
+  /* Awards */
+  .team5795-awards-list {
+    list-style: none;
+    margin-left: 2.5rem;
+    padding-left: 1.5rem;
+    border-left: 3px dashed rgba(230, 180, 120, 0.4);
+  }
+
+  .team5795-awards-list li {
+    margin-bottom: 0.6rem;
+  }
+
+  /* Competition Photos */
+  .team5795-competition-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .team5795-competition-photos figure {
+    margin: 0;
+  }
+
+  .team5795-competition-photos img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid rgba(230, 180, 120, 0.25);
+    transition: transform 0.3s ease;
+    display: block;
+  }
+
+  .team5795-competition-photos img:hover {
+    transform: scale(1.02);
+  }
+
+  .team5795-competition-photos figcaption {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.05rem;
+    color: #fbb16c;
+  }
+
+  /* Outreach Stats */
+  .team5795-outreach-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .team5795-stat-tile {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(230, 180, 120, 0.2);
+    border-radius: 12px;
+    padding: 1.2rem 0.75rem;
+    text-align: center;
+  }
+
+  .team5795-stat-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #9dd4f3;
+    line-height: 1.1;
+  }
+
+  .team5795-stat-label {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  /* Donut Chart */
+  .team5795-donut-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  .team5795-donut {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .team5795-donut-center {
+    position: absolute;
+    inset: 22%;
+    background: #17120e;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 2px rgba(230, 180, 120, 0.2);
+  }
+
+  .team5795-donut-total {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .team5795-donut-total-label {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .team5795-donut-legend {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .team5795-donut-legend li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+  }
+
+  .team5795-legend-swatch {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+
+  .team5795-legend-label {
+    flex: 1;
+  }
+
+  .team5795-legend-value {
+    font-weight: bold;
+    color: #fbb16c;
+  }
+
   /* Gallery Section */
   .team5795-gallery {
     margin-top: 2rem;
+    position: relative;
   }
-  
+
   /* Responsive */
   @media (max-width: 768px) {
     .team5795-header {
       flex-direction: column;
       text-align: center;
     }
-  
+
     .team5795-header h1 {
       font-size: 1.4rem;
     }
-  
+
     .team5795-logo {
       height: 50px;
     }
-  
+
     .team5795-socials {
       justify-content: center;
     }
-  
+
     .team5795-content {
       margin: 1rem;
       padding: 1.2rem;
+    }
+
+    .team5795-awards-list {
+      margin-left: 1rem;
+    }
+
+    .team5795-donut-row {
+      justify-content: center;
     }
   }
