@@ -12,7 +12,7 @@ import logo1533 from '/assets/logo1533.webp'
 import "aos/dist/aos.css";
 
 function Description() {
-  var cardWidth = window.innerWidth < 600 ? '100%' : window.innerWidth < 1400 ? '200px' : '250px';
+  var cardWidth = window.innerWidth < 600 ? '100%' : window.innerWidth < 1600 ? '200px' : '250px';
 
   return (
     <div className='description-container'>
@@ -20,8 +20,8 @@ function Description() {
         <div className='text-container'>
           <p>ECG Robotics is a student-led, non-profit robotics club based in Greensboro, NC. Our teams compete in the FIRST Tech Challenge and FIRST Robotics Competition and welcome students from all over Guilford County.</p>
           <p>We inspire students locally, nationally, and internationally to learn about STEM through our award-winning outreach initiatives.</p>
-        </div> 
-        <img src={overviewImage} alt='' className='overview-image'/>
+        </div>
+        <img src={overviewImage} alt='' className='overview-image' />
       </div>
 
       <div className='ftc-container'>
@@ -36,7 +36,7 @@ function Description() {
           <div className="cards-container">
             <div className="cards-wrapper">
               <ul className="cards-items">
-                <CardItem 
+                <CardItem
                   src={logo731}
                   title='Wannabee Strange'
                   number='731'
@@ -45,7 +45,7 @@ function Description() {
                   width={cardWidth}
                   imageWidth="100%"
                 />
-                <CardItem 
+                <CardItem
                   src={logo5795}
                   title='Back to the Drawing Board'
                   number='5795'
@@ -54,7 +54,7 @@ function Description() {
                   width={cardWidth}
                   imageWidth="100%"
                 />
-                <CardItem 
+                <CardItem
                   src={logo6183}
                   title='Triple Paradox'
                   number='6183'
@@ -63,7 +63,7 @@ function Description() {
                   width={cardWidth}
                   imageWidth="100%"
                 />
-                <CardItem 
+                <CardItem
                   src={logo10195}
                   title='Night Owls'
                   number='10195'
@@ -79,7 +79,7 @@ function Description() {
       </div>
 
       <div className="frc-container">
-      <h1 data-aos="fade-up">FIRST Robotics Competition</h1>
+        <h1 data-aos="fade-up">FIRST Robotics Competition</h1>
         <div className='frc-description-container' data-aos="fade-up">
           <p> FIRST Robotics Competition (FRC) is a high school robotics program where teams build large, industrial-style robots to compete in a new global challenge each year. Combining advanced engineering, programming, and strategy, FRC pushes students to collaborate, innovate, and solve complex problems under time constraints. Teams also engage in outreach, community impact, and STEM advocacy as core parts of the experience.
           </p>
@@ -90,7 +90,7 @@ function Description() {
           <div className="cards-container">
             <div className="cards-wrapper">
               <ul className="cards-items">
-                <CardItem 
+                <CardItem
                   src={logo1533}
                   title='Triple Strange'
                   number='1533'
