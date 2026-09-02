@@ -1,43 +1,68 @@
-import React, { useState } from 'react';
+import React, { Suspense, useState, useRef, useEffect } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, useGLTF, Html, useProgress } from '@react-three/drei';
 import './DecodePage6183.css';
-import RobotPage from './RobotDecode6183';
-import Outreach6183 from './Outreach6183';
 
-const tabs = [
-    { key: 'ROBOT', label: 'Robot' },
-    { key: 'OUTREACH', label: 'Outreach' },
-];
+function Loader() {
+    const { progress } = useProgress();
+    return (
+        <Html center>
+            <div className="robot-loader">
+                <div className="robot-loader-spinner" />
+                <p>{Math.round(progress)}%</p>
+            </div>
+        </Html>
+    );
+}
 
-const DecodePage6183 = () => {
-    const [selectedTab, setTab] = useState('ROBOT');
+function RobotModel() {
+    const { scene } = useGLTF('/assets/FTC6183/Robot V2 compressed.glb');
+    return <primitive object={scene} scale={2.2} position={[0, -0.5, 0]} />;
+}
+
+const RobotDecode6183 = () => {
+    const [inView, setInView] = useState(false);
+    const wrapRef = useRef(null);
+
+    // Only mount the canvas once it's actually scrolled into view
+    useEffect(() => {
+        const obs = new IntersectionObserver(
+            ([entry]) => setInView(entry.isIntersecting),
+            { threshold: 0.15 }
+        );
+        if (wrapRef.current) obs.observe(wrapRef.current);
+        return () => obs.disconnect();
+    }, []);
 
     return (
-        <div className="main-6183-decode">
-            <h1>DECODE</h1>
-            <p className="date">September 6th 2025 - Present</p>
-
-            {/* Tabs */}
-            <div className="tab-container-6183-decode" role="tablist" aria-label="Decode tabs">
-                {tabs.map((t) => (
-                    <button
-                        key={t.key}
-                        role="tab"
-                        aria-selected={selectedTab === t.key}
-                        className={`tab-6183-decode ${selectedTab === t.key ? 'selected' : ''}`}
-                        onClick={() => setTab(t.key)}
+        <section className="robot-container-6183">
+            <h2 className="section-title-6183">Robot</h2>
+            <div className="robot-canvas-wrapper" ref={wrapRef}>
+                {inView && (
+                    <Canvas
+                        camera={{ position: [0, 1.5, 3], fov: 50 }}
+                        dpr={[1, 1.5]}              // cap pixel ratio, big lag source on retina/mobile
+                        frameloop="demand"           // only re-render when something changes
+                        gl={{ antialias: false, powerPreference: 'low-power' }}
                     >
-                        {t.label}
-                    </button>
-                ))}
+                        <ambientLight intensity={0.6} />
+                        <directionalLight position={[5, 5, 5]} intensity={1} />
+                        <Suspense fallback={<Loader />}>
+                            <RobotModel />
+                            <OrbitControls
+                                autoRotate
+                                autoRotateSpeed={1}
+                                enableZoom={false}
+                                enablePan={false}
+                                makeDefault
+                            />
+                        </Suspense>
+                    </Canvas>
+                )}
             </div>
-
-            {/* Tab Content */}
-            <div className="tab-content-6183">
-                {selectedTab === 'ROBOT' && <RobotPage />}
-                {selectedTab === 'OUTREACH' && <Outreach6183 />}
-            </div>
-        </div>
+        </section>
     );
 };
 
-export default DecodePage6183;
+useGLTF.preload('/assets/FTC6183/Robot V2 compressed.glb');
+export default RobotDecode6183;

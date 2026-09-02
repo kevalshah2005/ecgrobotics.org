@@ -12,16 +12,21 @@ const BG_VIDEO = '/assets/FTC6183/background.mp4';
 // ─────────────────────────────────────────────────────────────────────────────
 
 const members = [
-    { name: "Luke St. Clair", roles: ["Mechanical", "Fabrication", "Outreach", "Lead Mechanical"], grade: "Junior", registration: "Returning" },
-    { name: "Xander Martinez", roles: ["Co-Captain", "Mechanical", "Website Programming", "Fabrication"], grade: "Junior", registration: "Recruited" },
-    { name: "Kristian Cook", roles: ["Programming", "Website Programming"], grade: "Sophomore", registration: "Recruited" },
-    { name: "Samy Gaire", roles: ["Co-Captain", "Outreach", "Mechanical"], grade: "Sophomore", registration: "Returning" },
-    { name: "Aryan Ranabhat", roles: ["Mechanical"], grade: "Freshman", registration: "Drafted" },
-    { name: "Rudra Patel", roles: ["Outreach", "Mechanical", "Media", "Graphic Design"], grade: "Freshman", registration: "Drafted" },
-    { name: "Ernest Hu", roles: ["Mechanical"], grade: "Sophomore", registration: "Switched" },
-    { name: "Pralove Shah", roles: ["Programming"], grade: "Freshman", registration: "Recruited" },
-    { name: "Arden Bankman", roles: ["Mechanical"], grade: "Freshman", registration: "Recruited" },
-    { name: "Ronith Budde", roles: ["Mechanical"], grade: "Freshman", registration: "Recruited" },
+    { name: "Luke St. Clair", roles: ["Mechanical Lead", "Fabrication Lead", "Design"], grade: "Senior", registration: "Returning" },
+    { name: "Xander Martinez", roles: ["Co-Captain", "Mechanical", "Website Programming", "Fabrication"], grade: "Senior", registration: "Recruited" },
+    { name: "Kristian Cook", roles: ["Co-Captain", "Programming", "Website Programming"], grade: "Junior", registration: "Recruited" },
+    { name: "Samy Gaire", roles: ["Mechanical"], grade: "Junior", registration: "Returning" },
+    { name: "Aryan Ranabhat", roles: ["Mechanical", "Design"], grade: "Sophomore", registration: "Drafted" },
+    { name: "Rudra Patel", roles: ["Mechanical", "Outreach", "Media", "Graphic Design"], grade: "Sophomore", registration: "Drafted" },
+    { name: "Ernest Hu", roles: ["Mechanical", "Fabrication", "Design"], grade: "Junior", registration: "Switched" },
+    { name: "Pralove Shah", roles: ["Programming"], grade: "Sophomore", registration: "Recruited" },
+    { name: "Arden Bankman", roles: ["Mechanical"], grade: "Sophomore", registration: "Recruited" },
+    { name: "Ronith Budde", roles: ["Mechanical"], grade: "Sophomore", registration: "Recruited" },
+    { name: "Karthik", roles: ["Mechanical"], grade: "Sophomore", registration: "Recruited" },
+    { name: "Sruthi", roles: ["Outreach"], grade: "Junior", registration: "Recruited" },
+    { name: "Erick", roles: ["Mechanical"], grade: "Junior", registration: "Recruited" },
+    { name: "Samuel", roles: ["Mechanical", "Outreach"], grade: "Junior", registration: "Recruited" },
+    { name: "Ahaan", roles: ["Mechanical", "Outreach"], grade: "Sophomore", registration: "Recruited" },
 ];
 
 const awards = [
@@ -100,10 +105,17 @@ const MemberGroup = ({ title, list }) => list.length === 0 ? null : (
 );
 
 const TeamPage6183 = () => {
-    const coCaptains = members.filter(m => m.roles.includes("Co-Captain"));
-    const mechanical = members.filter(m => !m.roles.includes("Co-Captain") && m.roles[0] === "Mechanical");
-    const programming = members.filter(m => !m.roles.includes("Co-Captain") && m.roles[0] === "Programming");
-    const outreach = members.filter(m => !m.roles.includes("Co-Captain") && m.roles[0] === "Outreach");
+    const CATEGORY_PRIORITY = ["Programming", "Outreach", "Mechanical"];
+
+    const getCategory = (member) => {
+        if (member.roles.includes("Co-Captain")) return "Co-Captain";
+        return CATEGORY_PRIORITY.find(cat => member.roles.includes(cat)) || "Mechanical";
+    };
+
+    const coCaptains = members.filter(m => getCategory(m) === "Co-Captain");
+    const mechanical = members.filter(m => getCategory(m) === "Mechanical");
+    const programming = members.filter(m => getCategory(m) === "Programming");
+    const outreach = members.filter(m => getCategory(m) === "Outreach");
 
     return (
         <div className="t6183-page-clip">
