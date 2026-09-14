@@ -537,13 +537,93 @@
 
 /* Outreach Section */
 .team731-outreach-project {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 18px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.025);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
+    transition: border-color .3s ease, box-shadow .3s ease, transform .3s ease;
 }
 
-.team731-outreach-project h3 {
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+.team731-outreach-project:hover,
+.team731-outreach-project[open] {
+    border-color: rgba(106, 76, 255, 0.38);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.22), inset 0 0 22px rgba(106, 76, 255, 0.035);
+}
+
+.team731-outreach-project summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 72px;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    user-select: none;
+    background: linear-gradient(90deg, rgba(255,255,255,.045), rgba(106,76,255,.035));
+    transition: background .3s ease;
+}
+
+.team731-outreach-project summary::-webkit-details-marker {
+    display: none;
+}
+
+.team731-outreach-project summary:hover {
+    background: linear-gradient(90deg, rgba(255,255,255,.07), rgba(106,76,255,.075));
+}
+
+.team731-outreach-project summary:focus-visible {
+    outline: 2px solid var(--team731-secondary);
+    outline-offset: -2px;
+}
+
+.team731-outreach-title {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+    font-weight: 800;
+    letter-spacing: .01em;
+}
+
+.team731-outreach-title::before {
+    content: "✦";
+    color: var(--team731-secondary);
+    font-size: .9em;
+    filter: drop-shadow(0 0 8px rgba(106, 76, 255, .45));
+}
+
+.team731-outreach-toggle {
+    flex: 0 0 auto;
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(255,255,255,.055);
+    color: var(--team731-secondary);
+    font-size: 1.45rem;
+    line-height: 1;
+    transition: transform .3s ease, background .3s ease;
+}
+
+.team731-outreach-project[open] .team731-outreach-toggle {
+    transform: rotate(45deg);
+    background: rgba(106,76,255,.14);
+}
+
+.team731-outreach-project .team731-outreach-content {
+    padding: 1.25rem;
+    margin-top: 0;
+    animation: team731-outreach-open .35s ease both;
+}
+
+@keyframes team731-outreach-open {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .team731-outreach-content {
@@ -584,68 +664,108 @@
                 inset 0 0 10px rgba(106, 76, 255, 0.1);
 }
 
-/* Gallery Section */
+/* Modern moving gallery */
+.team731-gallery-grid {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 1.5rem;
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
 
 .team731-gallery-album {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.team731-gallery-album-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 1rem;
-}
-
-.team731-gallery-album-grid > div {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-}
-
-.team731-gallery-table {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
+    overflow: hidden;
 }
 
-.team731-gallery-cell {
-    width: 33.33%;
-    padding: 1rem;
-    text-align: center;
+.team731-gallery-track {
+    display: flex;
+    width: max-content;
+    gap: 1.25rem;
+    animation: team731-gallery-scroll 30s linear infinite;
+    will-change: transform;
+}
+
+.team731-gallery-album:hover .team731-gallery-track {
+    animation-play-state: paused;
+}
+
+.team731-gallery-card {
     position: relative;
+    flex: 0 0 clamp(260px, 34vw, 430px);
+    height: clamp(210px, 28vw, 290px);
+    margin: 0;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,.12);
+    background: rgba(20,20,25,.7);
+    box-shadow: 0 12px 35px rgba(0,0,0,.35);
+    cursor: pointer;
+    isolation: isolate;
+}
+
+.team731-gallery-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,.82), rgba(0,0,0,0) 55%);
+    opacity: .7;
+    transition: opacity .35s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.team731-gallery-card:hover::after {
+    opacity: 1;
 }
 
 .team731-gallery-image {
     width: 100%;
-    height: 250px;
+    height: 100%;
     object-fit: cover;
-    border-radius: 8px;
+    display: block;
+    transition: transform .6s cubic-bezier(.2,.7,.2,1), filter .4s ease;
 }
 
-figcaption {
+.team731-gallery-card:hover .team731-gallery-image {
+    transform: scale(1.07);
+    filter: saturate(1.08) contrast(1.03);
+}
+
+.team731-gallery-card figcaption {
     position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    right: 1rem;
-    background: rgba(0, 0, 0);
-    color: white;
-    text-shadow: 0 0 10px #FF6600, 0 0 20px #FF8800;
-    opacity: 0.8;
-    padding: 0.5rem;
-    font-size: 0.85rem;
-    border-radius: 4px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 1.25rem 1.25rem 1.1rem;
     margin: 0;
-    transition: transform 0.5s cubic-bezier(0.87, -1.38, 0.03, 1.54);
-    box-shadow: 0 0 15px #FF6600, 0 0 25px #FF8800;
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: .03em;
+    line-height: 1.35;
+    background: linear-gradient(to top, rgba(0,0,0,.9), transparent);
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity .3s ease, transform .3s ease;
+    text-shadow: 0 2px 10px rgba(0,0,0,.8);
 }
 
-.team731-gallery-cell:hover figcaption {
+.team731-gallery-card:hover figcaption {
     opacity: 1;
-    transform: scale(1.15) translateY(1.15rem);
+    transform: translateY(0);
 }
 
+@keyframes team731-gallery-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-50% - .625rem)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .team731-gallery-track { animation: none; }
+}
 
 /* History Section - card grid */
 .team731-history-grid {
@@ -831,4 +951,561 @@ figcaption {
 ol > li > ul {
     margin-left: 20px !important;  /* Pushes the sub-list to the right */
     padding-left: 20px !important; /* Creates space between bullets and text */
+}
+
+/* New Member Highlight */
+.team731-new-member { background: linear-gradient(135deg, rgba(0,212,160,.18), rgba(106,76,255,.25)); border: 1px solid rgba(0,212,160,.65); box-shadow: 0 0 25px rgba(0,212,160,.18); }
+.team731-new-member-badge { display:block; width:fit-content; margin:-.35rem auto .9rem; padding:.25rem .75rem; border-radius:999px; background:linear-gradient(90deg,var(--team731-secondary),var(--team731-accent)); color:var(--team731-text-dark); font-size:.7rem; font-weight:800; letter-spacing:.5px; text-transform:uppercase; box-shadow:0 0 12px rgba(0,212,160,.35); }
+
+/* Outreach Impact Dashboard */
+.team731-impact { position:relative; overflow:hidden; background:radial-gradient(circle at 100% 0%,rgba(106,76,255,.18),transparent 45%),var(--team731-glass-bg); }
+.team731-impact-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:2rem; }
+.team731-impact-eyebrow { color:var(--team731-secondary); font-size:.75rem; font-weight:800; letter-spacing:2px; }
+.team731-impact-header h2 { margin:.4rem 0 .5rem; }
+.team731-impact-header p { margin:0; opacity:.75; font-size:1rem; }
+.team731-impact-icon { font-size:3rem; color:var(--team731-accent); text-shadow:0 0 20px rgba(255,209,102,.5); }
+.team731-impact-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
+.team731-stat-card { padding:1.5rem 1rem; border-radius:14px; background:rgba(40,40,40,.45); border:1px solid rgba(106,76,255,.25); text-align:center; transition:all .3s ease; }
+.team731-stat-card:hover { transform:translateY(-5px); border-color:var(--team731-secondary); box-shadow:0 8px 25px rgba(0,212,160,.15); }
+.team731-stat-primary { border-color:rgba(0,212,160,.45); background:linear-gradient(135deg,rgba(0,212,160,.12),rgba(106,76,255,.12)); }
+.team731-stat-icon { display:block; font-size:1.5rem; color:var(--team731-accent); margin-bottom:.5rem; }
+.team731-stat-card strong { display:block; font-size:2rem; font-weight:800; color:var(--team731-text-light); letter-spacing:-1px; }
+.team731-stat-primary strong { color:var(--team731-secondary); }
+.team731-stat-card span:not(.team731-stat-icon) { display:block; margin-top:.3rem; font-size:.85rem; font-weight:700; text-transform:uppercase; letter-spacing:.5px; }
+.team731-stat-card small { display:block; margin-top:.6rem; font-size:.75rem; opacity:.55; }
+.team731-impact-bottom { display:flex; justify-content:space-between; align-items:center; margin-top:1.5rem; padding:1.5rem; border-radius:14px; background:rgba(106,76,255,.12); border:1px solid rgba(106,76,255,.2); }
+.team731-hours { display:flex; align-items:center; gap:1rem; }
+.team731-hours-icon { width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:rgba(255,209,102,.15); color:var(--team731-accent); font-size:1.5rem; }
+.team731-hours strong { display:block; font-size:1.8rem; color:var(--team731-accent); }
+.team731-hours span { display:block; font-size:.8rem; text-transform:uppercase; letter-spacing:1px; opacity:.7; }
+.team731-impact-message { text-align:right; font-size:1.1rem; }
+.team731-impact-message span { display:block; opacity:.7; }
+.team731-impact-message strong { display:block; color:var(--team731-secondary); font-size:1.5rem; }
+@media (max-width:768px) { .team731-impact-grid { grid-template-columns:repeat(2,1fr); } .team731-impact-bottom { flex-direction:column; align-items:flex-start; gap:1.5rem; } .team731-impact-message { text-align:left; } }
+
+
+/* Modern Community Outreach */
+.team731-community-modern { position:relative; overflow:hidden; background:linear-gradient(135deg,rgba(18,20,38,.96),rgba(31,22,61,.92)); }
+.team731-community-modern:before { content:""; position:absolute; width:320px; height:320px; right:-120px; top:-140px; border-radius:50%; background:rgba(0,212,160,.16); filter:blur(8px); }
+.team731-outreach-hero { position:relative; display:flex; justify-content:space-between; align-items:center; gap:2rem; margin-bottom:1.5rem; }
+.team731-outreach-hero h2 { font-size:clamp(2rem,4vw,3.4rem); margin:.35rem 0 .7rem; letter-spacing:-1.5px; }
+.team731-outreach-hero p { max-width:650px; margin:0; color:rgba(255,255,255,.72); font-size:1.05rem; line-height:1.7; }
+.team731-outreach-hero-mark { font-size:5rem; font-weight:900; line-height:1; color:var(--team731-secondary); text-shadow:0 0 35px rgba(0,212,160,.25); }
+.team731-outreach-hero-mark span { color:var(--team731-accent); }
+.team731-outreach-pill-row { display:flex; flex-wrap:wrap; gap:.65rem; margin-bottom:2rem; }
+.team731-outreach-pill-row span { padding:.5rem .85rem; border:1px solid rgba(255,255,255,.12); border-radius:999px; background:rgba(255,255,255,.05); color:rgba(255,255,255,.78); font-size:.75rem; font-weight:700; letter-spacing:.5px; }
+.team731-outreach-card { position:relative; padding:1.4rem; margin-top:1.25rem; border:1px solid rgba(255,255,255,.1); border-radius:22px; background:rgba(255,255,255,.045); box-shadow:0 12px 35px rgba(0,0,0,.16); transition:transform .3s ease,border-color .3s ease; }
+.team731-outreach-card:hover { transform:translateY(-4px); border-color:rgba(0,212,160,.45); }
+.team731-outreach-card h3 { font-size:1.35rem; margin-bottom:1rem; }
+.team731-outreach-card .team731-outreach-image-container { border-radius:16px; overflow:hidden; }
+.team731-outreach-card .team731-outreach-image { transition:transform .5s ease; }
+.team731-outreach-card:hover .team731-outreach-image { transform:scale(1.04); }
+@media (max-width:768px){ .team731-outreach-hero{align-items:flex-start}.team731-outreach-hero-mark{font-size:3rem}.team731-outreach-card{padding:1rem} }
+
+
+/* =========================================================
+   TEAM 731 TITLE
+   ========================================================= */
+
+.team731-title-box-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.team731-title-box {
+    width: 100%;
+    padding: 2.5rem 1rem 2.8rem !important;
+    text-align: center;
+    position: relative;
+}
+
+.team731-main-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .15rem;
+}
+
+
+/* =========================================================
+   731 + LOGO SHARED POSITION
+   ========================================================= */
+
+.team731-title-number-wrap {
+    width: clamp(260px, 38vw, 560px);
+    height: clamp(125px, 17vw, 235px);
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: visible;
+}
+
+
+/* =========================================================
+   731
+   ========================================================= */
+
+.team731-title-number {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(-50%, -50%)
+        scale(1);
+
+    transform-origin: center center;
+
+    font-family:
+        Impact,
+        Haettenschweiler,
+        'Arial Black',
+        sans-serif;
+
+    font-size: clamp(7rem, 19vw, 15rem);
+
+    line-height: .78;
+
+    letter-spacing: -.08em;
+
+    padding-right: .08em;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7B2CFF 0%,
+            #FF6A00 52%,
+            #FFFFFF 100%
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+
+    text-shadow:
+        0 12px 45px rgba(123, 44, 255, .20);
+
+    cursor: pointer;
+
+    z-index: 3;
+
+    transition:
+        transform .75s cubic-bezier(.22, 1, .36, 1),
+        opacity .6s ease,
+        filter .65s ease;
+}
+
+
+/* =========================================================
+   LOGO
+   Initially COMPLETELY HIDDEN
+   ========================================================= */
+
+.team731-hover-logo {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    width: clamp(125px, 15vw, 215px);
+    height: clamp(125px, 15vw, 215px);
+
+    transform:
+        translate(-50%, -50%)
+        scale(.15);
+
+    opacity: 0;
+
+    filter:
+        blur(12px)
+        brightness(.8);
+
+    pointer-events: none;
+
+    z-index: 2;
+
+    transition:
+        opacity .55s ease,
+        transform .8s cubic-bezier(.22, 1, .36, 1),
+        filter .7s ease;
+}
+
+
+.team731-hover-logo .team731-logo {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+
+    filter:
+        drop-shadow(0 15px 35px rgba(123, 44, 255, .35));
+}
+
+
+/* =========================================================
+   HOVER OVER 731
+   ========================================================= */
+
+.team731-title-number:hover {
+    transform:
+        translate(calc(-50% + 115px), -50%)
+        scale(.18);
+
+    opacity: 0;
+
+    filter: blur(8px);
+}
+
+
+/* Logo takes the 731's place */
+
+.team731-title-number:hover ~ .team731-hover-logo {
+    opacity: 1;
+
+    transform:
+        translate(-50%, -50%)
+        scale(1);
+
+    filter:
+        blur(0)
+        brightness(1);
+}
+
+
+/* =========================================================
+   TITLE NAME
+   ========================================================= */
+
+.team731-title-name {
+    margin-top: .8rem;
+
+    font-family:
+        Georgia,
+        'Times New Roman',
+        serif;
+
+    font-style: italic;
+
+    font-weight: 700;
+
+    font-size:
+        clamp(2.2rem, 5vw, 4.8rem);
+
+    letter-spacing: -2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #7B2CFF 0%,
+            #FF6A00 55%,
+            #FFFFFF 100%
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+
+    text-shadow:
+        0 4px 25px rgba(106, 76, 255, .35);
+}
+
+
+/* =========================================================
+   SUBTITLE
+   ========================================================= */
+
+.team731-title-subtitle {
+    margin-top: .9rem;
+
+    font-size: .72rem;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    font-weight: 800;
+
+    color: #FFFFFF;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .team731-title-number-wrap {
+        width: 100%;
+        height: 150px;
+    }
+
+    .team731-title-number {
+        font-size: clamp(6rem, 30vw, 9rem);
+    }
+
+    .team731-hover-logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .team731-title-number:hover {
+        transform:
+            translate(calc(-50% + 65px), -50%)
+            scale(.18);
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .team731-title-number,
+    .team731-hover-logo {
+        transition: none;
+    }
+
+}
+.team731-community-modern { padding:clamp(2rem,5vw,4rem) !important; }
+.team731-outreach-hero { margin-bottom:2.5rem; }
+.team731-outreach-hero h2 { font-size:clamp(2.8rem,6vw,5.5rem) !important; line-height:.95; letter-spacing:-3px !important; }
+.team731-outreach-hero p { font-size:clamp(1.05rem,2vw,1.35rem) !important; max-width:720px; }
+.team731-outreach-hero-mark { font-size:clamp(5rem,12vw,10rem) !important; letter-spacing:-8px; }
+.team731-outreach-pill-row span { font-size:.9rem; padding:.7rem 1.05rem; }
+.team731-outreach-card { padding:clamp(1.25rem,3vw,2.2rem) !important; margin-top:1.7rem; }
+.team731-outreach-card h3 { font-size:clamp(1.7rem,3vw,2.5rem) !important; letter-spacing:-1px; }
+.team731-outreach-card .team731-outreach-text p { font-size:clamp(1rem,1.5vw,1.18rem) !important; line-height:1.8; color:rgba(255,255,255,.82); }
+.team731-outreach-content { gap:clamp(1.5rem,4vw,3rem) !important; }
+.team731-outreach-card .team731-outreach-image-container { min-height:260px; }
+.team731-outreach-card .team731-outreach-image { height:100%; min-height:260px; object-fit:cover; }
+@media (max-width:768px){ .team731-title-box { padding:2rem .5rem !important; } .team731-title-subtitle{letter-spacing:1.5px;font-size:.58rem} .team731-outreach-hero{flex-direction:column} .team731-outreach-hero-mark{align-self:flex-end} .team731-outreach-hero h2{letter-spacing:-1.5px !important} }
+
+/* =========================================================
+   FINAL TEAM 731 TITLE FIX
+   CENTER EVERYTHING + ENLARGE HOVER LOGO
+   ========================================================= */
+
+/* Keep the entire title card centered */
+.team731-title-box-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    padding: 0 !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    z-index: 10;
+}
+
+/* Center all title content */
+.team731-title-box {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.team731-main-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================================================
+   731 + POPUP LOGO
+   ========================================================= */
+
+.team731-title-number-wrap {
+    width: 100%;
+    height: clamp(170px, 21vw, 280px);
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: visible;
+}
+
+/* 731 sits EXACTLY in the center */
+.team731-title-number {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%) scale(1);
+    transform-origin: center center;
+
+    font-size: clamp(7rem, 19vw, 15rem);
+
+    z-index: 3;
+}
+
+/* =========================================================
+   LARGE CENTERED HOVER LOGO
+   ========================================================= */
+
+.team731-hover-logo {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    /* Make the popup substantially larger */
+    width: clamp(240px, 25vw, 360px) !important;
+    height: clamp(240px, 25vw, 360px) !important;
+
+    transform:
+        translate(-50%, -50%)
+        scale(.15);
+
+    transform-origin: center center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    z-index: 4;
+
+    transition:
+        opacity .55s ease,
+        transform .8s cubic-bezier(.22, 1, .36, 1),
+        filter .7s ease;
+}
+
+/* Enlarge the ACTUAL artwork inside the image.
+   This compensates for transparent space in the logo PNG. */
+.team731-hover-logo .team731-logo {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+
+    transform: scale(1.70);
+
+    filter:
+        drop-shadow(0 15px 35px rgba(123, 44, 255, .35));
+}
+
+/* =========================================================
+   HOVER ANIMATION
+   ========================================================= */
+
+/* 731 shrinks away from the CENTER */
+.team731-title-number:hover {
+    transform:
+        translate(-50%, -50%)
+        scale(.18);
+
+    opacity: 0;
+
+    filter: blur(8px);
+}
+
+/* Logo expands into the EXACT SAME CENTER POINT */
+.team731-title-number:hover ~ .team731-hover-logo {
+    opacity: 1;
+
+    transform:
+        translate(-50%, -50%)
+        scale(1);
+
+    filter:
+        blur(0)
+        brightness(1);
+}
+
+/* =========================================================
+   TITLE TEXT
+   ========================================================= */
+
+.team731-title-name {
+    display: block;
+    width: 100%;
+
+    margin-top: -3.5rem;
+
+    text-align: center;
+}
+
+.team731-title-subtitle {
+    width: 100%;
+    text-align: center;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .team731-title-box-container {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .team731-title-number-wrap {
+        width: 100%;
+        height: 170px;
+    }
+
+    .team731-title-number {
+        font-size: clamp(6rem, 30vw, 9rem);
+    }
+
+    .team731-hover-logo {
+        width: 190px !important;
+        height: 190px !important;
+    }
+
+    .team731-hover-logo .team731-logo {
+        transform: scale(1.55);
+    }
+
+    .team731-title-name {
+        margin-top: -2rem;
+    }
+}
+/* =========================================================
+   REMOVE TITLE CARD BACKGROUND
+   ========================================================= */
+
+.team731-title-box-container {
+    background: transparent !important;
+}
+
+.team731-title-box {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
 }
