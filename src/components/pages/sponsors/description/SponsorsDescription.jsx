@@ -20,6 +20,7 @@ import AnalogDevicesLogo from '/assets/SponsorLogos/AnalogDevicesLogo.jpg';
 import CotalityLogo from '/assets/SponsorLogos/Cotality.png';
 import GDTLogo from '/assets/SponsorLogos/GDTLogo.png';
 import HondaLogo from '/assets/SponsorLogos/HondaLogo.svg';
+import XternLogo from '/assets/SponsorLogos/XternLogo.webp';
 
 const sponsors = [
   {
@@ -108,7 +109,12 @@ const sponsors = [
     logo: IFGILogo,
     link: 'https://inventionsforgood.org/',
   },
- 
+   {
+    name: 'Xtern Software',
+    level: 'bronze',
+    logo: XternLogo,
+    link: 'https://xternsoftware.com/',
+  },
 ];
 
 const imageWidth = '80%';
