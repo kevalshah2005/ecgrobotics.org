@@ -14,7 +14,7 @@ function Footer() {
                     <div className="footer-join-section">
                         <h2>Students</h2>
                         <p>
-                            ECG Robotics welcomes students from across Guilford County, NC.
+                            ECG Robotics welcomes students from the Greater Triad Region, NC.
                             Join Triple Strange, our FRC team, or one of our four FTC teams 
                             to <a href="/join">become a part of our club</a>.
                         </p>
