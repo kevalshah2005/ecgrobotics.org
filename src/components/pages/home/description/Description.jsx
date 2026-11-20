@@ -18,7 +18,7 @@ function Description() {
     <div className='description-container'>
       <div className='overview-container' data-aos="fade-up">
         <div className='text-container'>
-          <p>ECG Robotics is a student-led, non-profit robotics club based in Greensboro, NC. Our teams compete in the FIRST Tech Challenge and FIRST Robotics Competition and welcome students from all over Guilford County.</p>
+          <p>ECG Robotics is a student-led, non-profit robotics club based in Greensboro, NC. Our teams compete in the FIRST Tech Challenge and FIRST Robotics Competition and welcome students from all over the Greater Triad Region.</p>
           <p>We inspire students locally, nationally, and internationally to learn about STEM through our award-winning outreach initiatives.</p>
         </div>
         <img src={overviewImage} alt='' className='overview-image' />
